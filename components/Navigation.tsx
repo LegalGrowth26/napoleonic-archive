@@ -19,15 +19,14 @@ export default function Navigation() {
     <header className="border-b border-gold/20 bg-navy-deep/80 backdrop-blur-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gold/50 bg-gradient-to-br from-burgundy to-burgundy-deep text-gold-pale group-hover:border-gold transition overflow-hidden">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/napoleon-bust.svg"
-              alt=""
-              aria-hidden="true"
-              className="w-8 h-8 object-contain -mb-1"
-            />
-          </span>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/napoleon-bust.png"
+            alt="The Napoleonic Archive"
+            width="40"
+            height="40"
+            className="rounded-full object-cover"
+          />
           <div className="flex flex-col leading-tight">
             <span className="font-display text-gold-pale tracking-widest text-sm md:text-base uppercase">
               The Napoleonic
