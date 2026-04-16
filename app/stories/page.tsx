@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Stories · The Napoleonic Archive",
   description:
-    "Accounts and anecdotes from the Napoleonic Wars — in the words of those who were there.",
+    "Accounts and anecdotes from the Napoleonic Wars, in the words of those who were there.",
 };
 
 interface Story {
@@ -21,7 +21,7 @@ const stories: Story[] = [
     source: "Recollection of the 42nd (Black Watch) · 1815",
     setting: "A rye-field in Brabant, 16 June 1815",
     excerpt:
-      "We formed square in the rye, the stalks so high we could not see the cuirassiers till they were ten yards off. Piper Mackay would not stand within. He paced outside the bayonets and played, and when the French came he played Cogadh no Sith — War or Peace — and when they broke and went back he played it again, and a trooper with a lance in his side was weeping on the drum.",
+      "We formed square in the rye, the stalks so high we could not see the cuirassiers till they were ten yards off. Piper Mackay would not stand within. He paced outside the bayonets and played, and when the French came he played Cogadh no Sith, War or Peace, and when they broke and went back he played it again, and a trooper with a lance in his side was weeping on the drum.",
     commentary:
       "The story of Kenneth Mackay pacing beyond the square became the regiment's most treasured relic. It is almost too perfect to be true; it is largely true.",
   },
@@ -30,7 +30,7 @@ const stories: Story[] = [
     source: "Benjamin Harris, 95th Rifles · Recollections (1848)",
     setting: "The retreat across Galicia, December 1808 – January 1809",
     excerpt:
-      "My shoes had given out long before. The men tied strips of raw oxhide about their feet, bloody side in, and so we went — the women carrying children, the children carrying loaves, the loaves mouldered black. I saw a wife of the 43rd fall down in the snow and her man would not leave her; a sergeant cut him across the back with a scabbard, and still he sat with her. When we came up the pass again the French dragoons had taken the lot.",
+      "My shoes had given out long before. The men tied strips of raw oxhide about their feet, bloody side in, and so we went: the women carrying children, the children carrying loaves, the loaves mouldered black. I saw a wife of the 43rd fall down in the snow and her man would not leave her; a sergeant cut him across the back with a scabbard, and still he sat with her. When we came up the pass again the French dragoons had taken the lot.",
     commentary:
       "Harris's dictated memoirs are the best private-soldier document we have of the Peninsula. His plain voice gives the retreat a reality no dispatch can.",
   },
@@ -57,7 +57,7 @@ const stories: Story[] = [
     source: "Lt. Charles Parquin, 20th Chasseurs à Cheval · Military Memoirs",
     setting: "Dawn on the Pratzen, 2 December 1805",
     excerpt:
-      "The Emperor sat his white horse at the foot of the slope as we came up through the fog. A gun fired — one only — and then the sun broke over the plateau so suddenly that we all cheered. He smiled for the first time that week. Soult's men were already on the heights; we could hear them cheering too. And then the Russian drums went rolling down towards the ponds.",
+      "The Emperor sat his white horse at the foot of the slope as we came up through the fog. A gun fired, one only, and then the sun broke over the plateau so suddenly that we all cheered. He smiled for the first time that week. Soult's men were already on the heights; we could hear them cheering too. And then the Russian drums went rolling down towards the ponds.",
     commentary:
       "The 'Sun of Austerlitz' became a synonym for Napoleonic good fortune. Parquin, a young chasseur, remembered it all his life.",
   },
@@ -68,7 +68,7 @@ const stories: Story[] = [
     excerpt:
       "He was brought down at twenty past one. The ball had broken his spine. He lay on a cot in the midshipmen's berth, covered with a sheet; the powder-monkeys had to be kept from staring at him. He asked constantly, 'How goes the day with us?' and when told we had eighteen prizes he said twice, 'God be praised, I have done my duty.' He died at half past four, his hand upon Hardy's.",
     commentary:
-      "Beatty's official account remains the primary source. Nelson's body was preserved in a cask of brandy for the voyage home — hence the sailor's name for rum: 'Nelson's blood.'",
+      "Beatty's official account remains the primary source. Nelson's body was preserved in a cask of brandy for the voyage home, hence the sailor's name for rum: 'Nelson's blood.'",
   },
   {
     title: "A Cantinière at Waterloo",
@@ -77,16 +77,16 @@ const stories: Story[] = [
     excerpt:
       "My barrel had a hole in it after the first hour, and the brandy leaked down my skirts. I carried it still because the men asked for me, and I could not refuse them. A cuirassier I did not know gave me his cross and said, 'Hold that for my wife, Marie,' and rode down the slope. I did not see him again. When night came I had his cross and the empty barrel and nothing else. I was twenty-two years old.",
     commentary:
-      "Women served with every army — washerwomen, sutlers, wives 'on the strength.' Their voices survive only in fragments. This one is dressed up, but its bones are real.",
+      "Women served with every army: washerwomen, sutlers, wives 'on the strength.' Their voices survive only in fragments. This one is dressed up, but its bones are real.",
   },
   {
     title: "The Old Guard at Krasny",
     source: "Sgt. Bourgogne, Imperial Guard · Mémoires (1835)",
     setting: "Retreat from Russia, 15 – 18 November 1812",
     excerpt:
-      "We were four thousand of the Guard left. The cold had glued the muskets to our hands; to let go was to leave the skin behind. When the Russian artillery opened upon us at Krasny we did not even form square — we could not. We marched in column straight through the fire, and when we came out upon the further side we counted not the dead but the living, and they were less than half.",
+      "We were four thousand of the Guard left. The cold had glued the muskets to our hands; to let go was to leave the skin behind. When the Russian artillery opened upon us at Krasny we did not even form square, for we could not. We marched in column straight through the fire, and when we came out upon the further side we counted not the dead but the living, and they were less than half.",
     commentary:
-      "Bourgogne's memoir is the retreat from Moscow as a sergeant lived it — frost-bitten, starved, and still, to the end, faithful.",
+      "Bourgogne's memoir is the retreat from Moscow as a sergeant lived it: frost-bitten, starved, and still, to the end, faithful.",
   },
   {
     title: "Wellington at Salamanca",
@@ -102,7 +102,7 @@ const stories: Story[] = [
     source: "Letter of Lt. George Barlow, 69th Foot · 1816",
     setting: "Canterbury, the year after Waterloo",
     excerpt:
-      "I pin my sleeve up each morning with a brass pin that was the Emperor's — taken, they say, from his carriage at Genappe. My mother cries when she sees it. My father says it is an honourable thing. I cannot yet write with my left hand without shaking, and the children in the village will not look at me. I do not know what to do with the rest of my life.",
+      "I pin my sleeve up each morning with a brass pin that was the Emperor's, taken, they say, from his carriage at Genappe. My mother cries when she sees it. My father says it is an honourable thing. I cannot yet write with my left hand without shaking, and the children in the village will not look at me. I do not know what to do with the rest of my life.",
     commentary:
       "After Waterloo the army demobilised hundreds of thousands of men. Broken veterans became a recognisable sight in every British town for thirty years.",
   },
@@ -114,7 +114,7 @@ export default function StoriesPage() {
       <PageHeader
         eyebrow="In their own ink"
         title="Stories"
-        lede="Memoirs, letters and anecdotes — the war recounted by those who were in it, and a little by those who were not."
+        lede="Memoirs, letters and anecdotes: the war recounted by those who were in it, and a little by those who were not."
       />
 
       <section className="max-w-4xl mx-auto px-6 py-16 space-y-12">

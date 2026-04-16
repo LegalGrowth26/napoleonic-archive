@@ -25,7 +25,7 @@ const primarySources: ReadingEntry[] = [
     author: "John Kincaid",
     title: "Adventures in the Rifle Brigade",
     year: "1830",
-    note: "Droll, literate Kincaid of the 95th — indispensable, and very funny.",
+    note: "Droll, literate Kincaid of the 95th: indispensable, and very funny.",
   },
   {
     author: "George Robert Gleig",
@@ -49,7 +49,7 @@ const primarySources: ReadingEntry[] = [
     author: "Jean-Baptiste Marbot",
     title: "Mémoires du Général Baron de Marbot",
     year: "1891",
-    note: "Theatrical, self-serving, marvellously readable — the ne plus ultra of cavalry memoirs.",
+    note: "Theatrical, self-serving, marvellously readable: the ne plus ultra of cavalry memoirs.",
   },
   {
     author: "Cavalié Mercer",
@@ -76,7 +76,7 @@ const modernHistories: ReadingEntry[] = [
     author: "Charles Esdaile",
     title: "Napoleon's Wars: An International History",
     year: "2007",
-    note: "The modern synthesis. Political, economic, military — all continents.",
+    note: "The modern synthesis. Political, economic, military, all continents.",
   },
   {
     author: "Adam Zamoyski",
@@ -124,7 +124,7 @@ const modernHistories: ReadingEntry[] = [
     author: "Dominic Lieven",
     title: "Russia Against Napoleon",
     year: "2009",
-    note: "The other side of 1812 — the Russian war from St Petersburg out.",
+    note: "The other side of 1812: the Russian war from St Petersburg out.",
   },
 ];
 
@@ -145,7 +145,7 @@ const sharpeCompanion: ReadingEntry[] = [
     author: "Mark Adkin",
     title: "The Sharpe Companion: The Early Years",
     year: "2003",
-    note: "Maps, orders of battle, uniform plates — the enthusiast's toolbox.",
+    note: "Maps, orders of battle, uniform plates: the enthusiast's toolbox.",
   },
   {
     author: "Mark Adkin",
@@ -170,7 +170,7 @@ const museums: LinkEntry[] = [
   {
     name: "Royal Green Jackets (Rifles) Museum",
     where: "Winchester",
-    note: "The Rifles' descendant museum — Baker rifles, jackets, the best 95th collection in the world.",
+    note: "The Rifles' descendant museum: Baker rifles, jackets, the best 95th collection in the world.",
   },
   {
     name: "Musée de l'Armée",
@@ -218,7 +218,7 @@ const archives: LinkEntry[] = [
   {
     name: "The British Newspaper Archive",
     where: "Online · £",
-    note: "Contemporary reporting — dispatches as Londoners read them.",
+    note: "Contemporary reporting: dispatches as Londoners read them.",
   },
   {
     name: "Gallica (BnF)",
@@ -236,10 +236,10 @@ const podcasts: LinkEntry[] = [
   {
     name: "The Age of Napoleon",
     where: "Podcast · Alexander Mikaberidze (academic)",
-    note: "Global, diplomatically-minded — a worthy pairing to the above.",
+    note: "Global, diplomatically-minded; a worthy pairing to the above.",
   },
   {
-    name: "The Rest Is History — Waterloo / Napoleon sequences",
+    name: "The Rest Is History: Waterloo / Napoleon sequences",
     where: "Podcast",
     note: "Tom Holland and Dominic Sandbrook on the period. Accessible and sharp.",
   },
@@ -320,7 +320,7 @@ export default function ResourcesPage() {
       <PageHeader
         eyebrow="For further reading"
         title="Resources"
-        lede="Memoirs, modern histories, museums, archives, maps and podcasts — the archivist's further shelves."
+        lede="Memoirs, modern histories, museums, archives, maps and podcasts: the archivist's further shelves."
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16 space-y-16">

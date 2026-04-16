@@ -4,13 +4,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Battles · The Napoleonic Archive",
   description:
-    "Key battles of the Napoleonic Wars — Austerlitz, Trafalgar, Borodino, Salamanca, Leipzig, Waterloo and more.",
+    "Key battles of the Napoleonic Wars: Austerlitz, Trafalgar, Borodino, Salamanca, Leipzig, Waterloo and more.",
 };
 
 interface Battle {
   name: string;
   date: string;
   location: string;
+  belligerents: string;
   commanders: string;
   outcome: string;
   casualties: string;
@@ -23,6 +24,7 @@ const battles: Battle[] = [
     name: "Marengo",
     date: "14 June 1800",
     location: "Piedmont, Italy",
+    belligerents: "France vs. Austria",
     commanders: "Napoleon Bonaparte vs. Michael von Melas",
     outcome: "French victory (narrow)",
     casualties: "≈ 7,000 French · ≈ 9,500 Austrian",
@@ -33,16 +35,18 @@ const battles: Battle[] = [
     name: "Trafalgar",
     date: "21 October 1805",
     location: "Cape Trafalgar, off south-west Spain",
+    belligerents: "Britain vs. France & Spain",
     commanders: "Vice-Admiral Horatio Nelson vs. Pierre Villeneuve",
     outcome: "Decisive British naval victory",
     casualties: "≈ 1,700 British · ≈ 13,780 Franco-Spanish (incl. captured)",
     summary:
-      "Nelson's two columns pierced the Franco-Spanish line at right angles; nineteen enemy ships were taken or destroyed and not one British ship was lost. Nelson, struck by a sharpshooter from the Redoutable, died below decks — securing a century of British maritime supremacy.",
+      "Nelson's two columns pierced the Franco-Spanish line at right angles; nineteen enemy ships were taken or destroyed and not one British ship was lost. Nelson, struck by a sharpshooter from the Redoutable, died below decks, securing a century of British maritime supremacy.",
   },
   {
     name: "Austerlitz",
     date: "2 December 1805",
     location: "Moravia (modern Czech Republic)",
+    belligerents: "France vs. Russia & Austria",
     commanders: "Napoleon vs. Tsar Alexander I & Emperor Francis II",
     outcome: "Crushing French victory",
     casualties: "≈ 9,000 French · ≈ 36,000 Russo-Austrian",
@@ -53,6 +57,7 @@ const battles: Battle[] = [
     name: "Jena–Auerstedt",
     date: "14 October 1806",
     location: "Thuringia, Prussia",
+    belligerents: "France vs. Prussia",
     commanders: "Napoleon & Davout vs. Frederick William III & Brunswick",
     outcome: "Decisive French victory",
     casualties: "≈ 15,000 French · ≈ 38,000 Prussian",
@@ -63,6 +68,7 @@ const battles: Battle[] = [
     name: "Eylau",
     date: "7–8 February 1807",
     location: "East Prussia",
+    belligerents: "France vs. Russia & Prussia",
     commanders: "Napoleon vs. Levin von Bennigsen",
     outcome: "Tactical draw; strategic French",
     casualties: "≈ 25,000 French · ≈ 15,000 Russian",
@@ -73,73 +79,80 @@ const battles: Battle[] = [
     name: "Vimeiro",
     date: "21 August 1808",
     location: "Portugal",
+    belligerents: "Britain & Portugal vs. France",
     commanders: "Sir Arthur Wellesley vs. Jean-Andoche Junot",
     outcome: "British victory",
     casualties: "≈ 720 British · ≈ 2,000 French",
     summary:
       "Wellesley's first great Peninsular success. British musketry in line shredded advancing French columns on the sun-baked ridge. The subsequent Convention of Cintra, allowing the French to sail home with their loot, disgraced his seniors and left the command to Wellesley.",
     sharpe:
-      "Sharpe's Rifles (indirectly) — the 95th's Peninsular story begins here.",
+      "Sharpe's Rifles (indirectly): the 95th's Peninsular story begins here.",
   },
   {
     name: "Corunna",
     date: "16 January 1809",
     location: "Galicia, Spain",
+    belligerents: "Britain vs. France",
     commanders: "Sir John Moore vs. Marshal Soult",
     outcome: "British rearguard victory; evacuation",
     casualties: "≈ 900 British · ≈ 2,000 French",
     summary:
       "The end of Moore's harrowing winter retreat across the Galician mountains. Moore was struck by a cannonball on the ridge above the port and died that evening, buried at midnight 'by the struggling moonbeam's misty light.' The army embarked; Moore left Iberia free for Wellesley's return.",
-    sharpe: "Sharpe's Rifles — the novel opens in the retreat to Corunna.",
+    sharpe: "Sharpe's Rifles: the novel opens in the retreat to Corunna.",
   },
   {
     name: "Talavera",
     date: "27–28 July 1809",
     location: "New Castile, Spain",
+    belligerents: "Britain & Spain vs. France",
     commanders: "Wellesley vs. King Joseph & Marshal Victor",
     outcome: "Allied victory",
     casualties: "≈ 5,300 British · ≈ 7,300 French",
     summary:
       "A bloody two-day contest in furnace heat. The 48th Foot's counter-march plugged a break in the line; the field caught fire, burning the wounded where they lay. Wellesley was created Viscount Wellington of Talavera for the victory.",
-    sharpe: "Sharpe's Eagle — Sharpe takes a French colour here.",
+    sharpe: "Sharpe's Eagle: Sharpe takes a French colour here.",
   },
   {
     name: "Ciudad Rodrigo",
     date: "8–19 January 1812",
     location: "Leon, Spain",
+    belligerents: "Britain & Portugal vs. France",
     commanders: "Wellington vs. Barrié (garrison)",
     outcome: "Allied storm; fortress taken",
     casualties: "≈ 1,100 British · ≈ 530 French",
     summary:
       "A midwinter siege opened in frozen trenches. On the night of 19 January the Light and 3rd Divisions went in through two breaches; General 'Black Bob' Craufurd was mortally wounded atop the lesser breach. The storming was followed by the usual drunken sack.",
-    sharpe: "Sharpe's Company — the novel culminates in the breach.",
+    sharpe: "Sharpe's Company: the novel culminates in the breach.",
   },
   {
     name: "Badajoz",
     date: "16 March – 6 April 1812",
     location: "Extremadura, Spain",
+    belligerents: "Britain & Portugal vs. France",
     commanders: "Wellington vs. Armand Philippon",
     outcome: "Allied storm; fortress taken",
     casualties: "≈ 4,800 British · ≈ 1,800 French",
     summary:
       "The most terrible storming of the war. Forty attempts and more were thrown at the breach of the Trinidad bastion; dead Britons piled in the ditch until the Light Division could climb on their bodies. Wellington wept on the glacis at dawn. The sack that followed lasted three days.",
-    sharpe: "Sharpe's Company — the storming and its aftermath.",
+    sharpe: "Sharpe's Company: the storming and its aftermath.",
   },
   {
     name: "Salamanca",
     date: "22 July 1812",
     location: "León, Spain",
+    belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. Marshal Marmont",
     outcome: "Decisive Allied victory",
     casualties: "≈ 5,200 Allied · ≈ 13,000 French",
     summary:
       "'Wellington defeated forty thousand men in forty minutes.' Marmont over-extended his left across the Arapiles; Wellington, eating a chicken leg, flung down the bone: 'By God, that will do!' Pakenham's 3rd Division rolled the French line from flank to centre.",
-    sharpe: "Sharpe's Sword — the campaign of the French sword-master Leroux.",
+    sharpe: "Sharpe's Sword: the campaign of the French sword-master Leroux.",
   },
   {
     name: "Borodino",
     date: "7 September 1812",
     location: "Moscow province, Russia",
+    belligerents: "France (Grande Armée) vs. Russia",
     commanders: "Napoleon vs. Prince Kutuzov",
     outcome: "French tactical victory; strategic pyrrhic",
     casualties: "≈ 30,000 French · ≈ 44,000 Russian",
@@ -150,17 +163,19 @@ const battles: Battle[] = [
     name: "Vitoria",
     date: "21 June 1813",
     location: "Basque country, Spain",
+    belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. King Joseph & Marshal Jourdan",
     outcome: "Decisive Allied victory",
     casualties: "≈ 5,100 Allied · ≈ 8,000 French (plus baggage)",
     summary:
-      "The battle that lost Joseph his kingdom. The French army disintegrated among its own baggage train — carriages of plundered silver, paintings and mistresses clogged the road east. Wellington's Marshal's baton, awarded for the day, came from a captured French coach.",
-    sharpe: "Sharpe's Honour — Sharpe dies (officially) on the day of victory.",
+      "The battle that lost Joseph his kingdom. The French army disintegrated among its own baggage train: carriages of plundered silver, paintings and mistresses clogged the road east. Wellington's Marshal's baton, awarded for the day, came from a captured French coach.",
+    sharpe: "Sharpe's Honour: Sharpe dies (officially) on the day of victory.",
   },
   {
     name: "Leipzig",
     date: "16–19 October 1813",
     location: "Saxony",
+    belligerents: "France vs. Russia, Prussia, Austria & Sweden",
     commanders: "Napoleon vs. Schwarzenberg, Blücher, Bernadotte, Bennigsen",
     outcome: "Allied victory; collapse of French Germany",
     casualties: "≈ 38,000 French · ≈ 54,000 Allied",
@@ -171,17 +186,19 @@ const battles: Battle[] = [
     name: "Toulouse",
     date: "10 April 1814",
     location: "Languedoc, France",
+    belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. Marshal Soult",
     outcome: "Tactical draw; strategic Allied",
     casualties: "≈ 4,600 Allied · ≈ 3,200 French",
     summary:
-      "Fought four days after Napoleon's abdication — the news had not reached the armies. The Peninsular veterans' final battle; Highlanders climbed the Calvinet heights under sleet. Soult withdrew the next night, and couriers at last confirmed the Empire was over.",
-    sharpe: "Sharpe's Regiment / Revenge — the closing Peninsular chapters.",
+      "Fought four days after Napoleon's abdication, although the news had not reached the armies. The Peninsular veterans' final battle; Highlanders climbed the Calvinet heights under sleet. Soult withdrew the next night, and couriers at last confirmed the Empire was over.",
+    sharpe: "Sharpe's Regiment / Revenge: the closing Peninsular chapters.",
   },
   {
     name: "Quatre Bras",
     date: "16 June 1815",
     location: "Brabant, Netherlands (Belgium)",
+    belligerents: "Britain, Netherlands & Brunswick vs. France",
     commanders: "Wellington vs. Marshal Ney",
     outcome: "Tactical Allied (holding)",
     casualties: "≈ 4,800 Allied · ≈ 4,000 French",
@@ -192,22 +209,25 @@ const battles: Battle[] = [
     name: "Ligny",
     date: "16 June 1815",
     location: "Namur, Netherlands (Belgium)",
+    belligerents: "France vs. Prussia",
     commanders: "Napoleon vs. Prince Blücher",
     outcome: "French victory (incomplete)",
     casualties: "≈ 12,400 French · ≈ 16,000 Prussian",
     summary:
-      "Napoleon's last victory. The Prussian centre broke at evening when the Old Guard stormed Ligny village; old Blücher was ridden over in a cavalry mêlée. But the Prussians withdrew northward in good order — towards Wavre, and Waterloo.",
+      "Napoleon's last victory. The Prussian centre broke at evening when the Old Guard stormed Ligny village; old Blücher was ridden over in a cavalry mêlée. But the Prussians withdrew northward in good order, towards Wavre, and Waterloo.",
   },
   {
     name: "Waterloo",
     date: "18 June 1815",
     location: "Brabant (near Brussels)",
+    belligerents:
+      "Britain, Netherlands, Hanover, Brunswick & Prussia vs. France",
     commanders: "Wellington & Blücher vs. Napoleon",
-    outcome: "Decisive Allied victory — end of the Empire",
+    outcome: "Decisive Allied victory; end of the Empire",
     casualties: "≈ 25,000 French · ≈ 24,000 Allied",
     summary:
-      "Nine hours of slaughter on a two-mile front. Hougoumont held; La Haye Sainte fell only at dusk; Ney's unsupported cavalry broke on British squares for an hour. The Prussians struck Plancenoit in the afternoon; at 7:30 the Imperial Guard advanced up the ridge — and were broken by the 52nd Light and the Guards. 'La Garde recule.' The Empire was finished.",
-    sharpe: "Sharpe's Waterloo — Sharpe, now a Lt Colonel, rides the ridge.",
+      "Nine hours of slaughter on a two-mile front. Hougoumont held; La Haye Sainte fell only at dusk; Ney's unsupported cavalry broke on British squares for an hour. The Prussians struck Plancenoit in the afternoon; at 7:30 the Imperial Guard advanced up the ridge, and were broken by the 52nd Light and the Guards. 'La Garde recule.' The Empire was finished.",
+    sharpe: "Sharpe's Waterloo: Sharpe, now a Lt Colonel, rides the ridge.",
   },
 ];
 
@@ -215,9 +235,9 @@ export default function BattlesPage() {
   return (
     <>
       <PageHeader
-        eyebrow="1800 — 1815"
+        eyebrow="1800 to 1815"
         title="Battles"
-        lede="Powder-smoke, square and column, the squeal of grape-shot — here are the engagements that made and unmade an empire."
+        lede="Powder-smoke, square and column, the squeal of grape-shot: here are the engagements that made and unmade an empire."
       />
 
       <section className="max-w-6xl mx-auto px-6 py-16">
@@ -234,6 +254,18 @@ export default function BattlesPage() {
                 <div className="text-sm uppercase tracking-[0.2em] text-gold/80">
                   {b.date}
                 </div>
+              </div>
+
+              <div className="mb-5 inline-flex items-center gap-3 px-4 py-2 border border-burgundy-light/50 bg-burgundy-deep/40 rounded-sm">
+                <span className="text-burgundy-light font-display text-sm">
+                  ⚔
+                </span>
+                <span className="text-xs uppercase tracking-[0.25em] text-gold/70">
+                  Combatants
+                </span>
+                <span className="text-parchment font-serif">
+                  {b.belligerents}
+                </span>
               </div>
 
               <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-parchment/80 mb-5 font-serif">

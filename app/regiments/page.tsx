@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Regiments · The Napoleonic Archive",
   description:
-    "Famous regiments of the Napoleonic era — the 95th Rifles, Imperial Guard, Highland regiments, and the men who marched behind them.",
+    "Famous regiments of the Napoleonic era: the 95th Rifles, Imperial Guard, Highland regiments, and the men who marched behind them.",
 };
 
 interface Regiment {
@@ -27,13 +27,13 @@ const regiments: Regiment[] = [
     type: "Rifle · Light Infantry",
     raised: "1800 (as Experimental Corps of Riflemen)",
     facings: "Green jackets, black facings, white piping",
-    motto: "Celer et Audax — Swift and Bold",
+    motto: "Celer et Audax (Swift and Bold)",
     battles: "Copenhagen · Corunna · Busaco · Ciudad Rodrigo · Badajoz · Salamanca · Vitoria · Waterloo",
     body:
-      "The first regiment in British service clothed in rifle-green, armed with the Baker — a grooved, slow-loading weapon accurate to three hundred yards. They scouted for the Light Division and skirmished in pairs — the 'Chosen Men' of every company. Sergeant Richard Sharpe's home, in fiction. In fact they marched from the snows of Galicia to the mud of Mont-Saint-Jean and back, and scarcely lost an action.",
+      "The first regiment in British service clothed in rifle-green, armed with the Baker, a grooved, slow-loading weapon accurate to three hundred yards. They scouted for the Light Division and skirmished in pairs, the 'Chosen Men' of every company. Sergeant Richard Sharpe's home, in fiction. In fact they marched from the snows of Galicia to the mud of Mont-Saint-Jean and back, and scarcely lost an action.",
   },
   {
-    name: "Garde Impériale — Vieille Garde",
+    name: "Garde Impériale, Vieille Garde",
     nickname: "Les Grognards (The Grumblers)",
     nation: "French Empire",
     type: "Élite Infantry / Cavalry Corps",
@@ -54,7 +54,7 @@ const regiments: Regiment[] = [
     motto: "Honi soit qui mal y pense",
     battles: "Villers-en-Cauchies · Willems · Waterloo",
     body:
-      "One of the three Household regiments, who together with the Life Guards formed the Household Brigade at Waterloo. Their charge down the slope against d'Erlon's I Corps, alongside the Scots Greys of the Union Brigade, was one of the great moments of the day — and then, unsupported, they were slaughtered by Milhaud's cuirassiers in the hollow beyond.",
+      "One of the three Household regiments, who together with the Life Guards formed the Household Brigade at Waterloo. Their charge down the slope against d'Erlon's I Corps, alongside the Scots Greys of the Union Brigade, was one of the great moments of the day, and then, unsupported, they were slaughtered by Milhaud's cuirassiers in the hollow beyond.",
   },
   {
     name: "42nd (Royal Highland) Regiment of Foot",
@@ -66,7 +66,7 @@ const regiments: Regiment[] = [
     motto: "Nemo me impune lacessit",
     battles: "Alexandria · Corunna · Burgos · Quatre Bras · Waterloo",
     body:
-      "Black tartan against red coat, bagpipes on the march. At Quatre Bras they formed square in a field of head-high rye and broke a French lancer charge that killed half their officers. The regimental memory of Waterloo: the piper Kenneth Mackay pacing outside the square, playing 'Cogadh no Sith' — War or Peace.",
+      "Black tartan against red coat, bagpipes on the march. At Quatre Bras they formed square in a field of head-high rye and broke a French lancer charge that killed half their officers. The regimental memory of Waterloo: the piper Kenneth Mackay pacing outside the square, playing 'Cogadh no Sith', meaning War or Peace.",
   },
   {
     name: "1st Regiment of Foot Guards",
@@ -78,16 +78,15 @@ const regiments: Regiment[] = [
     motto: "Honi soit qui mal y pense",
     battles: "Talavera · Barrosa · Nivelle · Waterloo",
     body:
-      "It was they who received the last charge of the Imperial Guard at Waterloo. Maitland's brigade, lying down behind the crest, rose to a volley at thirty yards and went in with the bayonet. For that action Queen Victoria renamed them the Grenadier Guards — on the regimental myth that they had destroyed the French Grenadiers of the Guard.",
+      "It was they who received the last charge of the Imperial Guard at Waterloo. Maitland's brigade, lying down behind the crest, rose to a volley at thirty yards and went in with the bayonet. For that action Queen Victoria renamed them the Grenadier Guards, on the regimental myth that they had destroyed the French Grenadiers of the Guard.",
   },
   {
     name: "The Cuirassiers",
-    nickname: "Les Gros Frères — The Big Brothers",
+    nickname: "Les Gros Frères (The Big Brothers)",
     nation: "French Empire",
     type: "Heavy Cavalry",
     raised: "An VI (1798) · reorganised 1802–03",
     facings: "Steel breastplate and helmet, blue coat, red facings",
-    motto: "—",
     battles: "Austerlitz · Eylau · Borodino · Waterloo",
     body:
       "Six feet on a seventeen-hand horse, in three stone of steel. Their armour would turn a spent musket-ball. At Waterloo Ney launched them, again and again, unsupported by infantry, against Wellington's squares; they could neither break nor ride round, and in two hours they destroyed themselves. 'The finest sight of my life,' said an English officer afterwards.",
@@ -99,10 +98,9 @@ const regiments: Regiment[] = [
     type: "Light Cavalry",
     raised: "1720",
     facings: "Sky-blue dolman, red pelisse, fur shako",
-    motto: "—",
     battles: "Marengo · Austerlitz · Eylau · Friedland · Wagram",
     body:
-      "The oldest hussar regiment in French service. Dolmans braided, pelisses slung, shakos with a horsehair plume — they scouted, raided, drank, duelled and, when the moment came, charged. Lasalle of this school declared: 'Any hussar who is not dead by thirty is a blackguard.' He died at thirty-four, at Wagram.",
+      "The oldest hussar regiment in French service. Dolmans braided, pelisses slung, shakos with a horsehair plume: they scouted, raided, drank, duelled and, when the moment came, charged. Lasalle of this school declared: 'Any hussar who is not dead by thirty is a blackguard.' He died at thirty-four, at Wagram.",
   },
   {
     name: "The Old Guard Chasseurs à Cheval",
@@ -111,10 +109,9 @@ const regiments: Regiment[] = [
     type: "Élite Light Cavalry · Imperial Guard",
     raised: "1800 (as Consular Guard squadron)",
     facings: "Green dolman, red pelisse, bearskin colpack",
-    motto: "—",
     battles: "Marengo · Austerlitz · Eylau · Wagram · Borodino · Waterloo",
     body:
-      "Napoleon's personal escort. He wore their green coat in preference to any other uniform — on St Helena he still kept one. In the retreat from Moscow they formed the final cordon of cavalry around the Emperor's sleigh, riding skeletons on skeletal horses. Not many returned.",
+      "Napoleon's personal escort. He wore their green coat in preference to any other uniform, and on St Helena he still kept one. In the retreat from Moscow they formed the final cordon of cavalry around the Emperor's sleigh, riding skeletons on skeletal horses. Not many returned.",
   },
   {
     name: "33rd (1st Yorkshire West Riding) Regiment",
@@ -123,10 +120,9 @@ const regiments: Regiment[] = [
     type: "Line Infantry",
     raised: "1702",
     facings: "Scarlet coat, red facings, silver lace",
-    motto: "—",
     battles: "Seringapatam · Assaye · Waterloo",
     body:
-      "Arthur Wesley's first command as a lieutenant-colonel in 1793. He fought his apprenticeship in India at their head — at Seringapatam, at Assaye. In fiction, it is the 33rd from which Sergeant Richard Sharpe is plucked for a commission. In fact, the regiment gave the British army its greatest commander, and took the name 'The Duke of Wellington's' in 1853.",
+      "Arthur Wesley's first command as a lieutenant-colonel in 1793. He fought his apprenticeship in India at their head, at Seringapatam and Assaye. In fiction, it is the 33rd from which Sergeant Richard Sharpe is plucked for a commission. In fact, the regiment gave the British army its greatest commander, and took the name 'The Duke of Wellington's' in 1853.",
   },
   {
     name: "Pavlov Grenadier Regiment",
@@ -135,10 +131,9 @@ const regiments: Regiment[] = [
     type: "Grenadier Infantry · Guard",
     raised: "1796",
     facings: "Dark green coat, red facings, brass-fronted mitre cap",
-    motto: "—",
     battles: "Friedland · Borodino · Leipzig · Paris 1814",
     body:
-      "After their slaughter at Friedland in 1807, Tsar Alexander decreed that they would continue to wear the old-pattern grenadier mitre — bullet-pierced, dented, unrepaired — as their battle-honour. No other regiment in Europe dressed like them. They carried those battered brass caps into Paris in 1814.",
+      "After their slaughter at Friedland in 1807, Tsar Alexander decreed that they would continue to wear the old-pattern grenadier mitre, bullet-pierced, dented, unrepaired, as their battle-honour. No other regiment in Europe dressed like them. They carried those battered brass caps into Paris in 1814.",
   },
   {
     name: "Brunswick 'Death's Head' Hussars",
@@ -147,19 +142,18 @@ const regiments: Regiment[] = [
     type: "Light Cavalry",
     raised: "1809 by the 'Black Duke'",
     facings: "Black dolman, black pelisse, skull-and-crossbones shako",
-    motto: "Nunquam retrorsum — Never Backwards",
+    motto: "Nunquam retrorsum (Never Backwards)",
     battles: "Halberstadt 1809 · Peninsula · Quatre Bras · Waterloo",
     body:
-      "Duke Frederick William of Brunswick raised his 'Black Horde' in mourning for his father, killed at Auerstedt. They dressed in black from shako to boots with a silver skull. At Quatre Bras the Duke himself was shot from his saddle. His sixteen-year-old pageboy — who became Queen Victoria's consort-in-law — was close by.",
+      "Duke Frederick William of Brunswick raised his 'Black Horde' in mourning for his father, killed at Auerstedt. They dressed in black from shako to boots with a silver skull. At Quatre Bras the Duke himself was shot from his saddle. His sixteen-year-old pageboy, who became Queen Victoria's consort-in-law, was close by.",
   },
   {
     name: "King's German Legion",
     nickname: "The K.G.L.",
     nation: "Hanover (in British service)",
-    type: "Combined Arms — Infantry, Cavalry, Artillery",
+    type: "Combined Arms: Infantry, Cavalry, Artillery",
     raised: "1803 (from the disbanded Hanoverian army)",
     facings: "British pattern · distinctive KGL shoulder-strap",
-    motto: "—",
     battles: "Copenhagen · Talavera · Albuera · Salamanca · Waterloo",
     body:
       "German exiles who fought under the British colours from 1803 to 1816. Their light battalions, under Baring, held La Haye Sainte at Waterloo all afternoon with Baker rifles, until their ammunition ran out and French engineers broke the door. Wellington said afterwards: 'I never saw steadier troops.' Few compliments were higher.",
@@ -172,7 +166,7 @@ export default function RegimentsPage() {
       <PageHeader
         eyebrow="Colours & Facings"
         title="Regiments"
-        lede="Green jackets and red coats, cuirasses and bearskins — the units whose numbers, honours and dead made the period."
+        lede="Green jackets and red coats, cuirasses and bearskins: the units whose numbers, honours and dead made the period."
       />
 
       <section className="max-w-6xl mx-auto px-6 py-16">
@@ -211,7 +205,7 @@ export default function RegimentsPage() {
                     <dd>{r.facings}</dd>
                   </>
                 )}
-                {r.motto && r.motto !== "—" && (
+                {r.motto && (
                   <>
                     <dt className="uppercase text-xs tracking-widest text-gold/70 pt-0.5">
                       Motto

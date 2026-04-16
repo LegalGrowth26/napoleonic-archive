@@ -8,7 +8,7 @@ powder and empire.
 ## Stack
 
 - **Next.js 14** (App Router, TypeScript)
-- **Tailwind CSS** with a custom dark palette — deep navy, burgundy and gold
+- **Tailwind CSS** with a custom dark palette: deep navy, burgundy and gold
 - Fonts: *Cinzel* (display), *Cormorant Garamond* (serif body), *Inter* (UI)
 
 ## Pages

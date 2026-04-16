@@ -9,7 +9,7 @@ export default function Footer() {
             The Napoleonic Archive
           </div>
           <p className="mt-3 text-parchment/70 text-sm leading-relaxed">
-            A chronicle of the age of muskets and empires — for devotees of
+            A chronicle of the age of muskets and empires, for devotees of
             history, and of Sharpe.
           </p>
         </div>
@@ -46,15 +46,14 @@ export default function Footer() {
           </h4>
           <blockquote className="italic text-parchment/70 border-l-2 border-burgundy pl-4 text-sm">
             &ldquo;From the sulphur of a volley at Talavera to the muddy
-            wheatfields of Mont-Saint-Jean — here lie the deeds, the men, the
+            wheatfields of Mont-Saint-Jean: here lie the deeds, the men, the
             regiments.&rdquo;
           </blockquote>
         </div>
       </div>
 
       <div className="border-t border-gold/10 py-5 text-center text-xs tracking-widest uppercase text-parchment/50">
-        © {new Date().getFullYear()} The Napoleonic Archive · Sharpe is the
-        creation of Bernard Cornwell
+        © {new Date().getFullYear()} The Napoleonic Archive
       </div>
     </footer>
   );

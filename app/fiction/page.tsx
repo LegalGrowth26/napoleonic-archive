@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fiction · Sharpe · The Napoleonic Archive",
   description:
-    "Bernard Cornwell's Sharpe novels in chronological order — from India in 1799 to India redux in 1820. Published order, historical setting and author's notes.",
+    "Bernard Cornwell's Sharpe novels in chronological order, from India in 1799 to India redux in 1820. Published order, historical setting and author's notes.",
 };
 
 interface Book {
@@ -42,7 +42,7 @@ const books: Book[] = [
     published: 1999,
     setting: "India · Siege of Gawilghur, 1803",
     synopsis:
-      "Ensign Sharpe is made — on paper. The gentlemen officers of the 74th want nothing to do with a ranker; the Mahratta fortress of Gawilghur has its own ideas about killing him.",
+      "Ensign Sharpe is made, on paper. The gentlemen officers of the 74th want nothing to do with a ranker; the Mahratta fortress of Gawilghur has its own ideas about killing him.",
     battle: "Gawilghur",
   },
   {
@@ -87,7 +87,7 @@ const books: Book[] = [
     published: 1981,
     setting: "Spain · Battle of Talavera, 1809",
     synopsis:
-      "The second-written but earlier-timed novel. Sharpe, attached to the cowardly South Essex, seizes a French Imperial Eagle in the smoke on the Cerro de Medellín — and makes his first enemies in high places.",
+      "The second-written but earlier-timed novel. Sharpe, attached to the cowardly South Essex, seizes a French Imperial Eagle in the smoke on the Cerro de Medellín, and makes his first enemies in high places.",
     battle: "Talavera",
   },
   {
@@ -114,7 +114,7 @@ const books: Book[] = [
     published: 2006,
     setting: "Spain · Battle of Barrosa, 1811",
     synopsis:
-      "Sharpe thrown into the cockpit of Cádiz. The brief, ferocious fight at Barrosa — an almost-forgotten British victory — is the set-piece.",
+      "Sharpe thrown into the cockpit of Cádiz. The brief, ferocious fight at Barrosa, an almost-forgotten British victory, is the set-piece.",
     battle: "Barrosa",
   },
   {
@@ -167,7 +167,7 @@ const books: Book[] = [
     published: 1985,
     setting: "Spain · Battle of Vitoria, 1813",
     synopsis:
-      "Sharpe is framed, tried, and killed — officially — on the morning of Vitoria. The cleverest plot of the Peninsular sequence.",
+      "Sharpe is framed, tried, and killed (officially) on the morning of Vitoria. The cleverest plot of the Peninsular sequence.",
     battle: "Vitoria",
   },
   {
@@ -176,7 +176,7 @@ const books: Book[] = [
     published: 1986,
     setting: "England & the Pyrenees, 1813",
     synopsis:
-      "Sharpe returns to England to find the 2nd Battalion of the South Essex being 'crimped' — stolen — by a recruiting racket. The only Sharpe novel set mostly at home.",
+      "Sharpe returns to England to find the 2nd Battalion of the South Essex being 'crimped', that is, stolen, by a recruiting racket. The only Sharpe novel set mostly at home.",
     battle: "Nivelle",
   },
   {
@@ -220,14 +220,14 @@ const books: Book[] = [
     published: 1992,
     setting: "Chile & Valdivia · 1820 – 1821",
     synopsis:
-      "Post-war Sharpe in South America with Lord Cochrane. Napoleon makes a last, ghostly cameo from St Helena. Technically the last novel in chronology — and the only one at sea for its climax.",
+      "Post-war Sharpe in South America with Lord Cochrane. Napoleon makes a last, ghostly cameo from St Helena. Technically the last novel in chronology, and the only one at sea for its climax.",
   },
 ];
 
 const themeNotes = [
   {
     title: "The Chosen Man",
-    body: "Cornwell explicitly modelled Sharpe on the idea of a ranker-promoted officer in a class-bound army — a tiny minority in fact, but represented in the period by figures like John Shipp. The 95th Rifles gave Cornwell both a famously egalitarian regiment and a weapon (the Baker rifle) accurate enough for his hero's marksmanship to be credible.",
+    body: "Cornwell explicitly modelled Sharpe on the idea of a ranker-promoted officer in a class-bound army, a tiny minority in fact, but represented in the period by figures like John Shipp. The 95th Rifles gave Cornwell both a famously egalitarian regiment and a weapon (the Baker rifle) accurate enough for his hero's marksmanship to be credible.",
   },
   {
     title: "History beside Fiction",
@@ -235,7 +235,7 @@ const themeNotes = [
   },
   {
     title: "A Reading Order",
-    body: "New readers may prefer to start with Sharpe's Rifles (1988) or Sharpe's Eagle (1981) — the first-written novels, which introduce Sharpe at his most essential. Chronological order (above) reads cleaner on a second pass, once Harper's jokes and Hakeswill's curses have become familiar.",
+    body: "New readers may prefer to start with Sharpe's Rifles (1988) or Sharpe's Eagle (1981), the first-written novels, which introduce Sharpe at his most essential. Chronological order (above) reads cleaner on a second pass, once Harper's jokes and Hakeswill's curses have become familiar.",
   },
 ];
 
@@ -245,7 +245,7 @@ export default function FictionPage() {
       <PageHeader
         eyebrow="Bernard Cornwell"
         title="Fiction · Sharpe"
-        lede="From a Seringapatam gunner to a Lt-Colonel at Waterloo — the Richard Sharpe novels in chronological order."
+        lede="From a Seringapatam gunner to a Lt-Colonel at Waterloo: the Richard Sharpe novels in chronological order."
       />
 
       <section className="max-w-5xl mx-auto px-6 py-16">
@@ -317,7 +317,7 @@ export default function FictionPage() {
           about a soldier fighting with Wellington, and nobody had written
           one.&rdquo;
           <footer className="mt-3 text-xs uppercase tracking-[0.3em] text-gold/70 not-italic">
-            — Bernard Cornwell
+            Bernard Cornwell
           </footer>
         </blockquote>
       </section>

@@ -4,7 +4,7 @@ const features = [
   {
     href: "/battles",
     title: "Battles",
-    desc: "From Austerlitz's frozen ponds to the rye-trampled ridge of Mont-Saint-Jean — the engagements that shook Europe.",
+    desc: "From Austerlitz's frozen ponds to the rye-trampled ridge of Mont-Saint-Jean, the engagements that shook Europe.",
     glyph: "⚔",
   },
   {
@@ -16,25 +16,25 @@ const features = [
   {
     href: "/regiments",
     title: "Regiments",
-    desc: "The 95th Rifles, the Old Guard, the Highland Black Watch — colours, facings, and the men who marched behind them.",
+    desc: "The 95th Rifles, the Old Guard, the Highland Black Watch: colours, facings, and the men who marched behind them.",
     glyph: "⚑",
   },
   {
     href: "/stories",
     title: "Stories",
-    desc: "First-hand accounts from officers, riflemen, vivandières and surgeons — the war in their own ink.",
+    desc: "First-hand accounts from officers, riflemen, vivandières and surgeons: the war in their own ink.",
     glyph: "✒",
   },
   {
     href: "/fiction",
     title: "Fiction",
-    desc: "Richard Sharpe from the breach at Badajoz to the slopes of Waterloo — Cornwell's chronicle, book by book.",
+    desc: "Richard Sharpe from the breach at Badajoz to the slopes of Waterloo: Cornwell's chronicle, book by book.",
     glyph: "❦",
   },
   {
     href: "/resources",
     title: "Resources",
-    desc: "Reading lists, museums, archives and maps — for the student, the re-enactor, and the armchair general.",
+    desc: "Reading lists, museums, archives and maps for the student, the re-enactor, and the armchair general.",
     glyph: "◈",
   },
 ];
@@ -50,7 +50,7 @@ export default function HomePage() {
 
         <div className="relative max-w-6xl mx-auto px-6 py-24 md:py-36 text-center">
           <div className="text-xs md:text-sm tracking-[0.5em] uppercase text-gold/70 mb-6">
-            Anno Domini 1789 — 1815
+            Anno Domini 1789 to 1815
           </div>
           <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-gold-pale uppercase tracking-wider leading-tight">
             The Napoleonic
@@ -61,7 +61,7 @@ export default function HomePage() {
             <span className="text-lg">⚜</span>
           </div>
           <p className="max-w-2xl mx-auto text-xl md:text-2xl italic text-parchment/85 leading-relaxed">
-            A chronicle of the age of powder and ambition — the battles, the
+            A chronicle of the age of powder and ambition: the battles, the
             men, the regiments, and the fiction of Bernard Cornwell&rsquo;s
             <span className="text-gold-pale"> Sharpe</span>.
           </p>
@@ -90,7 +90,7 @@ export default function HomePage() {
           Waterloo, a quarter-century of war reshaped Europe. Line infantry
           traded volleys at sixty paces; cuirassiers broke on British squares;
           riflemen stalked the sierras of Spain. The Napoleonic Archive gathers
-          the campaigns, the captains and the common soldiers of that age —
+          the campaigns, the captains and the common soldiers of that age,
           and, beside the history, the fiction it inspired: the green-jacketed
           rogue Richard Sharpe, climbing from the gutters of London to the
           epaulettes of a Chosen Man.
@@ -136,11 +136,11 @@ export default function HomePage() {
       <section className="border-y border-gold/20 bg-gradient-to-r from-navy-deep via-burgundy-deep/30 to-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <blockquote className="font-serif italic text-xl md:text-2xl text-parchment/90 leading-relaxed">
-            &ldquo;It has been a damned nice thing — the nearest-run thing you
+            &ldquo;It has been a damned nice thing, the nearest-run thing you
             ever saw in your life.&rdquo;
           </blockquote>
           <div className="mt-6 text-xs uppercase tracking-[0.4em] text-gold/70">
-            — Arthur Wellesley, Duke of Wellington · after Waterloo, 1815
+            Arthur Wellesley, Duke of Wellington · after Waterloo, 1815
           </div>
         </div>
       </section>
