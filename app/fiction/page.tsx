@@ -24,7 +24,7 @@ const books: Book[] = [
     setting: "India · Seringapatam, 1799",
     synopsis:
       "Private Sharpe slips into the Tippoo Sultan's fortress on a clandestine mission and earns his first stripe in the storming of Seringapatam.",
-    asin: "0060932309",
+    asin: "0007425791",
     link: "https://amzn.to/3QdRVuq",
   },
   {
@@ -33,7 +33,7 @@ const books: Book[] = [
     setting: "India · Assaye, 1803",
     synopsis:
       "Sergeant Sharpe fights the bloody day of Assaye at Arthur Wellesley's side and commits the act that will win him a commission.",
-    asin: "0060951974",
+    asin: "0007425805",
     link: "https://amzn.to/3OjyIa9",
   },
   {
@@ -42,7 +42,7 @@ const books: Book[] = [
     setting: "India · Gawilghur, 1803",
     synopsis:
       "Newly-commissioned Ensign Sharpe climbs the cliff-fortress of Gawilghur against both Mahratta guns and the gentlemen of his own regiment.",
-    asin: "0006513182",
+    asin: "0007425813",
     link: "https://amzn.to/3QtV1dP",
   },
   {
@@ -51,7 +51,7 @@ const books: Book[] = [
     setting: "East Indiaman Calliope, 1805",
     synopsis:
       "Homeward-bound Sharpe is caught aboard a merchantman at the greatest sea battle ever fought.",
-    asin: "0006513204",
+    asin: "0007425848",
     link: "https://amzn.to/4tTl50t",
   },
   {
@@ -60,7 +60,7 @@ const books: Book[] = [
     setting: "Denmark · Copenhagen, 1807",
     synopsis:
       "Sharpe hunts a Danish traitor through a burning city during Britain's ugly seizure of the Danish fleet.",
-    asin: "0060084537",
+    asin: "0007425856",
     link: "https://amzn.to/3Omyi2O",
   },
   {
@@ -69,7 +69,7 @@ const books: Book[] = [
     setting: "Spain · Retreat to Corunna, 1809",
     synopsis:
       "Cut off in the Galician mountains, Lieutenant Sharpe must shepherd a sacred relic and an unwilling company of riflemen to safety.",
-    asin: "0140294309",
+    asin: "B007YTSK2A",
     link: "https://amzn.to/4cSwN4L",
   },
   {
@@ -78,7 +78,7 @@ const books: Book[] = [
     setting: "Portugal · Crossing of the Douro, 1809",
     synopsis:
       "Sharpe defends an Anglo-Portuguese girl and gets tangled in Wellesley's audacious stroke at Oporto.",
-    asin: "0060530480",
+    asin: "0007428081",
     link: "https://amzn.to/3ObcY09",
   },
   {
@@ -87,7 +87,7 @@ const books: Book[] = [
     setting: "Spain · Talavera, 1809",
     synopsis:
       "Attached to the cowardly South Essex at Talavera, Sharpe seizes a French Imperial Eagle and makes his first enemies in high places.",
-    asin: "0140294317",
+    asin: "0140294309",
     link: "https://amzn.to/4sXbzbX",
   },
   {
@@ -96,7 +96,7 @@ const books: Book[] = [
     setting: "Spain · Lines of Torres Vedras, 1810",
     synopsis:
       "Sharpe hunts a fortune in Spanish gold through the Portuguese interior to pay Wellington's hungry army.",
-    asin: "0140294325",
+    asin: "0007452926",
     link: "https://amzn.to/3QJNU0Q",
   },
   {
@@ -105,7 +105,7 @@ const books: Book[] = [
     setting: "Portugal · Bussaco, 1810",
     synopsis:
       "Sharpe crosses the murderous Ferragus brothers as the French march into the scorched earth before the Lines.",
-    asin: "0007105991",
+    asin: "B002I86BJQ",
     link: "https://amzn.to/4teLTYW",
   },
   {
@@ -114,7 +114,7 @@ const books: Book[] = [
     setting: "Spain · Barrosa, 1811",
     synopsis:
       "Sharpe is thrown into the brief, ferocious fight at Barrosa outside beleaguered Cádiz.",
-    asin: "0060561564",
+    asin: "0007452942",
     link: "https://amzn.to/4vAIzJn",
   },
   {
@@ -123,7 +123,7 @@ const books: Book[] = [
     setting: "Spain · Fuentes de Oñoro, 1811",
     synopsis:
       "Sharpe commands an unwanted Irish company at the confused, bloody stand at Fuentes de Oñoro.",
-    asin: "0060932287",
+    asin: "0007452950",
     link: "https://amzn.to/4ct5mhn",
   },
   {
@@ -132,7 +132,7 @@ const books: Book[] = [
     setting: "Spain · Ciudad Rodrigo & Badajoz, 1812",
     synopsis:
       "Sergeant Hakeswill returns as Sharpe storms the terrible breach of Badajoz.",
-    asin: "0140294333",
+    asin: "0007452969",
     link: "https://amzn.to/4thUGcX",
   },
   {
@@ -141,7 +141,7 @@ const books: Book[] = [
     setting: "Portuguese–Spanish border, 1812",
     synopsis:
       "Sharpe leads a covert mission behind French lines before Wellington's march on Salamanca.",
-    asin: "0063219298",
+    asin: "0008496803",
     link: "https://amzn.to/4mvUMuG",
   },
   {
@@ -150,7 +150,7 @@ const books: Book[] = [
     setting: "Spain · Salamanca, 1812",
     synopsis:
       "Sharpe hunts the French sword-master Colonel Leroux through the campaign that ends in rout on the Arapiles.",
-    asin: "0140294341",
+    asin: "0007461755",
     link: "https://amzn.to/4cvSPtR",
   },
   {
@@ -159,7 +159,7 @@ const books: Book[] = [
     setting: "Spain · Adrados, Christmas 1812",
     synopsis:
       "A band of deserters under Hakeswill seize a mountain village and an English colonel's wife on the blackest Christmas of the war.",
-    asin: "014029435X",
+    asin: "0007452977",
     link: "https://amzn.to/487wQrL",
   },
   {
@@ -168,7 +168,7 @@ const books: Book[] = [
     setting: "Spain · Vitoria, 1813",
     synopsis:
       "Sharpe is framed, tried, and killed (officially) on the morning of Vitoria.",
-    asin: "0140294368",
+    asin: "0007452861",
     link: "https://amzn.to/3OJTLmk",
   },
   {
@@ -177,7 +177,7 @@ const books: Book[] = [
     setting: "England & the Pyrenees, 1813",
     synopsis:
       "Back in England, Sharpe investigates the crimping racket that is stealing the 2nd Battalion of the South Essex.",
-    asin: "0140294376",
+    asin: "000745287X",
     link: "https://amzn.to/4cdNMzg",
   },
   {
@@ -186,7 +186,7 @@ const books: Book[] = [
     setting: "France · Atlantic coast, 1814",
     synopsis:
       "Sharpe is handed a rotting coastal fort in a forgotten corner of the final campaign.",
-    asin: "0140294384",
+    asin: "0007452888",
     link: "https://amzn.to/4tifrFi",
   },
   {
@@ -195,7 +195,7 @@ const books: Book[] = [
     setting: "France & Naples, April 1814",
     synopsis:
       "With the war over, Sharpe must clear his name of theft across a France in Bourbon-restorations mood.",
-    asin: "0140294392",
+    asin: "0007452896",
     link: "https://amzn.to/484GHP5",
   },
   {
@@ -204,7 +204,7 @@ const books: Book[] = [
     setting: "Belgium · Quatre Bras & Waterloo, 1815",
     synopsis:
       "Lt-Colonel Sharpe rides into the Hundred Days and the slaughter on the ridge of Mont-Saint-Jean.",
-    asin: "0006510426",
+    asin: "000745290X",
     link: "https://amzn.to/4cMW7df",
   },
   {
@@ -213,7 +213,7 @@ const books: Book[] = [
     setting: "France · Occupation of Paris, 1815",
     synopsis:
       "In the Allied occupation of Paris, Sharpe hunts a French assassin through a city at war with itself.",
-    asin: "0062563270",
+    asin: "0008184046",
     link: "https://amzn.to/3On32AM",
   },
   {
@@ -222,7 +222,7 @@ const books: Book[] = [
     setting: "Southern France, winter 1813",
     synopsis:
       "Sharpe and his riflemen face the Allied invasion of southern France and a gathering storm in the Pyrenean foothills.",
-    asin: "000849682X",
+    asin: "0008496854",
     link: "https://amzn.to/4mztR11",
   },
   {
@@ -231,7 +231,7 @@ const books: Book[] = [
     setting: "Chile & Valdivia, 1820–1821",
     synopsis:
       "Post-war Sharpe sails to Chile with Lord Cochrane for a last, ghostly encounter with Napoleon from St Helena.",
-    asin: "0006470424",
+    asin: "0007452918",
     link: "https://amzn.to/4tPFDXB",
   },
 ];
@@ -304,7 +304,7 @@ export default function FictionPage() {
                 </span>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`}
+                  src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg`}
                   alt={`${b.title} cover`}
                   loading="lazy"
                   className="h-56 w-auto object-contain rounded-sm border border-gold/25 bg-navy-deep shadow-regal"

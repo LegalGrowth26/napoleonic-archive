@@ -159,88 +159,104 @@ interface LinkEntry {
   name: string;
   where: string;
   note: string;
+  url?: string;
 }
 
 const museums: LinkEntry[] = [
   {
     name: "National Army Museum",
     where: "Chelsea, London",
+    url: "https://www.nam.ac.uk/",
     note: "Peninsular and Waterloo galleries; Wellington's funeral uniform; Sharpe-era weapons and kit.",
   },
   {
     name: "Royal Green Jackets (Rifles) Museum",
     where: "Winchester",
+    url: "https://www.rgjmuseum.co.uk/",
     note: "The Rifles' descendant museum: Baker rifles, jackets, the best 95th collection in the world.",
   },
   {
     name: "Musée de l'Armée",
     where: "Hôtel des Invalides, Paris",
+    url: "https://www.musee-armee.fr/",
     note: "The Napoleonic rooms are unparalleled; the Emperor's tomb is in the dome above.",
   },
   {
     name: "Mémorial 1815 · Hougoumont",
     where: "Braine-l'Alleud, Belgium",
+    url: "https://www.waterloo1815.be/",
     note: "The Waterloo battlefield visitor centre and the restored farm of Hougoumont.",
   },
   {
     name: "Museu Militar de Lisboa",
     where: "Lisbon",
+    url: "https://www.exercito.pt/pt/quem-somos/organizacao/ceme/vceme/dhcm/lisboa",
     note: "Portuguese perspective; Torres Vedras diorama and Peninsular artillery.",
   },
   {
     name: "Borodino Museum-Reserve",
     where: "Mozhaysky District, Russia",
+    url: "https://www.borodino.ru/",
     note: "The battlefield preserved: the Raevsky redoubt, the Bagration flèches.",
   },
   {
-    name: "Museum of the Battle of Vitoria",
+    name: "Museo de Armería de Álava",
     where: "Vitoria-Gasteiz, Spain",
-    note: "On the plain where Joseph lost his kingdom and his baggage.",
+    url: "https://alavaturismo.eus/en/museo-de-armeria-de-alava",
+    note: "Battle of Vitoria 1813 section with uniforms and a vast miniature diorama of the field.",
   },
 ];
 
 const archives: LinkEntry[] = [
   {
-    name: "The Napoleon Series (napoleon-series.org)",
+    name: "The Napoleon Series",
     where: "Online",
+    url: "https://www.napoleon-series.org/",
     note: "A vast, volunteer-curated archive of orders, OOBs, uniform essays, book reviews.",
   },
   {
-    name: "Fondation Napoléon (napoleon.org)",
+    name: "Fondation Napoléon",
     where: "Online · Paris",
+    url: "https://www.napoleon.org/en/",
     note: "Scholarly articles, the Correspondance Générale, digital library.",
   },
   {
-    name: "Waterloo200.org",
+    name: "Waterloo 200",
     where: "Online",
+    url: "https://www.waterloo200.org/",
     note: "The bicentenary project's lasting archive of maps, lives and diaries.",
   },
   {
     name: "The British Newspaper Archive",
     where: "Online · £",
+    url: "https://www.britishnewspaperarchive.co.uk/",
     note: "Contemporary reporting: dispatches as Londoners read them.",
   },
   {
     name: "Gallica (BnF)",
     where: "Online",
+    url: "https://gallica.bnf.fr/",
     note: "The French national library's digitised holdings: memoirs, Moniteurs, lithographs.",
   },
 ];
 
 const podcasts: LinkEntry[] = [
   {
-    name: "The Napoleon Podcast",
+    name: "The Age of Napoleon",
     where: "Podcast · Everett Rummage",
+    url: "https://ageofnapoleon.com/",
     note: "Deep, lucid narrative of Napoleon's life campaign by campaign.",
   },
   {
-    name: "The Age of Napoleon",
-    where: "Podcast · Alexander Mikaberidze (academic)",
-    note: "Global, diplomatically-minded; a worthy pairing to the above.",
+    name: "The Napoleonic Quarterly",
+    where: "Podcast · Stevenson, Mikaberidze, White, Andress",
+    url: "https://creators.spotify.com/pod/profile/alexander-stevenson/",
+    note: "A scholarly, multi-expert panel on the period; a worthy pairing to the above.",
   },
   {
     name: "The Rest Is History: Waterloo / Napoleon sequences",
     where: "Podcast",
+    url: "https://therestishistory.com/",
     note: "Tom Holland and Dominic Sandbrook on the period. Accessible and sharp.",
   },
 ];
@@ -249,16 +265,19 @@ const maps: LinkEntry[] = [
   {
     name: "West Point atlas of the Napoleonic Wars",
     where: "Online · free",
+    url: "https://dhc.westpoint.edu/atlases/",
     note: "Still the best quick-reference maps of every major campaign.",
   },
   {
     name: "Ordnance Survey · Peninsular battlefields",
     where: "Print / online",
+    url: "https://www.ordnancesurvey.co.uk/",
     note: "Modern topography laid over Wellington's maps.",
   },
   {
     name: "Waterloo · IGN 1:10,000 battlefield sheet",
     where: "Belgium",
+    url: "https://www.ign.fr/",
     note: "The field itself, road-walkable, cornfield by cornfield.",
   },
 ];
@@ -297,10 +316,24 @@ function LinkList({ entries }: { entries: LinkEntry[] }) {
       {entries.map((e) => (
         <div
           key={e.name}
-          className="border border-gold/20 rounded-sm p-4 bg-navy-muted/40"
+          className="border border-gold/20 rounded-sm p-4 bg-navy-muted/40 hover:border-gold/50 transition"
         >
-          <div className="font-display text-gold-pale uppercase tracking-wider">
-            {e.name}
+          <div className="font-display uppercase tracking-wider">
+            {e.url ? (
+              <a
+                href={e.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold-pale hover:text-gold inline-flex items-center gap-1.5"
+              >
+                {e.name}
+                <span aria-hidden="true" className="text-gold/70 text-xs">
+                  ↗
+                </span>
+              </a>
+            ) : (
+              <span className="text-gold-pale">{e.name}</span>
+            )}
           </div>
           <div className="text-xs uppercase tracking-widest text-gold/60 mt-1">
             {e.where}
