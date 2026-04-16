@@ -4,223 +4,235 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fiction · Sharpe · The Napoleonic Archive",
   description:
-    "Bernard Cornwell's Sharpe novels in chronological order, from India in 1799 to India redux in 1820. Published order, historical setting and author's notes.",
+    "Bernard Cornwell's 24 Sharpe novels in chronological order with cover art, one-sentence synopsis and buy links.",
 };
 
 interface Book {
   order: number;
   title: string;
-  published: number;
   setting: string;
   synopsis: string;
-  battle?: string;
+  asin: string;
+  link: string;
 }
 
-// Chronological (in-story) order of the main Sharpe novels and novellas.
+// Chronological (in-story) order of the 24 Sharpe novels.
 const books: Book[] = [
   {
     order: 1,
     title: "Sharpe's Tiger",
-    published: 1997,
-    setting: "India · Siege of Seringapatam, 1799",
+    setting: "India · Seringapatam, 1799",
     synopsis:
-      "Private Richard Sharpe, about to be flogged for striking a sergeant, is recruited instead for a clandestine mission inside the fortress of the Tippoo Sultan. The book opens Sharpe's life and gives him, at the end, his first stripe.",
-    battle: "Siege of Seringapatam",
+      "Private Sharpe slips into the Tippoo Sultan's fortress on a clandestine mission and earns his first stripe in the storming of Seringapatam.",
+    asin: "0060932309",
+    link: "https://amzn.to/3QdRVuq",
   },
   {
     order: 2,
     title: "Sharpe's Triumph",
-    published: 1998,
-    setting: "India · Battle of Assaye, 1803",
+    setting: "India · Assaye, 1803",
     synopsis:
-      "Sergeant Sharpe, now under a young general named Arthur Wellesley, fights the greatest battle of Wellesley's Indian career. The act that will win Sharpe his commission begins here.",
-    battle: "Assaye",
+      "Sergeant Sharpe fights the bloody day of Assaye at Arthur Wellesley's side and commits the act that will win him a commission.",
+    asin: "0060951974",
+    link: "https://amzn.to/3OjyIa9",
   },
   {
     order: 3,
     title: "Sharpe's Fortress",
-    published: 1999,
-    setting: "India · Siege of Gawilghur, 1803",
+    setting: "India · Gawilghur, 1803",
     synopsis:
-      "Ensign Sharpe is made, on paper. The gentlemen officers of the 74th want nothing to do with a ranker; the Mahratta fortress of Gawilghur has its own ideas about killing him.",
-    battle: "Gawilghur",
+      "Newly-commissioned Ensign Sharpe climbs the cliff-fortress of Gawilghur against both Mahratta guns and the gentlemen of his own regiment.",
+    asin: "0060932848",
+    link: "https://amzn.to/3QtV1dP",
   },
   {
     order: 4,
     title: "Sharpe's Trafalgar",
-    published: 2000,
-    setting: "East Indiaman Calliope · Trafalgar, 1805",
+    setting: "East Indiaman Calliope, 1805",
     synopsis:
-      "Ensign Sharpe, homeward bound, finds himself pressed into a wooden hell at the greatest sea battle ever fought. A novella-brisk change of uniform for the rifleman-to-be.",
-    battle: "Trafalgar",
+      "Homeward-bound Sharpe is caught aboard a merchantman at the greatest sea battle ever fought.",
+    asin: "0060002537",
+    link: "https://amzn.to/4tTl50t",
   },
   {
     order: 5,
     title: "Sharpe's Prey",
-    published: 2001,
-    setting: "Denmark · Bombardment of Copenhagen, 1807",
+    setting: "Denmark · Copenhagen, 1807",
     synopsis:
-      "Ensign Sharpe in the 95th Rifles for the first time, hunting a Danish traitor through a burning city. Cornwell revisits one of the uglier British actions of the war.",
-    battle: "Copenhagen",
+      "Sharpe hunts a Danish traitor through a burning city during Britain's ugly seizure of the Danish fleet.",
+    asin: "0060084537",
+    link: "https://amzn.to/3Omyi2O",
   },
   {
     order: 6,
     title: "Sharpe's Rifles",
-    published: 1988,
     setting: "Spain · Retreat to Corunna, 1809",
     synopsis:
-      "The first-written Sharpe: a lieutenant of rifles, stranded in the Galician mountains with men who despise him, tries to shepherd a relic and a princess to safety. The founding book of the Peninsular saga.",
-    battle: "Retreat to Corunna",
+      "Cut off in the Galician mountains, Lieutenant Sharpe must shepherd a sacred relic and an unwilling company of riflemen to safety.",
+    asin: "0140294309",
+    link: "https://amzn.to/4cSwN4L",
   },
   {
     order: 7,
     title: "Sharpe's Havoc",
-    published: 2003,
     setting: "Portugal · Crossing of the Douro, 1809",
     synopsis:
-      "A novella-paced northern-Portugal campaign. Sharpe defends a slave-trader's daughter and gets tangled in Wellesley's audacious stroke at Oporto.",
-    battle: "Oporto (Second Douro)",
+      "Sharpe defends an Anglo-Portuguese girl and gets tangled in Wellesley's audacious stroke at Oporto.",
+    asin: "0060530480",
+    link: "https://amzn.to/3ObcY09",
   },
   {
     order: 8,
     title: "Sharpe's Eagle",
-    published: 1981,
-    setting: "Spain · Battle of Talavera, 1809",
+    setting: "Spain · Talavera, 1809",
     synopsis:
-      "The second-written but earlier-timed novel. Sharpe, attached to the cowardly South Essex, seizes a French Imperial Eagle in the smoke on the Cerro de Medellín, and makes his first enemies in high places.",
-    battle: "Talavera",
+      "Attached to the cowardly South Essex at Talavera, Sharpe seizes a French Imperial Eagle and makes his first enemies in high places.",
+    asin: "0140294317",
+    link: "https://amzn.to/4sXbzbX",
   },
   {
     order: 9,
     title: "Sharpe's Gold",
-    published: 1981,
     setting: "Spain · Lines of Torres Vedras, 1810",
     synopsis:
-      "A treasure hunt through the Portuguese interior for Spanish gold that Wellington needs to pay his army. The lines of Torres Vedras loom in the background.",
-    battle: "Almeida · Bussaco aftermath",
+      "Sharpe hunts a fortune in Spanish gold through the Portuguese interior to pay Wellington's hungry army.",
+    asin: "0140294325",
+    link: "https://amzn.to/3QJNU0Q",
   },
   {
     order: 10,
     title: "Sharpe's Escape",
-    published: 2003,
-    setting: "Portugal · Battle of Bussaco, 1810",
+    setting: "Portugal · Bussaco, 1810",
     synopsis:
-      "Sharpe enemies himself with the Ferragus brothers of Coimbra; the French are marched into the scorched earth in front of the Lines.",
-    battle: "Bussaco",
+      "Sharpe crosses the murderous Ferragus brothers as the French march into the scorched earth before the Lines.",
+    asin: "0061012769",
+    link: "https://amzn.to/4teLTYW",
   },
   {
     order: 11,
     title: "Sharpe's Fury",
-    published: 2006,
-    setting: "Spain · Battle of Barrosa, 1811",
+    setting: "Spain · Barrosa, 1811",
     synopsis:
-      "Sharpe thrown into the cockpit of Cádiz. The brief, ferocious fight at Barrosa, an almost-forgotten British victory, is the set-piece.",
-    battle: "Barrosa",
+      "Sharpe is thrown into the brief, ferocious fight at Barrosa outside beleaguered Cádiz.",
+    asin: "0060561564",
+    link: "https://amzn.to/4vAIzJn",
   },
   {
     order: 12,
     title: "Sharpe's Battle",
-    published: 1995,
     setting: "Spain · Fuentes de Oñoro, 1811",
     synopsis:
-      "The South Essex is broken and re-formed. Sharpe commands an unwanted Real Compañía Irlandesa and fights perhaps the most confused battle of the Peninsula.",
-    battle: "Fuentes de Oñoro",
+      "Sharpe commands an unwanted Irish company at the confused, bloody stand at Fuentes de Oñoro.",
+    asin: "0060932287",
+    link: "https://amzn.to/4ct5mhn",
   },
   {
     order: 13,
     title: "Sharpe's Company",
-    published: 1982,
-    setting: "Spain · Siege of Ciudad Rodrigo & Badajoz, 1812",
+    setting: "Spain · Ciudad Rodrigo & Badajoz, 1812",
     synopsis:
-      "The novel that made the series. Hakeswill returns; the breach of Badajoz is Cornwell's darkest and most compelling set-piece. Teresa dies in the aftermath.",
-    battle: "Ciudad Rodrigo · Badajoz",
+      "Sergeant Hakeswill returns as Sharpe storms the terrible breach of Badajoz.",
+    asin: "0140294333",
+    link: "https://amzn.to/4thUGcX",
   },
   {
     order: 14,
-    title: "Sharpe's Sword",
-    published: 1983,
-    setting: "Spain · Battle of Salamanca, 1812",
+    title: "Sharpe's Command",
+    setting: "Portuguese–Spanish border, 1812",
     synopsis:
-      "The French swordmaster Colonel Leroux hunts Wellington's intelligence network. Sharpe hunts him. The climax on the Arapiles is classic Cornwell.",
-    battle: "Salamanca",
+      "Sharpe leads a covert mission behind French lines before Wellington's march on Salamanca.",
+    asin: "0063219298",
+    link: "https://amzn.to/4mvUMuG",
   },
   {
     order: 15,
-    title: "Sharpe's Skirmish",
-    published: 2002,
-    setting: "Spain · a bridge on the Tormes, 1812",
+    title: "Sharpe's Sword",
+    setting: "Spain · Salamanca, 1812",
     synopsis:
-      "A short-story novella. A single day's action defending a Roman bridge with a handful of riflemen.",
+      "Sharpe hunts the French sword-master Colonel Leroux through the campaign that ends in rout on the Arapiles.",
+    asin: "0140294341",
+    link: "https://amzn.to/4cvSPtR",
   },
   {
     order: 16,
     title: "Sharpe's Enemy",
-    published: 1984,
     setting: "Spain · Adrados, Christmas 1812",
     synopsis:
-      "Hakeswill, loose with a band of deserters, seizes a mountain village and the wife of a British colonel. The coldest, blackest Christmas in the series.",
-    battle: "Adrados (fictional)",
+      "A band of deserters under Hakeswill seize a mountain village and an English colonel's wife on the blackest Christmas of the war.",
+    asin: "014029435X",
+    link: "https://amzn.to/487wQrL",
   },
   {
     order: 17,
     title: "Sharpe's Honour",
-    published: 1985,
-    setting: "Spain · Battle of Vitoria, 1813",
+    setting: "Spain · Vitoria, 1813",
     synopsis:
-      "Sharpe is framed, tried, and killed (officially) on the morning of Vitoria. The cleverest plot of the Peninsular sequence.",
-    battle: "Vitoria",
+      "Sharpe is framed, tried, and killed (officially) on the morning of Vitoria.",
+    asin: "0140294368",
+    link: "https://amzn.to/3OJTLmk",
   },
   {
     order: 18,
     title: "Sharpe's Regiment",
-    published: 1986,
     setting: "England & the Pyrenees, 1813",
     synopsis:
-      "Sharpe returns to England to find the 2nd Battalion of the South Essex being 'crimped', that is, stolen, by a recruiting racket. The only Sharpe novel set mostly at home.",
-    battle: "Nivelle",
+      "Back in England, Sharpe investigates the crimping racket that is stealing the 2nd Battalion of the South Essex.",
+    asin: "0140294376",
+    link: "https://amzn.to/4cdNMzg",
   },
   {
     order: 19,
     title: "Sharpe's Siege",
-    published: 1987,
-    setting: "France · 1814",
+    setting: "France · Atlantic coast, 1814",
     synopsis:
-      "Sharpe is handed a rotting coastal fort in a forgotten corner of the final campaign. Betrayal in high places, seabirds overhead, mud everywhere.",
-    battle: "Fortress of Teste-de-Buch",
+      "Sharpe is handed a rotting coastal fort in a forgotten corner of the final campaign.",
+    asin: "0140294384",
+    link: "https://amzn.to/4tifrFi",
   },
   {
     order: 20,
     title: "Sharpe's Revenge",
-    published: 1989,
-    setting: "France & Naples · April 1814",
+    setting: "France & Naples, April 1814",
     synopsis:
-      "The war is over; Sharpe is accused of theft and has to clear his name across a France in Bourbon-restorations mood. The series' gentlest, saddest novel.",
-    battle: "Toulouse",
+      "With the war over, Sharpe must clear his name of theft across a France in Bourbon-restorations mood.",
+    asin: "0140294392",
+    link: "https://amzn.to/484GHP5",
   },
   {
     order: 21,
     title: "Sharpe's Waterloo",
-    published: 1990,
     setting: "Belgium · Quatre Bras & Waterloo, 1815",
     synopsis:
-      "Lieutenant-Colonel Sharpe rides into the Hundred Days as an attached liaison officer. Cornwell's set-piece of Mont-Saint-Jean is the best battle writing in English fiction.",
-    battle: "Quatre Bras · Waterloo",
+      "Lt-Colonel Sharpe rides into the Hundred Days and the slaughter on the ridge of Mont-Saint-Jean.",
+    asin: "0006510426",
+    link: "https://amzn.to/4cMW7df",
   },
   {
     order: 22,
-    title: "Sharpe's Ransom",
-    published: 1994,
-    setting: "Normandy · Christmas 1815",
+    title: "Sharpe's Assassin",
+    setting: "France · Occupation of Paris, 1815",
     synopsis:
-      "A short story, published in an anthology. Peace-time Sharpe, and a home invasion that goes badly for the invaders.",
+      "In the Allied occupation of Paris, Sharpe hunts a French assassin through a city at war with itself.",
+    asin: "0062563270",
+    link: "https://amzn.to/3On32AM",
   },
   {
     order: 23,
-    title: "Sharpe's Devil",
-    published: 1992,
-    setting: "Chile & Valdivia · 1820 – 1821",
+    title: "Sharpe's Storm",
+    setting: "Southern France, winter 1813",
     synopsis:
-      "Post-war Sharpe in South America with Lord Cochrane. Napoleon makes a last, ghostly cameo from St Helena. Technically the last novel in chronology, and the only one at sea for its climax.",
+      "Sharpe and his riflemen face the Allied invasion of southern France and a gathering storm in the Pyrenean foothills.",
+    asin: "000849682X",
+    link: "https://amzn.to/4mztR11",
+  },
+  {
+    order: 24,
+    title: "Sharpe's Devil",
+    setting: "Chile & Valdivia, 1820–1821",
+    synopsis:
+      "Post-war Sharpe sails to Chile with Lord Cochrane for a last, ghostly encounter with Napoleon from St Helena.",
+    asin: "0060932104",
+    link: "https://amzn.to/4tPFDXB",
   },
 ];
 
@@ -235,7 +247,7 @@ const themeNotes = [
   },
   {
     title: "A Reading Order",
-    body: "New readers may prefer to start with Sharpe's Rifles (1988) or Sharpe's Eagle (1981), the first-written novels, which introduce Sharpe at his most essential. Chronological order (above) reads cleaner on a second pass, once Harper's jokes and Hakeswill's curses have become familiar.",
+    body: "New readers may prefer to start with Sharpe's Rifles (1988) or Sharpe's Eagle (1981), the first-written novels, which introduce Sharpe at his most essential. Chronological order (as below) reads cleaner on a second pass, once Harper's jokes and Hakeswill's curses have become familiar.",
   },
 ];
 
@@ -245,11 +257,11 @@ export default function FictionPage() {
       <PageHeader
         eyebrow="Bernard Cornwell"
         title="Fiction · Sharpe"
-        lede="From a Seringapatam gunner to a Lt-Colonel at Waterloo: the Richard Sharpe novels in chronological order."
+        lede="Twenty-four novels from a Seringapatam gunner to a Lt-Colonel at Waterloo, and a last, ghostly voyage to Chile."
       />
 
-      <section className="max-w-5xl mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
+      <section className="max-w-6xl mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
           {themeNotes.map((n) => (
             <div key={n.title} className="card p-6 rounded-sm">
               <h3 className="font-display text-lg uppercase tracking-wider text-gold-pale mb-3">
@@ -270,44 +282,55 @@ export default function FictionPage() {
             The Chronicle
           </h2>
           <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold/70">
-            In order of Sharpe&rsquo;s life
+            Twenty-four novels in the order of Sharpe&rsquo;s life
           </p>
         </div>
 
-        <div className="relative">
-          <div className="absolute left-6 md:left-8 top-0 bottom-0 w-px bg-gradient-to-b from-gold/0 via-gold/40 to-gold/0" />
-
-          <ol className="space-y-8">
-            {books.map((b) => (
-              <li key={b.title} className="relative pl-16 md:pl-24">
-                <div className="absolute left-2 md:left-4 top-1 flex items-center justify-center w-9 h-9 rounded-full bg-burgundy border border-gold/60 text-gold-pale font-display text-sm">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {books.map((b) => (
+            <article
+              key={b.asin}
+              className="card p-5 rounded-sm flex flex-col"
+            >
+              <a
+                href={b.link}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                aria-label={`${b.title} on Amazon`}
+                className="block mx-auto mb-4 relative"
+              >
+                <span className="absolute -top-3 -left-3 w-9 h-9 rounded-full bg-burgundy border border-gold/60 text-gold-pale font-display text-sm flex items-center justify-center z-10 shadow-regal">
                   {b.order}
-                </div>
+                </span>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`}
+                  alt={`${b.title} cover`}
+                  loading="lazy"
+                  className="h-56 w-auto object-contain rounded-sm border border-gold/25 bg-navy-deep shadow-regal"
+                />
+              </a>
 
-                <div className="card p-6 rounded-sm">
-                  <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-1 mb-2">
-                    <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider">
-                      {b.title}
-                    </h3>
-                    <span className="text-xs tracking-widest text-gold/70">
-                      Published {b.published}
-                    </span>
-                  </div>
-                  <div className="text-sm italic text-burgundy-bright mb-3">
-                    {b.setting}
-                  </div>
-                  <p className="text-parchment leading-relaxed font-serif">
-                    {b.synopsis}
-                  </p>
-                  {b.battle && (
-                    <div className="mt-4 text-xs uppercase tracking-[0.25em] text-gold/70">
-                      Field · {b.battle}
-                    </div>
-                  )}
-                </div>
-              </li>
-            ))}
-          </ol>
+              <h3 className="font-display text-base text-gold-pale uppercase tracking-wider leading-snug mb-1">
+                {b.title}
+              </h3>
+              <div className="text-xs italic text-burgundy-bright mb-3">
+                {b.setting}
+              </div>
+              <p className="text-sm text-parchment/95 font-serif leading-relaxed flex-1">
+                {b.synopsis}
+              </p>
+
+              <a
+                href={b.link}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="mt-4 inline-block self-start px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Buy on Amazon &rarr;
+              </a>
+            </article>
+          ))}
         </div>
 
         <div className="gold-divider" />
@@ -320,6 +343,10 @@ export default function FictionPage() {
             Bernard Cornwell
           </footer>
         </blockquote>
+
+        <p className="mt-12 text-xs uppercase tracking-widest text-parchment/85 text-center border-t border-gold/15 pt-5">
+          As an Amazon Associate I earn from qualifying purchases.
+        </p>
       </section>
     </>
   );
