@@ -29,6 +29,8 @@ interface Regiment {
   motto?: string;
   battles: string;
   body: string;
+  /** Appears below the main body. Use for disputed attributed sayings etc. */
+  attributedNote?: string;
 }
 
 const regiments: Regiment[] = [
@@ -51,10 +53,11 @@ const regiments: Regiment[] = [
     type: "Élite Infantry / Cavalry Corps",
     raised: "1804 (from the Consular Guard, 1799)",
     facings: "Blue coat, white facings, bearskin bonnet",
-    motto: "La Garde meurt, elle ne se rend pas",
     battles: "Austerlitz · Friedland · Wagram · Borodino · Leipzig · Waterloo",
     body:
       "Every man a veteran of ten campaigns; a moustache and two earrings a matter of right. Napoleon's last reserve, seldom committed. They grumbled in his face and worshipped him behind his back. At Waterloo six battalions advanced up the ridge of Mont-Saint-Jean in the twilight; they were broken by the 52nd Light and the Guards, and the Empire went with them.",
+    attributedNote:
+      "Attributed saying: 'La Garde meurt, elle ne se rend pas' (The Guard dies, it does not surrender). Attributed to General Cambronne at Waterloo. Authenticity disputed by historians.",
   },
   {
     name: "Royal Horse Guards",
@@ -146,18 +149,6 @@ const regiments: Regiment[] = [
     battles: "Friedland · Borodino · Leipzig · Paris 1814",
     body:
       "After their slaughter at Friedland in 1807, Tsar Alexander decreed that they would continue to wear the old-pattern grenadier mitre, bullet-pierced, dented, unrepaired, as their battle-honour. No other regiment in Europe dressed like them. They carried those battered brass caps into Paris in 1814.",
-  },
-  {
-    name: "Brunswick 'Death's Head' Hussars",
-    nickname: "The Black Brunswickers",
-    nation: "Duchy of Brunswick (Allied)",
-    type: "Light Cavalry",
-    raised: "1809 by the 'Black Duke'",
-    facings: "Black dolman, black pelisse, skull-and-crossbones shako",
-    motto: "Nunquam retrorsum (Never Backwards)",
-    battles: "Halberstadt 1809 · Peninsula · Quatre Bras · Waterloo",
-    body:
-      "Duke Frederick William of Brunswick raised his 'Black Horde' in mourning for his father, killed at Auerstedt. They dressed in black from shako to boots with a silver skull. At Quatre Bras the Duke himself was shot from his saddle. His sixteen-year-old pageboy, who became Queen Victoria's consort-in-law, was close by.",
   },
   {
     name: "King's German Legion",
@@ -312,6 +303,20 @@ export default function RegimentsPage() {
               <p className="text-parchment leading-relaxed font-serif">
                 {r.body}
               </p>
+
+              {r.attributedNote && (
+                <div className="mt-5 pt-5 border-t border-gold/15 flex items-start gap-3">
+                  <span className="text-burgundy-bright font-display text-lg leading-none" aria-hidden="true">
+                    ❦
+                  </span>
+                  <p className="text-sm text-parchment/95 leading-relaxed font-serif">
+                    <span className="text-gold-pale uppercase text-xs tracking-widest mr-2">
+                      Note
+                    </span>
+                    {r.attributedNote}
+                  </p>
+                </div>
+              )}
             </article>
             );
           })}

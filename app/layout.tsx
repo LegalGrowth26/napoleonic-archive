@@ -10,8 +10,8 @@ const GA_MEASUREMENT_ID = "G-S259C9QGFV";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
   title: {
-    default: "Napoleonic Wars & Sharpe — The Napoleonic Archive",
-    template: "%s — The Napoleonic Archive",
+    default: "Napoleonic Wars & Sharpe · The Napoleonic Archive",
+    template: "%s · The Napoleonic Archive",
   },
   description:
     "The Napoleonic Wars (1789–1815) and Bernard Cornwell's Sharpe novels: battles, people, regiments, first-hand stories, fiction and resources in one archive.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     canonical: SITE.baseUrl,
   },
   openGraph: {
-    title: "Napoleonic Wars & Sharpe — The Napoleonic Archive",
+    title: "Napoleonic Wars & Sharpe · The Napoleonic Archive",
     description:
       "Battles, people, regiments and Bernard Cornwell's Sharpe novels, chronicled in one dark, atmospheric archive.",
     url: SITE.baseUrl,

@@ -8,13 +8,13 @@ import { SITE } from "@/lib/seo";
 // per-page template.
 export const metadata: Metadata = {
   title: {
-    absolute: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+    absolute: "Napoleonic Wars & Sharpe Novels · The Napoleonic Archive",
   },
   description:
     "Napoleonic Wars history and Bernard Cornwell's Sharpe novels: battles, people, regiments, eyewitness accounts, fiction and resources in one dark archive.",
   alternates: { canonical: SITE.baseUrl },
   openGraph: {
-    title: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+    title: "Napoleonic Wars & Sharpe Novels · The Napoleonic Archive",
     description:
       "Napoleonic Wars history and Bernard Cornwell's Sharpe novels: battles, people, regiments, stories, fiction and resources.",
     url: SITE.baseUrl,
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+    title: "Napoleonic Wars & Sharpe Novels · The Napoleonic Archive",
     description:
       "Battles, people, regiments and Bernard Cornwell's Sharpe novels, in one curated archive.",
     images: [SITE.ogImage],

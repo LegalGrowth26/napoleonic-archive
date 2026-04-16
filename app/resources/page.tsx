@@ -436,7 +436,7 @@ function AffiliateBookGrid({ books }: { books: AffiliateBook[] }) {
           >
             <Image
               src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`}
-              alt={`${b.title} by ${b.author} — book cover`}
+              alt={`${b.title} by ${b.author}: book cover`}
               width={200}
               height={300}
               loading="lazy"

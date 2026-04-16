@@ -60,7 +60,7 @@
 
   <!-- Text block -->
   <g font-family="Georgia, 'Cormorant Garamond', serif">
-    <text x="570" y="230" font-size="28" letter-spacing="8" fill="#c9a24a" text-transform="uppercase">ANNO DOMINI 1789 — 1815</text>
+    <text x="570" y="230" font-size="28" letter-spacing="8" fill="#c9a24a" text-transform="uppercase">ANNO DOMINI 1789 · 1815</text>
     <text x="570" y="330" font-size="86" font-weight="bold" fill="#e3c97f" letter-spacing="2">The Napoleonic</text>
     <text x="570" y="420" font-size="86" font-weight="bold" fill="#c9a24a" letter-spacing="2">Archive</text>
     <line x1="570" y1="455" x2="770" y2="455" stroke="#c9a24a" stroke-width="1.5"/>

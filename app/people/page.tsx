@@ -134,7 +134,7 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
         epithet: "Rifleman · memoirist",
         years: "1781 – 1858",
         faction: "95th Rifles (2nd Battalion)",
-        bio: "A Dorset shepherd turned rifleman. His dictated 'Recollections' give us the private soldier's war: the lice, the hunger, the blistered feet, the dark comedy of the ranks on the retreat to Corunna. He died a shoemaker in London; nobody attended his funeral.",
+        bio: "A Dorset shepherd turned rifleman. His dictated 'Recollections' give us the private soldier's war: the lice, the hunger, the blistered feet, the dark comedy of the ranks on the retreat to Corunna. He died a shoemaker in London.",
         relatedBattles: ["Corunna"],
       },
     ],

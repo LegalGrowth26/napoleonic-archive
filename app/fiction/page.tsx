@@ -298,7 +298,7 @@ const relatedPages = [
   {
     href: "/people",
     title: "People",
-    note: "Real commanders Sharpe serves under — and the fictional company he keeps.",
+    note: "Real commanders Sharpe serves under, and the fictional company he keeps.",
   },
   {
     href: "/regiments",
@@ -366,7 +366,7 @@ export default function FictionPage() {
                 </span>
                 <Image
                   src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg`}
-                  alt={`${b.title} by Bernard Cornwell — book cover of Sharpe novel #${b.order} in chronological order`}
+                  alt={`${b.title} by Bernard Cornwell: book cover of Sharpe novel #${b.order} in chronological order`}
                   width={200}
                   height={300}
                   loading="lazy"

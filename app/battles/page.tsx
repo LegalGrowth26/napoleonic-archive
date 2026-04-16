@@ -94,7 +94,7 @@ const battles: Battle[] = [
     outcome: "Tactical draw; strategic French",
     casualties: "≈ 25,000 French · ≈ 15,000 Russian",
     summary:
-      "A battle fought in driving snow. Augereau's corps lost its way in a blizzard and was annihilated by Russian guns; Murat's legendary charge of 10,700 horse saved the army. Napoleon, surveying the frozen dead, is said to have murmured: 'Quel massacre, et sans résultat.'",
+      "A battle fought in driving snow. Augereau's corps lost its way in a blizzard and was annihilated by Russian guns; Murat's legendary charge of 10,700 horse saved the army. Napoleon, surveying the frozen dead, is reportedly said to have murmured: 'Quel massacre, et sans résultat.' The quote's authenticity is disputed by historians.",
   },
   {
     name: "Vimeiro",
@@ -172,7 +172,7 @@ const battles: Battle[] = [
     outcome: "Decisive Allied victory",
     casualties: "≈ 5,200 Allied · ≈ 13,000 French",
     summary:
-      "'Wellington defeated forty thousand men in forty minutes.' Marmont over-extended his left across the Arapiles; Wellington, eating a chicken leg, flung down the bone: 'By God, that will do!' Pakenham's 3rd Division rolled the French line from flank to centre.",
+      "'Wellington defeated forty thousand men in forty minutes.' Marmont over-extended his left across the Arapiles. By Peninsular tradition (reported in the memoirs of General Alava, and widely repeated since), Wellington flung down a chicken bone with 'By God, that will do!' and spurred off to Pakenham's 3rd Division, which rolled the French line from flank to centre.",
     sharpe: "Sharpe's Sword: the campaign of the French sword-master Leroux.",
   },
   {

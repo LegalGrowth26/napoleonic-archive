@@ -12,7 +12,7 @@ export const SITE = {
 } as const;
 
 interface PageMetaArgs {
-  /** Primary keyword; the root layout template adds " — The Napoleonic Archive". */
+  /** Primary keyword; the root layout template adds " · The Napoleonic Archive". */
   title: string;
   description: string;
   /** Path under the site, starting with "/". */
@@ -24,8 +24,8 @@ interface PageMetaArgs {
 /**
  * Build a canonical, social-media-ready Metadata object for a page.
  * `title` is the short primary keyword; the root layout's title.template
- * appends " — The Napoleonic Archive" for <title>. OG and Twitter use the
- * full "{title} — {site}" string for social previews.
+ * appends " · The Napoleonic Archive" for <title>. OG and Twitter use the
+ * full "{title} · {site}" string for social previews.
  */
 export function pageMeta({
   title,
@@ -35,7 +35,7 @@ export function pageMeta({
   type = "website",
 }: PageMetaArgs): Metadata {
   const url = `${SITE.baseUrl}${path}`;
-  const fullTitle = `${title} — ${SITE.name}`;
+  const fullTitle = `${title} · ${SITE.name}`;
   return {
     title,
     description,
