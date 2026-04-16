@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap");
+
+:root {
+  --navy-deep: #060a14;
+  --navy: #0b1220;
+  --navy-muted: #141c2e;
+  --burgundy: #6b1f2a;
+  --burgundy-deep: #4a141c;
+  --gold: #c9a24a;
+  --gold-pale: #e3c97f;
+  --parchment: #e8dcc4;
+}
+
+html,
+body {
+  background-color: var(--navy-deep);
+  color: var(--parchment);
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+body {
+  background-image:
+    radial-gradient(ellipse at 15% 10%, rgba(107, 31, 42, 0.18), transparent 55%),
+    radial-gradient(ellipse at 85% 85%, rgba(201, 162, 74, 0.08), transparent 60%),
+    linear-gradient(180deg, #060a14 0%, #0b1220 50%, #060a14 100%);
+  background-attachment: fixed;
+}
+
+/* Subtle parchment grain overlay */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      rgba(201, 162, 74, 0.3) 0,
+      rgba(201, 162, 74, 0.3) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+main,
+header,
+footer,
+nav {
+  position: relative;
+  z-index: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+  letter-spacing: 0.04em;
+  color: var(--gold-pale);
+}
+
+a {
+  color: var(--gold-pale);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffd27a;
+}
+
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(201, 162, 74, 0.6) 50%,
+    transparent 100%
+  );
+  margin: 2.5rem 0;
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  color: rgba(201, 162, 74, 0.7);
+  font-size: 1.25rem;
+  letter-spacing: 0.2em;
+}
+
+.ornament::before,
+.ornament::after {
+  content: "";
+  flex: 1;
+  max-width: 8rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(201, 162, 74, 0.5),
+    transparent
+  );
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(20, 28, 46, 0.85) 0%,
+    rgba(11, 18, 32, 0.95) 100%
+  );
+  border: 1px solid rgba(201, 162, 74, 0.25);
+  box-shadow:
+    0 10px 40px -10px rgba(0, 0, 0, 0.8),
+    inset 0 1px 0 rgba(201, 162, 74, 0.1);
+  transition: transform 0.25s ease, border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(201, 162, 74, 0.55);
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 50px -12px rgba(0, 0, 0, 0.9),
+    0 0 0 1px rgba(201, 162, 74, 0.4);
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3.5rem;
+  height: 2px;
+  background: linear-gradient(90deg, var(--burgundy), var(--gold));
+}
+
+.drop-cap::first-letter {
+  font-family: "Cinzel", serif;
+  font-size: 3.5rem;
+  float: left;
+  line-height: 0.9;
+  padding: 0.2rem 0.5rem 0 0;
+  color: var(--gold);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--navy-deep);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--burgundy), var(--burgundy-deep));
+  border-radius: 4px;
+  border: 2px solid var(--navy-deep);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-deep);
+}
+
+::selection {
+  background-color: rgba(201, 162, 74, 0.35);
+  color: var(--parchment);
+}
