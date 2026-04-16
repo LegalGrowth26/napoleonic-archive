@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+  <!--
+    Napoleon Bonaparte bust silhouette, profile facing viewer's right,
+    wearing a bicorne hat worn fore-and-aft. Path is a single closed
+    shape so fill="currentColor" or similar works at any size.
+  -->
+  <path fill="#e3c97f" d="
+    M 8 64
+    L 8 52
+    C 8 46 16 42 24 42
+    L 26 40
+    C 22 36 22 28 22 26
+    L 20 24
+    L 12 8
+    L 20 16
+    L 30 20
+    L 40 16
+    L 50 8
+    L 46 22
+    C 44 26 42 26 42 28
+    L 44 32
+    L 48 34
+    L 52 36
+    L 49 38
+    L 47 41
+    L 50 44
+    L 44 46
+    L 42 48
+    C 48 48 56 52 56 64
+    Z
+  "/>
+</svg>
