@@ -314,6 +314,113 @@ function LinkList({ entries }: { entries: LinkEntry[] }) {
   );
 }
 
+interface AffiliateBook {
+  title: string;
+  author: string;
+  asin: string;
+  link: string;
+  description: string;
+}
+
+const affiliateBooks: AffiliateBook[] = [
+  {
+    title: "Recollections of Rifleman Harris",
+    author: "Benjamin Harris",
+    asin: "0486836037",
+    link: "https://amzn.to/4elXalK",
+    description:
+      "A British rifleman's first-hand account of the Napoleonic Wars, dictated decades later from the memory of marches, breaches and the harrowing retreat to Corunna.",
+  },
+  {
+    title: "Waterloo: The History of Four Days, Three Armies and Three Battles",
+    author: "Bernard Cornwell",
+    asin: "0062312065",
+    link: "https://amzn.to/4tjc80D",
+    description:
+      "Cornwell's gripping non-fiction reckoning with the four days that ended Napoleon's Empire on the muddy ridge of Mont-Saint-Jean.",
+  },
+  {
+    title: "The Campaigns of Napoleon",
+    author: "David G. Chandler",
+    asin: "0025236601",
+    link: "https://amzn.to/4vyf2QD",
+    description:
+      "The single-volume standard in English on Napoleon as a soldier: every campaign, every battle, every gambit, in one monumental study.",
+  },
+  {
+    title: "Wellington: A Personal History",
+    author: "Christopher Hibbert",
+    asin: "0738201480",
+    link: "https://amzn.to/4vyaCsL",
+    description:
+      "Hibbert's intimate biography of the Iron Duke: politician, husband, soldier, and the only general to beat Napoleon in a pitched battle.",
+  },
+  {
+    title: "The Sharpe Companion",
+    author: "Mark Adkin",
+    asin: "0060738146",
+    link: "https://amzn.to/3OK6ohh",
+    description:
+      "An illustrated reader's guide to Cornwell's Sharpe novels with maps, orders of battle and historical commentary for every book in the series.",
+  },
+  {
+    title: "An Illustrated Encyclopedia: Uniforms of the Napoleonic Wars",
+    author: "Digby Smith",
+    asin: "0754815714",
+    link: "https://amzn.to/41CVBsc",
+    description:
+      "An illustrated reference to every army of the period: facings, shakos, sabretaches and standards from Lisbon to Moscow.",
+  },
+];
+
+function AffiliateBookGrid({ books }: { books: AffiliateBook[] }) {
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {books.map((b) => (
+        <article
+          key={b.asin}
+          className="card p-6 rounded-sm flex flex-col"
+        >
+          <a
+            href={b.link}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            aria-label={`${b.title} on Amazon`}
+            className="block mx-auto mb-5"
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`}
+              alt={`${b.title} cover`}
+              loading="lazy"
+              className="h-56 w-auto object-contain rounded-sm shadow-regal border border-gold/20 bg-navy-deep"
+            />
+          </a>
+
+          <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider leading-snug mb-1">
+            {b.title}
+          </h3>
+          <div className="text-sm italic text-burgundy-bright mb-3">
+            {b.author}
+          </div>
+          <p className="text-sm text-parchment/95 font-serif leading-relaxed flex-1">
+            {b.description}
+          </p>
+
+          <a
+            href={b.link}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            className="mt-5 inline-block self-start px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+          >
+            View on Amazon &rarr;
+          </a>
+        </article>
+      ))}
+    </div>
+  );
+}
+
 export default function ResourcesPage() {
   return (
     <>
@@ -343,6 +450,20 @@ export default function ResourcesPage() {
             Companion to Sharpe
           </h2>
           <ReadingList entries={sharpeCompanion} />
+        </div>
+
+        <div>
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Available on Amazon
+          </h2>
+          <p className="mb-8 text-parchment/95 font-serif italic max-w-3xl">
+            A handful of recommended editions, in print and easy to find. Each
+            link opens at Amazon in a new tab.
+          </p>
+          <AffiliateBookGrid books={affiliateBooks} />
+          <p className="mt-8 text-xs uppercase tracking-widest text-parchment/85 text-center border-t border-gold/15 pt-5">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
         </div>
 
         <div>
