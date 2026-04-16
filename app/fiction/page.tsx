@@ -82,7 +82,7 @@ const books: Book[] = [
     setting: "Spain · Retreat to Corunna, 1809",
     synopsis:
       "Cut off in the Galician mountains, Lieutenant Sharpe must shepherd a sacred relic and an unwilling company of riflemen to safety.",
-    asin: "B007YTSK2A",
+    asin: "0007425864",
     link: "https://amzn.to/4cSwN4L",
   },
   {
@@ -118,7 +118,7 @@ const books: Book[] = [
     setting: "Portugal · Bussaco, 1810",
     synopsis:
       "Sharpe crosses the murderous Ferragus brothers as the French march into the scorched earth before the Lines.",
-    asin: "B002I86BJQ",
+    asin: "0007120141",
     link: "https://amzn.to/4teLTYW",
   },
   {
