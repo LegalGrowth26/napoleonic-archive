@@ -1,9 +1,14 @@
 import Link from "next/link";
+import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
   return (
     <footer className="mt-24 border-t border-gold/20 bg-navy-deep/80">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
+      <div className="max-w-5xl mx-auto px-6 pt-12 pb-10">
+        <NewsletterSignup />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 border-t border-gold/10">
         <div>
           <div className="font-display text-gold tracking-[0.3em] uppercase text-sm">
             The Napoleonic Archive
@@ -54,6 +59,17 @@ export default function Footer() {
 
       <div className="border-t border-gold/10 py-5 text-center text-xs tracking-widest uppercase text-parchment/80">
         © {new Date().getFullYear()} The Napoleonic Archive
+      </div>
+
+      <div className="pb-6 text-center">
+        <a
+          href="https://app.kit.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[11px] tracking-widest uppercase text-parchment/55 hover:text-parchment/80 transition"
+        >
+          Staff Login
+        </a>
       </div>
     </footer>
   );

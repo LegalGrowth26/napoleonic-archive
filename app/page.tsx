@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import NewsletterSignup from "@/components/NewsletterSignup";
 import { SITE } from "@/lib/seo";
 
 // Home uses the root layout's default title (full), so override the
@@ -198,8 +199,15 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Newsletter */}
+      <section className="border-y border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/20 to-navy-deep">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <NewsletterSignup />
+        </div>
+      </section>
+
       {/* Quote band */}
-      <section className="border-y border-gold/20 bg-gradient-to-r from-navy-deep via-burgundy-deep/30 to-navy-deep">
+      <section className="border-b border-gold/20 bg-gradient-to-r from-navy-deep via-burgundy-deep/30 to-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <blockquote className="font-serif italic text-xl md:text-2xl text-parchment leading-relaxed">
             &ldquo;It has been a damned nice thing, the nearest-run thing you

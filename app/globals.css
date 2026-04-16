@@ -160,6 +160,64 @@ a:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
 
+/* Kit (ConvertKit) embedded form: overrides so the form reads on dark navy. */
+.kit-form-wrapper .formkit-form {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.kit-form-wrapper .formkit-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.kit-form-wrapper .formkit-field {
+  margin: 0;
+}
+.kit-form-wrapper .formkit-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: rgba(11, 18, 32, 0.85) !important;
+  color: var(--parchment) !important;
+  border: 1px solid rgba(201, 162, 74, 0.4) !important;
+  border-radius: 4px !important;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.kit-form-wrapper .formkit-input::placeholder {
+  color: rgba(232, 220, 196, 0.55);
+}
+.kit-form-wrapper .formkit-input:focus {
+  border-color: var(--gold) !important;
+  background-color: rgba(20, 28, 46, 0.9) !important;
+}
+.kit-form-wrapper .formkit-submit {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  font-family: "Cinzel", "Trajan Pro", Georgia, serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: 1px solid rgba(201, 162, 74, 0.6);
+  cursor: pointer;
+  transition: filter 0.2s ease, border-color 0.2s ease;
+}
+.kit-form-wrapper .formkit-submit:hover {
+  filter: brightness(1.15);
+  border-color: var(--gold);
+}
+.kit-form-wrapper .formkit-alert-error {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  color: #e08a93;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-style: italic;
+}
+
 /* Scrollbar styling */
 ::-webkit-scrollbar {
   width: 10px;
