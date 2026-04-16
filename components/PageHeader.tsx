@@ -21,7 +21,7 @@ export default function PageHeader({ eyebrow, title, lede }: PageHeaderProps) {
           {title}
         </h1>
         {lede && (
-          <p className="max-w-2xl mx-auto text-lg md:text-xl text-parchment/80 italic leading-relaxed">
+          <p className="max-w-2xl mx-auto text-lg md:text-xl text-parchment italic leading-relaxed">
             {lede}
           </p>
         )}

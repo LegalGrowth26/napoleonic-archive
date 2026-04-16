@@ -273,8 +273,8 @@ function ReadingList({ entries }: { entries: ReadingEntry[] }) {
               <span className="font-display uppercase tracking-wider text-gold-pale">
                 {e.author}
               </span>
-              <span className="text-parchment/60"> · </span>
-              <span className="italic text-parchment/90 font-serif">
+              <span className="text-parchment/85"> · </span>
+              <span className="italic text-parchment font-serif">
                 {e.title}
               </span>
             </div>
@@ -284,7 +284,7 @@ function ReadingList({ entries }: { entries: ReadingEntry[] }) {
               </span>
             )}
           </div>
-          <p className="mt-1 text-sm text-parchment/70 font-serif">{e.note}</p>
+          <p className="mt-1 text-sm text-parchment/95 font-serif">{e.note}</p>
         </li>
       ))}
     </ul>
@@ -305,7 +305,7 @@ function LinkList({ entries }: { entries: LinkEntry[] }) {
           <div className="text-xs uppercase tracking-widest text-gold/60 mt-1">
             {e.where}
           </div>
-          <p className="mt-2 text-sm text-parchment/75 font-serif leading-relaxed">
+          <p className="mt-2 text-sm text-parchment/95 font-serif leading-relaxed">
             {e.note}
           </p>
         </div>
@@ -375,7 +375,7 @@ export default function ResourcesPage() {
 
         <div className="gold-divider" />
 
-        <p className="italic text-center text-parchment/70 text-sm font-serif">
+        <p className="italic text-center text-parchment/95 text-sm font-serif">
           The Archive is a labour of love, not an academic register. Corrections
           and suggestions are always welcome; the bibliography above is a
           starting point, not a last word.

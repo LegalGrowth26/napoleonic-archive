@@ -255,7 +255,7 @@ export default function FictionPage() {
               <h3 className="font-display text-lg uppercase tracking-wider text-gold-pale mb-3">
                 {n.title}
               </h3>
-              <p className="text-sm text-parchment/80 leading-relaxed font-serif">
+              <p className="text-sm text-parchment/95 leading-relaxed font-serif">
                 {n.body}
               </p>
             </div>
@@ -293,10 +293,10 @@ export default function FictionPage() {
                       Published {b.published}
                     </span>
                   </div>
-                  <div className="text-sm italic text-burgundy-light mb-3">
+                  <div className="text-sm italic text-burgundy-bright mb-3">
                     {b.setting}
                   </div>
-                  <p className="text-parchment/85 leading-relaxed font-serif">
+                  <p className="text-parchment leading-relaxed font-serif">
                     {b.synopsis}
                   </p>
                   {b.battle && (
@@ -312,7 +312,7 @@ export default function FictionPage() {
 
         <div className="gold-divider" />
 
-        <blockquote className="text-center italic text-lg md:text-xl text-parchment/80 max-w-2xl mx-auto font-serif leading-relaxed">
+        <blockquote className="text-center italic text-lg md:text-xl text-parchment max-w-2xl mx-auto font-serif leading-relaxed">
           &ldquo;I wrote Sharpe&rsquo;s Eagle because I wanted to read a book
           about a soldier fighting with Wellington, and nobody had written
           one.&rdquo;

@@ -216,7 +216,7 @@ export default function PeoplePage() {
               <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest section-title">
                 {group.title}
               </h2>
-              <p className="mt-4 text-parchment/75 italic text-lg max-w-3xl font-serif">
+              <p className="mt-4 text-parchment italic text-lg max-w-3xl font-serif">
                 {group.intro}
               </p>
             </div>
@@ -232,13 +232,13 @@ export default function PeoplePage() {
                       {p.years}
                     </span>
                   </div>
-                  <div className="text-sm italic text-burgundy-light mb-3">
+                  <div className="text-sm italic text-burgundy-bright mb-3">
                     {p.epithet}
                   </div>
-                  <div className="text-xs uppercase tracking-widest text-parchment/60 mb-4">
+                  <div className="text-xs uppercase tracking-widest text-parchment/85 mb-4">
                     {p.faction}
                   </div>
-                  <p className="text-parchment/85 leading-relaxed font-serif">
+                  <p className="text-parchment leading-relaxed font-serif">
                     {p.bio}
                   </p>
                 </article>

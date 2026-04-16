@@ -60,7 +60,7 @@ export default function HomePage() {
           <div className="ornament my-10 text-gold/70">
             <span className="text-lg">⚜</span>
           </div>
-          <p className="max-w-2xl mx-auto text-xl md:text-2xl italic text-parchment/85 leading-relaxed">
+          <p className="max-w-2xl mx-auto text-xl md:text-2xl italic text-parchment leading-relaxed">
             A chronicle of the age of powder and ambition: the battles, the
             men, the regiments, and the fiction of Bernard Cornwell&rsquo;s
             <span className="text-gold-pale"> Sharpe</span>.
@@ -85,7 +85,7 @@ export default function HomePage() {
 
       {/* Intro */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <p className="drop-cap text-lg md:text-xl leading-relaxed text-parchment/90">
+        <p className="drop-cap text-lg md:text-xl leading-relaxed text-parchment">
           Between the storming of the Bastille and the fall of the Emperor at
           Waterloo, a quarter-century of war reshaped Europe. Line infantry
           traded volleys at sixty paces; cuirassiers broke on British squares;
@@ -121,7 +121,7 @@ export default function HomePage() {
               <h3 className="font-display text-2xl text-gold-pale uppercase tracking-wider mb-3">
                 {f.title}
               </h3>
-              <p className="text-parchment/75 leading-relaxed flex-1">
+              <p className="text-parchment/95 leading-relaxed flex-1">
                 {f.desc}
               </p>
               <div className="mt-6 text-xs uppercase tracking-[0.3em] text-gold/80">
@@ -135,7 +135,7 @@ export default function HomePage() {
       {/* Quote band */}
       <section className="border-y border-gold/20 bg-gradient-to-r from-navy-deep via-burgundy-deep/30 to-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
-          <blockquote className="font-serif italic text-xl md:text-2xl text-parchment/90 leading-relaxed">
+          <blockquote className="font-serif italic text-xl md:text-2xl text-parchment leading-relaxed">
             &ldquo;It has been a damned nice thing, the nearest-run thing you
             ever saw in your life.&rdquo;
           </blockquote>

@@ -19,7 +19,7 @@ const config: Config = {
           DEFAULT: "#6b1f2a",
           deep: "#4a141c",
           light: "#8b2a38",
-          bright: "#a33544",
+          bright: "#d97480",
         },
         gold: {
           DEFAULT: "#c9a24a",

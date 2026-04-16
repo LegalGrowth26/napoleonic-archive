@@ -178,13 +178,13 @@ export default function RegimentsPage() {
                   {r.name}
                 </h2>
                 {r.nickname && (
-                  <div className="mt-1 text-sm italic text-burgundy-light">
+                  <div className="mt-1 text-sm italic text-burgundy-bright">
                     {r.nickname}
                   </div>
                 )}
               </div>
 
-              <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm font-serif text-parchment/80 mb-5">
+              <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-sm font-serif text-parchment/95 mb-5">
                 <dt className="uppercase text-xs tracking-widest text-gold/70 pt-0.5">
                   Nation
                 </dt>
@@ -216,12 +216,12 @@ export default function RegimentsPage() {
                 <dt className="uppercase text-xs tracking-widest text-gold/70 pt-0.5">
                   Battles
                 </dt>
-                <dd className="text-parchment/75 text-xs leading-relaxed">
+                <dd className="text-parchment/95 text-xs leading-relaxed">
                   {r.battles}
                 </dd>
               </dl>
 
-              <p className="text-parchment/90 leading-relaxed font-serif">
+              <p className="text-parchment leading-relaxed font-serif">
                 {r.body}
               </p>
             </article>

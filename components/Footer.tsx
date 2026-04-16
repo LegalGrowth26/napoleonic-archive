@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="font-display text-gold tracking-[0.3em] uppercase text-sm">
             The Napoleonic Archive
           </div>
-          <p className="mt-3 text-parchment/70 text-sm leading-relaxed">
+          <p className="mt-3 text-parchment/95 text-sm leading-relaxed">
             A chronicle of the age of muskets and empires, for devotees of
             history, and of Sharpe.
           </p>
@@ -44,7 +44,7 @@ export default function Footer() {
           <h4 className="text-xs uppercase tracking-widest text-gold/80 mb-3">
             Motto
           </h4>
-          <blockquote className="italic text-parchment/70 border-l-2 border-burgundy pl-4 text-sm">
+          <blockquote className="italic text-parchment/95 border-l-2 border-burgundy pl-4 text-sm">
             &ldquo;From the sulphur of a volley at Talavera to the muddy
             wheatfields of Mont-Saint-Jean: here lie the deeds, the men, the
             regiments.&rdquo;
@@ -52,7 +52,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gold/10 py-5 text-center text-xs tracking-widest uppercase text-parchment/50">
+      <div className="border-t border-gold/10 py-5 text-center text-xs tracking-widest uppercase text-parchment/80">
         © {new Date().getFullYear()} The Napoleonic Archive
       </div>
     </footer>

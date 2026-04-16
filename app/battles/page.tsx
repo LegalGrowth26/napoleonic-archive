@@ -268,7 +268,7 @@ export default function BattlesPage() {
                 </span>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-parchment/80 mb-5 font-serif">
+              <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-parchment/95 mb-5 font-serif">
                 <div>
                   <span className="text-gold/70 uppercase text-xs tracking-widest">
                     Location ·{" "}
@@ -295,7 +295,7 @@ export default function BattlesPage() {
                 </div>
               </div>
 
-              <p className="text-parchment/90 leading-relaxed text-lg font-serif">
+              <p className="text-parchment leading-relaxed text-lg font-serif">
                 {b.summary}
               </p>
 
@@ -304,7 +304,7 @@ export default function BattlesPage() {
                   <span className="text-burgundy-light font-display text-lg">
                     ❦
                   </span>
-                  <p className="text-sm italic text-parchment/70">
+                  <p className="text-sm italic text-parchment/95">
                     <span className="text-gold-pale uppercase text-xs tracking-widest not-italic">
                       In Sharpe ·{" "}
                     </span>

@@ -128,17 +128,17 @@ export default function StoriesPage() {
               <h2 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-wider mb-2">
                 {s.title}
               </h2>
-              <div className="text-sm italic text-burgundy-light">{s.source}</div>
-              <div className="text-xs uppercase tracking-widest text-parchment/60 mt-1">
+              <div className="text-sm italic text-burgundy-bright">{s.source}</div>
+              <div className="text-xs uppercase tracking-widest text-parchment/85 mt-1">
                 {s.setting}
               </div>
             </header>
 
-            <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment/90 italic leading-relaxed font-serif">
+            <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
               {s.excerpt}
             </blockquote>
 
-            <p className="mt-5 text-sm text-parchment/70 leading-relaxed">
+            <p className="mt-5 text-sm text-parchment/95 leading-relaxed">
               <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
                 Note
               </span>
