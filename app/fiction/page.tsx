@@ -1,11 +1,24 @@
+import Link from "next/link";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, SITE } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Fiction · Sharpe · The Napoleonic Archive",
+export const metadata = pageMeta({
+  title: "Sharpe Novels by Bernard Cornwell",
   description:
-    "Bernard Cornwell's 24 Sharpe novels in chronological order with cover art, one-sentence synopsis and buy links.",
-};
+    "All 24 Sharpe novels by Bernard Cornwell in chronological reading order: synopses, cover art and buy links for Richard Sharpe's full Napoleonic saga.",
+  path: "/fiction",
+  keywords: [
+    "Sharpe novels in order",
+    "Bernard Cornwell books",
+    "Richard Sharpe",
+    "Sharpe series",
+    "Sharpe chronological order",
+    "Bernard Cornwell Sharpe",
+  ],
+  type: "article",
+});
 
 interface Book {
   order: number;
@@ -251,9 +264,58 @@ const themeNotes = [
   },
 ];
 
+const booksJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": books.map((b) => ({
+    "@type": "Book",
+    name: b.title,
+    bookFormat: "https://schema.org/Paperback",
+    author: {
+      "@type": "Person",
+      name: "Bernard Cornwell",
+      sameAs: "https://www.bernardcornwell.net/",
+    },
+    inLanguage: "en",
+    isbn: b.asin,
+    isPartOf: {
+      "@type": "BookSeries",
+      name: "Sharpe",
+      author: { "@type": "Person", name: "Bernard Cornwell" },
+    },
+    position: b.order,
+    description: b.synopsis,
+    image: `https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg`,
+    url: `${SITE.baseUrl}/fiction`,
+  })),
+};
+
+const relatedPages = [
+  {
+    href: "/battles",
+    title: "Battles",
+    note: "The real engagements Sharpe fights through, from Talavera to Waterloo.",
+  },
+  {
+    href: "/people",
+    title: "People",
+    note: "Real commanders Sharpe serves under — and the fictional company he keeps.",
+  },
+  {
+    href: "/regiments",
+    title: "Regiments",
+    note: "The 95th Rifles, Sharpe's real home regiment.",
+  },
+  {
+    href: "/resources",
+    title: "Resources",
+    note: "The Sharpe Companion, Cornwell's own Waterloo, and more buying guides.",
+  },
+];
+
 export default function FictionPage() {
   return (
     <>
+      <JsonLd data={booksJsonLd} />
       <PageHeader
         eyebrow="Bernard Cornwell"
         title="Fiction · Sharpe"
@@ -302,11 +364,13 @@ export default function FictionPage() {
                 <span className="absolute -top-3 -left-3 w-9 h-9 rounded-full bg-burgundy border border-gold/60 text-gold-pale font-display text-sm flex items-center justify-center z-10 shadow-regal">
                   {b.order}
                 </span>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.jpg`}
-                  alt={`${b.title} cover`}
+                  alt={`${b.title} by Bernard Cornwell — book cover of Sharpe novel #${b.order} in chronological order`}
+                  width={200}
+                  height={300}
                   loading="lazy"
+                  unoptimized
                   className="h-56 w-auto object-contain rounded-sm border border-gold/25 bg-navy-deep shadow-regal"
                 />
               </a>
@@ -343,6 +407,28 @@ export default function FictionPage() {
             Bernard Cornwell
           </footer>
         </blockquote>
+
+        <aside className="mt-16 pt-10 border-t border-gold/20">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Related
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {relatedPages.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="card p-5 rounded-sm block"
+              >
+                <div className="font-display text-gold-pale uppercase tracking-wider mb-2">
+                  {r.title}
+                </div>
+                <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                  {r.note}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </aside>
 
         <p className="mt-12 text-xs uppercase tracking-widest text-parchment/85 text-center border-t border-gold/15 pt-5">
           As an Amazon Associate I earn from qualifying purchases.

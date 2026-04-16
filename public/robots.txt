@@ -1,0 +1,6 @@
+# The Napoleonic Archive
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.napoleonicarchive.com/sitemap.xml

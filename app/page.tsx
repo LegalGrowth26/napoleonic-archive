@@ -1,4 +1,69 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { SITE } from "@/lib/seo";
+
+// Home uses the root layout's default title (full), so override the
+// title.default to match the SEO spec rather than going through the
+// per-page template.
+export const metadata: Metadata = {
+  title: {
+    absolute: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+  },
+  description:
+    "Napoleonic Wars history and Bernard Cornwell's Sharpe novels: battles, people, regiments, eyewitness accounts, fiction and resources in one dark archive.",
+  alternates: { canonical: SITE.baseUrl },
+  openGraph: {
+    title: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+    description:
+      "Napoleonic Wars history and Bernard Cornwell's Sharpe novels: battles, people, regiments, stories, fiction and resources.",
+    url: SITE.baseUrl,
+    siteName: SITE.name,
+    type: "website",
+    locale: "en_GB",
+    images: [
+      {
+        url: SITE.ogImage,
+        width: SITE.ogImageWidth,
+        height: SITE.ogImageHeight,
+        alt: "The Napoleonic Archive",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Napoleonic Wars & Sharpe Novels — The Napoleonic Archive",
+    description:
+      "Battles, people, regiments and Bernard Cornwell's Sharpe novels, in one curated archive.",
+    images: [SITE.ogImage],
+  },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE.name,
+  url: SITE.baseUrl,
+  description: SITE.description,
+  inLanguage: "en-GB",
+  publisher: {
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.baseUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${SITE.baseUrl}/favicon.svg`,
+    },
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE.baseUrl}/?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
+};
 
 const features = [
   {
@@ -42,6 +107,7 @@ const features = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={websiteJsonLd} />
       {/* Hero */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-burgundy-deep/30 via-navy-deep to-navy-deep" />

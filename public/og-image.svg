@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060a14"/>
+      <stop offset="50%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#060a14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#6b1f2a" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#6b1f2a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="medal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8b2a38"/>
+      <stop offset="60%" stop-color="#6b1f2a"/>
+      <stop offset="100%" stop-color="#4a141c"/>
+    </linearGradient>
+    <clipPath id="disk">
+      <circle cx="300" cy="315" r="195"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+
+  <!-- Gilt border frame -->
+  <rect x="20" y="20" width="1160" height="590" fill="none" stroke="#c9a24a" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="32" y="32" width="1136" height="566" fill="none" stroke="#c9a24a" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Medallion -->
+  <circle cx="300" cy="315" r="195" fill="url(#medal)"/>
+  <g clip-path="url(#disk)" transform="translate(90 75) scale(6.5)">
+    <path fill="#e3c97f" d="
+      M 8 64
+      L 8 52
+      C 8 46 16 42 24 42
+      L 26 40
+      C 22 36 22 28 22 26
+      L 20 24
+      L 12 8
+      L 20 16
+      L 30 20
+      L 40 16
+      L 50 8
+      L 46 22
+      C 44 26 42 26 42 28
+      L 44 32
+      L 48 34
+      L 52 36
+      L 49 38
+      L 47 41
+      L 50 44
+      L 44 46
+      L 42 48
+      C 48 48 56 52 56 64
+      Z
+    "/>
+  </g>
+  <circle cx="300" cy="315" r="195" fill="none" stroke="#c9a24a" stroke-width="3"/>
+  <circle cx="300" cy="315" r="205" fill="none" stroke="#c9a24a" stroke-opacity="0.35" stroke-width="1"/>
+
+  <!-- Text block -->
+  <g font-family="Georgia, 'Cormorant Garamond', serif">
+    <text x="570" y="230" font-size="28" letter-spacing="8" fill="#c9a24a" text-transform="uppercase">ANNO DOMINI 1789 — 1815</text>
+    <text x="570" y="330" font-size="86" font-weight="bold" fill="#e3c97f" letter-spacing="2">The Napoleonic</text>
+    <text x="570" y="420" font-size="86" font-weight="bold" fill="#c9a24a" letter-spacing="2">Archive</text>
+    <line x1="570" y1="455" x2="770" y2="455" stroke="#c9a24a" stroke-width="1.5"/>
+    <text x="570" y="500" font-size="28" font-style="italic" fill="#e8dcc4">Battles · People · Regiments · Stories · Sharpe</text>
+    <text x="570" y="548" font-size="20" fill="#c9a24a" letter-spacing="4">napoleonicarchive.com</text>
+  </g>
+</svg>

@@ -1,11 +1,23 @@
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, SITE, slugify } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Stories · The Napoleonic Archive",
+export const metadata = pageMeta({
+  title: "Napoleonic Wars Eyewitness Accounts",
   description:
-    "Accounts and anecdotes from the Napoleonic Wars, in the words of those who were there.",
-};
+    "Napoleonic Wars eyewitness accounts and soldier diaries: Rifleman Harris on Corunna, Caulaincourt in Moscow, Mercer at Waterloo, and more first-hand memoirs.",
+  path: "/stories",
+  keywords: [
+    "Napoleonic Wars eyewitness accounts",
+    "soldier diaries",
+    "Rifleman Harris",
+    "Caulaincourt",
+    "Cavalié Mercer",
+    "Kincaid",
+    "Napoleonic memoirs",
+  ],
+});
 
 interface Story {
   title: string;
@@ -108,9 +120,62 @@ const stories: Story[] = [
   },
 ];
 
+const articlesJsonLd = {
+  "@context": "https://schema.org",
+  "@graph": stories.map((s) => ({
+    "@type": "Article",
+    headline: s.title,
+    name: s.title,
+    abstract: s.excerpt,
+    description: s.commentary,
+    citation: s.source,
+    locationCreated: s.setting,
+    author: { "@type": "Person", name: s.source },
+    publisher: {
+      "@type": "Organization",
+      name: SITE.name,
+      url: SITE.baseUrl,
+      logo: { "@type": "ImageObject", url: `${SITE.baseUrl}/favicon.svg` },
+    },
+    isPartOf: {
+      "@type": "WebPage",
+      url: `${SITE.baseUrl}/stories`,
+      name: "Napoleonic Wars Eyewitness Accounts",
+    },
+    mainEntityOfPage: `${SITE.baseUrl}/stories#story-${slugify(s.title)}`,
+    url: `${SITE.baseUrl}/stories#story-${slugify(s.title)}`,
+    inLanguage: "en-GB",
+    articleSection: "Eyewitness accounts",
+  })),
+};
+
+const relatedPages = [
+  {
+    href: "/battles",
+    title: "Battles",
+    note: "The engagements these memoirists survived, in outline.",
+  },
+  {
+    href: "/people",
+    title: "People",
+    note: "The authors and their commanders: Harris, Wellington, Nelson.",
+  },
+  {
+    href: "/regiments",
+    title: "Regiments",
+    note: "The units the diarists served in: 95th Rifles, K.G.L., Old Guard.",
+  },
+  {
+    href: "/resources",
+    title: "Resources",
+    note: "Buy the memoirs these extracts are drawn from.",
+  },
+];
+
 export default function StoriesPage() {
   return (
     <>
+      <JsonLd data={articlesJsonLd} />
       <PageHeader
         eyebrow="In their own ink"
         title="Stories"
@@ -118,15 +183,23 @@ export default function StoriesPage() {
       />
 
       <section className="max-w-4xl mx-auto px-6 py-16 space-y-12">
-        {stories.map((s, idx) => (
-          <article key={s.title} className="relative">
+        {stories.map((s, idx) => {
+          const slug = slugify(s.title);
+          return (
+          <article
+            key={s.title}
+            id={`story-${slug}`}
+            className="relative scroll-mt-24"
+          >
             <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
             <header className="mb-4">
               <div className="text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">
                 No. {String(idx + 1).padStart(2, "0")}
               </div>
               <h2 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-wider mb-2">
-                {s.title}
+                <a href={`#story-${slug}`} className="hover:text-gold">
+                  {s.title}
+                </a>
               </h2>
               <div className="text-sm italic text-burgundy-bright">{s.source}</div>
               <div className="text-xs uppercase tracking-widest text-parchment/85 mt-1">
@@ -147,7 +220,30 @@ export default function StoriesPage() {
 
             {idx < stories.length - 1 && <div className="gold-divider" />}
           </article>
-        ))}
+          );
+        })}
+
+        <aside className="mt-12 pt-10 border-t border-gold/20">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Related
+          </h2>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {relatedPages.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="card p-5 rounded-sm block"
+              >
+                <div className="font-display text-gold-pale uppercase tracking-wider mb-2">
+                  {r.title}
+                </div>
+                <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                  {r.note}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
     </>
   );

@@ -1,11 +1,25 @@
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, SITE, slugify } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Battles · The Napoleonic Archive",
+export const metadata = pageMeta({
+  title: "Battles of the Napoleonic Wars",
   description:
-    "Key battles of the Napoleonic Wars: Austerlitz, Trafalgar, Borodino, Salamanca, Leipzig, Waterloo and more.",
-};
+    "Napoleonic Wars battles from Austerlitz and Trafalgar to the Peninsular War and Waterloo: commanders, combatants, casualties and outcomes in one archive.",
+  path: "/battles",
+  keywords: [
+    "Napoleonic battles",
+    "Waterloo",
+    "Austerlitz",
+    "Peninsular War",
+    "Battle of Trafalgar",
+    "Battle of Borodino",
+    "Battle of Leipzig",
+    "Salamanca",
+    "Vitoria",
+  ],
+});
 
 interface Battle {
   name: string;
@@ -13,6 +27,8 @@ interface Battle {
   location: string;
   belligerents: string;
   commanders: string;
+  /** Names (matching People slugs) to link to on the People page. */
+  relatedPeople?: readonly string[];
   outcome: string;
   casualties: string;
   summary: string;
@@ -26,6 +42,7 @@ const battles: Battle[] = [
     location: "Piedmont, Italy",
     belligerents: "France vs. Austria",
     commanders: "Napoleon Bonaparte vs. Michael von Melas",
+    relatedPeople: ["Napoleon Bonaparte"],
     outcome: "French victory (narrow)",
     casualties: "≈ 7,000 French · ≈ 9,500 Austrian",
     summary:
@@ -37,6 +54,7 @@ const battles: Battle[] = [
     location: "Cape Trafalgar, off south-west Spain",
     belligerents: "Britain vs. France & Spain",
     commanders: "Vice-Admiral Horatio Nelson vs. Pierre Villeneuve",
+    relatedPeople: ["Horatio Nelson"],
     outcome: "Decisive British naval victory",
     casualties: "≈ 1,700 British · ≈ 13,780 Franco-Spanish (incl. captured)",
     summary:
@@ -48,6 +66,7 @@ const battles: Battle[] = [
     location: "Moravia (modern Czech Republic)",
     belligerents: "France vs. Russia & Austria",
     commanders: "Napoleon vs. Tsar Alexander I & Emperor Francis II",
+    relatedPeople: ["Napoleon Bonaparte"],
     outcome: "Crushing French victory",
     casualties: "≈ 9,000 French · ≈ 36,000 Russo-Austrian",
     summary:
@@ -59,6 +78,7 @@ const battles: Battle[] = [
     location: "Thuringia, Prussia",
     belligerents: "France vs. Prussia",
     commanders: "Napoleon & Davout vs. Frederick William III & Brunswick",
+    relatedPeople: ["Napoleon Bonaparte", "Louis-Nicolas Davout"],
     outcome: "Decisive French victory",
     casualties: "≈ 15,000 French · ≈ 38,000 Prussian",
     summary:
@@ -70,6 +90,7 @@ const battles: Battle[] = [
     location: "East Prussia",
     belligerents: "France vs. Russia & Prussia",
     commanders: "Napoleon vs. Levin von Bennigsen",
+    relatedPeople: ["Napoleon Bonaparte", "Joachim Murat"],
     outcome: "Tactical draw; strategic French",
     casualties: "≈ 25,000 French · ≈ 15,000 Russian",
     summary:
@@ -81,6 +102,7 @@ const battles: Battle[] = [
     location: "Portugal",
     belligerents: "Britain & Portugal vs. France",
     commanders: "Sir Arthur Wellesley vs. Jean-Andoche Junot",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "British victory",
     casualties: "≈ 720 British · ≈ 2,000 French",
     summary:
@@ -94,6 +116,7 @@ const battles: Battle[] = [
     location: "Galicia, Spain",
     belligerents: "Britain vs. France",
     commanders: "Sir John Moore vs. Marshal Soult",
+    relatedPeople: ["Sir John Moore", "Benjamin Harris"],
     outcome: "British rearguard victory; evacuation",
     casualties: "≈ 900 British · ≈ 2,000 French",
     summary:
@@ -106,6 +129,7 @@ const battles: Battle[] = [
     location: "New Castile, Spain",
     belligerents: "Britain & Spain vs. France",
     commanders: "Wellesley vs. King Joseph & Marshal Victor",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "Allied victory",
     casualties: "≈ 5,300 British · ≈ 7,300 French",
     summary:
@@ -118,6 +142,7 @@ const battles: Battle[] = [
     location: "Leon, Spain",
     belligerents: "Britain & Portugal vs. France",
     commanders: "Wellington vs. Barrié (garrison)",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington", "Robert Craufurd"],
     outcome: "Allied storm; fortress taken",
     casualties: "≈ 1,100 British · ≈ 530 French",
     summary:
@@ -130,6 +155,7 @@ const battles: Battle[] = [
     location: "Extremadura, Spain",
     belligerents: "Britain & Portugal vs. France",
     commanders: "Wellington vs. Armand Philippon",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "Allied storm; fortress taken",
     casualties: "≈ 4,800 British · ≈ 1,800 French",
     summary:
@@ -142,6 +168,7 @@ const battles: Battle[] = [
     location: "León, Spain",
     belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. Marshal Marmont",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington", "Don Julián Sánchez"],
     outcome: "Decisive Allied victory",
     casualties: "≈ 5,200 Allied · ≈ 13,000 French",
     summary:
@@ -154,6 +181,7 @@ const battles: Battle[] = [
     location: "Moscow province, Russia",
     belligerents: "France (Grande Armée) vs. Russia",
     commanders: "Napoleon vs. Prince Kutuzov",
+    relatedPeople: ["Napoleon Bonaparte", "Mikhail Kutuzov"],
     outcome: "French tactical victory; strategic pyrrhic",
     casualties: "≈ 30,000 French · ≈ 44,000 Russian",
     summary:
@@ -165,6 +193,7 @@ const battles: Battle[] = [
     location: "Basque country, Spain",
     belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. King Joseph & Marshal Jourdan",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "Decisive Allied victory",
     casualties: "≈ 5,100 Allied · ≈ 8,000 French (plus baggage)",
     summary:
@@ -177,6 +206,7 @@ const battles: Battle[] = [
     location: "Saxony",
     belligerents: "France vs. Russia, Prussia, Austria & Sweden",
     commanders: "Napoleon vs. Schwarzenberg, Blücher, Bernadotte, Bennigsen",
+    relatedPeople: ["Napoleon Bonaparte", "Karl Philipp, Prince of Schwarzenberg", "Gebhard Leberecht von Blücher"],
     outcome: "Allied victory; collapse of French Germany",
     casualties: "≈ 38,000 French · ≈ 54,000 Allied",
     summary:
@@ -188,6 +218,7 @@ const battles: Battle[] = [
     location: "Languedoc, France",
     belligerents: "Britain, Portugal & Spain vs. France",
     commanders: "Wellington vs. Marshal Soult",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "Tactical draw; strategic Allied",
     casualties: "≈ 4,600 Allied · ≈ 3,200 French",
     summary:
@@ -200,6 +231,7 @@ const battles: Battle[] = [
     location: "Brabant, Netherlands (Belgium)",
     belligerents: "Britain, Netherlands & Brunswick vs. France",
     commanders: "Wellington vs. Marshal Ney",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington", "Michel Ney"],
     outcome: "Tactical Allied (holding)",
     casualties: "≈ 4,800 Allied · ≈ 4,000 French",
     summary:
@@ -211,6 +243,7 @@ const battles: Battle[] = [
     location: "Namur, Netherlands (Belgium)",
     belligerents: "France vs. Prussia",
     commanders: "Napoleon vs. Prince Blücher",
+    relatedPeople: ["Napoleon Bonaparte", "Gebhard Leberecht von Blücher"],
     outcome: "French victory (incomplete)",
     casualties: "≈ 12,400 French · ≈ 16,000 Prussian",
     summary:
@@ -223,6 +256,7 @@ const battles: Battle[] = [
     belligerents:
       "Britain, Netherlands, Hanover, Brunswick & Prussia vs. France",
     commanders: "Wellington & Blücher vs. Napoleon",
+    relatedPeople: ["Arthur Wellesley, Duke of Wellington", "Napoleon Bonaparte", "Gebhard Leberecht von Blücher", "Michel Ney", "Thomas Picton", "Pierre Cambronne"],
     outcome: "Decisive Allied victory; end of the Empire",
     casualties: "≈ 25,000 French · ≈ 24,000 Allied",
     summary:
@@ -231,9 +265,66 @@ const battles: Battle[] = [
   },
 ];
 
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Battles of the Napoleonic Wars",
+  description:
+    "Key battles of the Napoleonic Wars (1800–1815), from Marengo to Waterloo.",
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
+  numberOfItems: battles.length,
+  itemListElement: battles.map((b, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    item: {
+      "@type": "Article",
+      headline: `Battle of ${b.name}, ${b.date}`,
+      name: b.name,
+      about: b.belligerents,
+      description: b.summary,
+      url: `${SITE.baseUrl}/battles#battle-${slugify(b.name)}`,
+      inLanguage: "en-GB",
+      isPartOf: {
+        "@type": "WebPage",
+        url: `${SITE.baseUrl}/battles`,
+        name: "Battles of the Napoleonic Wars",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: SITE.name,
+        url: SITE.baseUrl,
+      },
+    },
+  })),
+};
+
+const relatedPages = [
+  {
+    href: "/people",
+    title: "People",
+    note: "Commanders and memoirists who fought in these battles.",
+  },
+  {
+    href: "/regiments",
+    title: "Regiments",
+    note: "The 95th Rifles, Old Guard, K.G.L. and the units who decided the day.",
+  },
+  {
+    href: "/stories",
+    title: "Stories",
+    note: "Eyewitness accounts of Corunna, Badajoz, Waterloo and more.",
+  },
+  {
+    href: "/fiction",
+    title: "Sharpe novels",
+    note: "Bernard Cornwell's novels set against the battles above.",
+  },
+];
+
 export default function BattlesPage() {
   return (
     <>
+      <JsonLd data={itemListJsonLd} />
       <PageHeader
         eyebrow="1800 to 1815"
         title="Battles"
@@ -242,79 +333,129 @@ export default function BattlesPage() {
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="space-y-8">
-          {battles.map((b) => (
-            <article
-              key={b.name}
-              className="card p-8 rounded-sm relative"
-            >
-              <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
-                <h2 className="font-display text-3xl text-gold-pale uppercase tracking-wider">
-                  {b.name}
-                </h2>
-                <div className="text-sm uppercase tracking-[0.2em] text-gold/80">
-                  {b.date}
+          {battles.map((b) => {
+            const slug = slugify(b.name);
+            return (
+              <article
+                key={b.name}
+                id={`battle-${slug}`}
+                className="card p-8 rounded-sm relative scroll-mt-24"
+              >
+                <div className="flex flex-col md:flex-row md:items-baseline md:justify-between gap-2 mb-4">
+                  <h2 className="font-display text-3xl text-gold-pale uppercase tracking-wider">
+                    <a href={`#battle-${slug}`} className="hover:text-gold">
+                      {b.name}
+                    </a>
+                  </h2>
+                  <div className="text-sm uppercase tracking-[0.2em] text-gold/80">
+                    {b.date}
+                  </div>
                 </div>
-              </div>
 
-              <div className="mb-5 inline-flex items-center gap-3 px-4 py-2 border border-burgundy-light/50 bg-burgundy-deep/40 rounded-sm">
-                <span className="text-burgundy-light font-display text-sm">
-                  ⚔
-                </span>
-                <span className="text-xs uppercase tracking-[0.25em] text-gold/70">
-                  Combatants
-                </span>
-                <span className="text-parchment font-serif">
-                  {b.belligerents}
-                </span>
-              </div>
+                <div className="mb-5 inline-flex items-center gap-3 px-4 py-2 border border-burgundy-light/50 bg-burgundy-deep/40 rounded-sm">
+                  <span className="text-burgundy-light font-display text-sm">
+                    ⚔
+                  </span>
+                  <span className="text-xs uppercase tracking-[0.25em] text-gold/70">
+                    Combatants
+                  </span>
+                  <span className="text-parchment font-serif">
+                    {b.belligerents}
+                  </span>
+                </div>
 
-              <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-parchment/95 mb-5 font-serif">
-                <div>
-                  <span className="text-gold/70 uppercase text-xs tracking-widest">
-                    Location ·{" "}
-                  </span>
-                  {b.location}
-                </div>
-                <div>
-                  <span className="text-gold/70 uppercase text-xs tracking-widest">
-                    Commanders ·{" "}
-                  </span>
-                  {b.commanders}
-                </div>
-                <div>
-                  <span className="text-gold/70 uppercase text-xs tracking-widest">
-                    Outcome ·{" "}
-                  </span>
-                  <span className="text-gold-pale">{b.outcome}</span>
-                </div>
-                <div>
-                  <span className="text-gold/70 uppercase text-xs tracking-widest">
-                    Casualties ·{" "}
-                  </span>
-                  {b.casualties}
-                </div>
-              </div>
-
-              <p className="text-parchment leading-relaxed text-lg font-serif">
-                {b.summary}
-              </p>
-
-              {b.sharpe && (
-                <div className="mt-5 pt-5 border-t border-gold/15 flex items-start gap-3">
-                  <span className="text-burgundy-light font-display text-lg">
-                    ❦
-                  </span>
-                  <p className="text-sm italic text-parchment/95">
-                    <span className="text-gold-pale uppercase text-xs tracking-widest not-italic">
-                      In Sharpe ·{" "}
+                <div className="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-parchment/95 mb-5 font-serif">
+                  <div>
+                    <span className="text-gold/70 uppercase text-xs tracking-widest">
+                      Location ·{" "}
                     </span>
-                    {b.sharpe}
-                  </p>
+                    {b.location}
+                  </div>
+                  <div>
+                    <span className="text-gold/70 uppercase text-xs tracking-widest">
+                      Commanders ·{" "}
+                    </span>
+                    {b.commanders}
+                  </div>
+                  <div>
+                    <span className="text-gold/70 uppercase text-xs tracking-widest">
+                      Outcome ·{" "}
+                    </span>
+                    <span className="text-gold-pale">{b.outcome}</span>
+                  </div>
+                  <div>
+                    <span className="text-gold/70 uppercase text-xs tracking-widest">
+                      Casualties ·{" "}
+                    </span>
+                    {b.casualties}
+                  </div>
                 </div>
-              )}
-            </article>
-          ))}
+
+                <p className="text-parchment leading-relaxed text-lg font-serif">
+                  {b.summary}
+                </p>
+
+                {b.relatedPeople && b.relatedPeople.length > 0 && (
+                  <div className="mt-5 pt-5 border-t border-gold/15 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
+                    <span className="text-gold-pale uppercase text-xs tracking-widest">
+                      Who fought here
+                    </span>
+                    <span className="text-gold/40">·</span>
+                    {b.relatedPeople.map((name, i) => (
+                      <span key={name} className="font-serif">
+                        <Link
+                          href={`/people#person-${slugify(name)}`}
+                          className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+                        >
+                          {name}
+                        </Link>
+                        {i < b.relatedPeople!.length - 1 && (
+                          <span className="text-gold/40 ml-3">·</span>
+                        )}
+                      </span>
+                    ))}
+                  </div>
+                )}
+
+                {b.sharpe && (
+                  <div className="mt-5 pt-5 border-t border-gold/15 flex items-start gap-3">
+                    <span className="text-burgundy-light font-display text-lg">
+                      ❦
+                    </span>
+                    <p className="text-sm italic text-parchment/95">
+                      <span className="text-gold-pale uppercase text-xs tracking-widest not-italic">
+                        In Sharpe ·{" "}
+                      </span>
+                      {b.sharpe}
+                    </p>
+                  </div>
+                )}
+              </article>
+            );
+          })}
         </div>
+
+        <aside className="mt-16 pt-10 border-t border-gold/20">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Related
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {relatedPages.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="card p-5 rounded-sm block"
+              >
+                <div className="font-display text-gold-pale uppercase tracking-wider mb-2">
+                  {r.title}
+                </div>
+                <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                  {r.note}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
     </>
   );

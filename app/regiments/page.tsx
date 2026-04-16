@@ -1,11 +1,23 @@
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, SITE, slugify } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Regiments · The Napoleonic Archive",
+export const metadata = pageMeta({
+  title: "95th Rifles & Napoleonic Regiments",
   description:
-    "Famous regiments of the Napoleonic era: the 95th Rifles, Imperial Guard, Highland regiments, and the men who marched behind them.",
-};
+    "The 95th Rifles, Imperial Guard, Black Watch, Cuirassiers and K.G.L.: facings, mottoes, battle-honours and uniforms of the famous Napoleonic regiments.",
+  path: "/regiments",
+  keywords: [
+    "95th Rifles",
+    "Napoleonic regiments",
+    "British army uniforms",
+    "Imperial Guard",
+    "Black Watch",
+    "King's German Legion",
+    "Napoleonic cavalry",
+  ],
+});
 
 interface Regiment {
   name: string;
@@ -160,9 +172,77 @@ const regiments: Regiment[] = [
   },
 ];
 
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Famous Regiments of the Napoleonic Wars",
+  description:
+    "Infantry, cavalry and guard regiments of the Napoleonic armies, with facings, mottoes, battle honours and unit histories.",
+  numberOfItems: regiments.length,
+  itemListElement: regiments.map((r, idx) => ({
+    "@type": "ListItem",
+    position: idx + 1,
+    item: {
+      "@type": "Organization",
+      name: r.name,
+      alternateName: r.nickname,
+      description: r.body,
+      foundingDate: r.raised,
+      areaServed: r.nation,
+      slogan: r.motto,
+      url: `${SITE.baseUrl}/regiments#regiment-${slugify(r.name)}`,
+    },
+  })),
+};
+
+const articleJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Famous Regiments of the Napoleonic Wars",
+  description:
+    "A reference to twelve famous regiments of the Napoleonic era: 95th Rifles, Imperial Guard, Black Watch, Cuirassiers, King's German Legion and more.",
+  author: { "@type": "Organization", name: SITE.name },
+  publisher: {
+    "@type": "Organization",
+    name: SITE.name,
+    url: SITE.baseUrl,
+    logo: { "@type": "ImageObject", url: `${SITE.baseUrl}/favicon.svg` },
+  },
+  mainEntityOfPage: `${SITE.baseUrl}/regiments`,
+  inLanguage: "en-GB",
+  articleSection: "Military history",
+  keywords:
+    "95th Rifles, Imperial Guard, Black Watch, Cuirassiers, K.G.L., Napoleonic uniforms",
+};
+
+const relatedPages = [
+  {
+    href: "/battles",
+    title: "Battles",
+    note: "Engagements where these regiments won their honours.",
+  },
+  {
+    href: "/people",
+    title: "People",
+    note: "Commanders and riflemen who served with these colours.",
+  },
+  {
+    href: "/stories",
+    title: "Stories",
+    note: "Rifleman Harris, Kincaid, Mercer and more, in their own words.",
+  },
+  {
+    href: "/fiction",
+    title: "Sharpe novels",
+    note: "The 95th Rifles as imagined by Bernard Cornwell.",
+  },
+];
+
 export default function RegimentsPage() {
   return (
     <>
+      <JsonLd data={itemListJsonLd} />
+      <JsonLd data={articleJsonLd} />
       <PageHeader
         eyebrow="Colours & Facings"
         title="Regiments"
@@ -171,11 +251,19 @@ export default function RegimentsPage() {
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid lg:grid-cols-2 gap-6">
-          {regiments.map((r) => (
-            <article key={r.name} className="card p-7 rounded-sm">
+          {regiments.map((r) => {
+            const slug = slugify(r.name);
+            return (
+            <article
+              key={r.name}
+              id={`regiment-${slug}`}
+              className="card p-7 rounded-sm scroll-mt-24"
+            >
               <div className="mb-4">
                 <h2 className="font-display text-2xl text-gold-pale uppercase tracking-wider leading-tight">
-                  {r.name}
+                  <a href={`#regiment-${slug}`} className="hover:text-gold">
+                    {r.name}
+                  </a>
                 </h2>
                 {r.nickname && (
                   <div className="mt-1 text-sm italic text-burgundy-bright">
@@ -225,8 +313,31 @@ export default function RegimentsPage() {
                 {r.body}
               </p>
             </article>
-          ))}
+            );
+          })}
         </div>
+
+        <aside className="mt-16 pt-10 border-t border-gold/20">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Related
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {relatedPages.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="card p-5 rounded-sm block"
+              >
+                <div className="font-display text-gold-pale uppercase tracking-wider mb-2">
+                  {r.title}
+                </div>
+                <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                  {r.note}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
     </>
   );

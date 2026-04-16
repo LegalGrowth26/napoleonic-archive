@@ -1,11 +1,24 @@
+import Link from "next/link";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
-import type { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { pageMeta, SITE } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Resources · The Napoleonic Archive",
+export const metadata = pageMeta({
+  title: "Napoleonic Wars Books & Resources",
   description:
-    "Reading lists, primary sources, museums, archives, re-enactors, and podcasts for the Napoleonic Wars.",
-};
+    "Recommended Napoleonic Wars books, museums, archives, podcasts and maps for students, re-enactors and Sharpe fans: a curated reading and travel list.",
+  path: "/resources",
+  keywords: [
+    "Napoleonic Wars books",
+    "Napoleonic museums",
+    "Napoleonic podcasts",
+    "Napoleonic archives",
+    "Sharpe Companion",
+    "Waterloo battlefield",
+    "Wellington biography",
+  ],
+});
 
 interface ReadingEntry {
   author: string;
@@ -421,11 +434,13 @@ function AffiliateBookGrid({ books }: { books: AffiliateBook[] }) {
             aria-label={`${b.title} on Amazon`}
             className="block mx-auto mb-5"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
+            <Image
               src={`https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`}
-              alt={`${b.title} cover`}
+              alt={`${b.title} by ${b.author} — book cover`}
+              width={200}
+              height={300}
               loading="lazy"
+              unoptimized
               className="h-56 w-auto object-contain rounded-sm shadow-regal border border-gold/20 bg-navy-deep"
             />
           </a>
@@ -454,9 +469,97 @@ function AffiliateBookGrid({ books }: { books: AffiliateBook[] }) {
   );
 }
 
+const itemListJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Napoleonic Wars Books & Resources",
+  description:
+    "Primary sources, modern histories, museums, archives, podcasts and maps for students of the Napoleonic Wars and Sharpe fans.",
+  numberOfItems:
+    primarySources.length +
+    modernHistories.length +
+    sharpeCompanion.length +
+    affiliateBooks.length +
+    museums.length +
+    archives.length +
+    podcasts.length +
+    maps.length,
+  itemListElement: [
+    ...affiliateBooks.map((b, idx) => ({
+      "@type": "ListItem",
+      position: idx + 1,
+      item: {
+        "@type": "Book",
+        name: b.title,
+        author: { "@type": "Person", name: b.author },
+        isbn: b.asin,
+        description: b.description,
+        image: `https://images-na.ssl-images-amazon.com/images/P/${b.asin}.01.LZZZZZZZ.jpg`,
+        url: b.link,
+      },
+    })),
+    ...museums.map((m, idx) => ({
+      "@type": "ListItem",
+      position: affiliateBooks.length + idx + 1,
+      item: {
+        "@type": "Museum",
+        name: m.name,
+        address: m.where,
+        description: m.note,
+        url: m.url,
+      },
+    })),
+    ...archives.map((a, idx) => ({
+      "@type": "ListItem",
+      position: affiliateBooks.length + museums.length + idx + 1,
+      item: {
+        "@type": "WebSite",
+        name: a.name,
+        description: a.note,
+        url: a.url,
+      },
+    })),
+    ...podcasts.map((p, idx) => ({
+      "@type": "ListItem",
+      position:
+        affiliateBooks.length + museums.length + archives.length + idx + 1,
+      item: {
+        "@type": "PodcastSeries",
+        name: p.name,
+        description: p.note,
+        url: p.url,
+      },
+    })),
+  ],
+};
+
+const relatedPages = [
+  {
+    href: "/fiction",
+    title: "Sharpe novels",
+    note: "All 24 Sharpe novels by Bernard Cornwell with cover art and buy links.",
+  },
+  {
+    href: "/battles",
+    title: "Battles",
+    note: "Key engagements referenced in the memoirs and histories above.",
+  },
+  {
+    href: "/people",
+    title: "People",
+    note: "The commanders and memoirists whose books fill these shelves.",
+  },
+  {
+    href: "/stories",
+    title: "Stories",
+    note: "Short excerpts from the primary sources cited here.",
+  },
+];
+
 export default function ResourcesPage() {
   return (
     <>
+      <JsonLd data={itemListJsonLd} />
       <PageHeader
         eyebrow="For further reading"
         title="Resources"
@@ -534,6 +637,28 @@ export default function ResourcesPage() {
           and suggestions are always welcome; the bibliography above is a
           starting point, not a last word.
         </p>
+
+        <aside className="pt-10 border-t border-gold/20">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
+            Related
+          </h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {relatedPages.map((r) => (
+              <Link
+                key={r.href}
+                href={r.href}
+                className="card p-5 rounded-sm block"
+              >
+                <div className="font-display text-gold-pale uppercase tracking-wider mb-2">
+                  {r.title}
+                </div>
+                <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                  {r.note}
+                </p>
+              </Link>
+            ))}
+          </div>
+        </aside>
       </section>
     </>
   );
