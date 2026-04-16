@@ -42,7 +42,7 @@ const books: Book[] = [
     setting: "India · Gawilghur, 1803",
     synopsis:
       "Newly-commissioned Ensign Sharpe climbs the cliff-fortress of Gawilghur against both Mahratta guns and the gentlemen of his own regiment.",
-    asin: "0060932848",
+    asin: "0006513182",
     link: "https://amzn.to/3QtV1dP",
   },
   {
@@ -51,7 +51,7 @@ const books: Book[] = [
     setting: "East Indiaman Calliope, 1805",
     synopsis:
       "Homeward-bound Sharpe is caught aboard a merchantman at the greatest sea battle ever fought.",
-    asin: "0060002537",
+    asin: "0006513204",
     link: "https://amzn.to/4tTl50t",
   },
   {
@@ -105,7 +105,7 @@ const books: Book[] = [
     setting: "Portugal · Bussaco, 1810",
     synopsis:
       "Sharpe crosses the murderous Ferragus brothers as the French march into the scorched earth before the Lines.",
-    asin: "0061012769",
+    asin: "0007105991",
     link: "https://amzn.to/4teLTYW",
   },
   {
@@ -231,7 +231,7 @@ const books: Book[] = [
     setting: "Chile & Valdivia, 1820–1821",
     synopsis:
       "Post-war Sharpe sails to Chile with Lord Cochrane for a last, ghostly encounter with Napoleon from St Helena.",
-    asin: "0060932104",
+    asin: "0006470424",
     link: "https://amzn.to/4tPFDXB",
   },
 ];
