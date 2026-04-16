@@ -48,7 +48,7 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
         epithet: "Bravest of the Brave",
         years: "1769 – 1815",
         faction: "Marshal of the Empire",
-        bio: "A cooper's son from Saarlouis. He commanded the rearguard of the retreat from Moscow, the last Frenchman to leave Russian soil, musket in hand. At Waterloo he had five horses shot under him. Tried by the Bourbons after the Hundred Days, he gave the firing squad the order himself.",
+        bio: "A cooper's son from Saarlouis. He commanded the rearguard of the retreat from Moscow. At Waterloo he had five horses shot under him. Tried by the Bourbons after the Hundred Days, he gave the firing squad the order himself.",
         relatedBattles: ["Quatre Bras", "Waterloo"],
       },
       {

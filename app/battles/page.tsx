@@ -185,7 +185,7 @@ const battles: Battle[] = [
     outcome: "French tactical victory; strategic pyrrhic",
     casualties: "≈ 30,000 French · ≈ 44,000 Russian",
     summary:
-      "The bloodiest day of the Napoleonic wars. The Raevsky redoubt changed hands in mounds of dead; the Great Redoubt fell only at twilight. Napoleon refused to commit the Guard, saying, 'I will not have it destroyed 800 leagues from France.' A week later he entered Moscow; within eight weeks, the retreat began.",
+      "The bloodiest day of the Napoleonic wars. The Raevsky redoubt changed hands in mounds of dead; the Great Redoubt fell only at twilight. According to de Ségur's memoirs, Napoleon refused to commit the Guard, saying: 'I will not have it destroyed 800 leagues from France.' A week later he entered Moscow; within eight weeks, the retreat began.",
   },
   {
     name: "Vitoria",

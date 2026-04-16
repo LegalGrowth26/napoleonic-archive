@@ -104,7 +104,7 @@ const regiments: Regiment[] = [
     facings: "Steel breastplate and helmet, blue coat, red facings",
     battles: "Austerlitz · Eylau · Borodino · Waterloo",
     body:
-      "Six feet on a seventeen-hand horse, in three stone of steel. Their armour would turn a spent musket-ball. At Waterloo Ney launched them, again and again, unsupported by infantry, against Wellington's squares; they could neither break nor ride round, and in two hours they destroyed themselves. 'The finest sight of my life,' said an English officer afterwards.",
+      "Six feet on a seventeen-hand horse, in three stone of steel. Their armour would turn a spent musket-ball. At Waterloo Ney launched them, again and again, unsupported by infantry, against Wellington's squares; they could neither break nor ride round, and in two hours they destroyed themselves.",
   },
   {
     name: "1st Regiment of Hussars (Paris)",
@@ -148,7 +148,7 @@ const regiments: Regiment[] = [
     facings: "Dark green coat, red facings, brass-fronted mitre cap",
     battles: "Friedland · Borodino · Leipzig · Paris 1814",
     body:
-      "After their slaughter at Friedland in 1807, Tsar Alexander decreed that they would continue to wear the old-pattern grenadier mitre, bullet-pierced, dented, unrepaired, as their battle-honour. No other regiment in Europe dressed like them. They carried those battered brass caps into Paris in 1814.",
+      "By tradition, after their slaughter at Friedland in 1807, Tsar Alexander decreed that they would continue to wear the old-pattern grenadier mitre, bullet-pierced, dented, unrepaired, as their battle-honour. No other regiment in Europe dressed like them. They carried those battered brass caps into Paris in 1814.",
   },
   {
     name: "King's German Legion",
