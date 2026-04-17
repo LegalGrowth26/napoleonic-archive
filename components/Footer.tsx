@@ -1,14 +1,9 @@
 import Link from "next/link";
-import NewsletterSignup from "@/components/NewsletterSignup";
 
 export default function Footer() {
   return (
     <footer className="mt-24 border-t border-gold/20 bg-navy-deep/80">
-      <div className="max-w-5xl mx-auto px-6 pt-12 pb-10">
-        <NewsletterSignup />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8 border-t border-gold/10">
+      <div className="max-w-7xl mx-auto px-6 py-10 grid md:grid-cols-3 gap-8">
         <div>
           <div className="font-display text-gold tracking-[0.3em] uppercase text-sm">
             The Napoleonic Archive
