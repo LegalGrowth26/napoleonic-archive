@@ -370,7 +370,289 @@ export default function WaterlooPage() {
         </div>
       </section>
 
-      {/* Sections 6-11 follow in the next update */}
+      {/* ============================================================ */}
+      {/* 6. THE COMMANDERS                                            */}
+      {/* ============================================================ */}
+      <section id="commanders" className="max-w-6xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+          The Commanders
+        </h2>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {[
+            {
+              name: "Arthur Wellesley, Duke of Wellington",
+              role: "Commander-in-Chief, Anglo-Allied Army",
+              slug: "arthur-wellesley-duke-of-wellington",
+              body: "Directed the battle from the ridge of Mont-Saint-Jean, repeatedly riding forward to the most threatened points under heavy fire. He later described Waterloo as the nearest-run thing you ever saw in your life. He survived the battle unscathed.",
+            },
+            {
+              name: "Napoleon Bonaparte",
+              role: "Emperor of the French",
+              slug: "napoleon-bonaparte",
+              body: "Commanded the French army from the inn of La Belle Alliance, south of the battlefield. He committed the Imperial Guard too late and with too little support. After the rout he fled to Paris and abdicated four days later; he died in exile on St Helena in 1821.",
+            },
+            {
+              name: "Michel Ney",
+              role: "Marshal of the Empire",
+              slug: "michel-ney",
+              body: "Led the great cavalry charges against Wellington's squares and personally directed the Imperial Guard's final advance. He had five horses shot under him during the day. He was tried and executed by the restored Bourbon government in December 1815.",
+            },
+            {
+              name: "Gebhard Leberecht von Bl\u00FCcher",
+              role: "Field Marshal, Prussian Army",
+              slug: "gebhard-leberecht-von-blucher",
+              body: "Seventy-two years old and only two days recovered from being ridden over at the Battle of Ligny, he marched his army to Wellington's aid and struck Napoleon's right flank at Plancenoit in the late afternoon. His arrival decided the battle.",
+            },
+            {
+              name: "Thomas Picton",
+              role: "Lieutenant-General, 5th Division",
+              slug: "thomas-picton",
+              body: "The most senior Allied officer killed at Waterloo. He was shot through the head while leading Kempt's brigade in a counter-charge against d'Erlon's corps at approximately 14:30. He had fought the day concealing a wound received at Quatre Bras two days earlier.",
+              killed: true,
+            },
+            {
+              name: "Pierre Cambronne",
+              role: "General, Old Guard",
+              slug: "pierre-cambronne",
+              body: "Commanded a battalion of the Old Guard in the final stand. Tradition attributes to him the defiant reply when summoned to surrender; the exact words are disputed by historians. He was wounded and captured on the field.",
+            },
+          ].map((c) => (
+            <article key={c.name} className="card p-6 rounded-sm">
+              <div className="flex items-baseline justify-between gap-2 mb-1">
+                <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider">
+                  <Link
+                    href={`/people#person-${c.slug}`}
+                    className="hover:text-gold transition"
+                  >
+                    {c.name}
+                  </Link>
+                </h3>
+                {"killed" in c && c.killed && (
+                  <span className="text-[10px] uppercase tracking-widest text-burgundy-bright border border-burgundy-bright/50 px-1.5 py-0.5 rounded-sm whitespace-nowrap">
+                    Killed
+                  </span>
+                )}
+              </div>
+              <div className="text-xs uppercase tracking-widest text-parchment/85 mb-4">
+                {c.role}
+              </div>
+              <p className="text-parchment leading-relaxed font-serif text-sm">
+                {c.body}
+              </p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 7. REGIMENTS AT WATERLOO                                     */}
+      {/* ============================================================ */}
+      <section
+        id="regiments"
+        className="border-y border-gold/20 bg-gradient-to-b from-navy-deep via-navy to-navy-deep"
+      >
+        <div className="max-w-6xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+            Regiments at Waterloo
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* British & Allied */}
+            <div>
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-6 section-title">
+                British &amp; Allied
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "95th (Rifle) Regiment of Foot", slug: "95th-rifle-regiment-of-foot", note: "Skirmished ahead of the main line throughout the day" },
+                  { name: "1st Regiment of Foot Guards", slug: "1st-regiment-of-foot-guards", note: "Received the Imperial Guard's final charge at the crest" },
+                  { name: "52nd (Oxfordshire) Light Infantry", slug: null, note: "Flanked the Imperial Guard under Colonel Colborne" },
+                  { name: "King's German Legion", slug: "kings-german-legion", note: "Defended La Haye Sainte until ammunition ran out" },
+                  { name: "42nd (Royal Highland) Regiment (Black Watch)", slug: "42nd-royal-highland-regiment-of-foot", note: "Held squares against cavalry on the right-centre" },
+                  { name: "Royal Horse Guards (The Blues)", slug: "royal-horse-guards", note: "Charged with the Household Brigade against d'Erlon" },
+                ].map((r) => (
+                  <li
+                    key={r.name}
+                    className="border border-gold/20 rounded-sm p-4 bg-navy-muted/30"
+                  >
+                    <div className="font-display text-gold-pale uppercase tracking-wider text-sm mb-1">
+                      {r.slug ? (
+                        <Link
+                          href={`/regiments#regiment-${r.slug}`}
+                          className="hover:text-gold transition"
+                        >
+                          {r.name}
+                        </Link>
+                      ) : (
+                        r.name
+                      )}
+                    </div>
+                    <p className="text-xs text-parchment/95 font-serif">
+                      {r.note}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* French */}
+            <div>
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-6 section-title">
+                French
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  { name: "Garde Imp\u00E9riale, Vieille Garde", slug: "garde-imperiale-vieille-garde", note: "Advanced up the ridge at 19:30 and were repulsed for the first time in their history" },
+                  { name: "The Cuirassiers", slug: "the-cuirassiers", note: "Led Ney's great cavalry charges against Wellington's squares" },
+                ].map((r) => (
+                  <li
+                    key={r.name}
+                    className="border border-gold/20 rounded-sm p-4 bg-navy-muted/30"
+                  >
+                    <div className="font-display text-gold-pale uppercase tracking-wider text-sm mb-1">
+                      {r.slug ? (
+                        <Link
+                          href={`/regiments#regiment-${r.slug}`}
+                          className="hover:text-gold transition"
+                        >
+                          {r.name}
+                        </Link>
+                      ) : (
+                        r.name
+                      )}
+                    </div>
+                    <p className="text-xs text-parchment/95 font-serif">
+                      {r.note}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-6 border border-gold/20 rounded-sm p-4 bg-navy-muted/30">
+                <h3 className="font-display text-gold-pale uppercase tracking-wider text-sm mb-1">
+                  Prussian Army
+                </h3>
+                <p className="text-xs text-parchment/95 font-serif">
+                  Bl\u00FCcher's IV Corps under B\u00FClow struck Plancenoit on
+                  Napoleon's right flank from late afternoon; I and II Corps
+                  arrived progressively through the evening, completing the
+                  pursuit after the French rout.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 8. VOICES FROM THE BATTLE                                    */}
+      {/* ============================================================ */}
+      <section id="voices" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center mb-12">
+          <div className="ornament text-gold/70 mb-4">
+            <span>✒</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+            Voices from the Battle
+          </h2>
+          <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold/70">
+            Genuine verbatim extracts from published public-domain memoirs
+          </p>
+        </div>
+
+        <div className="space-y-10">
+          {/* Kincaid */}
+          <article className="relative">
+            <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+            <header className="mb-3">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Captain John Kincaid, 95th Rifles
+              </h3>
+              <div className="text-sm italic text-burgundy-bright">
+                Adventures in the Rifle Brigade (1830)
+              </div>
+            </header>
+            <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+              I had never yet heard of a battle in which everybody was killed;
+              but this seemed likely to be an exception, as all were going by
+              turns.
+            </blockquote>
+            <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+              <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                Source
+              </span>
+              <span className="font-serif">
+                Adventures in the Rifle Brigade by Captain John Kincaid, 1830.
+                Public domain.
+              </span>
+            </p>
+          </article>
+
+          <div className="gold-divider" />
+
+          {/* Mercer */}
+          <article className="relative">
+            <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+            <header className="mb-3">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Captain Cavali\u00E9 Mercer, Royal Horse Artillery
+              </h3>
+              <div className="text-sm italic text-burgundy-bright">
+                Journal of the Waterloo Campaign (1870)
+              </div>
+            </header>
+            <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+              On they came in compact squadrons, one behind the other, so
+              numerous that those of the rear were still below the brow when
+              the head of the column was but at some sixty or seventy yards
+              from us, and all the while the ground shook beneath their
+              thundering tramp.
+            </blockquote>
+            <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+              <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                Source
+              </span>
+              <span className="font-serif">
+                Journal of the Waterloo Campaign by General Cavali\u00E9 Mercer,
+                1870. Public domain.
+              </span>
+            </p>
+          </article>
+
+          <div className="gold-divider" />
+
+          {/* Gronow */}
+          <article className="relative">
+            <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+            <header className="mb-3">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Captain Rees Howell Gronow, 1st Foot Guards
+              </h3>
+              <div className="text-sm italic text-burgundy-bright">
+                Reminiscences and Recollections (1862)
+              </div>
+            </header>
+            <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+              The word of command, &ldquo;Prepare to receive cavalry,&rdquo;
+              had been given, every man in the front ranks knelt, and a wall
+              bristling with steel, held together by steady hands, presented
+              itself to the infuriated cuirassiers.
+            </blockquote>
+            <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+              <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                Source
+              </span>
+              <span className="font-serif">
+                Reminiscences and Recollections of Captain Gronow, 1862.
+                Public domain.
+              </span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      {/* Sections 9-11 follow in the next update */}
     </>
   );
 }
