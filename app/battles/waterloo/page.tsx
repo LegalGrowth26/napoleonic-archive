@@ -45,7 +45,7 @@ const armies = [
   },
   {
     name: "Prussian Army",
-    commander: "Field Marshal Bl\u00FCcher",
+    commander: "Field Marshal Blücher",
     personSlug: "gebhard-leberecht-von-blucher",
     strength: "50,000 engaged",
     guns: "104 guns",
@@ -64,7 +64,7 @@ const timeline = [
   {
     time: "11:30",
     title: "The attack on Hougoumont",
-    body: "Prince J\u00E9r\u00F4me Bonaparte's division assaulted the walled chateau and farm complex on Wellington's right flank. What Napoleon intended as a diversion drew in ever more French troops throughout the day, while the British and Nassauer defenders held the buildings and the orchard against repeated infantry attacks.",
+    body: "Prince Jérôme Bonaparte's division assaulted the walled chateau and farm complex on Wellington's right flank. What Napoleon intended as a diversion drew in ever more French troops throughout the day, while the British and Nassauer defenders held the buildings and the orchard against repeated infantry attacks.",
   },
   {
     time: "13:00",
@@ -89,7 +89,7 @@ const timeline = [
   {
     time: "19:00",
     title: "The Prussians strike Plancenoit",
-    body: "Bl\u00FCcher's leading corps under B\u00FClow attacked the village of Plancenoit on Napoleon's right rear, threatening the French line of retreat along the Brussels road. Napoleon was forced to divert the Young Guard and eventually two battalions of the Old Guard to hold the village, weakening his reserves at the critical moment.",
+    body: "Blücher's leading corps under Bülow attacked the village of Plancenoit on Napoleon's right rear, threatening the French line of retreat along the Brussels road. Napoleon was forced to divert the Young Guard and eventually two battalions of the Old Guard to hold the village, weakening his reserves at the critical moment.",
   },
   {
     time: "19:30",
@@ -399,7 +399,7 @@ export default function WaterlooPage() {
               body: "Led the great cavalry charges against Wellington's squares and personally directed the Imperial Guard's final advance. He had five horses shot under him during the day. He was tried and executed by the restored Bourbon government in December 1815.",
             },
             {
-              name: "Gebhard Leberecht von Bl\u00FCcher",
+              name: "Gebhard Leberecht von Blücher",
               role: "Field Marshal, Prussian Army",
               slug: "gebhard-leberecht-von-blucher",
               body: "Seventy-two years old and only two days recovered from being ridden over at the Battle of Ligny, he marched his army to Wellington's aid and struck Napoleon's right flank at Plancenoit in the late afternoon. His arrival decided the battle.",
@@ -503,7 +503,7 @@ export default function WaterlooPage() {
               </h3>
               <ul className="space-y-3">
                 {[
-                  { name: "Garde Imp\u00E9riale, Vieille Garde", slug: "garde-imperiale-vieille-garde", note: "Advanced up the ridge at 19:30 and were repulsed for the first time in their history" },
+                  { name: "Garde Impériale, Vieille Garde", slug: "garde-imperiale-vieille-garde", note: "Advanced up the ridge at 19:30 and were repulsed for the first time in their history" },
                   { name: "The Cuirassiers", slug: "the-cuirassiers", note: "Led Ney's great cavalry charges against Wellington's squares" },
                 ].map((r) => (
                   <li
@@ -534,7 +534,7 @@ export default function WaterlooPage() {
                   Prussian Army
                 </h3>
                 <p className="text-xs text-parchment/95 font-serif">
-                  Bl\u00FCcher's IV Corps under B\u00FClow struck Plancenoit on
+                  Blücher's IV Corps under Bülow struck Plancenoit on
                   Napoleon's right flank from late afternoon; I and II Corps
                   arrived progressively through the evening, completing the
                   pursuit after the French rout.
@@ -596,7 +596,7 @@ export default function WaterlooPage() {
             <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
             <header className="mb-3">
               <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
-                Captain Cavali\u00E9 Mercer, Royal Horse Artillery
+                Captain Cavalié Mercer, Royal Horse Artillery
               </h3>
               <div className="text-sm italic text-burgundy-bright">
                 Journal of the Waterloo Campaign (1870)
@@ -614,7 +614,7 @@ export default function WaterlooPage() {
                 Source
               </span>
               <span className="font-serif">
-                Journal of the Waterloo Campaign by General Cavali\u00E9 Mercer,
+                Journal of the Waterloo Campaign by General Cavalié Mercer,
                 1870. Public domain.
               </span>
             </p>
@@ -771,7 +771,7 @@ export default function WaterlooPage() {
         <div className="grid md:grid-cols-2 gap-6">
           <div className="card p-7 rounded-sm">
             <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-3">
-              M\u00E9morial 1815
+              Mémorial 1815
             </h3>
             <p className="text-parchment leading-relaxed font-serif text-sm mb-4">
               The modern visitor centre at the foot of the Lion&rsquo;s Mound
@@ -802,7 +802,7 @@ export default function WaterlooPage() {
               and opened as a museum. The north gate, where the fighting was
               fiercest, is preserved; the chapel and courtyard still show
               marks of the battle. It is a short walk across the fields from
-              the M\u00E9morial.
+              the Mémorial.
             </p>
           </div>
 
@@ -829,7 +829,7 @@ export default function WaterlooPage() {
               The battlefield is approximately 20 km south of Brussels.
               Regular buses run from Brussels-Midi station to Braine-l&rsquo;Alleud
               (line W); the journey takes about 40 minutes. By car, follow
-              the N5 south from Brussels towards Charleroi. The M\u00E9morial car
+              the N5 south from Brussels towards Charleroi. The Mémorial car
               park is well signposted from the motorway exit. Allow a full
               day to visit the visitor centre, the Lion&rsquo;s Mound,
               Hougoumont and La Haye Sainte on foot.
