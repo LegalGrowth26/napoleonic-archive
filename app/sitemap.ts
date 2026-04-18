@@ -4,6 +4,7 @@ import { SITE } from "@/lib/seo";
 const routes = [
   { path: "", priority: 1.0 },
   { path: "/battles", priority: 0.9 },
+  { path: "/battles/waterloo", priority: 0.95 },
   { path: "/people", priority: 0.9 },
   { path: "/regiments", priority: 0.9 },
   { path: "/stories", priority: 0.8 },

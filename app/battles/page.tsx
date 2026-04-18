@@ -33,6 +33,8 @@ interface Battle {
   casualties: string;
   summary: string;
   sharpe?: string;
+  /** Path to a dedicated sub-page, if one exists. */
+  dedicatedPage?: string;
 }
 
 const battles: Battle[] = [
@@ -253,6 +255,7 @@ const battles: Battle[] = [
     name: "Waterloo",
     date: "18 June 1815",
     location: "Brabant (near Brussels)",
+    dedicatedPage: "/battles/waterloo",
     belligerents:
       "Britain, Netherlands, Hanover, Brunswick & Prussia vs. France",
     commanders: "Wellington & Blücher vs. Napoleon",
@@ -428,6 +431,17 @@ export default function BattlesPage() {
                       </span>
                       {b.sharpe}
                     </p>
+                  </div>
+                )}
+
+                {b.dedicatedPage && (
+                  <div className="mt-5 pt-5 border-t border-gold/15">
+                    <Link
+                      href={b.dedicatedPage}
+                      className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+                    >
+                      Read the full Waterloo page &rarr;
+                    </Link>
                   </div>
                 )}
               </article>

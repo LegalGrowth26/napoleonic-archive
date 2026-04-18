@@ -652,7 +652,266 @@ export default function WaterlooPage() {
         </div>
       </section>
 
-      {/* Sections 9-11 follow in the next update */}
+      {/* ============================================================ */}
+      {/* 9. SHARPE AT WATERLOO                                        */}
+      {/* ============================================================ */}
+      <section
+        id="sharpe"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/15 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <div className="text-center mb-10">
+            <div className="ornament text-gold/70 mb-4">
+              <span>❦</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+              Sharpe at Waterloo
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-burgundy-bright">
+              Fiction · Bernard Cornwell
+            </p>
+          </div>
+
+          <div className="card p-8 rounded-sm">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-4">
+              Sharpe&rsquo;s Waterloo (1990)
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif mb-5">
+              In the final full novel of the series, Lieutenant-Colonel Richard
+              Sharpe serves as a liaison officer attached to the Prince of
+              Orange&rsquo;s staff on the Allied ridge. Cornwell follows Sharpe
+              through the defence of Hougoumont, the cavalry charges, and the
+              crisis at La Haye Sainte, ending with the repulse of the
+              Imperial Guard at dusk.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div>
+                <h4 className="font-display text-sm text-gold-pale uppercase tracking-widest mb-2">
+                  What Cornwell got right
+                </h4>
+                <ul className="space-y-2 text-sm text-parchment/95 font-serif list-disc list-inside">
+                  <li>
+                    The sequence and timing of the battle follow the historical
+                    record closely: Hougoumont, d&rsquo;Erlon, the cavalry
+                    charges, La Haye Sainte, the Guard.
+                  </li>
+                  <li>
+                    The terrain, the weather (overnight rain, muddy ground
+                    delaying the French attack), and the key tactical decisions
+                    are accurately depicted.
+                  </li>
+                  <li>
+                    Real commanders appear in their documented roles:
+                    Wellington on the ridge, Ney leading the charges, Picton
+                    killed in the counter-attack.
+                  </li>
+                  <li>
+                    The arrival of the Prussians and the final rout match the
+                    historical timeline.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="font-display text-sm text-gold-pale uppercase tracking-widest mb-2">
+                  Fictional elements Cornwell added
+                </h4>
+                <ul className="space-y-2 text-sm text-parchment/95 font-serif list-disc list-inside">
+                  <li>
+                    Sharpe himself is fictional, as is his role as a liaison
+                    officer at the battle.
+                  </li>
+                  <li>
+                    The Prince of Orange is portrayed as recklessly
+                    incompetent; while this has some historical basis, Cornwell
+                    amplifies it for dramatic effect.
+                  </li>
+                  <li>
+                    Several secondary characters and personal subplots
+                    (including Sharpe&rsquo;s conflicts with officers on the
+                    Allied staff) are invented.
+                  </li>
+                  <li>
+                    Sharpe participates directly in the defence of Hougoumont
+                    and the repulse of the Guard, placing him at every key
+                    moment of the day.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-4 items-center pt-5 border-t border-gold/15">
+              <a
+                href="https://amzn.to/4cMW7df"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Buy Sharpe&rsquo;s Waterloo &rarr;
+              </a>
+              <Link
+                href="/fiction"
+                className="text-sm text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold transition"
+              >
+                See all 24 Sharpe novels
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 10. VISIT WATERLOO TODAY                                     */}
+      {/* ============================================================ */}
+      <section id="visit" className="max-w-6xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+          Visit Waterloo Today
+        </h2>
+
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="card p-7 rounded-sm">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-3">
+              M\u00E9morial 1815
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif text-sm mb-4">
+              The modern visitor centre at the foot of the Lion&rsquo;s Mound
+              offers an immersive underground exhibition covering all three
+              days of the campaign (Ligny, Quatre Bras and Waterloo) with
+              panoramic film, artefacts and a 3D battle model. It is the
+              starting point for any visit to the battlefield.
+            </p>
+            <a
+              href="https://www.waterloo1815.be"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-gold-pale hover:text-gold inline-flex items-center gap-1.5"
+            >
+              waterloo1815.be
+              <span aria-hidden="true" className="text-gold/70 text-xs">
+                ↗
+              </span>
+            </a>
+          </div>
+
+          <div className="card p-7 rounded-sm">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-3">
+              Hougoumont Farm
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif text-sm">
+              The walled farm complex on the Allied right has been restored
+              and opened as a museum. The north gate, where the fighting was
+              fiercest, is preserved; the chapel and courtyard still show
+              marks of the battle. It is a short walk across the fields from
+              the M\u00E9morial.
+            </p>
+          </div>
+
+          <div className="card p-7 rounded-sm">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-3">
+              The Lion&rsquo;s Mound
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif text-sm">
+              The 40-metre artificial hill topped by a cast-iron lion was
+              raised by the Kingdom of the Netherlands in the 1820s on the
+              approximate spot where the Prince of Orange was wounded. Two
+              hundred and twenty-six steps lead to a panoramic view of the
+              entire battlefield. Wellington is said to have complained that
+              the construction of the mound had altered the landscape he
+              fought over.
+            </p>
+          </div>
+
+          <div className="card p-7 rounded-sm">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-3">
+              Getting There
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif text-sm">
+              The battlefield is approximately 20 km south of Brussels.
+              Regular buses run from Brussels-Midi station to Braine-l&rsquo;Alleud
+              (line W); the journey takes about 40 minutes. By car, follow
+              the N5 south from Brussels towards Charleroi. The M\u00E9morial car
+              park is well signposted from the motorway exit. Allow a full
+              day to visit the visitor centre, the Lion&rsquo;s Mound,
+              Hougoumont and La Haye Sainte on foot.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 11. FURTHER READING                                          */}
+      {/* ============================================================ */}
+      <section
+        id="reading"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-navy to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+            Further Reading
+          </h2>
+
+          <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <div className="card p-6 rounded-sm">
+              <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+                Waterloo: The History of Four Days, Three Armies and Three
+                Battles
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Bernard Cornwell, 2014
+              </div>
+              <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+                Cornwell&rsquo;s own non-fiction account of the campaign,
+                drawing on letters, diaries and dispatches to reconstruct the
+                four days from Napoleon&rsquo;s crossing of the frontier to
+                the rout on the Brussels road.
+              </p>
+              <a
+                href="https://amzn.to/4tjc80D"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Buy on Amazon &rarr;
+              </a>
+            </div>
+
+            <div className="card p-6 rounded-sm">
+              <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+                The Campaigns of Napoleon
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                David G. Chandler, 1966
+              </div>
+              <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+                The single-volume standard in English on Napoleon as a
+                soldier. Chandler&rsquo;s account of the Waterloo campaign
+                runs to over a hundred pages and remains essential reading for
+                any serious student of the battle.
+              </p>
+              <a
+                href="https://amzn.to/4vyf2QD"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Buy on Amazon &rarr;
+              </a>
+            </div>
+          </div>
+
+          <div className="text-center space-y-4">
+            <Link
+              href="/resources"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              Browse all resources &rarr;
+            </Link>
+            <p className="text-xs uppercase tracking-widest text-parchment/85">
+              As an Amazon Associate I earn from qualifying purchases.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
   );
 }
