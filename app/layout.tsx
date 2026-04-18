@@ -5,7 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { SITE } from "@/lib/seo";
 
-const GA_MEASUREMENT_ID = "G-S259C9QGFV";
+const GA_MEASUREMENT_ID = "G-PZXCDVR6HE";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.baseUrl),
