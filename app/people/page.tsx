@@ -95,6 +95,7 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
       {
         name: "Arthur Wellesley, Duke of Wellington",
         epithet: "The Iron Duke · Old Nosey",
+        dedicatedPage: "/people/wellington",
         years: "1769 – 1852",
         faction: "Field Marshal · Commander-in-Chief, Peninsula & Waterloo",
         bio: "Born in the same year as Napoleon. Cold, private, calculating; he spoke of his men as 'the scum of the earth, enlisted for drink.' Yet he shared their biscuit in the mountains and never lost a battle in independent command. At Waterloo he said: 'I should like to be off my horse.'",
