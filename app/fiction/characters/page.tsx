@@ -435,10 +435,197 @@ export default function CharactersPage() {
                 </ul>
               </div>
             </details>
+            {/* 9. Sharpe's Gold */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    9. Sharpe&rsquo;s Gold
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Torres Vedras, 1810
+                  </span>
+                </div>
+                <a href="https://amzn.to/3QJNU0Q" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Captain) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">El Cat&oacute;lico</span> (Spanish guerrilla leader; the novel&rsquo;s main villain)</li>
+                  <li><span className="text-gold-pale">Teresa Moreno</span> (first appearance; Spanish guerrilla fighter, later Sharpe&rsquo;s wife) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Major Michael Hogan</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 10. Sharpe's Escape */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    10. Sharpe&rsquo;s Escape
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Portugal · Bussaco, 1810
+                  </span>
+                </div>
+                <a href="https://amzn.to/4teLTYW" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Ferragus</span> (Portuguese criminal, the novel&rsquo;s main villain)</li>
+                  <li><span className="text-gold-pale">Lieutenant Price</span> (officer in the South Essex)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 11. Sharpe's Fury */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    11. Sharpe&rsquo;s Fury
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Barrosa, 1811
+                  </span>
+                </div>
+                <a href="https://amzn.to/4vAIzJn" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Father Sarsfield</span> (Irish priest in C&aacute;diz)</li>
+                  <li><span className="text-gold-pale">General Thomas Graham</span> (commands the British at Barrosa) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 12. Sharpe's Battle */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    12. Sharpe&rsquo;s Battle
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Fuentes de O&ntilde;oro, 1811
+                  </span>
+                </div>
+                <a href="https://amzn.to/4ct5mhn" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lord Kiely / Lord Runciman</span> (comic-villain officers of the Real Compa&ntilde;&iacute;a Irlandesa)</li>
+                  <li><span className="text-gold-pale">Brigadier Loup</span> (French counter-guerrilla commander, the novel&rsquo;s main villain)</li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 13. Sharpe's Company */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    13. Sharpe&rsquo;s Company
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Badajoz, 1812
+                  </span>
+                </div>
+                <a href="https://amzn.to/4thUGcX" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Obadiah Hakeswill</span> (returns; murders Teresa Moreno during the sack of Badajoz) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Teresa Moreno</span> (killed by Hakeswill) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 14. Sharpe's Command */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    14. Sharpe&rsquo;s Command
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain, 1812
+                  </span>
+                </div>
+                <a href="https://amzn.to/4mvUMuG" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 15. Sharpe's Sword */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    15. Sharpe&rsquo;s Sword
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Salamanca, 1812
+                  </span>
+                </div>
+                <a href="https://amzn.to/4cvSPtR" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Colonel Philippe Leroux</span> (French intelligence officer and swordsman; main villain)</li>
+                  <li><span className="text-gold-pale">Major Michael Hogan</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lord Spears</span> (British officer, charming but untrustworthy)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 16. Sharpe's Enemy */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    16. Sharpe&rsquo;s Enemy
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Adrados, Christmas 1812
+                  </span>
+                </div>
+                <a href="https://amzn.to/487wQrL" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Obadiah Hakeswill</span> (returns for the last time; executed by firing squad) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Pot-au-Feu</span> (French deserter and bandit leader)</li>
+                  <li><span className="text-gold-pale">Colonel Dubreton</span> (French officer; honourable antagonist who cooperates with Sharpe against the deserters)</li>
+                </ul>
+              </div>
+            </details>
           </div>
 
           <p className="mt-10 text-center text-parchment/95 font-serif italic text-sm">
-            Books 9 to 24 will be added in a future update.
+            Books 17 to 24 will be added in a future update.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
