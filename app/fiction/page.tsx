@@ -7,15 +7,16 @@ import { pageMeta, SITE } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Sharpe Novels by Bernard Cornwell",
   description:
-    "All 24 Sharpe novels by Bernard Cornwell in chronological reading order: synopses, cover art and buy links for Richard Sharpe's full Napoleonic saga.",
+    "Sharpe novels in order, Sharpe reading order, and the Sean Bean TV series: all 24 Bernard Cornwell books with synopses, cover art and buy links.",
   path: "/fiction",
   keywords: [
     "Sharpe novels in order",
+    "Sharpe reading order",
     "Bernard Cornwell books",
     "Richard Sharpe",
-    "Sharpe series",
+    "Sharpe TV series Sean Bean",
     "Sharpe chronological order",
-    "Bernard Cornwell Sharpe",
+    "Sharpe publication order",
   ],
   type: "article",
 });
@@ -336,6 +337,268 @@ export default function FictionPage() {
           ))}
         </div>
 
+        {/* ======================================================== */}
+        {/* WHERE TO START                                            */}
+        {/* ======================================================== */}
+        <div className="mb-16" id="where-to-start">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-8">
+            Where to Start
+          </h2>
+          <p className="text-parchment leading-relaxed font-serif text-lg max-w-3xl mx-auto mb-8 text-center">
+            New to Sharpe? The series was not written in chronological order, so
+            there are two good entry points. Most readers begin with{" "}
+            <strong className="text-gold-pale">Sharpe&rsquo;s Eagle</strong>,
+            which drops you straight into the Peninsular War with Sharpe already
+            an officer. If you prefer to follow his full arc from private soldier
+            upward, start with{" "}
+            <strong className="text-gold-pale">Sharpe&rsquo;s Tiger</strong>,
+            the chronological beginning set in India. Either works; Eagle is the
+            faster introduction, Tiger the longer journey.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card p-6 rounded-sm border-gold/40">
+              <div className="text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">
+                Recommended
+              </div>
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-2">
+                Start with Sharpe&rsquo;s Eagle (1981)
+              </h3>
+              <p className="text-parchment/95 font-serif text-sm leading-relaxed">
+                The first novel Cornwell published. Sharpe is already a
+                lieutenant in the 95th Rifles serving in Spain. You meet
+                Sergeant Harper, see your first volley, and watch Sharpe seize a
+                French Imperial Eagle at the Battle of Talavera. The best
+                introduction to his character and the series&rsquo; voice.
+              </p>
+            </div>
+            <div className="card p-6 rounded-sm">
+              <div className="text-xs uppercase tracking-[0.3em] text-gold/70 mb-2">
+                Chronological
+              </div>
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-2">
+                Start with Sharpe&rsquo;s Tiger (1997)
+              </h3>
+              <p className="text-parchment/95 font-serif text-sm leading-relaxed">
+                The chronological beginning. Sharpe is a private soldier at the
+                siege of Seringapatam in India, 1799. You follow his entire
+                journey from the ranks to a commission. A longer road, but you
+                see every rung of the ladder he climbs.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* ======================================================== */}
+        {/* THE TV SERIES                                             */}
+        {/* ======================================================== */}
+        <div className="mb-16" id="tv-series">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-4">
+            The TV Series
+          </h2>
+          <p className="text-sm uppercase tracking-[0.3em] text-gold/70 text-center mb-8">
+            ITV · 1993 to 2008 · Sean Bean as Richard Sharpe
+          </p>
+          <div className="card p-6 md:p-8 rounded-sm mb-8">
+            <p className="text-parchment leading-relaxed font-serif text-lg mb-5">
+              Sixteen television films were produced by ITV between 1993 and
+              2008, filmed largely on location in Turkey, Portugal and India.
+              Paul McGann was originally cast as Sharpe but was injured during
+              early filming; Sean Bean replaced him and made the role his own.
+              Cornwell later rewrote Sharpe&rsquo;s backstory to give him
+              Yorkshire origins, matching Bean&rsquo;s accent and screen
+              presence.
+            </p>
+            <p className="text-parchment/95 font-serif text-sm">
+              Streaming availability changes frequently. Search your preferred
+              platform for &ldquo;Sharpe&rdquo; or check
+              physical media retailers for the complete DVD box set.
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm font-serif">
+              <thead>
+                <tr className="border-b border-gold/30">
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Film
+                  </th>
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Year
+                  </th>
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Based on
+                  </th>
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Campaign / Battle
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-parchment/95">
+                {[
+                  ["Sharpe's Rifles", "1993", "Sharpe's Rifles", "Retreat to Corunna, 1809"],
+                  ["Sharpe's Eagle", "1993", "Sharpe's Eagle", "Battle of Talavera, 1809"],
+                  ["Sharpe's Company", "1994", "Sharpe's Company", "Siege of Badajoz, 1812"],
+                  ["Sharpe's Enemy", "1994", "Sharpe's Enemy", "Adrados, Christmas 1812"],
+                  ["Sharpe's Honour", "1994", "Sharpe's Honour", "Battle of Vitoria, 1813"],
+                  ["Sharpe's Gold", "1995", "Sharpe's Gold", "Portugal, 1810"],
+                  ["Sharpe's Battle", "1995", "Sharpe's Battle", "Fuentes de Oñoro, 1811"],
+                  ["Sharpe's Sword", "1995", "Sharpe's Sword", "Battle of Salamanca, 1812"],
+                  ["Sharpe's Regiment", "1996", "Sharpe's Regiment", "England, 1813"],
+                  ["Sharpe's Siege", "1996", "Sharpe's Siege", "France, 1814"],
+                  ["Sharpe's Mission", "1996", "Original screenplay", "France, 1813"],
+                  ["Sharpe's Revenge", "1997", "Sharpe's Revenge", "Toulouse / Naples, 1814"],
+                  ["Sharpe's Justice", "1997", "Original screenplay", "England, 1814"],
+                  ["Sharpe's Waterloo", "1997", "Sharpe's Waterloo", "Battle of Waterloo, 1815"],
+                  ["Sharpe's Challenge", "2006", "Original screenplay", "India, 1803"],
+                  ["Sharpe's Peril", "2008", "Original screenplay", "India, 1803"],
+                ].map(([film, year, source, battle]) => (
+                  <tr key={film} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
+                    <td className="py-2.5 px-3 text-gold-pale">{film}</td>
+                    <td className="py-2.5 px-3">{year}</td>
+                    <td className="py-2.5 px-3 italic text-burgundy-bright">{source}</td>
+                    <td className="py-2.5 px-3">{battle}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* ======================================================== */}
+        {/* NOVELS AND THEIR REAL BATTLES                             */}
+        {/* ======================================================== */}
+        <div className="mb-16" id="novels-and-battles">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-8">
+            Novels and Their Real Battles
+          </h2>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm font-serif">
+              <thead>
+                <tr className="border-b border-gold/30">
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Novel
+                  </th>
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    Real Battle / Campaign
+                  </th>
+                  <th className="text-left py-3 px-3 font-display text-xs uppercase tracking-widest text-gold/80">
+                    What Cornwell fictionalised
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-parchment/95">
+                {[
+                  ["Sharpe's Tiger", "Siege of Seringapatam, 1799", "Real siege; fictional mission inside the fortress"],
+                  ["Sharpe's Triumph", "Battle of Assaye, 1803", "Real battle; fictional act earning Sharpe's commission"],
+                  ["Sharpe's Fortress", "Siege of Gawilghur, 1803", "Real siege; fictional officer rivalries"],
+                  ["Sharpe's Trafalgar", "Battle of Trafalgar, 1805", "Real battle; Sharpe placed aboard a merchantman"],
+                  ["Sharpe's Prey", "Bombardment of Copenhagen, 1807", "Real event; fictional espionage subplot"],
+                  ["Sharpe's Rifles", "Retreat to Corunna, 1809", "Real retreat; fictional relic-recovery mission"],
+                  ["Sharpe's Havoc", "Crossing of the Douro, 1809", "Real campaign; fictional rescue plot"],
+                  ["Sharpe's Eagle", "Battle of Talavera, 1809", "Real battle; fictional capture of the Eagle"],
+                  ["Sharpe's Gold", "Lines of Torres Vedras, 1810", "Real campaign; fictional treasure hunt"],
+                  ["Sharpe's Escape", "Battle of Bussaco, 1810", "Real battle; fictional civilian antagonists"],
+                  ["Sharpe's Fury", "Battle of Barrosa, 1811", "Real battle; fictional Cádiz intrigue"],
+                  ["Sharpe's Battle", "Fuentes de Oñoro, 1811", "Real battle; fictional Irish company"],
+                  ["Sharpe's Company", "Siege of Badajoz, 1812", "Real siege; Hakeswill subplot fictional"],
+                  ["Sharpe's Command", "Portuguese border, 1812", "Real campaign; fictional covert mission"],
+                  ["Sharpe's Sword", "Battle of Salamanca, 1812", "Real battle; fictional French swordsman"],
+                  ["Sharpe's Enemy", "Winter 1812", "Fictional battle at Adrados; real setting"],
+                  ["Sharpe's Honour", "Battle of Vitoria, 1813", "Real battle; fictional framing plot"],
+                  ["Sharpe's Regiment", "England, 1813", "Real recruiting system; fictional crimping racket"],
+                  ["Sharpe's Siege", "France, 1814", "Real final campaign; fictional coastal fort"],
+                  ["Sharpe's Revenge", "Battle of Toulouse, 1814", "Real battle; fictional theft accusation"],
+                  ["Sharpe's Waterloo", "Battle of Waterloo, 1815", "Real battle; Sharpe as fictional liaison officer"],
+                  ["Sharpe's Assassin", "Occupation of Paris, 1815", "Real occupation; fictional assassination plot"],
+                  ["Sharpe's Storm", "Invasion of southern France, 1813", "Real campaign; fictional Pyrenean mission"],
+                  ["Sharpe's Devil", "Chilean War of Independence, 1820", "Real war; fictional encounter with Cochrane"],
+                ].map(([novel, battle, fiction]) => (
+                  <tr key={novel} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
+                    <td className="py-2.5 px-3 text-gold-pale">{novel}</td>
+                    <td className="py-2.5 px-3">{battle}</td>
+                    <td className="py-2.5 px-3 italic text-parchment/85">{fiction}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* ======================================================== */}
+        {/* PUBLICATION vs CHRONOLOGICAL ORDER                        */}
+        {/* ======================================================== */}
+        <div className="mb-16" id="reading-order">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-4">
+            Publication Order vs Chronological Order
+          </h2>
+          <p className="text-parchment leading-relaxed font-serif text-lg max-w-3xl mx-auto mb-8 text-center">
+            Cornwell wrote the Peninsular War novels first, beginning with
+            Sharpe&rsquo;s Eagle in 1981. He then went back to write the India
+            prequels (Tiger, Triumph, Fortress) in the late 1990s, and
+            continued to fill gaps in the chronology with later books. The
+            result: publication order and story order are quite different.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="card p-6 rounded-sm">
+              <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-4 text-center">
+                Publication Order
+              </h3>
+              <ol className="space-y-1 text-sm font-serif text-parchment/95">
+                {[
+                  "Sharpe's Eagle (1981)",
+                  "Sharpe's Gold (1981)",
+                  "Sharpe's Company (1982)",
+                  "Sharpe's Sword (1983)",
+                  "Sharpe's Enemy (1984)",
+                  "Sharpe's Honour (1985)",
+                  "Sharpe's Regiment (1986)",
+                  "Sharpe's Siege (1987)",
+                  "Sharpe's Rifles (1988)",
+                  "Sharpe's Revenge (1989)",
+                  "Sharpe's Waterloo (1990)",
+                  "Sharpe's Devil (1992)",
+                  "Sharpe's Battle (1995)",
+                  "Sharpe's Tiger (1997)",
+                  "Sharpe's Triumph (1998)",
+                  "Sharpe's Fortress (1999)",
+                  "Sharpe's Trafalgar (2000)",
+                  "Sharpe's Prey (2001)",
+                  "Sharpe's Havoc (2003)",
+                  "Sharpe's Escape (2004)",
+                  "Sharpe's Fury (2006)",
+                  "Sharpe's Assassin (2021)",
+                  "Sharpe's Command (2023)",
+                  "Sharpe's Storm (2024)",
+                ].map((t, i) => (
+                  <li key={t} className="flex gap-2">
+                    <span className="text-gold/70 w-6 text-right shrink-0">
+                      {i + 1}.
+                    </span>
+                    {t}
+                  </li>
+                ))}
+              </ol>
+            </div>
+            <div className="card p-6 rounded-sm border-gold/40">
+              <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-4 text-center">
+                Chronological Order (Sharpe&rsquo;s life)
+              </h3>
+              <ol className="space-y-1 text-sm font-serif text-parchment/95">
+                {books.map((b, i) => (
+                  <li key={b.title} className="flex gap-2">
+                    <span className="text-gold/70 w-6 text-right shrink-0">
+                      {i + 1}.
+                    </span>
+                    {b.title}
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        {/* ======================================================== */}
+        {/* THE CHRONICLE (existing book grid)                        */}
+        {/* ======================================================== */}
         <div className="mb-10 text-center">
           <div className="ornament text-gold/70 mb-4">
             <span>❦</span>
