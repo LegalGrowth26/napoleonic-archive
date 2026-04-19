@@ -43,6 +43,7 @@ interface MajorCharacter {
   books: string;
   description: string;
   fate?: string;
+  novelVsTv?: string;
 }
 
 const majorCharacters: MajorCharacter[] = [
@@ -72,6 +73,8 @@ const majorCharacters: MajorCharacter[] = [
     description:
       "The most loathsome villain in the series. A former soldier in the 33rd Foot who tormented the young Private Sharpe in India. Survived a botched hanging as a child, which left him with a facial twitch and a conviction that he cannot be killed. A bully, thief, rapist and murderer who returns to plague Sharpe in the Peninsular War. He is responsible for the death of Teresa Moreno.",
     fate: "Killed by Sharpe. Executed by firing squad in Sharpe's Enemy.",
+    novelVsTv:
+      "In the novel Sharpe's Enemy, Hakeswill is tried and sentenced to death by firing squad. Sharpe commands the execution and delivers the coup de grâce, cold, formal, and deliberate. In the 1994 ITV television film, the death is more personal and dramatic, with Sharpe shooting Hakeswill directly in a confrontation rather than as a formal execution. The change was made for television to give Sharpe a more emotionally direct moment of revenge against his longest-running enemy.",
   },
   {
     name: "Major Michael Hogan",
@@ -222,6 +225,21 @@ export default function CharactersPage() {
                       Fate
                     </span>
                     {c.fate}
+                  </p>
+                </div>
+              )}
+              {c.novelVsTv && (
+                <div className="mt-4 border border-burgundy-bright/40 rounded-sm bg-burgundy-deep/20 p-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-burgundy-bright font-display text-sm" aria-hidden="true">
+                      ❦
+                    </span>
+                    <span className="font-display text-xs uppercase tracking-[0.25em] text-burgundy-bright">
+                      Novel vs TV
+                    </span>
+                  </div>
+                  <p className="text-sm text-parchment/95 font-serif leading-relaxed">
+                    {c.novelVsTv}
                   </p>
                 </div>
               )}
