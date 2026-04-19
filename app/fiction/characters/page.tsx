@@ -622,13 +622,288 @@ export default function CharactersPage() {
                 </ul>
               </div>
             </details>
+            {/* 17. Sharpe's Honour */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    17. Sharpe&rsquo;s Honour
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Vitoria, 1813
+                  </span>
+                </div>
+                <a href="https://amzn.to/3OJTLmk" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Major Pierre Ducos</span> (French intelligence officer; main villain, returns in later novels) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">El Matarife</span> (Spanish guerrilla leader, brutal and treacherous)</li>
+                  <li><span className="text-gold-pale">Helene Leroux / La Marquesa</span> (French spy, wife of Colonel Leroux from Sharpe&rsquo;s Sword)</li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 18. Sharpe's Regiment */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    18. Sharpe&rsquo;s Regiment
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    England &amp; Pyrenees, 1813
+                  </span>
+                </div>
+                <a href="https://amzn.to/4cdNMzg" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Jane Gibbons</span> (first appearance; young Englishwoman who becomes Sharpe&rsquo;s second wife) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lord Fenner</span> (War Office villain running the crimping racket)</li>
+                  <li><span className="text-gold-pale">The Prince of Wales</span> (minor appearance) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 19. Sharpe's Siege */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    19. Sharpe&rsquo;s Siege
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    France · Atlantic coast, 1814
+                  </span>
+                </div>
+                <a href="https://amzn.to/4tifrFi" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Captain Bampfylde</span> (Royal Navy officer; incompetent and treacherous)</li>
+                  <li><span className="text-gold-pale">Cornelius Killick</span> (American privateer captain)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 20. Sharpe's Revenge */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    20. Sharpe&rsquo;s Revenge
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    France &amp; Naples, 1814
+                  </span>
+                </div>
+                <a href="https://amzn.to/484GHP5" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Jane Sharpe</span> (leaves Sharpe, takes his money) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Major Pierre Ducos</span> (returns; frames Sharpe for theft) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lucille Castineau</span> (first appearance; French widow, becomes Sharpe&rsquo;s companion) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Captain William Frederickson</span> (Rifle officer, Sharpe&rsquo;s ally)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 21. Sharpe's Waterloo */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    21. Sharpe&rsquo;s Waterloo
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Belgium · Waterloo, 1815
+                  </span>
+                </div>
+                <a href="https://amzn.to/4cMW7df" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Lieutenant-Colonel, liaison officer) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">The Prince of Orange</span> (commands the Allied I Corps) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Napoleon Bonaparte</span> (glimpsed at a distance) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                  <li><span className="text-gold-pale">Lord John Rossendale</span> (Jane&rsquo;s lover)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 22. Sharpe's Assassin */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    22. Sharpe&rsquo;s Assassin
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Paris, 1815
+                  </span>
+                </div>
+                <a href="https://amzn.to/3On32AM" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lucille Castineau</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Major Pierre Ducos</span> (final appearance) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Henri Lassan</span> (Lucille&rsquo;s brother)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 23. Sharpe's Storm */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    23. Sharpe&rsquo;s Storm
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Southern France, 1813
+                  </span>
+                </div>
+                <a href="https://amzn.to/4mztR11" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 24. Sharpe's Devil */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    24. Sharpe&rsquo;s Devil
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Chile, 1820 to 1821
+                  </span>
+                </div>
+                <a href="https://amzn.to/4tPFDXB" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lord Cochrane</span> (commanding Chilean independence navy) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                  <li><span className="text-gold-pale">Don Blas Vivar</span> (returns from Sharpe&rsquo;s Rifles; now a prisoner in Chile) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Napoleon Bonaparte</span> (on St Helena; glimpsed in the final chapter) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                </ul>
+              </div>
+            </details>
           </div>
+        </div>
+      </section>
 
-          <p className="mt-10 text-center text-parchment/95 font-serif italic text-sm">
-            Books 17 to 24 will be added in a future update.
+      {/* ============================================================ */}
+      {/* A-Z CHARACTER INDEX                                          */}
+      {/* ============================================================ */}
+      <section id="index" className="max-w-5xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center mb-10">
+          <div className="ornament text-gold/70 mb-4">
+            <span>◈</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+            A-Z Character Index
+          </h2>
+          <p className="mt-3 text-sm text-parchment/95 font-serif italic">
+            Major named characters across all 24 novels, with the book they
+            first appear in.
           </p>
+        </div>
 
-          <div className="mt-8 flex flex-wrap gap-4 justify-center">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-1 text-sm font-serif">
+          {[
+            ["Astrid Skovgaard", "Sharpe's Prey"],
+            ["Bampfylde, Captain", "Sharpe's Siege"],
+            ["Blas Vivar, Captain (Don)", "Sharpe's Rifles"],
+            ["Chase, Captain Joel", "Sharpe's Trafalgar"],
+            ["Christopher, Colonel", "Sharpe's Havoc"],
+            ["Cochrane, Lord", "Sharpe's Devil"],
+            ["Dodd, William", "Sharpe's Triumph"],
+            ["Dubreton, Colonel", "Sharpe's Enemy"],
+            ["Ducos, Major Pierre", "Sharpe's Honour"],
+            ["El Católico", "Sharpe's Gold"],
+            ["El Matarife", "Sharpe's Honour"],
+            ["Ferragus", "Sharpe's Escape"],
+            ["Frederickson, Captain William", "Sharpe's Revenge"],
+            ["Gibbons, Jane", "Sharpe's Regiment"],
+            ["Gibbons, Lieutenant Christian", "Sharpe's Eagle"],
+            ["Graham, General Thomas", "Sharpe's Fury"],
+            ["Hakeswill, Sergeant Obadiah", "Sharpe's Tiger"],
+            ["Hale, Lady Grace", "Sharpe's Trafalgar"],
+            ["Hale, Lord William", "Sharpe's Trafalgar"],
+            ["Harper, Sergeant Patrick", "Sharpe's Rifles"],
+            ["Hogan, Major Michael", "Sharpe's Eagle"],
+            ["Killick, Cornelius", "Sharpe's Siege"],
+            ["Lassan, Henri", "Sharpe's Assassin"],
+            ["Lavisser, Captain John", "Sharpe's Prey"],
+            ["Leroux, Colonel Philippe", "Sharpe's Sword"],
+            ["Leroux, Helene (La Marquesa)", "Sharpe's Honour"],
+            ["Loup, Brigadier", "Sharpe's Battle"],
+            ["Lucille Castineau", "Sharpe's Revenge"],
+            ["Mary Bickerstaff", "Sharpe's Tiger"],
+            ["McCandless, Colonel", "Sharpe's Tiger"],
+            ["Moore, Sir John", "Sharpe's Rifles"],
+            ["Moreno, Teresa", "Sharpe's Gold"],
+            ["Napoleon Bonaparte", "Sharpe's Waterloo"],
+            ["Pot-au-Feu", "Sharpe's Enemy"],
+            ["Price, Lieutenant", "Sharpe's Escape"],
+            ["Prince of Orange", "Sharpe's Waterloo"],
+            ["Prince of Wales", "Sharpe's Regiment"],
+            ["Rossendale, Lord John", "Sharpe's Waterloo"],
+            ["Runciman, Lord", "Sharpe's Battle"],
+            ["Sarsfield, Father", "Sharpe's Fury"],
+            ["Savage, Kate", "Sharpe's Havoc"],
+            ["Sevajee, Syud", "Sharpe's Fortress"],
+            ["Sharpe, Richard", "Sharpe's Tiger"],
+            ["Simmerson, Sir Henry", "Sharpe's Eagle"],
+            ["Skovgaard, Ole", "Sharpe's Prey"],
+            ["Spears, Lord", "Sharpe's Sword"],
+            ["Stevenson, Colonel", "Sharpe's Fortress"],
+            ["Tippoo Sultan", "Sharpe's Tiger"],
+            ["Villeneuve, Admiral", "Sharpe's Trafalgar"],
+            ["Wellington, Duke of", "Sharpe's Tiger"],
+          ].map(([name, book]) => (
+            <div
+              key={name}
+              className="flex justify-between items-baseline py-1.5 border-b border-gold/10"
+            >
+              <span className="text-gold-pale">{name}</span>
+              <span className="text-parchment/85 text-xs ml-2 whitespace-nowrap">
+                {book}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* FOOTER LINKS */}
+      <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
+        <div className="max-w-4xl mx-auto px-6 py-12">
+          <div className="flex flex-wrap gap-4 justify-center">
             <Link
               href="/fiction"
               className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
