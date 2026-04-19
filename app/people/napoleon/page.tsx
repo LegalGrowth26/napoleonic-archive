@@ -183,7 +183,363 @@ export default function NapoleonPage() {
         </div>
       </section>
 
-      {/* Sections 4-12 follow in subsequent updates */}
+      {/* ============================================================ */}
+      {/* 4. THE CAMPAIGNS                                             */}
+      {/* ============================================================ */}
+      <section id="campaigns" className="max-w-5xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center mb-12">
+          <div className="ornament text-gold/70 mb-4">
+            <span>⚔</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+            The Campaigns
+          </h2>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-8 md:left-12 top-0 bottom-0 w-px bg-gradient-to-b from-gold/0 via-gold/40 to-gold/0" />
+
+          <ol className="space-y-8">
+            {[
+              {
+                date: "1796-97",
+                name: "First Italian Campaign",
+                outcome: "Victory",
+                link: "/battles#battle-marengo",
+                body: "General Bonaparte, aged twenty-six, took command of a starving, demoralised Army of Italy and in a year defeated the Austrians and Piedmontese in a sequence of battles: Montenotte, Lodi, Arcole, Rivoli. He dictated terms to Austria and returned to Paris a national hero.",
+              },
+              {
+                date: "1798-99",
+                name: "Egyptian Campaign",
+                outcome: "Strategic failure",
+                body: "Bonaparte invaded Egypt with 40,000 men, defeated the Mamluks at the Battle of the Pyramids, and brought a corps of scientists who produced the Description de l'Egypte. But Nelson destroyed his fleet at the Nile, stranding the army. Bonaparte abandoned his troops and sailed home to seize power in France.",
+              },
+              {
+                date: "1800",
+                name: "Marengo",
+                outcome: "Narrow French victory",
+                link: "/battles#battle-marengo",
+                body: "Now First Consul, Bonaparte crossed the Alps and fought the Austrians at Marengo in northern Italy. The battle was nearly lost until Desaix's division arrived in the afternoon and Kellermann's cavalry charge shattered the Austrian line. Desaix was killed; the victory secured Bonaparte's political position.",
+              },
+              {
+                date: "1805",
+                name: "Austerlitz",
+                outcome: "Crushing victory",
+                link: "/battles#battle-austerlitz",
+                body: "The Battle of the Three Emperors. Napoleon drew the Allies off the Pratzen Heights, then seized the ground with Soult's corps and destroyed the Russo-Austrian army. It was his most complete tactical triumph and forced Austria out of the Third Coalition.",
+              },
+              {
+                date: "1806",
+                name: "Jena-Auerstedt",
+                outcome: "Decisive victory",
+                link: "/battles#battle-jena-auerstedt",
+                body: "Two battles fought on the same day destroyed the Prussian army. Davout's single corps broke the main Prussian force at Auerstedt while Napoleon smashed the secondary army at Jena. Prussia collapsed in a fortnight; Napoleon entered Berlin.",
+              },
+              {
+                date: "1807",
+                name: "Friedland",
+                outcome: "French victory",
+                body: "Napoleon defeated the Russians at Friedland in East Prussia, ending the War of the Fourth Coalition. The resulting Treaty of Tilsit, signed on a raft in the River Niemen, divided Europe between Napoleon and Tsar Alexander. It was the high-water mark of the Empire.",
+              },
+              {
+                date: "1808-14",
+                name: "Peninsular War",
+                outcome: "Catastrophic failure",
+                link: "/battles",
+                body: "Napoleon invaded Spain to enforce the Continental System and placed his brother Joseph on the throne. The resulting guerrilla war and British intervention under Wellington bled France of 300,000 casualties over six years. Napoleon himself fought in Spain only briefly in late 1808 and never returned.",
+              },
+              {
+                date: "1812",
+                name: "Russian Campaign",
+                outcome: "Catastrophe",
+                body: "Napoleon invaded Russia with over 600,000 men, the largest army Europe had seen. He fought a costly battle at Borodino, entered Moscow to find it burning, and was forced into a winter retreat that destroyed the Grande Armée. Fewer than 100,000 men returned. It was the beginning of the end.",
+              },
+              {
+                date: "1813",
+                name: "Leipzig",
+                outcome: "Decisive defeat",
+                link: "/battles#battle-leipzig",
+                body: "The Battle of the Nations. Half a million men fought over four days around the Saxon city. Napoleon was outnumbered and outflanked by the combined armies of Russia, Prussia, Austria and Sweden. The Confederation of the Rhine collapsed; Napoleon fell back to France with a shattered army.",
+              },
+              {
+                date: "1814",
+                name: "Abdication and Elba",
+                outcome: "Exile",
+                body: "After a brilliant but doomed defensive campaign in France, Napoleon's marshals refused to continue. He abdicated on 6 April 1814, was granted sovereignty of the island of Elba, and watched the Bourbons return to Paris. He would remain on Elba for less than a year.",
+              },
+              {
+                date: "1815",
+                name: "The Hundred Days and Waterloo",
+                outcome: "Final defeat",
+                link: "/battles/waterloo",
+                body: "Napoleon escaped from Elba, marched on Paris, and rebuilt an army in a hundred days. He defeated the Prussians at Ligny but was destroyed at Waterloo by Wellington and Blücher on 18 June 1815. He abdicated again four days later and surrendered to the British. He would never return to France.",
+              },
+            ].map((c) => (
+              <li key={c.date} className="relative pl-20 md:pl-28">
+                <div className="absolute left-0 top-0 flex items-center justify-center w-16 md:w-24 h-8 rounded-sm bg-burgundy border border-gold/60 text-gold-pale font-display text-sm tracking-wider">
+                  {c.date}
+                </div>
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1 mb-2">
+                  <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider">
+                    {c.link ? (
+                      <Link href={c.link} className="hover:text-gold transition">
+                        {c.name}
+                      </Link>
+                    ) : (
+                      c.name
+                    )}
+                  </h3>
+                  <span
+                    className={`text-xs uppercase tracking-[0.2em] px-2 py-0.5 rounded-sm border ${
+                      c.outcome.includes("ictory")
+                        ? "border-gold/50 text-gold-pale"
+                        : c.outcome.includes("failure") || c.outcome.includes("atastrophe") || c.outcome.includes("defeat")
+                        ? "border-burgundy-bright/50 text-burgundy-bright"
+                        : "border-gold/30 text-parchment/85"
+                    }`}
+                  >
+                    {c.outcome}
+                  </span>
+                </div>
+                <p className="text-parchment leading-relaxed font-serif">
+                  {c.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 5. THE GENERAL                                               */}
+      {/* ============================================================ */}
+      <section
+        id="the-general"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            The General
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              Napoleon&rsquo;s military system rested on speed, concentration
+              and aggression. He organised his army into self-contained corps,
+              each with its own infantry, cavalry and artillery, capable of
+              marching independently and fighting alone until reinforced. This
+              allowed him to advance on a broad front, screening his
+              intentions, and then concentrate overwhelming force at the
+              decisive point faster than his opponents could react. The
+              strategy of the central position, his signature approach, meant
+              placing his army between two enemy forces and defeating each in
+              turn before they could unite.
+            </p>
+            <p>
+              He was a superb reader of terrain, choosing ground that
+              multiplied his advantages: the Pratzen Heights at Austerlitz,
+              the crossing at Arcole, the reverse slopes he used at Rivoli.
+              His artillery background gave him an instinctive understanding
+              of firepower and its concentration. He drove his men hard on the
+              march but rewarded them with victory, promotion and plunder. His
+              personal energy was extraordinary: he could work eighteen hours a
+              day, dictate orders to multiple secretaries simultaneously, and
+              retain the details of every regiment&rsquo;s strength and
+              position.
+            </p>
+            <p>
+              The counterarguments are substantial. After about 1807, some
+              historians argue, his generalship became more rigid: he relied
+              increasingly on frontal assault rather than manoeuvre, and his
+              battles grew costlier. He struggled to delegate effectively,
+              appointing marshals who excelled as corps commanders but faltered
+              when given independent authority (Ney at Quatre Bras, Grouchy
+              after Ligny). His strategic overreach in Spain and Russia, where
+              he committed armies to campaigns he could not supervise in
+              person, was catastrophic. Whether this represents a decline in
+              ability or simply the impossibility of controlling an empire that
+              stretched from Lisbon to Moscow remains debated by military
+              historians. What is not disputed is that at his best, between
+              1796 and 1809, he was the most formidable battlefield commander
+              in European history.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 6. THE EMPEROR                                               */}
+      {/* ============================================================ */}
+      <section id="the-emperor" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+          The Emperor
+        </h2>
+        <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+          <p>
+            The Civil Code of 1804 remains Napoleon&rsquo;s most durable
+            achievement. It replaced the patchwork of feudal, Roman and
+            customary law across France with a single, rational legal system
+            guaranteeing equality before the law, property rights and secular
+            authority over marriage and civil status. Versions of the Code
+            still form the basis of law in France, Belgium, the Netherlands,
+            Italy and much of Latin America.
+          </p>
+          <p>
+            He signed a Concordat with Pope Pius VII in 1801, restoring
+            Catholicism as the majority religion of France while keeping the
+            Church subordinate to the state. He reorganised French education
+            around the lyc&eacute;e system and the grandes &eacute;coles. He
+            created the Legion of Honour, the Bank of France and a
+            centralised prefectoral administration. He placed his brothers on
+            the thrones of Spain, Holland, Naples and Westphalia, building a
+            dynasty that lasted only as long as his armies could sustain it.
+            The Continental System, his attempt to strangle British trade by
+            closing European ports, damaged France&rsquo;s own economy and
+            drove him into the disastrous wars in Spain and Russia.
+          </p>
+          <p>
+            His relationship with Josephine, his first wife, was passionate
+            and turbulent. He divorced her in 1809 because she could not
+            produce an heir, and married the Austrian Archduchess Marie
+            Louise, who bore him a son. His marshals served him with varying
+            degrees of loyalty and ability; he rewarded them with titles,
+            estates and wealth, but never fully trusted any of them.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 7. THE PENINSULAR WAR — HIS GREATEST MISTAKE                */}
+      {/* ============================================================ */}
+      <section
+        id="peninsular"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            The Peninsular War: His Greatest Mistake
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              In 1808 Napoleon deposed the Spanish Bourbons and placed his
+              brother Joseph on the throne of Spain. He expected a swift
+              political settlement. Instead he provoked a national uprising,
+              a six-year guerrilla war that tied down over 300,000 French
+              troops, and gave Britain, under Wellington, a continental
+              foothold from which to bleed France year after year.
+            </p>
+            <p>
+              Napoleon fought in Spain only once, in the winter campaign of
+              1808, when he smashed the Spanish regular armies and chased the
+              British to Corunna. He then left for Austria and never returned.
+              He left the war to his marshals, who quarrelled among themselves
+              and could not suppress the guerrillas or defeat Wellington. The
+              result was a slow, grinding attrition that drained French
+              manpower and morale. Napoleon later called it his &ldquo;Spanish
+              ulcer.&rdquo;
+            </p>
+            <p>
+              This is Bernard Cornwell&rsquo;s war. The{" "}
+              <Link
+                href="/fiction"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Sharpe novels
+              </Link>{" "}
+              follow a fictional rifleman through the Peninsular campaigns
+              from 1809 to 1814, fighting alongside Wellington&rsquo;s real
+              army at{" "}
+              <Link
+                href="/battles#battle-talavera"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Talavera
+              </Link>
+              ,{" "}
+              <Link
+                href="/battles#battle-badajoz"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Badajoz
+              </Link>
+              ,{" "}
+              <Link
+                href="/battles#battle-salamanca"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Salamanca
+              </Link>{" "}
+              and{" "}
+              <Link
+                href="/battles#battle-vitoria"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Vitoria
+              </Link>
+              . Napoleon is the shadow over every page: the absent Emperor
+              whose strategic error created the war Sharpe fights.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 8. THE FALL                                                  */}
+      {/* ============================================================ */}
+      <section id="the-fall" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+          The Fall
+        </h2>
+        <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+          <p>
+            The Russian campaign of 1812 destroyed the Grande Arm&eacute;e.
+            Napoleon entered{" "}
+            <Link
+              href="/battles#battle-borodino"
+              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+            >
+              Moscow after Borodino
+            </Link>{" "}
+            and found it burning. The retreat through the Russian winter
+            killed hundreds of thousands through cold, starvation and
+            Cossack pursuit. At{" "}
+            <Link
+              href="/battles#battle-leipzig"
+              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+            >
+              Leipzig in 1813
+            </Link>{" "}
+            a coalition of all the European powers overwhelmed him. He
+            abdicated in April 1814 and was exiled to the island of Elba.
+          </p>
+          <p>
+            He escaped in March 1815, marched on Paris, and rebuilt an army
+            in a hundred days. He defeated the Prussians at Ligny but was
+            destroyed at{" "}
+            <Link
+              href="/battles/waterloo"
+              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+            >
+              Waterloo
+            </Link>{" "}
+            on 18 June 1815 by the combined forces of Wellington and
+            Bl&uuml;cher. He surrendered to the British and was exiled to
+            Saint Helena in the South Atlantic, where he spent his last six
+            years dictating his memoirs to the Comte de Las Cases.
+          </p>
+          <p>
+            The resulting M&eacute;morial de Sainte-H&eacute;l&egrave;ne,
+            published in 1823, was Napoleon&rsquo;s final campaign: the
+            construction of his own legend. In it he presented himself as the
+            champion of the Revolution, the liberator of Europe, the man
+            betrayed by his marshals and defeated only by the Russian winter
+            and British gold. The Memorial sold enormously and shaped the
+            Napoleonic myth for the rest of the nineteenth century. He died
+            on 5 May 1821, aged fifty-one.
+          </p>
+        </div>
+      </section>
+
+      {/* Sections 9-12 follow in subsequent updates */}
     </>
   );
 }
