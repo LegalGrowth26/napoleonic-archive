@@ -230,13 +230,217 @@ export default function CharactersPage() {
         </div>
       </section>
 
-      {/* FURTHER SECTIONS PLACEHOLDER */}
+      {/* CHARACTERS BY BOOK (1-8) */}
       <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
-        <div className="max-w-4xl mx-auto px-6 py-16 text-center">
-          <p className="text-parchment/95 font-serif italic">
-            Per-book character listings and an A-Z index are planned for a
-            future update.
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <div className="text-center mb-10">
+            <div className="ornament text-gold/70 mb-4">
+              <span>⚔</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+              Characters by Book
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold/70">
+              Books 1 to 8 · India, Trafalgar, Copenhagen, Spain
+            </p>
+          </div>
+
+          <div className="space-y-4">
+            {/* 1. Sharpe's Tiger */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    1. Sharpe&rsquo;s Tiger
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    India · Seringapatam, 1799
+                  </span>
+                </div>
+                <a href="https://amzn.to/3QdRVuq" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Private, 33rd Foot) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Obadiah Hakeswill</span> (33rd Foot, Sharpe&rsquo;s tormentor) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Colonel McCandless</span> (East India Company intelligence officer)</li>
+                  <li><span className="text-gold-pale">The Tippoo Sultan</span> (ruler of Mysore) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                  <li><span className="text-gold-pale">Colonel Arthur Wellesley</span> (33rd Foot, future Duke of Wellington) <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Mary Bickerstaff</span> (soldier&rsquo;s widow, Sharpe&rsquo;s lover in this novel)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 2. Sharpe's Triumph */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    2. Sharpe&rsquo;s Triumph
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    India · Assaye, 1803
+                  </span>
+                </div>
+                <a href="https://amzn.to/3OjyIa9" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Sergeant, 33rd Foot) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Colonel McCandless</span> (intelligence officer, returns from Tiger)</li>
+                  <li><span className="text-gold-pale">William Dodd</span> (renegade British officer serving the Mahrattas, main villain)</li>
+                  <li><span className="text-gold-pale">Major-General Arthur Wellesley</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Hakeswill</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 3. Sharpe's Fortress */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    3. Sharpe&rsquo;s Fortress
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    India · Gawilghur, 1803
+                  </span>
+                </div>
+                <a href="https://amzn.to/3QtV1dP" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (newly commissioned Ensign) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Hakeswill</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Colonel Stevenson</span> (commands one of Wellesley&rsquo;s columns)</li>
+                  <li><span className="text-gold-pale">Syud Sevajee</span> (Mahratta ally, guides the British assault on Gawilghur)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 4. Sharpe's Trafalgar */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    4. Sharpe&rsquo;s Trafalgar
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    At sea, 1805
+                  </span>
+                </div>
+                <a href="https://amzn.to/4tTl50t" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Lieutenant, homeward bound from India) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Lord William Hale</span> (aristocratic villain aboard the East Indiaman)</li>
+                  <li><span className="text-gold-pale">Lady Grace Hale</span> (Lord William&rsquo;s wife, Sharpe&rsquo;s lover; dies)</li>
+                  <li><span className="text-gold-pale">Captain Joel Chase</span> (Royal Navy frigate captain, Sharpe&rsquo;s ally)</li>
+                  <li><span className="text-gold-pale">Admiral Villeneuve</span> (commander of the Franco-Spanish fleet) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 5. Sharpe's Prey */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    5. Sharpe&rsquo;s Prey
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Denmark · Copenhagen, 1807
+                  </span>
+                </div>
+                <a href="https://amzn.to/3Omyi2O" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Lieutenant, 95th Rifles) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Captain John Lavisser</span> (main villain, traitor working for the Danes)</li>
+                  <li><span className="text-gold-pale">Ole Skovgaard</span> (Danish merchant sympathetic to the British)</li>
+                  <li><span className="text-gold-pale">Astrid Skovgaard</span> (Ole&rsquo;s daughter)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 6. Sharpe's Rifles */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    6. Sharpe&rsquo;s Rifles
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Retreat to Corunna, 1809
+                  </span>
+                </div>
+                <a href="https://amzn.to/4cSwN4L" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Lieutenant, 95th Rifles) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> (first appearance; Sharpe&rsquo;s future RSM and closest friend) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Captain Blas Vivar</span> (Spanish officer escorting a sacred relic behind French lines)</li>
+                  <li><span className="text-gold-pale">Sir John Moore</span> (commander of the British retreat) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 7. Sharpe's Havoc */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    7. Sharpe&rsquo;s Havoc
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Portugal · Oporto, 1809
+                  </span>
+                </div>
+                <a href="https://amzn.to/3ObcY09" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Colonel Christopher</span> (British officer turned traitor, main villain)</li>
+                  <li><span className="text-gold-pale">Kate Savage</span> (young Englishwoman stranded in Portugal)</li>
+                </ul>
+              </div>
+            </details>
+
+            {/* 8. Sharpe's Eagle */}
+            <details className="card rounded-sm group">
+              <summary className="flex flex-wrap items-center justify-between gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <div>
+                  <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider inline">
+                    8. Sharpe&rsquo;s Eagle
+                  </h3>
+                  <span className="text-xs text-parchment/85 ml-3 font-serif">
+                    Spain · Talavera, 1809
+                  </span>
+                </div>
+                <a href="https://amzn.to/4sXbzbX" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                <ul className="space-y-2 text-sm font-serif text-parchment/95">
+                  <li><span className="text-gold-pale">Richard Sharpe</span> (Captain, attached to the South Essex) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sir Henry Simmerson</span> (incompetent colonel of the South Essex, main antagonist)</li>
+                  <li><span className="text-gold-pale">Lieutenant Christian Gibbons</span> (Simmerson&rsquo;s nephew)</li>
+                  <li><span className="text-gold-pale">Major Michael Hogan</span> (first appearance; Wellington&rsquo;s intelligence officer) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                  <li><span className="text-gold-pale">Sir Arthur Wellesley</span> (later Duke of Wellington) <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
+                </ul>
+              </div>
+            </details>
+          </div>
+
+          <p className="mt-10 text-center text-parchment/95 font-serif italic text-sm">
+            Books 9 to 24 will be added in a future update.
           </p>
+
           <div className="mt-8 flex flex-wrap gap-4 justify-center">
             <Link
               href="/fiction"
