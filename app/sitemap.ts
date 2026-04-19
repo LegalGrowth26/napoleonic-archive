@@ -14,6 +14,7 @@ const routes = [
   { path: "/fiction/characters", priority: 0.8 },
   { path: "/fiction/recommendations", priority: 0.8 },
   { path: "/resources", priority: 0.8 },
+  { path: "/contact", priority: 0.6 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
