@@ -12,6 +12,7 @@ const routes = [
   { path: "/stories", priority: 0.8 },
   { path: "/fiction", priority: 0.9 },
   { path: "/fiction/characters", priority: 0.8 },
+  { path: "/fiction/recommendations", priority: 0.8 },
   { path: "/resources", priority: 0.8 },
 ] as const;
 
