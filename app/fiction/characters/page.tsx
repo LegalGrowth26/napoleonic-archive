@@ -74,7 +74,7 @@ const majorCharacters: MajorCharacter[] = [
       "The most loathsome villain in the series. A former soldier in the 33rd Foot who tormented the young Private Sharpe in India. Survived a botched hanging as a child, which left him with a facial twitch and a conviction that he cannot be killed. A bully, thief, rapist and murderer who returns to plague Sharpe in the Peninsular War. He is responsible for the death of Teresa Moreno.",
     fate: "Killed by Sharpe. Executed by firing squad in Sharpe's Enemy.",
     novelVsTv:
-      "In the novel Sharpe's Enemy, Sharpe commands the firing squad and personally delivers the coup de grâce. In the 1994 ITV television film, Sharpe is present at the execution but another officer delivers the final shot. Hakeswill's last words, directed at Sharpe, his greatest enemy, are his famous line: You cannot kill me. Note: if you spot any inaccuracy in this description please do let us know via the contact page.",
+      "In the novel Sharpe's Enemy, Sharpe commands the firing squad and personally delivers the coup de grâce. In the 1994 ITV television film, Sharpe is present at the execution but another officer delivers the final shot. Hakeswill's last words, directed at Sharpe, his greatest enemy, are his famous line: You cannot kill me.",
   },
   {
     name: "Major Michael Hogan",
