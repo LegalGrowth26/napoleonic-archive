@@ -337,6 +337,16 @@ export default function FictionPage() {
           ))}
         </div>
 
+        {/* CHARACTER GUIDE LINK */}
+        <div className="mb-16 text-center">
+          <Link
+            href="/fiction/characters"
+            className="inline-block px-8 py-3 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition shadow-regal"
+          >
+            ♛ Character Guide: Who&rsquo;s Who in Sharpe
+          </Link>
+        </div>
+
         {/* ======================================================== */}
         {/* WHERE TO START                                            */}
         {/* ======================================================== */}
