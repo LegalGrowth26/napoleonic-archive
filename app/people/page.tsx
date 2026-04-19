@@ -27,6 +27,8 @@ interface Person {
   bio: string;
   /** Battles this person fought at (matches Battle names for deep links). */
   relatedBattles?: readonly string[];
+  /** Path to a dedicated sub-page, if one exists. */
+  dedicatedPage?: string;
 }
 
 const groups: { title: string; intro: string; people: Person[] }[] = [
@@ -40,6 +42,7 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
         epithet: "The Emperor",
         years: "1769 – 1821",
         faction: "Emperor of the French",
+        dedicatedPage: "/people/napoleon",
         bio: "A Corsican artilleryman who became master of Europe. His genius lay in movement: in bringing more men to the decisive point than the enemy thought possible. He ruled by Civil Code, by the loot of a continent, and by the devotion of his Old Guard. He died in exile on St Helena, attended by his diary and a handful of grumblers.",
         relatedBattles: ["Marengo", "Austerlitz", "Jena–Auerstedt", "Eylau", "Borodino", "Leipzig", "Ligny", "Waterloo"],
       },
@@ -349,6 +352,16 @@ export default function PeoplePage() {
                             )}
                           </span>
                         ))}
+                      </div>
+                    )}
+                    {p.dedicatedPage && (
+                      <div className="mt-5 pt-5 border-t border-gold/15">
+                        <Link
+                          href={p.dedicatedPage}
+                          className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+                        >
+                          Read full biography &rarr;
+                        </Link>
                       </div>
                     )}
                   </article>

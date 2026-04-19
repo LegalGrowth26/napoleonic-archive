@@ -6,6 +6,7 @@ const routes = [
   { path: "/battles", priority: 0.9 },
   { path: "/battles/waterloo", priority: 0.95 },
   { path: "/people", priority: 0.9 },
+  { path: "/people/napoleon", priority: 0.9 },
   { path: "/regiments", priority: 0.9 },
   { path: "/stories", priority: 0.8 },
   { path: "/fiction", priority: 0.9 },

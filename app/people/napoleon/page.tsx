@@ -539,7 +539,276 @@ export default function NapoleonPage() {
         </div>
       </section>
 
-      {/* Sections 9-12 follow in subsequent updates */}
+      {/* ============================================================ */}
+      {/* 9. LEGACY                                                    */}
+      {/* ============================================================ */}
+      <section
+        id="legacy"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            Legacy
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              The Napoleonic Code remains the foundation of civil law in
+              France, Belgium, the Netherlands, Italy, much of Latin America,
+              and parts of the Middle East and Asia. His reorganisation of the
+              French state, from the prefectoral system to the lyc&eacute;es,
+              endures largely intact. The corps system he perfected shaped
+              military organisation for the rest of the nineteenth century and
+              beyond.
+            </p>
+            <p>
+              He still divides opinion. To his admirers he was the son of the
+              Revolution who carried its principles across Europe, abolishing
+              feudalism and the Inquisition wherever his armies marched. To
+              his critics he was a military dictator who plunged the continent
+              into twenty years of war, re-established slavery in the French
+              Caribbean in 1802, and governed by conscription, censorship and
+              police surveillance. The truth, as most modern historians
+              acknowledge, contains both. The Napoleonic myth endures because
+              it answers a persistent human fascination with the idea of one
+              extraordinary individual reshaping the world by force of will.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 10. IN SHARPE'S WORLD                                        */}
+      {/* ============================================================ */}
+      <section id="in-sharpe" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center mb-8">
+          <div className="ornament text-gold/70 mb-4">
+            <span>❦</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+            In Sharpe&rsquo;s World
+          </h2>
+          <p className="mt-3 text-sm uppercase tracking-[0.3em] text-burgundy-bright">
+            Fiction · Bernard Cornwell
+          </p>
+        </div>
+        <div className="card p-8 rounded-sm">
+          <p className="text-parchment leading-relaxed font-serif text-lg mb-5">
+            Napoleon is the shadow over every{" "}
+            <Link
+              href="/fiction"
+              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+            >
+              Sharpe novel
+            </Link>
+            , but he is rarely seen directly. Sharpe fights against
+            Napoleon&rsquo;s armies for fourteen books without ever meeting the
+            Emperor. He glimpses Napoleon at a distance during{" "}
+            <Link
+              href="/battles/waterloo"
+              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+            >
+              Waterloo
+            </Link>
+            , and encounters him briefly on St Helena in the final novel,
+            Sharpe&rsquo;s Devil. Cornwell portrays Napoleon as a genius whose
+            hubris destroyed his own creation: brilliant at war, catastrophic
+            in judgement, and always, to the riflemen who fought him, the
+            distant cause of everything.
+          </p>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 11. CONTEMPORARY VOICES                                      */}
+      {/* ============================================================ */}
+      <section
+        id="voices"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <div className="text-center mb-10">
+            <div className="ornament text-gold/70 mb-4">
+              <span>✒</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+              Contemporary Voices
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-gold/70">
+              Genuine verbatim extracts from published public-domain sources
+            </p>
+          </div>
+
+          <div className="space-y-10">
+            {/* Las Cases */}
+            <article className="relative">
+              <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+              <header className="mb-3">
+                <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                  Napoleon to the Prince Regent
+                </h3>
+                <div className="text-sm italic text-burgundy-bright">
+                  Recorded by Las Cases, M&eacute;morial de Sainte-H&eacute;l&egrave;ne (1823)
+                </div>
+              </header>
+              <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+                I come, like Themistocles, to seek the hospitality of the
+                British nation. I place myself under the protection of their
+                laws, which I claim from your Royal Highness, as the most
+                powerful, the most constant, and the most generous, of my
+                enemies.
+              </blockquote>
+              <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+                <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                  Source
+                </span>
+                <span className="font-serif">
+                  M&eacute;morial de Sainte-H&eacute;l&egrave;ne by Emmanuel de Las Cases, 1823.
+                  Napoleon&rsquo;s letter of surrender to the Prince Regent, July 1815.
+                  Public domain.
+                </span>
+              </p>
+            </article>
+
+            <div className="gold-divider" />
+
+            {/* Caulaincourt */}
+            <article className="relative">
+              <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+              <header className="mb-3">
+                <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                  Napoleon before the Russian Campaign
+                </h3>
+                <div className="text-sm italic text-burgundy-bright">
+                  Armand de Caulaincourt, With Napoleon in Russia (memoir written 1812-13, published 1933)
+                </div>
+              </header>
+              <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+                If the fighting went against me, I should retire to
+                Kamtchatka rather than cede provinces.
+              </blockquote>
+              <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+                <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                  Source
+                </span>
+                <span className="font-serif">
+                  With Napoleon in Russia: The Memoirs of General de Caulaincourt,
+                  Duke of Vicenza. Public domain.
+                </span>
+              </p>
+            </article>
+
+            <div className="gold-divider" />
+
+            {/* Madame de R&eacute;musat */}
+            <article className="relative">
+              <div className="absolute -left-2 -top-2 w-1 h-full bg-gradient-to-b from-burgundy via-burgundy-deep to-transparent hidden md:block" />
+              <header className="mb-3">
+                <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                  Napoleon&rsquo;s Working Habits
+                </h3>
+                <div className="text-sm italic text-burgundy-bright">
+                  Madame de R&eacute;musat, M&eacute;moires (1880)
+                </div>
+              </header>
+              <blockquote className="relative pl-6 pr-2 py-2 border-l-2 border-gold/50 text-lg text-parchment italic leading-relaxed font-serif">
+                Bonaparte dictated with great ease. He never wrote anything
+                with his own hand. He spoke to the subalterns in a tone of
+                good-fellowship, which delighted them all.
+              </blockquote>
+              <p className="mt-3 text-sm text-parchment/95 leading-relaxed">
+                <span className="uppercase tracking-widest text-gold/70 text-xs mr-2">
+                  Source
+                </span>
+                <span className="font-serif">
+                  M&eacute;moires de Madame de R&eacute;musat, 1880.
+                  Available via Fordham University Modern History Sourcebook.
+                  Public domain.
+                </span>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* 12. FURTHER READING                                          */}
+      {/* ============================================================ */}
+      <section id="reading" className="max-w-5xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+          Further Reading
+        </h2>
+
+        <div className="grid sm:grid-cols-2 gap-6 mb-10">
+          <div className="card p-6 rounded-sm">
+            <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+              The Campaigns of Napoleon
+            </h3>
+            <div className="text-sm italic text-burgundy-bright mb-3">
+              David G. Chandler, 1966
+            </div>
+            <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+              The single-volume standard in English on Napoleon as a soldier.
+              Every campaign, every battle, every gambit, in one monumental
+              study.
+            </p>
+            <a
+              href="https://amzn.to/4vyf2QD"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+            >
+              Buy on Amazon &rarr;
+            </a>
+          </div>
+
+          <div className="card p-6 rounded-sm">
+            <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+              Wellington: A Personal History
+            </h3>
+            <div className="text-sm italic text-burgundy-bright mb-3">
+              Christopher Hibbert, 1997
+            </div>
+            <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+              The biography of the man who beat Napoleon. Essential
+              counterpoint to any study of the Emperor.
+            </p>
+            <a
+              href="https://amzn.to/4vyaCsL"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+            >
+              Buy on Amazon &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center space-y-3">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/resources"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              Browse all resources &rarr;
+            </Link>
+            <Link
+              href="/battles/waterloo"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              Battle of Waterloo
+            </Link>
+            <Link
+              href="/people"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              &larr; All People
+            </Link>
+          </div>
+          <p className="text-xs uppercase tracking-widest text-parchment/85 pt-4">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
