@@ -17,6 +17,8 @@ const routes = [
   { path: "/contact", priority: 0.6 },
   { path: "/india/east-india-company", priority: 0.8 },
   { path: "/india", priority: 0.9 },
+  { path: "/india/battles/seringapatam", priority: 0.8 },
+  { path: "/india/battles/assaye", priority: 0.8 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
