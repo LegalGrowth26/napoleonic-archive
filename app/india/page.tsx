@@ -184,7 +184,7 @@ export default function IndiaPage() {
               ability that would later sustain his Peninsular campaigns.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm">
-              <span className="text-burgundy-bright italic font-serif">In Sharpe: Sharpe&rsquo;s Tiger</span>
+              <span className="text-burgundy-bright italic font-serif">In Sharpe: <a href="https://amzn.to/3QdRVuq" target="_blank" rel="noopener noreferrer sponsored" className="underline underline-offset-4 decoration-burgundy-bright/40 hover:text-gold hover:decoration-gold transition">Sharpe&rsquo;s Tiger</a></span>
             </div>
           </article>
 
@@ -220,7 +220,7 @@ export default function IndiaPage() {
               opened the Deccan to Company expansion.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm">
-              <span className="text-burgundy-bright italic font-serif">In Sharpe: Sharpe&rsquo;s Triumph</span>
+              <span className="text-burgundy-bright italic font-serif">In Sharpe: <a href="https://amzn.to/3OjyIa9" target="_blank" rel="noopener noreferrer sponsored" className="underline underline-offset-4 decoration-burgundy-bright/40 hover:text-gold hover:decoration-gold transition">Sharpe&rsquo;s Triumph</a></span>
             </div>
           </article>
 
@@ -284,7 +284,7 @@ export default function IndiaPage() {
               across central India.
             </p>
             <div className="flex flex-wrap items-center gap-4 text-sm">
-              <span className="text-burgundy-bright italic font-serif">In Sharpe: Sharpe&rsquo;s Fortress</span>
+              <span className="text-burgundy-bright italic font-serif">In Sharpe: <a href="https://amzn.to/3QtV1dP" target="_blank" rel="noopener noreferrer sponsored" className="underline underline-offset-4 decoration-burgundy-bright/40 hover:text-gold hover:decoration-gold transition">Sharpe&rsquo;s Fortress</a></span>
             </div>
           </article>
         </div>
