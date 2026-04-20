@@ -137,6 +137,22 @@ export default function IndiaPage() {
           </p>
         </div>
 
+        <aside className="card p-5 rounded-sm border-gold/35 mb-10">
+          <div className="flex items-start gap-4">
+            <span className="text-gold text-xl leading-none" aria-hidden="true">
+              ⚜
+            </span>
+            <p className="text-sm text-parchment leading-relaxed font-serif">
+              <strong className="text-gold-pale">Note on casualties:</strong>{" "}
+              British and Company casualty figures are drawn from official
+              records. Indian casualty figures are often absent or unreliable
+              in contemporary sources, a reflection of how the Company
+              documented its wars. Where figures are estimates only, this is
+              noted.
+            </p>
+          </div>
+        </aside>
+
         <div className="space-y-8">
           {/* Seringapatam */}
           <article className="card p-8 rounded-sm">
@@ -150,9 +166,13 @@ export default function IndiaPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-x-6 gap-y-1 text-sm text-parchment/95 font-serif mb-5">
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Forces </span>~20,000 British &amp; Company vs ~30,000 Mysorean</div>
-              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Casualties </span>~1,400 British</div>
+              <div><span className="text-gold/70 uppercase text-xs tracking-widest">British casualties </span>~1,400</div>
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Outcome </span><span className="text-gold-pale">Decisive British victory</span></div>
             </div>
+            <p className="text-xs text-parchment/85 font-serif italic mb-4">
+              Defender casualties are not reliably recorded in contemporary
+              sources. Tippu Sultan was killed during the assault.
+            </p>
             <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
               The Fourth Anglo-Mysore War ended with the storm of Tippu
               Sultan&rsquo;s island fortress at Seringapatam. The British
@@ -180,9 +200,14 @@ export default function IndiaPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-x-6 gap-y-1 text-sm text-parchment/95 font-serif mb-5">
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Forces </span>~7,000 British vs ~40,000 Maratha</div>
-              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Casualties </span>~1,600 British (nearly a quarter of his force)</div>
+              <div><span className="text-gold/70 uppercase text-xs tracking-widest">British casualties </span>~1,600 (nearly a quarter of his force)</div>
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Outcome </span><span className="text-gold-pale">British victory (costly)</span></div>
             </div>
+            <p className="text-xs text-parchment/85 font-serif italic mb-4">
+              Maratha casualties are estimated at approximately 6,000 but
+              contemporary Indian sources are limited and figures vary
+              significantly between historians.
+            </p>
             <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
               Wellington attacked a Maratha army that outnumbered him
               roughly five to one because he judged, correctly, that the
@@ -211,9 +236,13 @@ export default function IndiaPage() {
             </div>
             <div className="grid md:grid-cols-3 gap-x-6 gap-y-1 text-sm text-parchment/95 font-serif mb-5">
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Forces </span>~11,000 British vs ~30,000 Maratha</div>
-              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Casualties </span>~350 British</div>
+              <div><span className="text-gold/70 uppercase text-xs tracking-widest">British casualties </span>~350</div>
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Outcome </span><span className="text-gold-pale">Decisive British victory</span></div>
             </div>
+            <p className="text-xs text-parchment/85 font-serif italic mb-4">
+              Maratha casualties estimated at approximately 5,000 but not
+              reliably documented in contemporary sources.
+            </p>
             <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
               A month after Assaye, Wellington confronted and destroyed a
               second Maratha army at Argaum (also known as Adgaon). This
@@ -236,10 +265,15 @@ export default function IndiaPage() {
               </div>
             </div>
             <div className="grid md:grid-cols-3 gap-x-6 gap-y-1 text-sm text-parchment/95 font-serif mb-5">
-              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Forces </span>~11,000 British</div>
-              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Type </span>Fortress assault</div>
+              <div><span className="text-gold/70 uppercase text-xs tracking-widest">Forces </span>~11,000 British (assault)</div>
+              <div><span className="text-gold/70 uppercase text-xs tracking-widest">British casualties </span>~150 killed and wounded</div>
               <div><span className="text-gold/70 uppercase text-xs tracking-widest">Outcome </span><span className="text-gold-pale">Fortress taken</span></div>
             </div>
+            <p className="text-xs text-parchment/85 font-serif italic mb-4">
+              Defender casualties were not recorded by British sources. The
+              gap in the historical record reflects how the Company documented
+              its wars.
+            </p>
             <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
               Gawilghur was a seemingly impregnable hill-fortress perched
               on a cliff above the Deccan plateau, protected by ravines
