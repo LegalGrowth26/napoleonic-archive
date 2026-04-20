@@ -26,16 +26,19 @@ export default function Footer() {
               <Link href="/people">People</Link>
             </li>
             <li>
-              <Link href="/regiments">Regiments</Link>
+              <Link href="/india">India</Link>
             </li>
             <li>
-              <Link href="/stories">Stories</Link>
+              <Link href="/regiments">Regiments</Link>
             </li>
             <li>
               <Link href="/fiction">Fiction</Link>
             </li>
             <li>
               <Link href="/resources">Resources</Link>
+            </li>
+            <li>
+              <Link href="/stories">Stories</Link>
             </li>
             <li>
               <Link href="/contact">Contact</Link>
