@@ -449,29 +449,41 @@ export default function FictionPage() {
                 </tr>
               </thead>
               <tbody className="text-parchment/95">
-                {[
-                  ["Sharpe's Rifles", "1993", "Sharpe's Rifles", "Retreat to Corunna, 1809"],
-                  ["Sharpe's Eagle", "1993", "Sharpe's Eagle", "Battle of Talavera, 1809"],
-                  ["Sharpe's Company", "1994", "Sharpe's Company", "Siege of Badajoz, 1812"],
-                  ["Sharpe's Enemy", "1994", "Sharpe's Enemy", "Adrados, Christmas 1812"],
-                  ["Sharpe's Honour", "1994", "Sharpe's Honour", "Battle of Vitoria, 1813"],
-                  ["Sharpe's Gold", "1995", "Sharpe's Gold", "Portugal, 1810"],
-                  ["Sharpe's Battle", "1995", "Sharpe's Battle", "Fuentes de Oñoro, 1811"],
-                  ["Sharpe's Sword", "1995", "Sharpe's Sword", "Battle of Salamanca, 1812"],
-                  ["Sharpe's Regiment", "1996", "Sharpe's Regiment", "England, 1813"],
-                  ["Sharpe's Siege", "1996", "Sharpe's Siege", "France, 1814"],
-                  ["Sharpe's Mission", "1996", "Original screenplay", "France, 1813"],
-                  ["Sharpe's Revenge", "1997", "Sharpe's Revenge", "Toulouse / Naples, 1814"],
-                  ["Sharpe's Justice", "1997", "Original screenplay", "England, 1814"],
-                  ["Sharpe's Waterloo", "1997", "Sharpe's Waterloo", "Battle of Waterloo, 1815"],
-                  ["Sharpe's Challenge", "2006", "Original screenplay", "India, 1803"],
-                  ["Sharpe's Peril", "2008", "Original screenplay", "India, 1803"],
-                ].map(([film, year, source, battle]) => (
-                  <tr key={film} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
-                    <td className="py-2.5 px-3 text-gold-pale">{film}</td>
-                    <td className="py-2.5 px-3">{year}</td>
-                    <td className="py-2.5 px-3 italic text-burgundy-bright">{source}</td>
-                    <td className="py-2.5 px-3">{battle}</td>
+                {([
+                  { film: "Sharpe's Rifles", year: "1993", source: "Sharpe's Rifles", slug: "sharpes-rifles", imdb: "https://www.imdb.com/title/tt0108255/", battle: "Retreat to Corunna, 1809" },
+                  { film: "Sharpe's Eagle", year: "1993", source: "Sharpe's Eagle", slug: "sharpes-eagle", imdb: "https://www.imdb.com/title/tt0108254/", battle: "Battle of Talavera, 1809" },
+                  { film: "Sharpe's Company", year: "1994", source: "Sharpe's Company", slug: "sharpes-company", imdb: "https://www.imdb.com/title/tt0111003/", battle: "Siege of Badajoz, 1812" },
+                  { film: "Sharpe's Enemy", year: "1994", source: "Sharpe's Enemy", slug: "sharpes-enemy", imdb: "https://www.imdb.com/title/tt0111004/", battle: "Adrados, Christmas 1812" },
+                  { film: "Sharpe's Honour", year: "1994", source: "Sharpe's Honour", slug: "sharpes-honour", imdb: "https://www.imdb.com/title/tt0111005/", battle: "Battle of Vitoria, 1813" },
+                  { film: "Sharpe's Gold", year: "1995", source: "Sharpe's Gold", slug: "sharpes-gold", imdb: "https://www.imdb.com/title/tt0114034/", battle: "Portugal, 1810" },
+                  { film: "Sharpe's Battle", year: "1995", source: "Sharpe's Battle", slug: "sharpes-battle", imdb: "https://www.imdb.com/title/tt0114033/", battle: "Fuentes de Oñoro, 1811" },
+                  { film: "Sharpe's Sword", year: "1995", source: "Sharpe's Sword", slug: "sharpes-sword", imdb: "https://www.imdb.com/title/tt0114035/", battle: "Battle of Salamanca, 1812" },
+                  { film: "Sharpe's Regiment", year: "1996", source: "Sharpe's Regiment", slug: "sharpes-regiment", imdb: "https://www.imdb.com/title/tt0117569/", battle: "England, 1813" },
+                  { film: "Sharpe's Siege", year: "1996", source: "Sharpe's Siege", slug: "sharpes-siege", imdb: "https://www.imdb.com/title/tt0117570/", battle: "France, 1814" },
+                  { film: "Sharpe's Mission", year: "1996", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0117568/", battle: "France, 1813" },
+                  { film: "Sharpe's Revenge", year: "1997", source: "Sharpe's Revenge", slug: "sharpes-revenge", imdb: "https://www.imdb.com/title/tt0117571/", battle: "Toulouse / Naples, 1814" },
+                  { film: "Sharpe's Justice", year: "1997", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0119959/", battle: "England, 1814" },
+                  { film: "Sharpe's Waterloo", year: "1997", source: "Sharpe's Waterloo", slug: "sharpes-waterloo", imdb: "https://www.imdb.com/title/tt0119960/", battle: "Battle of Waterloo, 1815" },
+                  { film: "Sharpe's Challenge", year: "2006", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0460637/", battle: "India, 1803" },
+                  { film: "Sharpe's Peril", year: "2008", source: null, slug: null, imdb: "https://www.imdb.com/title/tt1229278/", battle: "India, 1803" },
+                ] as const).map((row) => (
+                  <tr key={row.film} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
+                    <td className="py-2.5 px-3">
+                      <a href={row.imdb} target="_blank" rel="noopener noreferrer" className="text-gold-pale hover:text-gold transition">
+                        {row.film}
+                      </a>
+                    </td>
+                    <td className="py-2.5 px-3">{row.year}</td>
+                    <td className="py-2.5 px-3 italic text-burgundy-bright">
+                      {row.source && row.slug ? (
+                        <a href={`#${row.slug}`} className="hover:text-gold transition">
+                          {row.source}
+                        </a>
+                      ) : (
+                        "Original screenplay"
+                      )}
+                    </td>
+                    <td className="py-2.5 px-3">{row.battle}</td>
                   </tr>
                 ))}
               </tbody>
@@ -631,7 +643,8 @@ export default function FictionPage() {
           {books.map((b) => (
             <article
               key={b.asin}
-              className="card p-5 rounded-sm flex flex-col"
+              id={b.title.toLowerCase().replace(/[''`]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}
+              className="card p-5 rounded-sm flex flex-col scroll-mt-24"
             >
               <a
                 href={b.link}
