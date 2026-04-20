@@ -31,6 +31,8 @@ interface Regiment {
   body: string;
   /** Appears below the main body. Use for disputed attributed sayings etc. */
   attributedNote?: string;
+  /** Path to a dedicated sub-page, if one exists. */
+  dedicatedPage?: string;
 }
 
 const regiments: Regiment[] = [
@@ -38,6 +40,7 @@ const regiments: Regiment[] = [
     name: "95th (Rifle) Regiment of Foot",
     nickname: "The Grasshoppers · The Sweeps",
     nation: "Great Britain",
+    dedicatedPage: "/regiments/95th-rifles",
     type: "Rifle · Light Infantry",
     raised: "1800 (as Experimental Corps of Riflemen)",
     facings: "Green jackets, black facings, white piping",
@@ -315,6 +318,17 @@ export default function RegimentsPage() {
                     </span>
                     {r.attributedNote}
                   </p>
+                </div>
+              )}
+
+              {r.dedicatedPage && (
+                <div className="mt-5 pt-5 border-t border-gold/15">
+                  <Link
+                    href={r.dedicatedPage}
+                    className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+                  >
+                    Read full regiment history &rarr;
+                  </Link>
                 </div>
               )}
             </article>

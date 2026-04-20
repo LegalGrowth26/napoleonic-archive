@@ -430,7 +430,219 @@ export default function NinetyFifthRiflesPage() {
         </div>
       </section>
 
-      {/* Sections 9-12 follow in subsequent updates */}
+      {/* 9. WATERLOO */}
+      <section
+        id="waterloo"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            Waterloo: The Final Battle
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              At{" "}
+              <Link
+                href="/battles/waterloo"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Waterloo
+              </Link>{" "}
+              the 1st Battalion of the 95th, under Sir Andrew Barnard, was
+              positioned in the centre of Wellington&rsquo;s line. They
+              skirmished ahead of the main British formations through the
+              morning, then took up a position around the sandpit and a
+              broken hedgerow on the eastern side of the Brussels road,
+              directly supporting La Haye Sainte. From this ground they
+              shot at French skirmishers and gunners all afternoon, and
+              held even after La Haye Sainte fell at dusk and French
+              infantry pushed up the slope behind them.
+            </p>
+            <p>
+              When the Imperial Guard advanced and was broken, the 95th
+              joined the general advance at evening, pursuing the French
+              into the night. Casualties for the regiment at Waterloo were
+              severe: the 1st Battalion lost roughly a third of its
+              strength in killed and wounded. The 95th ended the day, and
+              the war, in the centre of Wellington&rsquo;s victory.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 10. THE REGIMENT TODAY */}
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest mb-4 section-title">
+          The Regiment Today
+        </h2>
+        <p className="text-parchment leading-relaxed font-serif text-lg">
+          In 1816 the 95th was removed from the numbered line of the army
+          and constituted as the Rifle Brigade, a unique regiment marked
+          out from the rest of the infantry. Through successive amalgamations
+          its lineage today survives in The Rifles, formed in 2007 and the
+          largest regiment in the British Army. The regimental museum is at
+          Peninsula Barracks in Winchester, where the Royal Green Jackets
+          Museum holds Baker rifles, jackets, colours and the largest 95th
+          collection in the world.{" "}
+          <Link
+            href="/resources"
+            className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+          >
+            Find it on the Resources page &rarr;
+          </Link>
+        </p>
+      </section>
+
+      {/* 11. IN SHARPE'S WORLD */}
+      <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <div className="text-center mb-8">
+            <div className="ornament text-gold/70 mb-4">
+              <span>❦</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+              In Sharpe&rsquo;s World
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-burgundy-bright">
+              Fiction &middot; Bernard Cornwell
+            </p>
+          </div>
+
+          <div className="card p-8 rounded-sm">
+            <p className="text-parchment leading-relaxed font-serif text-lg mb-5">
+              The 95th is Sharpe&rsquo;s true home throughout the Cornwell
+              novels. He transfers to the Rifles after his commission and
+              spends the rest of the Peninsular series fighting in the green
+              jacket. The dark coat and Baker rifle become inseparable from
+              his identity: when he is detached to the (fictional) South
+              Essex line battalion in Sharpe&rsquo;s Eagle, he keeps his
+              green jacket and his rifle as a deliberate refusal to
+              assimilate. Patrick Harper, the huge Irish sergeant with the
+              seven-barrelled volley gun, is the archetypal rifleman:
+              skilled, independent, devoted to Sharpe and to the regiment.
+              Cornwell uses the 95th as a counterpoint to the line: a
+              regiment of thinking soldiers in an army of drilled formations.
+            </p>
+            <div className="flex flex-wrap gap-3 mb-5">
+              <a
+                href="https://amzn.to/4cSwN4L"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Sharpe&rsquo;s Rifles &rarr;
+              </a>
+              <a
+                href="https://amzn.to/4sXbzbX"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Sharpe&rsquo;s Eagle &rarr;
+              </a>
+              <a
+                href="https://amzn.to/4thUGcX"
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Sharpe&rsquo;s Company &rarr;
+              </a>
+            </div>
+            <div className="flex flex-wrap gap-4 text-sm">
+              <Link
+                href="/fiction"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                All 24 Sharpe novels &rarr;
+              </Link>
+              <Link
+                href="/fiction/characters"
+                className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
+              >
+                Character guide &rarr;
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 12. FURTHER READING */}
+      <section className="max-w-5xl mx-auto px-6 py-16">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-12">
+          Further Reading
+        </h2>
+        <div className="grid sm:grid-cols-2 gap-6 mb-8">
+          <div className="card p-6 rounded-sm">
+            <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+              Recollections of Rifleman Harris
+            </h3>
+            <div className="text-sm italic text-burgundy-bright mb-3">
+              Benjamin Harris, 1848
+            </div>
+            <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+              The dictated memoirs of a Dorset shepherd turned rifleman. The
+              best private-soldier document of the Peninsular War.
+            </p>
+            <a
+              href="https://amzn.to/4elXalK"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+            >
+              Buy on Amazon &rarr;
+            </a>
+          </div>
+
+          <div className="card p-6 rounded-sm">
+            <h3 className="font-display text-lg text-gold-pale uppercase tracking-wider mb-2">
+              Adventures in the Rifle Brigade
+            </h3>
+            <div className="text-sm italic text-burgundy-bright mb-3">
+              Captain John Kincaid, 1830
+            </div>
+            <p className="text-sm text-parchment/95 font-serif leading-relaxed mb-4">
+              The literate, droll account of an officer of the 95th from
+              Walcheren to Waterloo. Available in multiple editions; search
+              Amazon for current paperbacks.
+            </p>
+            <a
+              href="https://www.amazon.com/s?k=adventures+in+the+rifle+brigade+kincaid"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+            >
+              Search on Amazon &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div className="text-center space-y-4">
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link
+              href="/regiments"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              &larr; All Regiments
+            </Link>
+            <Link
+              href="/stories"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              Stories
+            </Link>
+            <Link
+              href="/resources"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              Resources
+            </Link>
+          </div>
+          <p className="text-xs uppercase tracking-widest text-parchment/85 pt-4">
+            As an Amazon Associate I earn from qualifying purchases.
+          </p>
+        </div>
+      </section>
     </>
   );
 }
