@@ -339,13 +339,15 @@ export default function IndiaPage() {
 
             <article className="card p-6 rounded-sm">
               <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
-                Tippu Sultan
+                <Link href="/india/people/tippu-sultan" className="hover:text-gold transition">
+                  Tippu Sultan
+                </Link>
               </h3>
               <div className="text-xs tracking-widest text-gold/70 mb-1">1750-1799</div>
               <div className="text-sm italic text-burgundy-bright mb-3">
                 Sultan of Mysore &middot; The Tiger of Mysore
               </div>
-              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm mb-4">
                 The Company&rsquo;s greatest Indian opponent and the last
                 ruler to pose a serious military threat to British expansion
                 in southern India. He modernised his army with French
@@ -355,6 +357,12 @@ export default function IndiaPage() {
                 killed fighting at the northern gate of his fortress during
                 the final storm on 4 May 1799.
               </p>
+              <Link
+                href="/india/people/tippu-sultan"
+                className="inline-block px-4 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Read full profile &rarr;
+              </Link>
             </article>
 
             <article className="card p-6 rounded-sm">
