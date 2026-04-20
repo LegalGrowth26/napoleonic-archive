@@ -223,7 +223,214 @@ export default function NinetyFifthRiflesPage() {
         </div>
       </section>
 
-      {/* Sections 5-12 follow in subsequent updates */}
+      {/* 5. TACTICS AND TRAINING */}
+      <section
+        id="tactics"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            Tactics and Training
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              Riflemen fought in pairs. While one loaded, the other aimed,
+              ensuring that at least one rifle was always ready. The pair
+              moved together, used cover instinctively, and operated with a
+              degree of autonomy unknown in the line regiments. They were
+              expected to read the ground, choose targets, and act without
+              waiting for orders.
+            </p>
+            <p>
+              Use of cover was revolutionary in an era when British line
+              infantry stood upright in formation as a matter of regulation
+              and pride. The 95th lay down behind walls, fired from copses,
+              and crawled through standing crops to reach a firing position.
+              NCOs and even privates were trained to act on their own
+              initiative, a doctrinal shift that owed everything to Sir
+              John Moore&rsquo;s Shorncliffe system.
+            </p>
+            <p>
+              In place of the rolling drumbeats that controlled line infantry
+              manoeuvres, the 95th used bugle calls. The bugle carried
+              further over broken ground and through the noise of battle, and
+              it suited a regiment whose soldiers were often scattered as
+              skirmishers. They fought ahead of the main line, harassing
+              enemy columns, picking off officers, and disrupting formations
+              before the main British line ever came into volley range. Where
+              a line regiment stood and fired in unison, the rifleman moved,
+              thought, and chose his target.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* 6. THE CAMPAIGNS */}
+      <section id="campaigns" className="max-w-5xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center mb-12">
+          <div className="ornament text-gold/70 mb-4">
+            <span>⚔</span>
+          </div>
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+            The Campaigns
+          </h2>
+        </div>
+
+        <div className="relative">
+          <div className="absolute left-8 md:left-12 top-0 bottom-0 w-px bg-gradient-to-b from-gold/0 via-gold/40 to-gold/0" />
+          <ol className="space-y-6">
+            {[
+              { date: "1807", name: "Copenhagen", body: "The 95th took part in the British expedition that bombarded Copenhagen and seized the Danish fleet." },
+              { date: "1808-09", name: "Corunna", link: "/battles#battle-corunna", body: "The harrowing winter retreat across Galicia. Riflemen of the 95th formed the rearguard under Sir John Moore." },
+              { date: "1810", name: "Busaco", body: "The 95th skirmished ahead of Wellington's line on the ridge of Busaco, blunting the French advance before the main engagement." },
+              { date: "1812", name: "Ciudad Rodrigo", link: "/battles#battle-ciudad-rodrigo", body: "A midwinter siege opened in frozen trenches. The 95th provided sharpshooters and assault troops at the breaches." },
+              { date: "1812", name: "Badajoz", link: "/battles#battle-badajoz", body: "The most costly night in the regiment's history. The 95th led storming parties at the breaches and the castle walls and was decimated." },
+              { date: "1812", name: "Salamanca", link: "/battles#battle-salamanca", body: "Riflemen skirmished across the Arapiles as Wellington's army destroyed Marmont's in forty minutes." },
+              { date: "1813", name: "Vitoria", link: "/battles#battle-vitoria", body: "The battle that drove the French from Spain. The 95th harassed the retreating French through the streets and into the baggage train." },
+              { date: "1814", name: "Toulouse", link: "/battles#battle-toulouse", body: "The last major battle of the Peninsular War, fought four days after Napoleon's abdication. The 95th was in the line under Soult's guns." },
+              { date: "1815", name: "Waterloo", link: "/battles/waterloo", body: "The 95th fought in the centre of Wellington's line, supporting La Haye Sainte all afternoon, and joined the final advance at dusk." },
+            ].map((c) => (
+              <li key={c.date + c.name} className="relative pl-20 md:pl-28">
+                <div className="absolute left-0 top-0 flex items-center justify-center w-16 md:w-24 h-8 rounded-sm bg-burgundy border border-gold/60 text-gold-pale font-display text-sm tracking-wider">
+                  {c.date}
+                </div>
+                <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-2">
+                  {c.link ? (
+                    <Link href={c.link} className="hover:text-gold transition">
+                      {c.name}
+                    </Link>
+                  ) : (
+                    c.name
+                  )}
+                </h3>
+                <p className="text-parchment leading-relaxed font-serif">
+                  {c.body}
+                </p>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
+      {/* 7. NOTABLE OFFICERS AND MEN */}
+      <section
+        id="notable"
+        className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep"
+      >
+        <div className="max-w-6xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-10">
+            Notable Officers and Men
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Sir Andrew Barnard
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Major-General &middot; commanding officer at Waterloo
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                A career rifleman who rose from junior officer to general.
+                Commanded the 1st Battalion of the 95th at Waterloo, where he
+                was wounded in the action that supported La Haye Sainte. He
+                later served as a senior officer of the army.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Jonathan Leach
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Captain &middot; memoirist
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Author of Rough Sketches of the Life of an Old Soldier
+                (1831), one of the best officer memoirs of the Peninsular
+                War. Leach served with the 95th from 1808 to Waterloo and
+                wrote with dry humour and a soldier&rsquo;s eye for detail.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                John Kincaid
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Captain &middot; memoirist
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Author of Adventures in the Rifle Brigade (1830). Served with
+                the 95th from the Walcheren expedition through the Peninsula
+                to Waterloo, where he was adjutant of the 1st Battalion. The
+                droll, literate voice of the regiment.{" "}
+                <Link href="/stories" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                  Read his Badajoz extract on Stories &rarr;
+                </Link>
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Benjamin Harris
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Rifleman &middot; memoirist
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                A Dorset shepherd turned rifleman whose dictated Recollections
+                of Rifleman Harris (1848) is the finest private-soldier
+                document we have of the Peninsular War. He served on the
+                retreat to Corunna and his plain voice gives the experience a
+                reality no dispatch can.{" "}
+                <Link href="/stories" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                  Stories &rarr;
+                </Link>{" "}
+                &middot;{" "}
+                <Link href="/resources" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                  Resources &rarr;
+                </Link>
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* 8. BADAJOZ — THE COSTLIEST NIGHT */}
+      <section className="max-w-4xl mx-auto px-6 py-16">
+        <div className="card p-8 rounded-sm border-burgundy-bright/40 bg-burgundy-deep/20">
+          <div className="flex items-center gap-2 mb-4">
+            <span className="text-burgundy-bright font-display text-lg">❦</span>
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider">
+              Badajoz: The Costliest Night
+            </h3>
+          </div>
+          <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
+            On the night of 6 April 1812 the 95th went into the breaches of
+            Badajoz with the Light and 4th Divisions. The casualties were
+            catastrophic. The assault parties at the Trinidad and Santa Maria
+            breaches were broken again and again on the chevaux-de-frise and
+            the murderous fire from the ramparts; dead Britons piled in the
+            ditch until the storming columns could climb on their bodies. The
+            95th lost officers and men in numbers the regiment had never
+            suffered before, and would not suffer again.
+          </p>
+          <p className="text-parchment leading-relaxed font-serif text-lg mb-4">
+            The courage shown that night became part of regimental legend.
+            Officers led from the front and died there; sergeants and
+            corporals took over and led on. Wellington, who had seen many
+            battles, wept on the glacis at dawn when he saw the cost.
+          </p>
+          <Link
+            href="/battles#battle-badajoz"
+            className="inline-block px-5 py-2 border border-gold/60 text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition"
+          >
+            Read the Battle of Badajoz &rarr;
+          </Link>
+        </div>
+      </section>
+
+      {/* Sections 9-12 follow in subsequent updates */}
     </>
   );
 }
