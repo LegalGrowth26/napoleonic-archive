@@ -261,7 +261,7 @@ const themeNotes = [
   },
   {
     title: "A Reading Order",
-    body: "New readers may prefer to start with Sharpe's Rifles (1988) or Sharpe's Eagle (1981), the first-written novels, which introduce Sharpe at his most essential. Chronological order (as below) reads cleaner on a second pass, once Harper's jokes and Hakeswill's curses have become familiar.",
+    body: null,
   },
 ];
 
@@ -331,7 +331,22 @@ export default function FictionPage() {
                 {n.title}
               </h3>
               <p className="text-sm text-parchment/95 leading-relaxed font-serif">
-                {n.body}
+                {n.body ?? (
+                  <>
+                    New readers may prefer to start with{" "}
+                    <a href="https://amzn.to/4cSwN4L" target="_blank" rel="noopener noreferrer sponsored" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                      Sharpe&rsquo;s Rifles (1988)
+                    </a>{" "}
+                    or{" "}
+                    <a href="https://amzn.to/4sXbzbX" target="_blank" rel="noopener noreferrer sponsored" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                      Sharpe&rsquo;s Eagle (1981)
+                    </a>
+                    , the first-written novels, which introduce Sharpe at his
+                    most essential. Chronological order (as below) reads
+                    cleaner on a second pass, once Harper&rsquo;s jokes and
+                    Hakeswill&rsquo;s curses have become familiar.
+                  </>
+                )}
               </p>
             </div>
           ))}
@@ -450,22 +465,22 @@ export default function FictionPage() {
               </thead>
               <tbody className="text-parchment/95">
                 {([
-                  { film: "Sharpe's Rifles", year: "1993", source: "Sharpe's Rifles", slug: "sharpes-rifles", imdb: "https://www.imdb.com/title/tt0108255/", battle: "Retreat to Corunna, 1809" },
-                  { film: "Sharpe's Eagle", year: "1993", source: "Sharpe's Eagle", slug: "sharpes-eagle", imdb: "https://www.imdb.com/title/tt0108254/", battle: "Battle of Talavera, 1809" },
-                  { film: "Sharpe's Company", year: "1994", source: "Sharpe's Company", slug: "sharpes-company", imdb: "https://www.imdb.com/title/tt0111003/", battle: "Siege of Badajoz, 1812" },
-                  { film: "Sharpe's Enemy", year: "1994", source: "Sharpe's Enemy", slug: "sharpes-enemy", imdb: "https://www.imdb.com/title/tt0111004/", battle: "Adrados, Christmas 1812" },
-                  { film: "Sharpe's Honour", year: "1994", source: "Sharpe's Honour", slug: "sharpes-honour", imdb: "https://www.imdb.com/title/tt0111005/", battle: "Battle of Vitoria, 1813" },
-                  { film: "Sharpe's Gold", year: "1995", source: "Sharpe's Gold", slug: "sharpes-gold", imdb: "https://www.imdb.com/title/tt0114034/", battle: "Portugal, 1810" },
-                  { film: "Sharpe's Battle", year: "1995", source: "Sharpe's Battle", slug: "sharpes-battle", imdb: "https://www.imdb.com/title/tt0114033/", battle: "Fuentes de Oñoro, 1811" },
-                  { film: "Sharpe's Sword", year: "1995", source: "Sharpe's Sword", slug: "sharpes-sword", imdb: "https://www.imdb.com/title/tt0114035/", battle: "Battle of Salamanca, 1812" },
-                  { film: "Sharpe's Regiment", year: "1996", source: "Sharpe's Regiment", slug: "sharpes-regiment", imdb: "https://www.imdb.com/title/tt0117569/", battle: "England, 1813" },
-                  { film: "Sharpe's Siege", year: "1996", source: "Sharpe's Siege", slug: "sharpes-siege", imdb: "https://www.imdb.com/title/tt0117570/", battle: "France, 1814" },
-                  { film: "Sharpe's Mission", year: "1996", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0117568/", battle: "France, 1813" },
-                  { film: "Sharpe's Revenge", year: "1997", source: "Sharpe's Revenge", slug: "sharpes-revenge", imdb: "https://www.imdb.com/title/tt0117571/", battle: "Toulouse / Naples, 1814" },
-                  { film: "Sharpe's Justice", year: "1997", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0119959/", battle: "England, 1814" },
-                  { film: "Sharpe's Waterloo", year: "1997", source: "Sharpe's Waterloo", slug: "sharpes-waterloo", imdb: "https://www.imdb.com/title/tt0119960/", battle: "Battle of Waterloo, 1815" },
-                  { film: "Sharpe's Challenge", year: "2006", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0460637/", battle: "India, 1803" },
-                  { film: "Sharpe's Peril", year: "2008", source: null, slug: null, imdb: "https://www.imdb.com/title/tt1229278/", battle: "India, 1803" },
+                  { film: "Sharpe's Rifles", year: "1993", source: "Sharpe's Rifles", slug: "sharpes-rifles", imdb: "https://www.imdb.com/title/tt0108255/", buy: "https://amzn.to/4cSwN4L", battle: "Retreat to Corunna, 1809" },
+                  { film: "Sharpe's Eagle", year: "1993", source: "Sharpe's Eagle", slug: "sharpes-eagle", imdb: "https://www.imdb.com/title/tt0108254/", buy: "https://amzn.to/4sXbzbX", battle: "Battle of Talavera, 1809" },
+                  { film: "Sharpe's Company", year: "1994", source: "Sharpe's Company", slug: "sharpes-company", imdb: "https://www.imdb.com/title/tt0111003/", buy: "https://amzn.to/4thUGcX", battle: "Siege of Badajoz, 1812" },
+                  { film: "Sharpe's Enemy", year: "1994", source: "Sharpe's Enemy", slug: "sharpes-enemy", imdb: "https://www.imdb.com/title/tt0111004/", buy: "https://amzn.to/487wQrL", battle: "Adrados, Christmas 1812" },
+                  { film: "Sharpe's Honour", year: "1994", source: "Sharpe's Honour", slug: "sharpes-honour", imdb: "https://www.imdb.com/title/tt0111005/", buy: "https://amzn.to/3OJTLmk", battle: "Battle of Vitoria, 1813" },
+                  { film: "Sharpe's Gold", year: "1995", source: "Sharpe's Gold", slug: "sharpes-gold", imdb: "https://www.imdb.com/title/tt0114034/", buy: "https://amzn.to/3QJNU0Q", battle: "Portugal, 1810" },
+                  { film: "Sharpe's Battle", year: "1995", source: "Sharpe's Battle", slug: "sharpes-battle", imdb: "https://www.imdb.com/title/tt0114033/", buy: "https://amzn.to/4ct5mhn", battle: "Fuentes de Oñoro, 1811" },
+                  { film: "Sharpe's Sword", year: "1995", source: "Sharpe's Sword", slug: "sharpes-sword", imdb: "https://www.imdb.com/title/tt0114035/", buy: "https://amzn.to/4cvSPtR", battle: "Battle of Salamanca, 1812" },
+                  { film: "Sharpe's Regiment", year: "1996", source: "Sharpe's Regiment", slug: "sharpes-regiment", imdb: "https://www.imdb.com/title/tt0117569/", buy: "https://amzn.to/4cdNMzg", battle: "England, 1813" },
+                  { film: "Sharpe's Siege", year: "1996", source: "Sharpe's Siege", slug: "sharpes-siege", imdb: "https://www.imdb.com/title/tt0117570/", buy: "https://amzn.to/4tifrFi", battle: "France, 1814" },
+                  { film: "Sharpe's Mission", year: "1996", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0117568/", buy: "https://amzn.to/4thUGcX", battle: "France, 1813" },
+                  { film: "Sharpe's Revenge", year: "1997", source: "Sharpe's Revenge", slug: "sharpes-revenge", imdb: "https://www.imdb.com/title/tt0117571/", buy: "https://amzn.to/484GHP5", battle: "Toulouse / Naples, 1814" },
+                  { film: "Sharpe's Justice", year: "1997", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0119959/", buy: "https://amzn.to/3OJTLmk", battle: "England, 1814" },
+                  { film: "Sharpe's Waterloo", year: "1997", source: "Sharpe's Waterloo", slug: "sharpes-waterloo", imdb: "https://www.imdb.com/title/tt0119960/", buy: "https://amzn.to/4cMW7df", battle: "Battle of Waterloo, 1815" },
+                  { film: "Sharpe's Challenge", year: "2006", source: null, slug: null, imdb: "https://www.imdb.com/title/tt0460637/", buy: "https://amzn.to/4sXbzbX", battle: "India, 1803" },
+                  { film: "Sharpe's Peril", year: "2008", source: null, slug: null, imdb: "https://www.imdb.com/title/tt1229278/", buy: "https://amzn.to/4sXbzbX", battle: "India, 1803" },
                 ] as const).map((row) => (
                   <tr key={row.film} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
                     <td className="py-2.5 px-3">
@@ -474,14 +489,17 @@ export default function FictionPage() {
                       </a>
                     </td>
                     <td className="py-2.5 px-3">{row.year}</td>
-                    <td className="py-2.5 px-3 italic text-burgundy-bright">
-                      {row.source && row.slug ? (
-                        <a href={`#${row.slug}`} className="hover:text-gold transition">
-                          {row.source}
-                        </a>
-                      ) : (
-                        "Original screenplay"
-                      )}
+                    <td className="py-2.5 px-3">
+                      <span className="flex items-center gap-2">
+                        {row.source && row.slug ? (
+                          <a href={`#${row.slug}`} className="italic text-burgundy-bright hover:text-gold transition">
+                            {row.source}
+                          </a>
+                        ) : (
+                          <span className="italic text-burgundy-bright">Original screenplay</span>
+                        )}
+                        <a href={row.buy} target="_blank" rel="noopener noreferrer sponsored" className="shrink-0 px-1.5 py-0.5 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[9px] hover:border-gold transition rounded-sm">Buy</a>
+                      </span>
                     </td>
                     <td className="py-2.5 px-3">{row.battle}</td>
                   </tr>
