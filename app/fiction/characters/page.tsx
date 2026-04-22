@@ -213,6 +213,14 @@ export default function CharactersPage() {
             All characters are the creation of Bernard Cornwell. Character
             descriptions are written in our own words for reference purposes.
           </p>
+          <p className="text-sm text-parchment/95 font-serif leading-relaxed text-center mt-3">
+            Character entries are based on Bernard Cornwell&rsquo;s novels.
+            Where details are uncertain this is noted. If you spot an error
+            please{" "}
+            <Link href="/contact" className="text-gold-pale underline underline-offset-2 hover:text-gold transition">
+              contact us via our contact page
+            </Link>.
+          </p>
         </aside>
       </section>
 
@@ -729,12 +737,57 @@ export default function CharactersPage() {
                 <a href="https://amzn.to/4cdNMzg" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
               </summary>
               <div className="px-5 pb-5 pt-2 border-t border-gold/15">
-                <ul className="space-y-2 text-sm font-serif text-parchment/95">
-                  <li><span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">Jane Gibbons</span> (first appearance; young Englishwoman who becomes Sharpe&rsquo;s second wife) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">Lord Fenner</span> (War Office villain running the crimping racket)</li>
-                  <li><span className="text-gold-pale">The Prince of Wales</span> (minor appearance) <span className="text-xs text-gold/70 ml-1">historical</span></li>
+                <ul className="space-y-4 text-sm font-serif text-parchment/95">
+                  <li>
+                    <span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Lieutenant-Colonel &middot; English</span>
+                    <p className="mt-1">Returns to England from Spain to find the South Essex&rsquo;s second battalion has been effectively dissolved, its recruits siphoned off in a crimping racket. Sharpe and Harper go undercover as common recruits to infiltrate the battalion&rsquo;s training camp and expose the conspiracy. Sharpe also meets and begins his courtship of Jane Gibbons.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">RSM &middot; Irish (Donegal)</span>
+                    <p className="mt-1">Accompanies Sharpe to England and enlists alongside him in the second battalion under false names. His size and fighting ability make him conspicuous despite the disguise.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Colonel Girdwood</span>
+                    <br /><span className="text-xs text-gold/70">Colonel, 2nd Battalion South Essex &middot; English</span>
+                    <p className="mt-1">The commanding officer of the second battalion and the novel&rsquo;s principal villain. Girdwood runs the training camp where recruits are drilled and then sold to other regiments for profit. He is a petty tyrant who governs the camp through fear and rigid discipline. Girdwood is protected by his political connections to Lord Fenner.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: defeated and disgraced by Sharpe. Exact details of his final fate uncertain; readers should verify.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Lord Fenner</span>
+                    <br /><span className="text-xs text-gold/70">Secretary at War &middot; English</span>
+                    <p className="mt-1">The politician behind the crimping racket. Fenner occupies a senior position in the War Office and uses his authority to cover up the diversion of recruits from the South Essex. He is the power behind Girdwood and the more dangerous of the two villains because of his political connections.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: his conspiracy is exposed. Exact consequences uncertain; readers should verify.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Sergeant Lynch</span>
+                    <br /><span className="text-xs text-gold/70">Sergeant, 2nd Battalion South Essex &middot; English</span>
+                    <p className="mt-1">Girdwood&rsquo;s brutal enforcer at the training camp. Lynch maintains discipline through violence and intimidation. He is one of the men Sharpe and Harper must deal with while undercover as recruits.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: killed during the novel. Exact circumstances uncertain; readers should verify.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Jane Gibbons</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Civilian &middot; English</span>
+                    <p className="mt-1">First appearance. A young, well-born Englishwoman and niece of Sir Henry Simmerson (the incompetent colonel from Sharpe&rsquo;s Eagle). Sharpe is attracted to her beauty and her apparent admiration for him. They marry, but the relationship deteriorates badly in later novels as Jane proves ill-suited to life with Sharpe.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: becomes Sharpe&rsquo;s second wife. Leaves him by Sharpe&rsquo;s Revenge.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Maggie Joyce</span>
+                    <br /><span className="text-xs text-gold/70">Civilian &middot; English</span>
+                    <p className="mt-1">A woman from Sharpe&rsquo;s past in London, connected to his youth before he enlisted. She provides a reminder of the world Sharpe came from and the poverty he escaped by joining the army.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Specific plot details uncertain; readers should verify from the novel.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">The Prince of Wales</span> <span className="text-xs text-gold/70 ml-1">historical</span>
+                    <br /><span className="text-xs text-gold/70">Prince Regent &middot; English</span>
+                    <p className="mt-1">The future George IV. Makes a minor appearance in the London scenes. Cornwell uses him to illustrate the contrast between the political world and the reality of the war in Spain.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Sir Henry Simmerson</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Former Colonel, South Essex &middot; English</span>
+                    <p className="mt-1">Returns from Sharpe&rsquo;s Eagle. The disgraced former colonel of the South Essex who lost the King&rsquo;s Colour at Valdelacasa. Now involved in the crimping conspiracy through his political connections. Jane Gibbons is his niece.</p>
+                  </li>
                 </ul>
               </div>
             </details>
@@ -801,13 +854,62 @@ export default function CharactersPage() {
                 <a href="https://amzn.to/4cMW7df" target="_blank" rel="noopener noreferrer sponsored" className="px-3 py-1 border border-gold/50 bg-burgundy-deep/60 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold transition">Buy on Amazon</a>
               </summary>
               <div className="px-5 pb-5 pt-2 border-t border-gold/15">
-                <ul className="space-y-2 text-sm font-serif text-parchment/95">
-                  <li><span className="text-gold-pale">Richard Sharpe</span> (Lieutenant-Colonel, liaison officer) <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">Sergeant Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">The Prince of Orange</span> (commands the Allied I Corps) <span className="text-xs text-gold/70 ml-1">historical</span></li>
-                  <li><span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span></li>
-                  <li><span className="text-gold-pale">Napoleon Bonaparte</span> (glimpsed at a distance) <span className="text-xs text-gold/70 ml-1">historical</span></li>
-                  <li><span className="text-gold-pale">Lord John Rossendale</span> (Jane&rsquo;s lover)</li>
+                <ul className="space-y-4 text-sm font-serif text-parchment/95">
+                  <li>
+                    <span className="text-gold-pale">Richard Sharpe</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Lieutenant-Colonel, liaison officer &middot; English</span>
+                    <p className="mt-1">Attached to the Prince of Orange&rsquo;s staff as a liaison officer, a role that puts him in direct contact with the Allied command&rsquo;s worst decisions. Sharpe watches the Prince order catastrophic attacks and is powerless to countermand them. He fights at both Quatre Bras and Waterloo, ending the battle in the thick of the fighting around La Haye Sainte and the final defeat of the Imperial Guard.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Patrick Harper</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">RSM (retired) &middot; Irish (Donegal)</span>
+                    <p className="mt-1">Has left the army but comes to Belgium to find Sharpe. Fights alongside him at Waterloo as a civilian volunteer. Harper&rsquo;s presence at the battle is a deliberate choice: he comes because Sharpe needs him, not because he has to.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: survives Waterloo. Returns to Ireland.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">The Prince of Orange</span> <span className="text-xs text-gold/70 ml-1">historical</span>
+                    <br /><span className="text-xs text-gold/70">Commander, Allied I Corps &middot; Dutch</span>
+                    <p className="mt-1">William, Prince of Orange, heir to the Kingdom of the Netherlands. Cornwell portrays him as young, inexperienced and dangerously incompetent: he orders infantry into line when they should be in square, directly causing heavy casualties. His reckless commands are one of the novel&rsquo;s central sources of tension. Historically, the Prince was wounded at Waterloo and his battlefield performance has been debated by historians, though Cornwell&rsquo;s portrayal is notably harsh.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: wounded at Waterloo (historical).</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">The Duke of Wellington</span> <span className="text-xs text-gold/70 ml-1">historical</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Field Marshal, Allied commander &middot; Anglo-Irish</span>
+                    <p className="mt-1">Commands the Allied army at Waterloo. Cornwell portrays him as calm, cold, and utterly in command throughout the crisis. He recognises Sharpe&rsquo;s value and uses him where the fighting is hardest. Their long association across the series reaches its climax here.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Lord John Rossendale</span>
+                    <br /><span className="text-xs text-gold/70">Officer &middot; English</span>
+                    <p className="mt-1">Jane Sharpe&rsquo;s lover. A young, fashionable aristocrat who has taken up with Jane and is spending Sharpe&rsquo;s money. Rossendale serves in the Allied army at Waterloo. Sharpe wants to kill him but the battle intervenes.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Fate: specific outcome uncertain; readers should verify from the novel.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Napoleon Bonaparte</span> <span className="text-xs text-gold/70 ml-1">historical</span>
+                    <br /><span className="text-xs text-gold/70">Emperor of the French</span>
+                    <p className="mt-1">Seen at a distance commanding the French army. Cornwell does not give him a speaking role in this novel but his presence shapes every moment of the battle.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Lucille Castineau</span> <span className="text-burgundy-bright text-xs ml-1">recurring</span>
+                    <br /><span className="text-xs text-gold/70">Civilian &middot; French</span>
+                    <p className="mt-1">Sharpe&rsquo;s companion, waiting for him in Normandy. She appears in the novel&rsquo;s framing scenes. Her presence is a reminder of what Sharpe has to survive for.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Harry Price</span>
+                    <br /><span className="text-xs text-gold/70">Lieutenant &middot; English</span>
+                    <p className="mt-1">A junior officer who serves under Sharpe. Price is a likeable, capable soldier who fights at Waterloo.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">Exact rank and role details uncertain; first appears earlier in the series (Sharpe&rsquo;s Escape or later). Readers should verify.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">General Rebecque</span> <span className="text-xs text-gold/70 ml-1">historical</span>
+                    <br /><span className="text-xs text-gold/70">Chief of Staff, Netherlands Corps &middot; Dutch-Belgian</span>
+                    <p className="mt-1">Jean Victor de Constant Rebecque, the Prince of Orange&rsquo;s chief of staff. In the novel he is portrayed as a competent professional officer who tries to mitigate the Prince&rsquo;s worst decisions. He acts as a foil to the Prince: experienced where the Prince is reckless, cautious where the Prince is impulsive. Rebecque cooperates with Sharpe because both men can see the danger the Prince poses.</p>
+                  </li>
+                  <li>
+                    <span className="text-gold-pale">Peter d&rsquo;Alembord</span>
+                    <br /><span className="text-xs text-gold/70">Captain &middot; English</span>
+                    <p className="mt-1">An officer in Sharpe&rsquo;s battalion. D&rsquo;Alembord is a well-born officer who has served with Sharpe in earlier novels and fights at Waterloo.</p>
+                    <p className="mt-1 text-xs text-parchment/70 italic">First appearance is earlier in the series. Exact details of his Waterloo role uncertain; readers should verify.</p>
+                  </li>
                 </ul>
               </div>
             </details>
@@ -910,6 +1012,7 @@ export default function CharactersPage() {
             ["Chase, Captain Joel", "Sharpe's Trafalgar"],
             ["Christopher, Colonel", "Sharpe's Havoc"],
             ["Cochrane, Lord", "Sharpe's Devil"],
+            ["d'Alembord, Captain Peter", "Sharpe's Waterloo"],
             ["Dodd, William", "Sharpe's Triumph"],
             ["Dubreton, Colonel", "Sharpe's Enemy"],
             ["Ducos, Major Pierre", "Sharpe's Honour"],
@@ -919,12 +1022,14 @@ export default function CharactersPage() {
             ["Frederickson, Captain William", "Sharpe's Revenge"],
             ["Gibbons, Jane", "Sharpe's Regiment"],
             ["Gibbons, Lieutenant Christian", "Sharpe's Eagle"],
+            ["Girdwood, Colonel", "Sharpe's Regiment"],
             ["Graham, General Thomas", "Sharpe's Fury"],
             ["Hakeswill, Sergeant Obadiah", "Sharpe's Tiger"],
             ["Hale, Lady Grace", "Sharpe's Trafalgar"],
             ["Hale, Lord William", "Sharpe's Trafalgar"],
             ["Harper, Sergeant Patrick", "Sharpe's Rifles"],
             ["Hogan, Major Michael", "Sharpe's Eagle"],
+            ["Joyce, Maggie", "Sharpe's Regiment"],
             ["Killick, Cornelius", "Sharpe's Siege"],
             ["Lassan, Henri", "Sharpe's Assassin"],
             ["Lavisser, Captain John", "Sharpe's Prey"],
@@ -932,15 +1037,17 @@ export default function CharactersPage() {
             ["Leroux, Helene (La Marquesa)", "Sharpe's Honour"],
             ["Loup, Brigadier", "Sharpe's Battle"],
             ["Lucille Castineau", "Sharpe's Revenge"],
+            ["Lynch, Sergeant", "Sharpe's Regiment"],
             ["Mary Bickerstaff", "Sharpe's Tiger"],
             ["McCandless, Colonel", "Sharpe's Tiger"],
             ["Moore, Sir John", "Sharpe's Rifles"],
             ["Moreno, Teresa", "Sharpe's Gold"],
             ["Napoleon Bonaparte", "Sharpe's Waterloo"],
             ["Pot-au-Feu", "Sharpe's Enemy"],
-            ["Price, Lieutenant", "Sharpe's Escape"],
+            ["Price, Lieutenant Harry", "Sharpe's Escape"],
             ["Prince of Orange", "Sharpe's Waterloo"],
             ["Prince of Wales", "Sharpe's Regiment"],
+            ["Rebecque, General", "Sharpe's Waterloo"],
             ["Rossendale, Lord John", "Sharpe's Waterloo"],
             ["Runciman, Lord", "Sharpe's Battle"],
             ["Sarsfield, Father", "Sharpe's Fury"],
