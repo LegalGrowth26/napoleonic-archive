@@ -253,11 +253,18 @@ export default function AssayePage() {
       {/* 9. FURTHER READING + NAV */}
       <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-12">
-          <div className="flex flex-wrap gap-4 justify-center mb-6">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest text-center mb-8">Further Reading</h2>
+          <div className="flex flex-wrap gap-4 justify-center mb-8">
             <Link href="/india" className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">&larr; India</Link>
+            <Link href="/india/people/tippu-sultan" className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">Tippu Sultan</Link>
             <Link href="/india/east-india-company" className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">East India Company</Link>
             <Link href="/people/wellington" className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">Wellington Biography</Link>
             <Link href="/india/battles/seringapatam" className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">&larr; Seringapatam</Link>
+          </div>
+          <div className="text-center mb-6">
+            <a href="https://amzn.to/4vMBAgH" target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
+              The Anarchy by William Dalrymple &rarr;
+            </a>
           </div>
           <p className="text-xs uppercase tracking-widest text-parchment/85 text-center">
             As an Amazon Associate I earn from qualifying purchases.
