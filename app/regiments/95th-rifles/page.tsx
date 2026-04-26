@@ -620,6 +620,12 @@ export default function NinetyFifthRiflesPage() {
         <div className="text-center space-y-4">
           <div className="flex flex-wrap gap-4 justify-center">
             <Link
+              href="/regiments/baker-rifle"
+              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+            >
+              The Baker Rifle &rarr;
+            </Link>
+            <Link
               href="/regiments"
               className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
             >

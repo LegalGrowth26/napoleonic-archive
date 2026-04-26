@@ -230,6 +230,11 @@ const relatedPages = [
     title: "Sharpe novels",
     note: "The 95th Rifles as imagined by Bernard Cornwell.",
   },
+  {
+    href: "/regiments/baker-rifle",
+    title: "The Baker Rifle",
+    note: "The grooved-barrel weapon that gave the 95th their deadly edge.",
+  },
 ];
 
 export default function RegimentsPage() {
