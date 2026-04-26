@@ -99,6 +99,7 @@ const battles: Battle[] = [
     summary:
       "The Battle of the Three Emperors. Napoleon feigned weakness on his right, drew the Allies across the Pratzen Heights, then seized those heights with Soult's corps and rolled up their centre. The Holy Roman Empire would not survive the following year.",
     campaign: "Early Napoleonic",
+    dedicatedPage: "/battles/austerlitz",
   },
   {
     name: "Jena–Auerstedt",
@@ -245,6 +246,7 @@ const battles: Battle[] = [
       "'Wellington defeated forty thousand men in forty minutes.' Marmont over-extended his left across the Arapiles. By Peninsular tradition (reported in the memoirs of General Alava, and widely repeated since), Wellington flung down a chicken bone with 'By God, that will do!' and spurred off to Pakenham's 3rd Division, which rolled the French line from flank to centre.",
     sharpe: "Sharpe's Sword: the campaign of the French sword-master Leroux.",
     campaign: "Peninsular War",
+    dedicatedPage: "/battles/salamanca",
   },
   {
     name: "Vitoria",
