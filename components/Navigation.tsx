@@ -37,6 +37,7 @@ const NAV_SECTIONS: NavSection[] = [
         heading: "Featured Battles",
         links: [
           { label: "Battle of Waterloo", href: "/battles/waterloo" },
+          { label: "Battle of Trafalgar", href: "/battles/trafalgar" },
           { label: "Battle of Austerlitz", href: "/battles/austerlitz" },
           { label: "Battle of Salamanca", href: "/battles/salamanca" },
           { label: "Siege of Seringapatam", href: "/india/battles/seringapatam" },

@@ -85,6 +85,7 @@ const battles: Battle[] = [
     summary:
       "Nelson's two columns pierced the Franco-Spanish line at right angles; nineteen enemy ships were taken or destroyed and not one British ship was lost. Nelson, struck by a sharpshooter from the Redoutable, died below decks, securing a century of British maritime supremacy.",
     campaign: "Early Napoleonic",
+    dedicatedPage: "/battles/trafalgar",
   },
   {
     name: "Austerlitz",
