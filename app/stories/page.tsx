@@ -129,6 +129,11 @@ const relatedPages = [
     title: "Resources",
     note: "Buy the memoirs these extracts are drawn from.",
   },
+  {
+    href: "/stories/prisoners",
+    title: "Prisoners of War",
+    note: "Capture, captivity and survival: hulks, parole towns and Dartmoor.",
+  },
 ];
 
 export default function StoriesPage() {

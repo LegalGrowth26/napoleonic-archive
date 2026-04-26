@@ -166,6 +166,12 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
+        heading: "Voices",
+        links: [
+          { label: "Prisoners of War", href: "/stories/prisoners" },
+        ],
+      },
+      {
         heading: "Visit",
         links: [
           { label: "Museums & Battlefields", href: "/resources#museums" },
