@@ -77,6 +77,39 @@ const stories: Story[] = [
     publishedSource:
       "Mémoires du Sergent Bourgogne, 1835. Public domain.",
   },
+  {
+    title: "Cavalry at Waterloo",
+    byline: "Cavalié Mercer, Royal Horse Artillery · Journal of the Waterloo Campaign (1870)",
+    setting: "The ridge at Mont-Saint-Jean, 18 June 1815",
+    excerpt:
+      "Mercer describes how his battery of nine-pounders held its ground on the ridge as wave after wave of French cavalry charged the Allied line. He writes of the cuirassiers riding uphill through the mud, the guns firing at point-blank range into the mass of horsemen, the ground between the guns filling with dead horses and men in steel breastplates. He refused Wellington's order to shelter his gunners inside the infantry squares, judging that if they ran, the raw Dutch-Belgian infantry nearby would break. His battery kept firing.",
+    commentary:
+      "Mercer's journal, published posthumously in 1870, is the finest artillery memoir of the period. His vivid account of the cavalry charges has shaped how the battle is visualised for two centuries.",
+    publishedSource:
+      "Journal of the Waterloo Campaign by General Cavalié Mercer, 1870. Public domain.",
+  },
+  {
+    title: "A Private Soldier in Spain",
+    byline: "Private William Wheeler · The Letters of Private Wheeler, 1809–1828",
+    setting: "The Peninsular War, 1809 to 1814",
+    excerpt:
+      "Wheeler's letters home describe the daily reality of the ordinary infantryman in the Peninsula: the long marches under a broiling sun, the short rations, the bivouacs in rain without blankets, and the moments of sudden violence when a French column appeared over a ridge. He writes of the camaraderie of the ranks, the dark humour of soldiers who knew each battle might be their last, and the steady erosion of men by disease, exhaustion and the occasional musket ball.",
+    commentary:
+      "Wheeler's letters were edited and published by B.H. Liddell Hart in 1951. They provide a rare and largely unembellished record of the Peninsula from the perspective of a literate private soldier.",
+    publishedSource:
+      "The Letters of Private Wheeler 1809–1828, edited by B.H. Liddell Hart, 1951. Based on letters written during the period.",
+  },
+  {
+    title: "The 42nd Highlanders in Spain",
+    byline: "Sergeant James Anton · Retrospect of a Military Life (1841)",
+    setting: "The Peninsular War, the 42nd (Black Watch) at various actions",
+    excerpt:
+      "Anton describes the experience of the Highland regiments in the Peninsula: the pride of the kilt in battle, the bagpipes playing the men into action, and the terrible cost of frontal assaults against prepared positions. He writes of comrades lost at Quatre Bras and Waterloo, of the disciplined advance of the 42nd through fields of rye taller than a man, and of the moment when the Highland charge broke the French line.",
+    commentary:
+      "Anton's memoir is one of the few published accounts from a Highland NCO of the period. His pride in the regiment and his honest descriptions of the cost of battle make it an essential source for the Black Watch's war.",
+    publishedSource:
+      "Retrospect of a Military Life by James Anton, 1841. Public domain.",
+  },
 ];
 
 const articlesJsonLd = {
