@@ -86,7 +86,7 @@ const stories: Story[] = [
     commentary:
       "Mercer's journal, published posthumously in 1870, is the finest artillery memoir of the period. His vivid account of the cavalry charges has shaped how the battle is visualised for two centuries.",
     publishedSource:
-      "Journal of the Waterloo Campaign by General Cavalié Mercer, 1870. Public domain.",
+      "Source: Journal of the Waterloo Campaign by General Cavalié Mercer, 1870. Public domain. This is a summary of the account in our own words, not a verbatim extract. The original text is available via the sources listed on our Resources page.",
   },
   {
     title: "A Private Soldier in Spain",
@@ -97,7 +97,7 @@ const stories: Story[] = [
     commentary:
       "Wheeler's letters were edited and published by B.H. Liddell Hart in 1951. They provide a rare and largely unembellished record of the Peninsula from the perspective of a literate private soldier.",
     publishedSource:
-      "The Letters of Private Wheeler 1809–1828, edited by B.H. Liddell Hart, 1951. Based on letters written during the period.",
+      "Source: The Letters of Private Wheeler 1809–1828, edited by B.H. Liddell Hart, 1951. This is a summary of the account in our own words, not a verbatim extract. The original text is available via the sources listed on our Resources page.",
   },
   {
     title: "The 42nd Highlanders in Spain",
@@ -108,7 +108,7 @@ const stories: Story[] = [
     commentary:
       "Anton's memoir is one of the few published accounts from a Highland NCO of the period. His pride in the regiment and his honest descriptions of the cost of battle make it an essential source for the Black Watch's war.",
     publishedSource:
-      "Retrospect of a Military Life by James Anton, 1841. Public domain.",
+      "Source: Retrospect of a Military Life by James Anton, 1841. Public domain. This is a summary of the account in our own words, not a verbatim extract. The original text is available via the sources listed on our Resources page.",
   },
 ];
 
