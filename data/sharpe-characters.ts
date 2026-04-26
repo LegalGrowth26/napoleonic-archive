@@ -1496,4 +1496,17 @@ export const sharpeCharacters: SharpeCharacter[] = [
     firstAppearance: "Sharpe's Regiment",
     uncertain: false,
   },
+  {
+    name: "Helene Leroux",
+    rank: "Civilian",
+    nationality: "French",
+    role: "Sister of Colonel Philippe Leroux. A French agent operating inside British lines in Salamanca. Beautiful and dangerous. Sharpe's love interest in Sharpe's Sword. At the end of the novel she gives Sharpe a replacement telescope in a rosewood box — a gift from Napoleon to his brother Joseph, King of Spain.",
+    fate: "Survives. Her subsequent fate is not described.",
+    books: ["Sharpe's Sword"],
+    tvFilms: [],
+    novelVsTV: "In the TV adaptation of Sharpe's Sword her role is replaced by the character Lass — a traumatised novice nun played as a completely different character.",
+    type: "fictional",
+    firstAppearance: "Sharpe's Sword",
+    uncertain: false,
+  },
 ];
