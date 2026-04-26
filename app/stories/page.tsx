@@ -167,6 +167,11 @@ const relatedPages = [
     title: "Prisoners of War",
     note: "Capture, captivity and survival: hulks, parole towns and Dartmoor.",
   },
+  {
+    href: "/stories/purchase-system",
+    title: "The Purchase System",
+    note: "How officers were made: buying a commission and why Sharpe could never belong.",
+  },
 ];
 
 export default function StoriesPage() {
