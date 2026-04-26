@@ -1,6 +1,7 @@
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import JsonLd from "@/components/JsonLd";
+import PeopleContent from "@/components/PeopleContent";
 import { pageMeta, SITE, slugify } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -19,76 +20,11 @@ export const metadata = pageMeta({
   ],
 });
 
-interface Person {
-  name: string;
-  epithet: string;
-  years: string;
-  faction: string;
-  bio: string;
-  /** Battles this person fought at (matches Battle names for deep links). */
-  relatedBattles?: readonly string[];
-  /** Path to a dedicated sub-page, if one exists. */
-  dedicatedPage?: string;
-}
-
-const groups: { title: string; intro: string; people: Person[] }[] = [
+const groups = [
   {
-    title: "French",
-    intro:
-      "Soldiers of the Republic, of the Consulate and of the Empire: the men who carried the eagles across Europe.",
-    people: [
-      {
-        name: "Napoleon Bonaparte",
-        epithet: "The Emperor",
-        years: "1769 – 1821",
-        faction: "Emperor of the French",
-        dedicatedPage: "/people/napoleon",
-        bio: "A Corsican artilleryman who became master of Europe. His genius lay in movement: in bringing more men to the decisive point than the enemy thought possible. He ruled by Civil Code, by the loot of a continent, and by the devotion of his Old Guard. He died in exile on St Helena, attended by his diary and a handful of grumblers.",
-        relatedBattles: ["Marengo", "Austerlitz", "Jena–Auerstedt", "Eylau", "Borodino", "Leipzig", "Ligny", "Waterloo"],
-      },
-      {
-        name: "Michel Ney",
-        epithet: "Bravest of the Brave",
-        years: "1769 – 1815",
-        faction: "Marshal of the Empire",
-        bio: "A cooper's son from Saarlouis. He commanded the rearguard of the retreat from Moscow. At Waterloo he had five horses shot under him. Tried by the Bourbons after the Hundred Days, he gave the firing squad the order himself.",
-        relatedBattles: ["Quatre Bras", "Waterloo"],
-      },
-      {
-        name: "Louis-Nicolas Davout",
-        epithet: "The Iron Marshal",
-        years: "1770 – 1823",
-        faction: "Marshal · Duke of Auerstedt",
-        bio: "Bespectacled, austere, undefeated. At Auerstedt his 26,000 men broke a Prussian army nearly twice their size. Alone among the marshals he never lost a battle in independent command. Napoleon trusted him with Hamburg when the Empire was crumbling; he held it to the last.",
-        relatedBattles: ["Jena–Auerstedt"],
-      },
-      {
-        name: "Joachim Murat",
-        epithet: "The Dandy King",
-        years: "1767 – 1815",
-        faction: "Marshal · King of Naples",
-        bio: "An innkeeper's son who became Napoleon's brother-in-law and the most theatrical cavalryman in Europe. He rode in plumes, velvet and gold lace; the Russians called his uniforms 'the peacock's feathers.' Shot by a Bourbon firing squad in Pizzo, he gave the order himself, refusing a blindfold.",
-        relatedBattles: ["Eylau"],
-      },
-      {
-        name: "Jean Lannes",
-        epithet: "The Roland of the Army",
-        years: "1769 – 1809",
-        faction: "Marshal · Duke of Montebello",
-        bio: "Gascon, hot-tempered, beloved. The only marshal who addressed Napoleon with the familiar 'tu.' Both his legs were shattered by a cannonball at Aspern-Essling; he died nine days later in Napoleon's arms. The Emperor is said to have wept, perhaps the only time for a subordinate.",
-      },
-      {
-        name: "Pierre Cambronne",
-        epithet: "Général de la Garde",
-        years: "1770 – 1842",
-        faction: "General of the Old Guard",
-        bio: "Commanded a battalion of the Old Guard in the last square at Waterloo. Legend says that, summoned to surrender, he answered: 'La Garde meurt et ne se rend pas!', or, in the soldier's version, a single untranslatable word. He was taken alive, bloody and bitter.",
-        relatedBattles: ["Waterloo"],
-      },
-    ],
-  },
-  {
-    title: "British",
+    id: "british",
+    title: "British Commanders",
+    category: "British",
     intro:
       "Redcoats and their officers: the stubborn, parade-drilled, gin-soaked line that broke the Empire.",
     people: [
@@ -144,7 +80,9 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
     ],
   },
   {
-    title: "Allied & Other",
+    id: "allied",
+    title: "Allied Commanders",
+    category: "Allied",
     intro:
       "Tsars and Prussian hussars, Austrian archdukes and Spanish partisans: the coalitions that at last held.",
     people: [
@@ -197,7 +135,66 @@ const groups: { title: string; intro: string; people: Person[] }[] = [
     ],
   },
   {
-    title: "Of Sharpe's world",
+    id: "french",
+    title: "French Commanders",
+    category: "French",
+    intro:
+      "Soldiers of the Republic, of the Consulate and of the Empire: the men who carried the eagles across Europe.",
+    people: [
+      {
+        name: "Napoleon Bonaparte",
+        epithet: "The Emperor",
+        years: "1769 – 1821",
+        faction: "Emperor of the French",
+        dedicatedPage: "/people/napoleon",
+        bio: "A Corsican artilleryman who became master of Europe. His genius lay in movement: in bringing more men to the decisive point than the enemy thought possible. He ruled by Civil Code, by the loot of a continent, and by the devotion of his Old Guard. He died in exile on St Helena, attended by his diary and a handful of grumblers.",
+        relatedBattles: ["Marengo", "Austerlitz", "Jena–Auerstedt", "Eylau", "Borodino", "Leipzig", "Ligny", "Waterloo"],
+      },
+      {
+        name: "Michel Ney",
+        epithet: "Bravest of the Brave",
+        years: "1769 – 1815",
+        faction: "Marshal of the Empire",
+        bio: "A cooper's son from Saarlouis. He commanded the rearguard of the retreat from Moscow. At Waterloo he had five horses shot under him. Tried by the Bourbons after the Hundred Days, he gave the firing squad the order himself.",
+        relatedBattles: ["Quatre Bras", "Waterloo"],
+      },
+      {
+        name: "Louis-Nicolas Davout",
+        epithet: "The Iron Marshal",
+        years: "1770 – 1823",
+        faction: "Marshal · Duke of Auerstedt",
+        bio: "Bespectacled, austere, undefeated. At Auerstedt his 26,000 men broke a Prussian army nearly twice their size. Alone among the marshals he never lost a battle in independent command. Napoleon trusted him with Hamburg when the Empire was crumbling; he held it to the last.",
+        relatedBattles: ["Jena–Auerstedt"],
+      },
+      {
+        name: "Joachim Murat",
+        epithet: "The Dandy King",
+        years: "1767 – 1815",
+        faction: "Marshal · King of Naples",
+        bio: "An innkeeper's son who became Napoleon's brother-in-law and the most theatrical cavalryman in Europe. He rode in plumes, velvet and gold lace; the Russians called his uniforms 'the peacock's feathers.' Shot by a Bourbon firing squad in Pizzo, he gave the order himself, refusing a blindfold.",
+        relatedBattles: ["Eylau"],
+      },
+      {
+        name: "Jean Lannes",
+        epithet: "The Roland of the Army",
+        years: "1769 – 1809",
+        faction: "Marshal · Duke of Montebello",
+        bio: "Gascon, hot-tempered, beloved. The only marshal who addressed Napoleon with the familiar 'tu.' Both his legs were shattered by a cannonball at Aspern-Essling; he died nine days later in Napoleon's arms. The Emperor is said to have wept, perhaps the only time for a subordinate.",
+      },
+      {
+        name: "Pierre Cambronne",
+        epithet: "Général de la Garde",
+        years: "1770 – 1842",
+        faction: "General of the Old Guard",
+        bio: "Commanded a battalion of the Old Guard in the last square at Waterloo. Legend says that, summoned to surrender, he answered: 'La Garde meurt et ne se rend pas!', or, in the soldier's version, a single untranslatable word. He was taken alive, bloody and bitter.",
+        relatedBattles: ["Waterloo"],
+      },
+    ],
+  },
+  {
+    id: "fictional",
+    title: "Sharpe's World",
+    category: "Fictional",
     intro:
       "Names borrowed, transfigured or invented by Bernard Cornwell: the company kept by a rifleman from Yorkshire.",
     people: [
@@ -285,94 +282,18 @@ export default function PeoplePage() {
   return (
     <>
       <JsonLd data={itemListJsonLd} />
-      <PageHeader
-        eyebrow="Dramatis Personæ"
-        title="People"
-        lede="Emperors and riflemen, marshals and memoirists: the men and women whose lives the powder scorched."
-      />
+      <div id="top">
+        <PageHeader
+          eyebrow="Dramatis Personæ"
+          title="People"
+          lede="Emperors and riflemen, marshals and memoirists: the men and women whose lives the powder scorched."
+        />
+      </div>
 
-      <section className="max-w-6xl mx-auto px-6 py-16 space-y-16">
-        {groups.map((group) => (
-          <div key={group.title}>
-            <div className="mb-8">
-              <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest section-title">
-                {group.title}
-              </h2>
-              <p className="mt-4 text-parchment italic text-lg max-w-3xl font-serif">
-                {group.intro}
-              </p>
-            </div>
+      <PeopleContent groups={groups} />
 
-            <div className="grid md:grid-cols-2 gap-6">
-              {group.people.map((p) => {
-                const slug = slugify(p.name);
-                return (
-                  <article
-                    key={p.name}
-                    id={`person-${slug}`}
-                    className="card p-6 rounded-sm scroll-mt-24"
-                  >
-                    <div className="flex items-baseline justify-between gap-2 mb-1">
-                      <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider">
-                        <a
-                          href={`#person-${slug}`}
-                          className="hover:text-gold"
-                        >
-                          {p.name}
-                        </a>
-                      </h3>
-                      <span className="text-xs tracking-widest text-gold/70 whitespace-nowrap">
-                        {p.years}
-                      </span>
-                    </div>
-                    <div className="text-sm italic text-burgundy-bright mb-3">
-                      {p.epithet}
-                    </div>
-                    <div className="text-xs uppercase tracking-widest text-parchment/85 mb-4">
-                      {p.faction}
-                    </div>
-                    <p className="text-parchment leading-relaxed font-serif">
-                      {p.bio}
-                    </p>
-                    {p.relatedBattles && p.relatedBattles.length > 0 && (
-                      <div className="mt-5 pt-5 border-t border-gold/15 flex flex-wrap items-center gap-x-3 gap-y-2 text-sm">
-                        <span className="text-gold-pale uppercase text-xs tracking-widest">
-                          Fought at
-                        </span>
-                        <span className="text-gold/40">·</span>
-                        {p.relatedBattles.map((battle, i) => (
-                          <span key={battle} className="font-serif">
-                            <Link
-                              href={`/battles#battle-${slugify(battle)}`}
-                              className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold"
-                            >
-                              {battle}
-                            </Link>
-                            {i < p.relatedBattles!.length - 1 && (
-                              <span className="text-gold/40 ml-3">·</span>
-                            )}
-                          </span>
-                        ))}
-                      </div>
-                    )}
-                    {p.dedicatedPage && (
-                      <div className="mt-5 pt-5 border-t border-gold/15">
-                        <Link
-                          href={p.dedicatedPage}
-                          className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal"
-                        >
-                          Read full biography &rarr;
-                        </Link>
-                      </div>
-                    )}
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-        ))}
-
-        <aside className="mt-16 pt-10 border-t border-gold/20">
+      <section className="max-w-6xl mx-auto px-6 pb-16">
+        <aside className="pt-10 border-t border-gold/20">
           <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
             Related
           </h2>
