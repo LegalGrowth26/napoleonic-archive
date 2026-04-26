@@ -27,6 +27,7 @@ const routes = [
   { path: "/india/battles/gawilghur", priority: 0.8 },
   { path: "/stories/prisoners", priority: 0.8 },
   { path: "/battles/austerlitz", priority: 0.9 },
+  { path: "/battles/salamanca", priority: 0.9 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
