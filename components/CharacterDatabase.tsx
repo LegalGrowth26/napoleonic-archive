@@ -45,7 +45,7 @@ export default function CharacterDatabase() {
             The Complete Character Database
           </h2>
           <p className="mt-3 text-sm text-parchment/95 font-serif italic max-w-2xl mx-auto">
-            Every named character from all 24 Sharpe novels, with book and TV film appearances.
+            Every named character from the Sharpe novels and TV series, with verified book and film appearances.
           </p>
         </div>
 
@@ -86,7 +86,7 @@ export default function CharacterDatabase() {
             No characters match your search.
           </p>
         ) : (
-          <div className="grid md:grid-cols-2 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((c) => (
               <article key={c.name} className="card p-6 rounded-sm">
                 <div className="flex items-start justify-between gap-3 mb-2">
@@ -133,7 +133,7 @@ export default function CharacterDatabase() {
                       {c.books.map((b) => (
                         <span
                           key={b}
-                          className="inline-block px-2 py-0.5 text-[10px] border border-gold/30 bg-navy-muted/40 text-parchment/95 rounded-sm"
+                          className="inline-block px-2 py-0.5 text-[10px] border border-burgundy-bright/40 bg-burgundy-deep/20 text-burgundy-bright rounded-sm"
                         >
                           {b}
                         </span>
@@ -150,7 +150,7 @@ export default function CharacterDatabase() {
                       {c.tvFilms.map((t) => (
                         <span
                           key={t}
-                          className="inline-block px-2 py-0.5 text-[10px] border border-burgundy-bright/40 bg-burgundy-deep/20 text-burgundy-bright rounded-sm"
+                          className="inline-block px-2 py-0.5 text-[10px] border border-gold/40 bg-gold/10 text-gold-pale rounded-sm"
                         >
                           {t}
                         </span>
@@ -170,12 +170,12 @@ export default function CharacterDatabase() {
                 )}
                 {c.uncertain && (
                   <p className="mt-3 text-xs italic text-parchment/70 font-serif">
-                    Some details uncertain. If you spot an error please{" "}
+                    Some details unverified — corrections welcome via our{" "}
                     <Link
                       href="/contact"
                       className="text-gold-pale underline underline-offset-2 hover:text-gold transition"
                     >
-                      contact us
+                      contact page
                     </Link>
                     .
                   </p>
