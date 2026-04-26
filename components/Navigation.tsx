@@ -85,7 +85,6 @@ const NAV_SECTIONS: NavSection[] = [
       {
         heading: "Overview",
         links: [
-          { label: "India & the Company", href: "/india" },
           { label: "East India Company", href: "/india/east-india-company" },
         ],
       },
