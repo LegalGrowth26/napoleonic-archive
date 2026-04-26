@@ -408,7 +408,7 @@ export default function NapoleonPage() {
       </section>
 
       {/* ============================================================ */}
-      {/* 7. THE PENINSULAR WAR — HIS GREATEST MISTAKE                */}
+      {/* 7. THE PENINSULAR WAR, HIS GREATEST MISTAKE                */}
       {/* ============================================================ */}
       <section
         id="peninsular"

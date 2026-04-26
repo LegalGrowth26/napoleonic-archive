@@ -37,7 +37,7 @@ const battles: Battle[] = [
     outcomeType: "allied",
     casualties: "~1,400 British. Mysore defender casualties not reliably recorded.",
     summary:
-      "The storming of Tippu Sultan's fortress capital. Wellesley commanded the reserves and the night attack — his only significant failure came on 5 April when his force became confused in a tope of trees in darkness. The successful assault on 4 May ended the Kingdom of Mysore. Wellesley was appointed governor of the captured city.",
+      "The storming of Tippu Sultan's fortress capital. Wellesley commanded the reserves and the night attack, his only significant failure came on 5 April when his force became confused in a tope of trees in darkness. The successful assault on 4 May ended the Kingdom of Mysore. Wellesley was appointed governor of the captured city.",
     sharpe: "Sharpe's Tiger: the novel is set entirely at this siege.",
     campaign: "India",
     dedicatedPage: "/india/battles/seringapatam",
@@ -51,9 +51,9 @@ const battles: Battle[] = [
     relatedPeople: ["Arthur Wellesley, Duke of Wellington"],
     outcome: "British victory",
     outcomeType: "allied",
-    casualties: "~1,584 British — nearly a quarter of the force. Two horses shot under Wellesley. Maratha casualties ~6,000 est. but not reliably documented.",
+    casualties: "~1,584 British, nearly a quarter of the force. Two horses shot under Wellesley. Maratha casualties ~6,000 est. but not reliably documented.",
     summary:
-      "Wellington called it the hardest fighting he ever saw — a verdict he maintained even after Waterloo. Outnumbered nearly six to one, Wellesley identified a ford, crossed the River Kaitna and attacked immediately. The Maratha artillery was devastating. The 74th Highlanders were almost destroyed. Victory came at terrible cost.",
+      "Wellington called it the hardest fighting he ever saw, a verdict he maintained even after Waterloo. Outnumbered nearly six to one, Wellesley identified a ford, crossed the River Kaitna and attacked immediately. The Maratha artillery was devastating. The 74th Highlanders were almost destroyed. Victory came at terrible cost.",
     sharpe: "Sharpe's Triumph: Sharpe saves Wellesley's life here and earns his commission.",
     campaign: "India",
     dedicatedPage: "/india/battles/assaye",

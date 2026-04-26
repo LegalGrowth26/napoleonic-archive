@@ -235,7 +235,7 @@ export default function CharacterDatabase() {
                 </div>
                 {c.tvOnly && (
                   <div className="mb-3 inline-block px-2 py-1 text-[10px] uppercase tracking-widest rounded-sm border border-parchment/40 bg-parchment/5 text-parchment/85">
-                    TV Only — does not appear in the novels
+                    TV Only, does not appear in the novels
                   </div>
                 )}
                 <div className="text-sm italic text-burgundy-bright mb-1">{c.rank}</div>
@@ -334,7 +334,7 @@ export default function CharacterDatabase() {
                 )}
                 {c.uncertain && (
                   <p className="mt-3 text-xs italic text-parchment/70 font-serif">
-                    Some details unverified — corrections welcome via our{" "}
+                    Some details unverified, corrections welcome via our{" "}
                     <Link
                       href="/contact"
                       className="text-gold-pale underline underline-offset-2 hover:text-gold transition"

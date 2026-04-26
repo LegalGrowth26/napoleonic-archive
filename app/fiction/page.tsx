@@ -454,11 +454,11 @@ export default function FictionPage() {
               While most Sharpe TV films are adaptations of Bernard Cornwell&rsquo;s novels, five are original screenplays not based on any Cornwell book:
             </p>
             <ul className="text-parchment/95 leading-relaxed font-serif space-y-2 mb-4 list-disc pl-6">
-              <li><span className="text-gold-pale">Sharpe&rsquo;s Mission</span> (1996) — original screenplay</li>
-              <li><span className="text-gold-pale">Sharpe&rsquo;s Justice</span> (1997) — original screenplay</li>
-              <li><span className="text-gold-pale">Sharpe&rsquo;s Challenge</span> (2006) — original screenplay loosely inspired by the India novels</li>
-              <li><span className="text-gold-pale">Sharpe&rsquo;s Peril</span> (2008) — original screenplay</li>
-              <li><span className="text-gold-pale">Sharpe&rsquo;s Gold</span> (1995) — shares only the title with Cornwell&rsquo;s novel. The plot is completely different and unrelated.</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Mission</span> (1996), original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Justice</span> (1997), original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Challenge</span> (2006), original screenplay loosely inspired by the India novels</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Peril</span> (2008), original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Gold</span> (1995), shares only the title with Cornwell&rsquo;s novel. The plot is completely different and unrelated.</li>
             </ul>
             <p className="text-parchment/95 leading-relaxed font-serif">
               Characters who appear exclusively in these films do not exist in Bernard Cornwell&rsquo;s novels. They are the creations of the TV screenwriters.

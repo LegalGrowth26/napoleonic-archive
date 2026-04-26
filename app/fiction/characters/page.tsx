@@ -40,11 +40,11 @@ const articleJsonLd = {
 const faqItems = [
   {
     q: "What happens to Sharpe's daughter Antonia?",
-    a: "Antonia is Sharpe's daughter with Teresa Moreno. After Teresa is killed by Hakeswill at Badajoz, Antonia is left in Spain in the care of others. She appears briefly in the novels as a young child but her ultimate fate is not clearly resolved in the main series — Cornwell leaves her story largely unfinished.",
+    a: "Antonia is Sharpe's daughter with Teresa Moreno. After Teresa is killed by Hakeswill at Badajoz, Antonia is left in Spain in the care of others. She appears briefly in the novels as a young child but her ultimate fate is not clearly resolved in the main series. Cornwell leaves her story largely unfinished.",
   },
   {
     q: "Does Sharpe have any other children?",
-    a: "Yes. With Lucille Castineau after the wars, Sharpe has a son named Patrick — named after Harper. He also had a son with Jane Gibbons but that child does not survive. His acknowledged surviving children are Antonia (with Teresa, fate unclear) and Patrick (with Lucille).",
+    a: "Yes. With Lucille Castineau after the wars, Sharpe has a son named Patrick, named after Harper. He also had a son with Jane Gibbons but that child does not survive. His acknowledged surviving children are Antonia (with Teresa, fate unclear) and Patrick (with Lucille).",
   },
   {
     q: "What happens to Lucille Castineau?",
@@ -52,23 +52,23 @@ const faqItems = [
   },
   {
     q: "Does Sharpe ever meet Napoleon?",
-    a: "Yes — briefly, in Sharpe's Devil, the final novel. Sharpe travels to Chile with Lord Cochrane and on the voyage encounters Napoleon on St Helena. It is a brief atmospheric encounter rather than a dramatic confrontation. Napoleon is diminished by exile and Sharpe sees the man behind the legend. It is one of Cornwell's most affecting scenes.",
+    a: "Yes, briefly, in Sharpe's Devil, the final novel. Sharpe travels to Chile with Lord Cochrane and on the voyage encounters Napoleon on St Helena. It is a brief atmospheric encounter rather than a dramatic confrontation. Napoleon is diminished by exile and Sharpe sees the man behind the legend. It is one of Cornwell's most affecting scenes.",
   },
   {
     q: "Is Sharpe still alive at the end of the series?",
-    a: "Yes. At the end of Sharpe's Devil, Sharpe is alive and returns to Normandy and Lucille. He is in his mid-forties. Cornwell has continued adding novels — Sharpe's Assassin (2021) and Sharpe's Storm (2024) are set earlier in the timeline. As of the most recent novels, Sharpe survives the Napoleonic Wars and lives on in France with Lucille.",
+    a: "Yes. At the end of Sharpe's Devil, Sharpe is alive and returns to Normandy and Lucille. He is in his mid-forties. Cornwell has continued adding novels. Sharpe's Assassin (2021) and Sharpe's Storm (2024) are set earlier in the timeline. As of the most recent novels, Sharpe survives the Napoleonic Wars and lives on in France with Lucille.",
   },
   {
     q: "Who kills Hakeswill?",
-    a: "In the novel Sharpe's Enemy, Hakeswill is tried and sentenced to death by firing squad. Sharpe commands the execution and delivers the coup de grâce — cold, formal and deliberate. In the 1994 ITV television adaptation the scene is handled differently.",
+    a: "In the novel Sharpe's Enemy, Hakeswill is tried and sentenced to death by firing squad. Sharpe commands the execution and delivers the coup de grâce, cold, formal and deliberate. In the 1994 ITV television adaptation the scene is handled differently.",
   },
   {
     q: "What regiment is Sharpe in?",
-    a: "Sharpe begins his career in the 33rd Regiment of Foot before becoming an officer in the 95th Rifles — the green-jacketed light infantry regiment that becomes his true home throughout the Peninsular War. He is briefly attached to the fictional South Essex Regiment as well.",
+    a: "Sharpe begins his career in the 33rd Regiment of Foot before becoming an officer in the 95th Rifles, the green-jacketed light infantry regiment that becomes his true home throughout the Peninsular War. He is briefly attached to the fictional South Essex Regiment as well.",
   },
   {
     q: "Who is Patrick Harper?",
-    a: "Patrick Harper is Sharpe's closest friend and companion throughout the series — an Irish sergeant from Donegal in the 95th Rifles. Immensely strong, deeply loyal, and armed with a seven-barrelled volley gun, Harper is the second most dangerous man in any room Sharpe enters. He survives the wars and returns to Ireland with his wife Ramona.",
+    a: "Patrick Harper is Sharpe's closest friend and companion throughout the series, an Irish sergeant from Donegal in the 95th Rifles. Immensely strong, deeply loyal, and armed with a seven-barrelled volley gun, Harper is the second most dangerous man in any room Sharpe enters. He survives the wars and returns to Ireland with his wife Ramona.",
   },
   {
     q: "In what order should I read the Sharpe books?",

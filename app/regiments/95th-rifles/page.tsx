@@ -396,7 +396,7 @@ export default function NinetyFifthRiflesPage() {
         </div>
       </section>
 
-      {/* 8. BADAJOZ — THE COSTLIEST NIGHT */}
+      {/* 8. BADAJOZ, THE COSTLIEST NIGHT */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <div className="card p-8 rounded-sm border-burgundy-bright/40 bg-burgundy-deep/20">
           <div className="flex items-center gap-2 mb-4">
