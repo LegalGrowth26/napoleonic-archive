@@ -10,6 +10,11 @@ export interface SharpeCharacter {
   type: 'recurring' | 'historical' | 'fictional';
   firstAppearance: string;
   uncertain: boolean;
+  career?: {
+    book: string;
+    rank: string;
+    notes?: string;
+  }[];
 }
 
 export const sharpeCharacters: SharpeCharacter[] = [
@@ -37,6 +42,18 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "recurring",
     firstAppearance: "Sharpe's Tiger",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Tiger", rank: "Private", notes: "33rd Regiment of Foot. Promoted to Sergeant by end of novel." },
+      { book: "Sharpe's Triumph", rank: "Sergeant", notes: "Saves Wellesley's life at Assaye. Receives battlefield commission." },
+      { book: "Sharpe's Fortress", rank: "Ensign", notes: "74th Regiment of Foot." },
+      { book: "Sharpe's Trafalgar", rank: "Lieutenant", notes: "Transfers to newly formed 95th Rifles." },
+      { book: "Sharpe's Prey", rank: "Lieutenant", notes: "95th Rifles." },
+      { book: "Sharpe's Rifles", rank: "Lieutenant", notes: "95th Rifles. Takes command after Captain Murray is mortally wounded." },
+      { book: "Sharpe's Eagle", rank: "Captain", notes: "Promoted by Wellesley after taking the French Eagle at Talavera. Given command of South Essex Light Company." },
+      { book: "Sharpe's Sword", rank: "Captain", notes: "Wounded at Salamanca." },
+      { book: "Sharpe's Regiment", rank: "Major", notes: "Promoted by the Prince Regent after Salamanca." },
+      { book: "Sharpe's Waterloo", rank: "Lieutenant Colonel", notes: "Given command of 5th Belgian Light Dragoons on Prince of Orange's staff." },
+    ],
   },
   {
     name: "Obadiah Hakeswill",
@@ -53,6 +70,13 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "recurring",
     firstAppearance: "Sharpe's Tiger",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Tiger", rank: "Sergeant", notes: "33rd Regiment of Foot. Recruits Sharpe at age 16. Has Sharpe flogged." },
+      { book: "Sharpe's Triumph", rank: "Sergeant", notes: "Murders McCandless in the confusion of battle." },
+      { book: "Sharpe's Fortress", rank: "Sergeant", notes: "Final India appearance." },
+      { book: "Sharpe's Company", rank: "Sergeant", notes: "Returns attached to the South Essex with Colonel Windham. Frames Harper for theft. Kills Teresa Moreno." },
+      { book: "Sharpe's Enemy", rank: "Sergeant", notes: "Leads the deserters at Adrados. Final appearance. Tried and executed by firing squad. Sharpe commands the execution." },
+    ],
   },
   {
     name: "Lieutenant William Lawford",
@@ -69,6 +93,11 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "recurring",
     firstAppearance: "Sharpe's Tiger",
     uncertain: true,
+    career: [
+      { book: "Sharpe's Tiger", rank: "Lieutenant", notes: "33rd Regiment. Accompanies Sharpe on the mission inside Seringapatam. Teaches Sharpe to read and write in Tippu's prison." },
+      { book: "Sharpe's Eagle", rank: "Colonel", notes: "Commanding officer of the South Essex." },
+      { book: "Sharpe's Company", rank: "Colonel", notes: "Severely wounded at Ciudad Rodrigo — loses an arm when a mine blows. Retires from active command." },
+    ],
   },
   {
     name: "Colonel Hector McCandless",
@@ -234,6 +263,12 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "fictional",
     firstAppearance: "Sharpe's Rifles",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Rifles", rank: "Private", notes: "95th Rifles. First appearance. Initially mutinies against Sharpe." },
+      { book: "Sharpe's Eagle", rank: "Sergeant", notes: "Promoted. Becomes Sharpe's right hand." },
+      { book: "Sharpe's Regiment", rank: "Regimental Sergeant Major", notes: "Promoted by Sharpe when the previous RSM is killed." },
+      { book: "Sharpe's Waterloo", rank: "Civilian", notes: "Discharged from the army in 1814 with Wellington's signature. Comes to Waterloo as a civilian horse trader — unofficially to fight alongside Sharpe one last time." },
+    ],
   },
   {
     name: "Major Blas Vivar",
@@ -481,6 +516,12 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "fictional",
     firstAppearance: "Sharpe's Eagle",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Eagle", rank: "Captain", notes: "South Essex. Described as the only other decent soldier in the battalion by Lennox." },
+      { book: "Sharpe's Company", rank: "Captain", notes: "Passed over for promotion to Major in favour of Collett." },
+      { book: "Sharpe's Sword", rank: "Major", notes: "South Essex." },
+      { book: "Sharpe's Honour", rank: "Lieutenant Colonel", notes: "Takes command of the South Essex after Forrest transfers to Lisbon. Killed leading his men on foot at Gamarra Mayor." },
+    ],
   },
   {
     name: "Robert Knowles",
@@ -559,6 +600,14 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "fictional",
     firstAppearance: "Sharpe's Company",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Company", rank: "Lieutenant", notes: "First appearance. Shot by Hakeswill at Badajoz in the TV version." },
+      { book: "Sharpe's Sword", rank: "Lieutenant", notes: "South Essex Light Company." },
+      { book: "Sharpe's Enemy", rank: "Lieutenant", notes: "Adrados campaign." },
+      { book: "Sharpe's Honour", rank: "Lieutenant", notes: "Vitoria campaign." },
+      { book: "Sharpe's Regiment", rank: "Lieutenant", notes: "England and Pyrenees." },
+      { book: "Sharpe's Waterloo", rank: "Lieutenant", notes: "Officer in the Prince of Wales Own Volunteers. Worried his brother is among the casualties of Orange's foolish orders." },
+    ],
   },
   {
     name: "General Graham",
@@ -819,6 +868,11 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "fictional",
     firstAppearance: "Sharpe's Siege",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Siege", rank: "Captain", notes: "First appearance. 60th Rifles. Known as Sweet William. Missing an eye, several teeth and part of an ear." },
+      { book: "Sharpe's Revenge", rank: "Captain", notes: "Fights his last battle at Toulouse with the 60th Rifles after he and Sharpe are detached from the South Essex." },
+      { book: "Sharpe's Assassin", rank: "Captain", notes: "Paris 1815." },
+    ],
   },
   {
     name: "Lucille Castineau",
@@ -949,6 +1003,12 @@ export const sharpeCharacters: SharpeCharacter[] = [
     type: "fictional",
     firstAppearance: "Sharpe's Regiment",
     uncertain: false,
+    career: [
+      { book: "Sharpe's Regiment", rank: "Captain", notes: "First appearance. Travels to England with Sharpe and Harper to investigate the crimping racket." },
+      { book: "Sharpe's Siege", rank: "Captain", notes: "Atlantic coast raid." },
+      { book: "Sharpe's Revenge", rank: "Captain", notes: "France campaign." },
+      { book: "Sharpe's Waterloo", rank: "Captain", notes: "Officer in Prince of Wales Own Volunteers." },
+    ],
   },
   {
     name: "Lady Anne Comoynes",

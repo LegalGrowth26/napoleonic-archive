@@ -296,6 +296,37 @@ export default function CharacterDatabase() {
                     </p>
                   </div>
                 )}
+                {c.career && c.career.length > 0 && (
+                  <details className="mt-3 border border-gold/25 rounded-sm bg-navy-muted/30 group/career">
+                    <summary className="flex items-center justify-between gap-2 px-3 py-2 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                      <span className="font-display text-xs uppercase tracking-[0.25em] text-gold-pale">
+                        Military Career
+                      </span>
+                      <span className="text-gold/60 text-xs group-open/career:rotate-90 transition-transform" aria-hidden="true">
+                        ›
+                      </span>
+                    </summary>
+                    <ol className="px-3 pb-3 pt-1 border-t border-gold/15 space-y-2 text-sm font-serif">
+                      {c.career.map((step, i) => (
+                        <li key={`${step.book}-${i}`} className="flex flex-col gap-0.5">
+                          <div className="flex flex-wrap items-baseline gap-x-2">
+                            <span className="text-gold-pale text-xs uppercase tracking-widest">
+                              {step.rank}
+                            </span>
+                            <span className="text-burgundy-bright text-[10px] uppercase tracking-widest">
+                              {step.book}
+                            </span>
+                          </div>
+                          {step.notes && (
+                            <p className="text-parchment/90 text-xs leading-relaxed">
+                              {step.notes}
+                            </p>
+                          )}
+                        </li>
+                      ))}
+                    </ol>
+                  </details>
+                )}
                 {c.uncertain && (
                   <p className="mt-3 text-xs italic text-parchment/70 font-serif">
                     Some details unverified — corrections welcome via our{" "}
