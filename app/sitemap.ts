@@ -21,6 +21,10 @@ const routes = [
   { path: "/india/battles/seringapatam", priority: 0.8 },
   { path: "/india/battles/assaye", priority: 0.8 },
   { path: "/india/people/tippu-sultan", priority: 0.8 },
+  { path: "/india/people/wellington-in-india", priority: 0.8 },
+  { path: "/india/people/richard-wellesley", priority: 0.8 },
+  { path: "/india/battles/argaum", priority: 0.8 },
+  { path: "/india/battles/gawilghur", priority: 0.8 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
