@@ -10,6 +10,7 @@ export interface SharpeCharacter {
   type: 'recurring' | 'historical' | 'fictional';
   firstAppearance: string;
   uncertain: boolean;
+  tvOnly?: boolean;
   career?: {
     book: string;
     rank: string;

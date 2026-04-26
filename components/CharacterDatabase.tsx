@@ -233,6 +233,11 @@ export default function CharacterDatabase() {
                     {c.type}
                   </span>
                 </div>
+                {c.tvOnly && (
+                  <div className="mb-3 inline-block px-2 py-1 text-[10px] uppercase tracking-widest rounded-sm border border-parchment/40 bg-parchment/5 text-parchment/85">
+                    TV Only — does not appear in the novels
+                  </div>
+                )}
                 <div className="text-sm italic text-burgundy-bright mb-1">{c.rank}</div>
                 <div className="text-xs uppercase tracking-widest text-parchment/85 mb-3">
                   {c.nationality}

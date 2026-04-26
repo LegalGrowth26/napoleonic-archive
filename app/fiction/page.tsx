@@ -429,7 +429,7 @@ export default function FictionPage() {
           <p className="text-sm uppercase tracking-[0.3em] text-gold/70 text-center mb-8">
             ITV · 1993 to 2008 · Sean Bean as Richard Sharpe
           </p>
-          <div className="card p-6 md:p-8 rounded-sm mb-8">
+          <div className="card p-6 md:p-8 rounded-sm mb-6">
             <p className="text-parchment leading-relaxed font-serif text-lg mb-5">
               Sixteen television films were produced by ITV between 1993 and
               2008, filmed largely on location in Turkey, Portugal and India.
@@ -445,6 +445,25 @@ export default function FictionPage() {
               physical media retailers for the complete DVD box set.
             </p>
           </div>
+
+          <aside className="card p-6 md:p-8 rounded-sm mb-8 border-burgundy-bright/40 bg-burgundy-deep/15">
+            <h3 className="font-display text-xl text-gold-pale uppercase tracking-widest mb-4">
+              Original Screenplays
+            </h3>
+            <p className="text-parchment leading-relaxed font-serif mb-4">
+              While most Sharpe TV films are adaptations of Bernard Cornwell&rsquo;s novels, five are original screenplays not based on any Cornwell book:
+            </p>
+            <ul className="text-parchment/95 leading-relaxed font-serif space-y-2 mb-4 list-disc pl-6">
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Mission</span> (1996) — original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Justice</span> (1997) — original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Challenge</span> (2006) — original screenplay loosely inspired by the India novels</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Peril</span> (2008) — original screenplay</li>
+              <li><span className="text-gold-pale">Sharpe&rsquo;s Gold</span> (1995) — shares only the title with Cornwell&rsquo;s novel. The plot is completely different and unrelated.</li>
+            </ul>
+            <p className="text-parchment/95 leading-relaxed font-serif">
+              Characters who appear exclusively in these films do not exist in Bernard Cornwell&rsquo;s novels. They are the creations of the TV screenwriters.
+            </p>
+          </aside>
           <div className="overflow-x-auto">
             <table className="w-full text-sm font-serif">
               <thead>
@@ -465,26 +484,33 @@ export default function FictionPage() {
               </thead>
               <tbody className="text-parchment/95">
                 {([
-                  { film: "Sharpe's Rifles", year: "1993", source: "Sharpe's Rifles", slug: "sharpes-rifles", buy: "https://amzn.to/4cSwN4L", battle: "Retreat to Corunna, 1809" },
-                  { film: "Sharpe's Eagle", year: "1993", source: "Sharpe's Eagle", slug: "sharpes-eagle", buy: "https://amzn.to/4sXbzbX", battle: "Battle of Talavera, 1809" },
-                  { film: "Sharpe's Company", year: "1994", source: "Sharpe's Company", slug: "sharpes-company", buy: "https://amzn.to/4thUGcX", battle: "Siege of Badajoz, 1812" },
-                  { film: "Sharpe's Enemy", year: "1994", source: "Sharpe's Enemy", slug: "sharpes-enemy", buy: "https://amzn.to/487wQrL", battle: "Adrados, Christmas 1812" },
-                  { film: "Sharpe's Honour", year: "1994", source: "Sharpe's Honour", slug: "sharpes-honour", buy: "https://amzn.to/3OJTLmk", battle: "Battle of Vitoria, 1813" },
-                  { film: "Sharpe's Gold", year: "1995", source: "Sharpe's Gold", slug: "sharpes-gold", buy: "https://amzn.to/3QJNU0Q", battle: "Portugal, 1810" },
-                  { film: "Sharpe's Battle", year: "1995", source: "Sharpe's Battle", slug: "sharpes-battle", buy: "https://amzn.to/4ct5mhn", battle: "Fuentes de Oñoro, 1811" },
-                  { film: "Sharpe's Sword", year: "1995", source: "Sharpe's Sword", slug: "sharpes-sword", buy: "https://amzn.to/4cvSPtR", battle: "Battle of Salamanca, 1812" },
-                  { film: "Sharpe's Regiment", year: "1996", source: "Sharpe's Regiment", slug: "sharpes-regiment", buy: "https://amzn.to/4cdNMzg", battle: "England, 1813" },
-                  { film: "Sharpe's Siege", year: "1996", source: "Sharpe's Siege", slug: "sharpes-siege", buy: "https://amzn.to/4tifrFi", battle: "France, 1814" },
-                  { film: "Sharpe's Mission", year: "1996", source: null, slug: null, buy: "https://amzn.to/4thUGcX", battle: "France, 1813" },
-                  { film: "Sharpe's Revenge", year: "1997", source: "Sharpe's Revenge", slug: "sharpes-revenge", buy: "https://amzn.to/484GHP5", battle: "Toulouse / Naples, 1814" },
-                  { film: "Sharpe's Justice", year: "1997", source: null, slug: null, buy: "https://amzn.to/3OJTLmk", battle: "England, 1814" },
-                  { film: "Sharpe's Waterloo", year: "1997", source: "Sharpe's Waterloo", slug: "sharpes-waterloo", buy: "https://amzn.to/4cMW7df", battle: "Battle of Waterloo, 1815" },
-                  { film: "Sharpe's Challenge", year: "2006", source: null, slug: null, buy: "https://amzn.to/4sXbzbX", battle: "India, 1803" },
-                  { film: "Sharpe's Peril", year: "2008", source: null, slug: null, buy: "https://amzn.to/4sXbzbX", battle: "India, 1803" },
+                  { film: "Sharpe's Rifles", year: "1993", source: "Sharpe's Rifles", slug: "sharpes-rifles", buy: "https://amzn.to/4cSwN4L", battle: "Retreat to Corunna, 1809", originalScreenplay: false },
+                  { film: "Sharpe's Eagle", year: "1993", source: "Sharpe's Eagle", slug: "sharpes-eagle", buy: "https://amzn.to/4sXbzbX", battle: "Battle of Talavera, 1809", originalScreenplay: false },
+                  { film: "Sharpe's Company", year: "1994", source: "Sharpe's Company", slug: "sharpes-company", buy: "https://amzn.to/4thUGcX", battle: "Siege of Badajoz, 1812", originalScreenplay: false },
+                  { film: "Sharpe's Enemy", year: "1994", source: "Sharpe's Enemy", slug: "sharpes-enemy", buy: "https://amzn.to/487wQrL", battle: "Adrados, Christmas 1812", originalScreenplay: false },
+                  { film: "Sharpe's Honour", year: "1994", source: "Sharpe's Honour", slug: "sharpes-honour", buy: "https://amzn.to/3OJTLmk", battle: "Battle of Vitoria, 1813", originalScreenplay: false },
+                  { film: "Sharpe's Gold", year: "1995", source: "Sharpe's Gold", slug: "sharpes-gold", buy: "https://amzn.to/3QJNU0Q", battle: "Portugal, 1810", originalScreenplay: true },
+                  { film: "Sharpe's Battle", year: "1995", source: "Sharpe's Battle", slug: "sharpes-battle", buy: "https://amzn.to/4ct5mhn", battle: "Fuentes de Oñoro, 1811", originalScreenplay: false },
+                  { film: "Sharpe's Sword", year: "1995", source: "Sharpe's Sword", slug: "sharpes-sword", buy: "https://amzn.to/4cvSPtR", battle: "Battle of Salamanca, 1812", originalScreenplay: false },
+                  { film: "Sharpe's Regiment", year: "1996", source: "Sharpe's Regiment", slug: "sharpes-regiment", buy: "https://amzn.to/4cdNMzg", battle: "England, 1813", originalScreenplay: false },
+                  { film: "Sharpe's Siege", year: "1996", source: "Sharpe's Siege", slug: "sharpes-siege", buy: "https://amzn.to/4tifrFi", battle: "France, 1814", originalScreenplay: false },
+                  { film: "Sharpe's Mission", year: "1996", source: null, slug: null, buy: "https://amzn.to/4thUGcX", battle: "France, 1813", originalScreenplay: true },
+                  { film: "Sharpe's Revenge", year: "1997", source: "Sharpe's Revenge", slug: "sharpes-revenge", buy: "https://amzn.to/484GHP5", battle: "Toulouse / Naples, 1814", originalScreenplay: false },
+                  { film: "Sharpe's Justice", year: "1997", source: null, slug: null, buy: "https://amzn.to/3OJTLmk", battle: "England, 1814", originalScreenplay: true },
+                  { film: "Sharpe's Waterloo", year: "1997", source: "Sharpe's Waterloo", slug: "sharpes-waterloo", buy: "https://amzn.to/4cMW7df", battle: "Battle of Waterloo, 1815", originalScreenplay: false },
+                  { film: "Sharpe's Challenge", year: "2006", source: null, slug: null, buy: "https://amzn.to/4sXbzbX", battle: "India, 1803", originalScreenplay: true },
+                  { film: "Sharpe's Peril", year: "2008", source: null, slug: null, buy: "https://amzn.to/4sXbzbX", battle: "India, 1803", originalScreenplay: true },
                 ] as const).map((row) => (
                   <tr key={row.film} className="border-b border-gold/10 hover:bg-navy-muted/30 transition">
                     <td className="py-2.5 px-3 text-gold-pale">
-                      {row.film}
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span>{row.film}</span>
+                        {row.originalScreenplay && (
+                          <span className="inline-block px-1.5 py-0.5 text-[9px] uppercase tracking-widest rounded-sm border border-parchment/40 bg-parchment/5 text-parchment/85 whitespace-nowrap">
+                            Original Screenplay
+                          </span>
+                        )}
+                      </div>
                     </td>
                     <td className="py-2.5 px-3">{row.year}</td>
                     <td className="py-2.5 px-3">
