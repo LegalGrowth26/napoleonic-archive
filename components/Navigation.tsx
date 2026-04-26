@@ -122,6 +122,12 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "All Regiments", href: "/regiments" },
         ],
       },
+      {
+        heading: "Weapons & Equipment",
+        links: [
+          { label: "The Baker Rifle", href: "/regiments/baker-rifle" },
+        ],
+      },
     ],
   },
   {
@@ -153,6 +159,12 @@ const NAV_SECTIONS: NavSection[] = [
         heading: "More Fiction",
         links: [
           { label: "If You Like Sharpe", href: "/fiction/recommendations" },
+        ],
+      },
+      {
+        heading: "Historical Context",
+        links: [
+          { label: "The Purchase System", href: "/stories/purchase-system" },
         ],
       },
     ],
