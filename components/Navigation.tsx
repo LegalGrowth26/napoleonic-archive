@@ -223,10 +223,9 @@ export default function Navigation() {
                 {section.label}
               </Link>
 
-              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 z-50">
-                <div className="border border-gold/30 bg-navy-deep/98 backdrop-blur-lg rounded-sm shadow-2xl min-w-[240px] max-w-[320px]">
-                  <div className="border-t-2 border-gold/50" />
-                  <div className="p-4 space-y-4">
+              <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-all duration-200 z-[60]">
+                <div className="border-2 border-gold/60 bg-[#0a0e1a] rounded-sm shadow-[0_8px_30px_rgba(0,0,0,0.7)] min-w-[280px]">
+                  <div className="p-5 space-y-4">
                     {section.groups.map((group) => (
                       <div key={group.heading}>
                         <div className="font-display text-[10px] uppercase tracking-[0.3em] text-gold/70 mb-2">
