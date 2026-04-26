@@ -241,6 +241,9 @@ export default function CharactersPage() {
         </p>
       </section>
 
+      {/* SEARCHABLE DATABASE */}
+      <CharacterDatabase />
+
       {/* RECURRING MAJOR CHARACTERS */}
       <section className="max-w-6xl mx-auto px-6 pb-16" id="major-characters">
         <div className="text-center mb-10">
@@ -1075,9 +1078,6 @@ export default function CharactersPage() {
           ))}
         </div>
       </section>
-
-      {/* SEARCHABLE DATABASE */}
-      <CharacterDatabase />
 
       {/* FAQ */}
       <section id="faq" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">

@@ -13,14 +13,70 @@ const FILTERS: { key: FilterType; label: string }[] = [
   { key: "fictional", label: "Fictional" },
 ];
 
+const BOOKS_IN_ORDER = [
+  "Sharpe's Tiger",
+  "Sharpe's Triumph",
+  "Sharpe's Fortress",
+  "Sharpe's Trafalgar",
+  "Sharpe's Prey",
+  "Sharpe's Rifles",
+  "Sharpe's Havoc",
+  "Sharpe's Eagle",
+  "Sharpe's Gold",
+  "Sharpe's Escape",
+  "Sharpe's Fury",
+  "Sharpe's Battle",
+  "Sharpe's Company",
+  "Sharpe's Command",
+  "Sharpe's Sword",
+  "Sharpe's Enemy",
+  "Sharpe's Honour",
+  "Sharpe's Regiment",
+  "Sharpe's Siege",
+  "Sharpe's Revenge",
+  "Sharpe's Waterloo",
+  "Sharpe's Assassin",
+  "Sharpe's Storm",
+  "Sharpe's Devil",
+];
+
+const TV_FILMS_IN_ORDER = [
+  "Sharpe's Rifles",
+  "Sharpe's Eagle",
+  "Sharpe's Company",
+  "Sharpe's Enemy",
+  "Sharpe's Honour",
+  "Sharpe's Gold",
+  "Sharpe's Battle",
+  "Sharpe's Sword",
+  "Sharpe's Regiment",
+  "Sharpe's Siege",
+  "Sharpe's Mission",
+  "Sharpe's Revenge",
+  "Sharpe's Justice",
+  "Sharpe's Waterloo",
+  "Sharpe's Challenge",
+  "Sharpe's Peril",
+];
+
+const NO_TV = "__none__";
+
 export default function CharacterDatabase() {
   const [search, setSearch] = useState("");
-  const [filter, setFilter] = useState<FilterType>("all");
+  const [typeFilter, setTypeFilter] = useState<FilterType>("all");
+  const [bookFilter, setBookFilter] = useState<string>("");
+  const [tvFilmFilter, setTvFilmFilter] = useState<string>("");
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
     return sharpeCharacters.filter((c) => {
-      if (filter !== "all" && c.type !== filter) return false;
+      if (typeFilter !== "all" && c.type !== typeFilter) return false;
+      if (bookFilter && !c.books.includes(bookFilter)) return false;
+      if (tvFilmFilter === NO_TV) {
+        if (c.tvFilms.length > 0) return false;
+      } else if (tvFilmFilter) {
+        if (!c.tvFilms.includes(tvFilmFilter)) return false;
+      }
       if (!q) return true;
       return (
         c.name.toLowerCase().includes(q) ||
@@ -29,7 +85,23 @@ export default function CharacterDatabase() {
         c.fate.toLowerCase().includes(q)
       );
     });
-  }, [search, filter]);
+  }, [search, typeFilter, bookFilter, tvFilmFilter]);
+
+  const hasActiveFilters =
+    search.trim() !== "" ||
+    typeFilter !== "all" ||
+    bookFilter !== "" ||
+    tvFilmFilter !== "";
+
+  const resetAll = () => {
+    setSearch("");
+    setTypeFilter("all");
+    setBookFilter("");
+    setTvFilmFilter("");
+  };
+
+  const selectClass =
+    "w-full bg-navy-muted/40 border border-gold/30 rounded-sm px-3 py-2 text-parchment font-serif text-sm focus:outline-none focus:border-gold transition";
 
   return (
     <section
@@ -60,14 +132,14 @@ export default function CharacterDatabase() {
           />
         </div>
 
-        <div className="flex flex-wrap gap-2 justify-center mb-4">
+        <div className="flex flex-wrap gap-2 justify-center mb-6">
           {FILTERS.map((f) => (
             <button
               key={f.key}
               type="button"
-              onClick={() => setFilter(f.key)}
+              onClick={() => setTypeFilter(f.key)}
               className={`px-4 py-2 border uppercase tracking-widest text-xs transition ${
-                filter === f.key
+                typeFilter === f.key
                   ? "border-gold bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale"
                   : "border-gold/30 text-parchment/85 hover:border-gold/60 hover:text-gold-pale"
               }`}
@@ -77,13 +149,69 @@ export default function CharacterDatabase() {
           ))}
         </div>
 
-        <p className="text-center text-xs uppercase tracking-widest text-parchment/70 mb-8">
-          Showing {filtered.length} of {sharpeCharacters.length} characters
-        </p>
+        <div className="grid sm:grid-cols-2 gap-4 max-w-2xl mx-auto mb-4">
+          <div>
+            <label
+              htmlFor="book-filter"
+              className="block text-xs uppercase tracking-widest text-gold/70 mb-1"
+            >
+              Filter by Book
+            </label>
+            <select
+              id="book-filter"
+              value={bookFilter}
+              onChange={(e) => setBookFilter(e.target.value)}
+              className={selectClass}
+            >
+              <option value="">All Books</option>
+              {BOOKS_IN_ORDER.map((b) => (
+                <option key={b} value={b}>
+                  {b}
+                </option>
+              ))}
+            </select>
+          </div>
+          <div>
+            <label
+              htmlFor="tv-filter"
+              className="block text-xs uppercase tracking-widest text-gold/70 mb-1"
+            >
+              Filter by TV Film
+            </label>
+            <select
+              id="tv-filter"
+              value={tvFilmFilter}
+              onChange={(e) => setTvFilmFilter(e.target.value)}
+              className={selectClass}
+            >
+              <option value="">All Films</option>
+              <option value={NO_TV}>No TV appearance</option>
+              {TV_FILMS_IN_ORDER.map((t) => (
+                <option key={t} value={t}>
+                  {t}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
+        <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
+          <p className="text-xs uppercase tracking-widest text-parchment/70">
+            Showing {filtered.length} of {sharpeCharacters.length} characters
+          </p>
+          <button
+            type="button"
+            onClick={resetAll}
+            disabled={!hasActiveFilters}
+            className="px-3 py-1 border border-gold/30 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold hover:text-gold transition disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:border-gold/30 disabled:hover:text-gold-pale"
+          >
+            Reset filters
+          </button>
+        </div>
 
         {filtered.length === 0 ? (
           <p className="text-center text-parchment/85 font-serif italic py-12">
-            No characters match your search.
+            No characters match your filters.
           </p>
         ) : (
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
