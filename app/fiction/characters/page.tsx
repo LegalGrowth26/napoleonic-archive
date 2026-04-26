@@ -1,5 +1,6 @@
 import Link from "next/link";
 import JsonLd from "@/components/JsonLd";
+import CharacterDatabase from "@/components/CharacterDatabase";
 import { pageMeta, SITE } from "@/lib/seo";
 
 export const metadata = pageMeta({
@@ -1074,6 +1075,9 @@ export default function CharactersPage() {
           ))}
         </div>
       </section>
+
+      {/* SEARCHABLE DATABASE */}
+      <CharacterDatabase />
 
       {/* FAQ */}
       <section id="faq" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
