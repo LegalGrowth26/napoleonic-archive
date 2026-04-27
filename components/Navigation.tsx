@@ -161,12 +161,6 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "If You Like Sharpe", href: "/fiction/recommendations" },
         ],
       },
-      {
-        heading: "Historical Context",
-        links: [
-          { label: "The Purchase System", href: "/stories/purchase-system" },
-        ],
-      },
     ],
   },
   {
@@ -181,8 +175,9 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
-        heading: "Voices",
+        heading: "Life in the Era",
         links: [
+          { label: "The Purchase System", href: "/stories/purchase-system" },
           { label: "Prisoners of War", href: "/stories/prisoners" },
         ],
       },

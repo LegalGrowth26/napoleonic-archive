@@ -84,7 +84,7 @@ export default function PurchaseSystemPage() {
               </thead>
               <tbody className="text-parchment/95">
                 {[
-                  { rank: "Ensign", price: "£400", modern: "~£40,000" },
+                  { rank: "Ensign", price: "£400", modern: "~£40,000–45,000" },
                   { rank: "Lieutenant", price: "£550", modern: "~£55,000" },
                   { rank: "Captain", price: "£1,500", modern: "~£150,000" },
                   { rank: "Major", price: "£2,600", modern: "~£260,000" },
@@ -99,9 +99,17 @@ export default function PurchaseSystemPage() {
               </tbody>
             </table>
           </div>
-          <p className="text-xs text-parchment/70 font-serif italic mt-4">
-            Modern equivalents are approximate. Actual prices paid often exceeded regulation prices considerably, especially in fashionable cavalry regiments. Guards regiments commanded a premium of two to three times these figures.
-          </p>
+          <div className="space-y-4 mt-6">
+            <p className="text-sm text-parchment/85 font-serif leading-relaxed">
+              These are official regulated prices for line infantry. Cavalry commissions were significantly more expensive: the most prestigious regiments could cost three to four times the infantry price. Lord Cardigan famously paid &pound;35,000 for the lieutenant-colonelcy of the 11th Hussars in the 1830s, equivalent to approximately &pound;3.4 million today.
+            </p>
+            <p className="text-sm text-parchment/85 font-serif leading-relaxed">
+              Payments above the regulated price were illegal but common, particularly for fashionable regiments. The gap between the official tariff and the actual price paid was an open secret.
+            </p>
+            <p className="text-sm text-parchment/85 font-serif leading-relaxed">
+              During the Napoleonic Wars themselves, only about a third of commissions were actually purchased. Most were granted by seniority or merit as casualties created vacancies. This is why battlefield commissions like Sharpe&rsquo;s were possible, even if socially awkward. A man could rise without money, but he could never escape the stigma of having done so.
+            </p>
+          </div>
         </div>
       </section>
 
