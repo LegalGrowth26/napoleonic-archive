@@ -114,6 +114,10 @@ const NAV_SECTIONS: NavSection[] = [
         heading: "Featured",
         links: [
           { label: "95th Rifles", href: "/regiments/95th-rifles" },
+          { label: "King's German Legion", href: "/regiments/kings-german-legion" },
+          { label: "52nd Light Infantry", href: "/regiments/52nd-light-infantry" },
+          { label: "Royal Scots Greys", href: "/regiments/scots-greys" },
+          { label: "33rd West Riding", href: "/regiments/west-riding" },
         ],
       },
       {
