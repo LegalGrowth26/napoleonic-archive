@@ -139,6 +139,7 @@ const regiments: Regiment[] = [
     raised: "1702",
     facings: "Scarlet coat, red facings, silver lace",
     battles: "Seringapatam · Assaye · Waterloo",
+    dedicatedPage: "/regiments/west-riding",
     body:
       "Arthur Wesley's first command as a lieutenant-colonel in 1793. He fought his apprenticeship in India at their head, at Seringapatam and Assaye. In fiction, it is the 33rd from which Sergeant Richard Sharpe is plucked for a commission. In fact, the regiment gave the British army its greatest commander, and took the name 'The Duke of Wellington's' in 1853.",
   },

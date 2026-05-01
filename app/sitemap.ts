@@ -32,6 +32,9 @@ const routes = [
   { path: "/stories/purchase-system", priority: 0.8 },
   { path: "/regiments/baker-rifle", priority: 0.8 },
   { path: "/regiments/kings-german-legion", priority: 0.85 },
+  { path: "/regiments/52nd-light-infantry", priority: 0.85 },
+  { path: "/regiments/scots-greys", priority: 0.85 },
+  { path: "/regiments/west-riding", priority: 0.85 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
