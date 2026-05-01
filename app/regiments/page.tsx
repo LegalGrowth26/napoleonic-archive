@@ -161,6 +161,7 @@ const regiments: Regiment[] = [
     raised: "1803 (from the disbanded Hanoverian army)",
     facings: "British pattern · distinctive KGL shoulder-strap",
     battles: "Copenhagen · Talavera · Albuera · Salamanca · Waterloo",
+    dedicatedPage: "/regiments/kings-german-legion",
     body:
       "German exiles who fought under the British colours from 1803 to 1816. Their light battalions, under Baring, held La Haye Sainte at Waterloo all afternoon with Baker rifles, until their ammunition ran out and French engineers broke the door. Wellington said afterwards: 'I never saw steadier troops.' Few compliments were higher.",
   },

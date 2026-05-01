@@ -31,6 +31,7 @@ const routes = [
   { path: "/battles/trafalgar", priority: 0.9 },
   { path: "/stories/purchase-system", priority: 0.8 },
   { path: "/regiments/baker-rifle", priority: 0.8 },
+  { path: "/regiments/kings-german-legion", priority: 0.85 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
