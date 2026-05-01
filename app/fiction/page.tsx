@@ -5,9 +5,9 @@ import JsonLd from "@/components/JsonLd";
 import { pageMeta, SITE } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Sharpe Novels by Bernard Cornwell",
+  title: "Bernard Cornwell Sharpe Books in Order — Complete Guide",
   description:
-    "Sharpe novels in order, Sharpe reading order, and the Sean Bean TV series: all 24 Bernard Cornwell books with synopses, cover art and buy links.",
+    "The complete guide to Bernard Cornwell's Sharpe novels in chronological and publication order. All 24 books, the ITV TV series with Sean Bean, Sharpe characters, and the real history behind the fiction.",
   path: "/fiction",
   keywords: [
     "Sharpe novels in order",
@@ -17,6 +17,7 @@ export const metadata = pageMeta({
     "Sharpe TV series Sean Bean",
     "Sharpe chronological order",
     "Sharpe publication order",
+    "Bernard Cornwell Sharpe",
   ],
   type: "article",
 });
@@ -313,15 +314,48 @@ const relatedPages = [
   },
 ];
 
+const fictionFaqItems = [
+  { q: "What are the Bernard Cornwell Sharpe books?", a: "The Sharpe series is a sequence of 24 historical novels by Bernard Cornwell following Richard Sharpe, a British soldier who rises from private to lieutenant colonel during the Napoleonic Wars. The series covers campaigns from India in 1799 through to the Battle of Waterloo in 1815 and beyond." },
+  { q: "What is the best Bernard Cornwell Sharpe book to start with?", a: "Most readers start with Sharpe's Eagle (1981), the first published novel, which introduces Sharpe already an officer in Spain during the Peninsular War. For chronological order, start with Sharpe's Tiger (1997) set in India in 1799." },
+  { q: "How many Sharpe books are there by Bernard Cornwell?", a: "Bernard Cornwell has written 24 Sharpe novels plus several short stories. The most recent full novel is Sharpe's Storm (2024)." },
+  { q: "Are the Sharpe books by Bernard Cornwell historically accurate?", a: "Cornwell bases every novel on real battles and campaigns. Each book includes an Author's Note explaining what he invented and what is historically accurate. The battles, commanders and military details are carefully researched." },
+  { q: "What order should I read the Bernard Cornwell Sharpe books?", a: "You can read in publication order starting with Sharpe's Eagle (1981) or chronological order starting with Sharpe's Tiger (1799 setting). Publication order is recommended for new readers as Cornwell wrote the Peninsular books first and the India prequels later." },
+] as const;
+
+const fictionFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: fictionFaqItems.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 export default function FictionPage() {
   return (
     <>
       <JsonLd data={booksJsonLd} />
+      <JsonLd data={fictionFaqJsonLd} />
       <PageHeader
         eyebrow="Bernard Cornwell"
         title="Fiction · Sharpe"
         lede="Twenty-four novels from a Seringapatam gunner to a Lt-Colonel at Waterloo, and a last, ghostly voyage to Chile."
       />
+
+      <section className="max-w-4xl mx-auto px-6 pt-12 pb-6">
+        <h1 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-widest text-center mb-8">
+          Bernard Cornwell&rsquo;s Sharpe Novels: The Complete Guide
+        </h1>
+        <div className="text-parchment leading-relaxed font-serif text-lg space-y-4">
+          <p>
+            Bernard Cornwell&rsquo;s <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link> is the greatest fictional soldier of the Napoleonic Wars. Across 24 novels, Sharpe rises from a private in the 33rd Foot to a lieutenant colonel at <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>, fighting his way through India, the Peninsular War and the Hundred Days. The Sharpe books in order take you from the siege of Seringapatam in 1799 to a final haunted voyage to Chile, with the real campaigns of <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon Bonaparte</Link> as their backdrop.
+          </p>
+          <p>
+            The ITV television series starring Sean Bean brought Sharpe to millions of viewers between 1993 and 2008. Below you will find every novel in chronological order, the complete TV series, a <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">character guide</Link>, and <Link href="/fiction/recommendations" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">recommendations</Link> for readers who want more.
+          </p>
+        </div>
+      </section>
 
       <section className="max-w-6xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-3 gap-6 mb-16">
@@ -742,7 +776,31 @@ export default function FictionPage() {
           </footer>
         </blockquote>
 
-        <aside className="mt-16 pt-10 border-t border-gold/20">
+        <div className="mt-16 pt-10 border-t border-gold/20" id="faq">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest">
+              Frequently Asked Questions
+            </h2>
+            <p className="mt-3 text-sm text-parchment/95 font-serif italic">
+              Common questions about Bernard Cornwell&rsquo;s Sharpe novels
+            </p>
+          </div>
+          <div className="space-y-4 max-w-4xl mx-auto mb-16">
+            {fictionFaqItems.map(({ q, a }) => (
+              <details key={q} className="card rounded-sm">
+                <summary className="flex items-start gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                  <span className="text-gold font-display text-sm mt-0.5 shrink-0" aria-hidden="true">Q</span>
+                  <span className="font-display text-lg text-gold-pale tracking-wide leading-snug">{q}</span>
+                </summary>
+                <div className="px-5 pb-5 pt-2 border-t border-gold/15">
+                  <p className="text-parchment leading-relaxed font-serif">{a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+
+        <aside className="pt-10 border-t border-gold/20">
           <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">
             Related
           </h2>
