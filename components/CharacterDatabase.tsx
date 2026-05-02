@@ -69,7 +69,7 @@ export default function CharacterDatabase() {
 
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase();
-    return sharpeCharacters.filter((c) => {
+    const results = sharpeCharacters.filter((c) => {
       if (typeFilter !== "all" && c.type !== typeFilter) return false;
       if (bookFilter && !c.books.includes(bookFilter)) return false;
       if (tvFilmFilter === NO_TV) {
@@ -84,6 +84,17 @@ export default function CharacterDatabase() {
         c.role.toLowerCase().includes(q) ||
         c.fate.toLowerCase().includes(q)
       );
+    });
+    if (!q) return results;
+    return results.sort((a, b) => {
+      const scoreOf = (c: (typeof sharpeCharacters)[number]) => {
+        const name = c.name.toLowerCase();
+        if (name === q) return 4;
+        if (name.startsWith(q)) return 3;
+        if (name.includes(q)) return 2;
+        return 1;
+      };
+      return scoreOf(b) - scoreOf(a);
     });
   }, [search, typeFilter, bookFilter, tvFilmFilter]);
 
