@@ -211,6 +211,12 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
+        heading: "Reviews",
+        links: [
+          { label: "Book Reviews", href: "/resources/book-reviews" },
+        ],
+      },
+      {
         heading: "Visit",
         links: [
           { label: "Museums & Battlefields", href: "/resources#museums" },
