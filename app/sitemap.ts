@@ -42,6 +42,8 @@ const routes = [
   { path: "/battles/peninsular-war", priority: 0.9 },
   { path: "/battles/hundred-days", priority: 0.9 },
   { path: "/glossary", priority: 0.8 },
+  { path: "/battles/badajoz", priority: 0.9 },
+  { path: "/battles/corunna", priority: 0.9 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
