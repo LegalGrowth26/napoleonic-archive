@@ -59,7 +59,13 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-gold/10 py-5 text-center text-xs tracking-widest uppercase text-parchment/80">
-        © {new Date().getFullYear()} The Napoleonic Archive
+        &copy; {new Date().getFullYear()} The Napoleonic Archive
+      </div>
+
+      <div className="px-6 pb-4 text-center">
+        <p className="text-[10px] text-parchment/50 leading-relaxed max-w-2xl mx-auto">
+          All illustrations on this site are original AI-generated artwork commissioned exclusively for The Napoleonic Archive and are the property of The Napoleonic Archive. They are not reproductions of existing paintings.
+        </p>
       </div>
 
       <div className="pb-6 text-center">
