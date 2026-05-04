@@ -70,7 +70,7 @@ export default function Footer() {
 
       <div className="pb-6 text-center">
         <a
-          href="https://app.kit.com"
+          href="https://app.beehiiv.com"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[11px] tracking-widest uppercase text-parchment/55 hover:text-parchment/80 transition"
