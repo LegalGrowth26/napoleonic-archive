@@ -110,6 +110,50 @@ const stories: Story[] = [
     publishedSource:
       "Source: Retrospect of a Military Life by James Anton, 1841. Public domain. This is a summary of the account in our own words, not a verbatim extract. The original text is available via the sources listed on our Resources page.",
   },
+  {
+    title: "The Cavalry Charges at Waterloo",
+    byline: "Captain Cavalié Mercer, Royal Horse Artillery · Journal of the Waterloo Campaign (1870)",
+    setting: "The ridge at Mont-Saint-Jean, approximately 4pm, 18 June 1815",
+    excerpt:
+      "Mercer describes the French cuirassiers advancing uphill towards his battery in successive waves. His guns fire at point-blank range into the mass of horses and steel-clad men. The ground between the guns fills with dead and dying horses, their riders trapped beneath them. He writes of the extraordinary spectacle of armoured cavalry riding through a storm of canister, the front ranks falling while the rear ranks press forward over the bodies. His battery fires until the barrels are too hot to touch.",
+    commentary:
+      "Mercer's journal, published posthumously in 1870, is the finest artillery memoir of the period. His account of the cavalry charges has shaped how the battle is visualised for two centuries.",
+    publishedSource:
+      "Source: Journal of the Waterloo Campaign by General Cavalié Mercer, 1870. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "The Guard Advances",
+    byline: "Ensign Rees Howell Gronow, 1st Foot Guards · Reminiscences and Recollections (1862)",
+    setting: "The ridge at Mont-Saint-Jean, approximately 7:30pm, 18 June 1815",
+    excerpt:
+      "Gronow describes the final crisis of Waterloo: the advance of the Imperial Guard up the slope in the evening twilight. He writes of the dense blue columns approaching through the smoke, the drums beating the pas de charge, and the extraordinary moment when the Guards were ordered to stand and fire. The French column halted, staggered by the volley at thirty yards, and then the British Guards charged with the bayonet. The Imperial Guard broke and fled. Gronow writes that the cry 'La Garde recule' spread across the French army like a wave.",
+    commentary:
+      "Gronow's Reminiscences are among the most entertaining memoirs of the Regency period. His account of Waterloo, written decades later, captures the surreal calm of a young officer watching the most important moment in European history unfold at thirty yards.",
+    publishedSource:
+      "Source: Reminiscences and Recollections of Captain Gronow, 1862. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "The Morning After Badajoz",
+    byline: "Lieutenant John Kincaid, 95th Rifles · Adventures in the Rifle Brigade (1830)",
+    setting: "Badajoz, morning of 7 April 1812",
+    excerpt:
+      "Kincaid describes walking through the town on the morning after the storming. He writes of British soldiers drunk on plundered wine, lying unconscious in the streets alongside the dead. He saw men quarrelling over silver plate from churches, officers unable to control their own men, and the extraordinary sight of soldiers dressed in looted finery: silk gowns, priests' vestments, women's bonnets. The contrast between the night's horror and the morning's grotesque carnival is Kincaid's particular genius.",
+    commentary:
+      "Kincaid is the wittiest of the Peninsular memoirists. His account of Badajoz balances dark humour with genuine horror at what the army became in those three days.",
+    publishedSource:
+      "Source: Adventures in the Rifle Brigade by Sir John Kincaid, 1830. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "The Retreat from Moscow",
+    byline: "General Armand de Caulaincourt · With Napoleon in Russia (memoir written 1812-13)",
+    setting: "The road from Moscow to Smolensk, November 1812",
+    excerpt:
+      "Caulaincourt, Napoleon's Master of the Horse, describes the retreat in language of controlled despair. He writes of men freezing to death standing upright, of horses that could not keep their footing on the ice, of entire regiments dissolving into stumbling crowds of starving men. He records Napoleon's silence as the army disintegrated around him, and the Emperor's occasional bursts of furious energy when news arrived of yet another disaster. The cold, Caulaincourt writes, was beyond anything the army had experienced or imagined possible.",
+    commentary:
+      "Caulaincourt's memoir, dictated to his secretary during and immediately after the campaign, is the closest we have to Napoleon's own account of 1812. His proximity to the Emperor gives his account unique authority.",
+    publishedSource:
+      "Source: With Napoleon in Russia: The Memoirs of General de Caulaincourt (written 1812-13, published posthumously). Public domain translation available. This is a summary of the account in our own words, not a verbatim extract.",
+  },
 ];
 
 const articlesJsonLd = {
@@ -171,6 +215,16 @@ const relatedPages = [
     href: "/stories/purchase-system",
     title: "The Purchase System",
     note: "How officers were made: buying a commission and why Sharpe could never belong.",
+  },
+  {
+    href: "/stories/life-as-a-soldier",
+    title: "Life as a Soldier",
+    note: "Pay, food, flogging and survival: the everyday reality behind the battles.",
+  },
+  {
+    href: "/stories/battlefield-medicine",
+    title: "Battlefield Medicine",
+    note: "The surgeon's saw, amputation, and why disease killed more men than battle.",
   },
 ];
 
