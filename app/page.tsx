@@ -71,7 +71,7 @@ export default function HomePage() {
         <img
           src="/napoleon-vs-wellington.png"
           alt="Napoleon and Wellington facing each other across the battlefield"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
+          className="absolute inset-0 w-full h-full object-cover opacity-35"
         />
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_40%_20%,rgba(201,162,74,0.4),transparent_60%)]" />
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-32 text-center">

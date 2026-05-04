@@ -88,11 +88,11 @@ export default function WellingtonPage() {
       </section>
 
       {/* HERO IMAGE */}
-      <div className="relative w-full h-[250px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src="/Wellington.png"
           alt="The Duke of Wellington surveying the battlefield"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-[center_top]"
         />
         <div className="absolute inset-0 bg-navy-deep/40" />
       </div>

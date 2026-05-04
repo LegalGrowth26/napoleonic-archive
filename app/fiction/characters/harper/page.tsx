@@ -51,11 +51,11 @@ export default function HarperPage() {
       </section>
 
       {/* HERO IMAGE */}
-      <div className="relative w-full h-[250px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src="/Soldier-with-volley-gun.png"
           alt="Patrick Harper with his seven-barrelled volley gun"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-navy-deep/40" />
       </div>

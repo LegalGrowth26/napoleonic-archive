@@ -27,11 +27,11 @@ export default function BattlefieldMedicinePage() {
       </section>
 
       {/* HERO IMAGE */}
-      <div className="relative w-full h-[250px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src="/Surgeon.png"
           alt="A regimental surgeon at work on the battlefield"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-navy-deep/40" />
       </div>

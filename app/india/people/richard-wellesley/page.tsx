@@ -64,11 +64,11 @@ export default function RichardWellesleyPage() {
       </section>
 
       {/* HERO IMAGE */}
-      <div className="relative w-full h-[250px] md:h-[400px]">
+      <div className="relative w-full h-[300px] md:h-[500px]">
         <img
           src="/Young-Sir-Arthur.png"
           alt="Richard Wellesley, Governor-General of India"
-          className="absolute inset-0 w-full h-full object-cover"
+          className="absolute inset-0 w-full h-full object-cover object-top"
         />
         <div className="absolute inset-0 bg-navy-deep/40" />
       </div>
