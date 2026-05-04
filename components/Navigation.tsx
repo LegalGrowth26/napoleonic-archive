@@ -25,6 +25,12 @@ const NAV_SECTIONS: NavSection[] = [
     href: "/battles",
     groups: [
       {
+        heading: "Overview",
+        links: [
+          { label: "The Napoleonic Wars", href: "/napoleonic-wars" },
+        ],
+      },
+      {
         heading: "Campaigns",
         links: [
           { label: "All Battles", href: "/battles" },

@@ -44,10 +44,26 @@ const websiteJsonLd = {
   },
 };
 
+const homeFaqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Why is it called the Napoleonic Wars?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The wars are named after Napoleon Bonaparte, the French Emperor who dominated European politics and warfare from 1799 to 1815. The term distinguishes this period from the earlier French Revolutionary Wars and reflects Napoleon's central role as both the driving force and defining figure of the conflicts.",
+      },
+    },
+  ],
+};
+
 export default function HomePage() {
   return (
     <>
       <JsonLd data={websiteJsonLd} />
+      <JsonLd data={homeFaqJsonLd} />
 
       {/* 1. HERO */}
       <section className="relative overflow-hidden min-h-[70vh] flex items-center">
@@ -117,6 +133,16 @@ export default function HomePage() {
             </p>
           </Link>
         </div>
+      </section>
+
+      {/* 3b. NAPOLEONIC WARS OVERVIEW */}
+      <section className="max-w-4xl mx-auto px-6 pb-8">
+        <Link href="/napoleonic-wars" className="card p-6 rounded-sm block group hover:border-gold/60 transition text-center">
+          <div className="font-display text-xl text-gold-pale uppercase tracking-widest group-hover:text-gold transition mb-2">
+            New here? Start with the complete overview
+          </div>
+          <p className="text-parchment/85 font-serif">What were the Napoleonic Wars? Who fought them? Why do they matter? &rarr;</p>
+        </Link>
       </section>
 
       {/* 4. QUICK ENTRY POINTS */}
