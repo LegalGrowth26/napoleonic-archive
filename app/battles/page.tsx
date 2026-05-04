@@ -143,6 +143,7 @@ const battles: Battle[] = [
     summary:
       "The bloodiest day of the Napoleonic wars. The Raevsky redoubt changed hands in mounds of dead; the Great Redoubt fell only at twilight. According to de Ségur's memoirs, Napoleon refused to commit the Guard, saying: 'I will not have it destroyed 800 leagues from France.' A week later he entered Moscow; within eight weeks, the retreat began.",
     campaign: "Early Napoleonic",
+    dedicatedPage: "/battles/borodino",
   },
   {
     name: "Leipzig",
@@ -265,6 +266,7 @@ const battles: Battle[] = [
       "The battle that lost Joseph his kingdom. The French army disintegrated among its own baggage train: carriages of plundered silver, paintings and mistresses clogged the road east. Wellington's Marshal's baton, awarded for the day, came from a captured French coach.",
     sharpe: "Sharpe's Honour: Sharpe dies (officially) on the day of victory.",
     campaign: "Peninsular War",
+    dedicatedPage: "/battles/vitoria",
   },
   {
     name: "Toulouse",
