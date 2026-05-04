@@ -44,6 +44,13 @@ const routes = [
   { path: "/glossary", priority: 0.8 },
   { path: "/battles/badajoz", priority: 0.9 },
   { path: "/battles/corunna", priority: 0.9 },
+  { path: "/battles/russian-campaign", priority: 0.9 },
+  { path: "/battles/borodino", priority: 0.9 },
+  { path: "/battles/vitoria", priority: 0.9 },
+  { path: "/fiction/characters/teresa", priority: 0.85 },
+  { path: "/fiction/characters/lucille", priority: 0.85 },
+  { path: "/stories/life-as-a-soldier", priority: 0.8 },
+  { path: "/stories/battlefield-medicine", priority: 0.8 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
