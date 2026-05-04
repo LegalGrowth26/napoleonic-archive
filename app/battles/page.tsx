@@ -187,6 +187,7 @@ const battles: Battle[] = [
       "The end of Moore's harrowing winter retreat across the Galician mountains. Moore was struck by a cannonball on the ridge above the port and died that evening, buried at midnight 'by the struggling moonbeam's misty light.' The army embarked; Moore left Iberia free for Wellesley's return.",
     sharpe: "Sharpe's Rifles: the novel opens in the retreat to Corunna.",
     campaign: "Peninsular War",
+    dedicatedPage: "/battles/corunna",
   },
   {
     name: "Talavera",
@@ -232,6 +233,7 @@ const battles: Battle[] = [
       "The most terrible storming of the war. Forty attempts and more were thrown at the breach of the Trinidad bastion; dead Britons piled in the ditch until the Light Division could climb on their bodies. Wellington wept on the glacis at dawn. The sack that followed lasted three days.",
     sharpe: "Sharpe's Company: the storming and its aftermath.",
     campaign: "Peninsular War",
+    dedicatedPage: "/battles/badajoz",
   },
   {
     name: "Salamanca",

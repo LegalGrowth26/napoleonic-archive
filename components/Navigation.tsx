@@ -29,8 +29,8 @@ const NAV_SECTIONS: NavSection[] = [
         links: [
           { label: "All Battles", href: "/battles" },
           { label: "India 1799–1805", href: "/battles#india" },
-          { label: "Peninsular War", href: "/battles#peninsular" },
-          { label: "Hundred Days 1815", href: "/battles#hundred-days" },
+          { label: "Peninsular War", href: "/battles/peninsular-war" },
+          { label: "Hundred Days 1815", href: "/battles/hundred-days" },
         ],
       },
       {
@@ -40,6 +40,8 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "Battle of Trafalgar", href: "/battles/trafalgar" },
           { label: "Battle of Austerlitz", href: "/battles/austerlitz" },
           { label: "Battle of Salamanca", href: "/battles/salamanca" },
+          { label: "Siege of Badajoz", href: "/battles/badajoz" },
+          { label: "Battle of Corunna", href: "/battles/corunna" },
           { label: "Siege of Seringapatam", href: "/india/battles/seringapatam" },
           { label: "Battle of Assaye", href: "/india/battles/assaye" },
         ],
@@ -154,6 +156,14 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
+        heading: "Key Characters",
+        links: [
+          { label: "Richard Sharpe", href: "/fiction/characters/sharpe" },
+          { label: "Patrick Harper", href: "/fiction/characters/harper" },
+          { label: "Obadiah Hakeswill", href: "/fiction/characters/hakeswill" },
+        ],
+      },
+      {
         heading: "TV Series",
         links: [
           { label: "The ITV Series", href: "/fiction#tv-series" },
@@ -183,6 +193,8 @@ const NAV_SECTIONS: NavSection[] = [
         links: [
           { label: "The Purchase System", href: "/stories/purchase-system" },
           { label: "Prisoners of War", href: "/stories/prisoners" },
+          { label: "Rifleman Harris", href: "/stories/rifleman-harris" },
+          { label: "Glossary", href: "/glossary" },
         ],
       },
       {
