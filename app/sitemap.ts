@@ -41,6 +41,7 @@ const routes = [
   { path: "/stories/rifleman-harris", priority: 0.85 },
   { path: "/battles/peninsular-war", priority: 0.9 },
   { path: "/battles/hundred-days", priority: 0.9 },
+  { path: "/glossary", priority: 0.8 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
