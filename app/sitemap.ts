@@ -38,6 +38,7 @@ const routes = [
   { path: "/fiction/characters/sharpe", priority: 0.9 },
   { path: "/fiction/characters/harper", priority: 0.9 },
   { path: "/fiction/characters/hakeswill", priority: 0.85 },
+  { path: "/stories/rifleman-harris", priority: 0.85 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
