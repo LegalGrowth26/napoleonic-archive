@@ -89,6 +89,16 @@ export default function RussianCampaignPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/retreat-from-Russia.png"
+          alt="The Grande Armee retreating from Moscow in winter"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* 2. WHY NAPOLEON INVADED */}
       <section className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
         <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">

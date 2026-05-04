@@ -328,6 +328,16 @@ export default function StoriesPage() {
           </div>
         </aside>
       </section>
+
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/soldiers.png"
+          alt="Napoleonic soldiers on the march"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
     </>
   );
 }

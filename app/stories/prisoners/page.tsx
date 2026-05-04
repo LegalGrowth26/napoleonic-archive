@@ -53,6 +53,16 @@ export default function PrisonersPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/prison-hulk.png"
+          alt="A prison hulk moored in a British harbour"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* OVERVIEW */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest mb-8 section-title">Overview</h2>

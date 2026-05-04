@@ -83,6 +83,16 @@ export default function NinetyFifthRiflesPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/95th-rifles.png"
+          alt="Riflemen of the 95th in their green jackets"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* 2. INTRODUCTION */}
       <section
         id="introduction"

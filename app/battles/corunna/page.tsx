@@ -48,6 +48,16 @@ export default function CorunnaPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/retreat-british.png"
+          alt="British troops retreating through winter mountains"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       <section className="max-w-4xl mx-auto px-6 py-16">
         <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest mb-8 section-title">Background</h2>
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">

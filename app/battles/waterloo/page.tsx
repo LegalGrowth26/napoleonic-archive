@@ -208,6 +208,16 @@ export default function WaterlooPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/Napoleonic-Wars-2.png"
+          alt="The Battle of Waterloo in full fury"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* ============================================================ */}
       {/* 2. THE ARMIES                                                */}
       {/* ============================================================ */}

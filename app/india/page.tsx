@@ -62,6 +62,16 @@ export default function IndiaPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/India.png"
+          alt="British and Indian forces in the subcontinent"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* 2. INTRODUCTION */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">

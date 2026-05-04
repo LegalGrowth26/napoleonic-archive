@@ -423,6 +423,16 @@ export default function BattlesPage() {
           </div>
         </aside>
       </section>
+
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/Battle-infantry-charge.png"
+          alt="British infantry charging with bayonets fixed"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
     </>
   );
 }

@@ -76,6 +76,16 @@ export default function GlossaryPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/napoleonic-acoutrimon.png"
+          alt="Napoleonic military equipment and weapons"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       <nav className="max-w-4xl mx-auto px-6 py-8">
         <div className="flex flex-wrap gap-2 justify-center">
           {letters.map((l) => (

@@ -205,6 +205,16 @@ export default function CharactersPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/officer-admin.png"
+          alt="A British officer at his desk"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* DISCLAIMER */}
       <section className="max-w-4xl mx-auto px-6 pt-10">
         <aside className="card p-5 rounded-sm border-burgundy-bright/40 bg-burgundy-deep/20">

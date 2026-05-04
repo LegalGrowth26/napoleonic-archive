@@ -67,6 +67,16 @@ export default function TrafalgarPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/Trafalgar.png"
+          alt="Ships of the line at the Battle of Trafalgar"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* BACKGROUND */}
       <section className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
         <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">Background</h2>

@@ -96,6 +96,16 @@ export default function NapoleonPage() {
         </div>
       </section>
 
+      {/* HERO IMAGE */}
+      <div className="relative w-full h-[250px] md:h-[400px]">
+        <img
+          src="/Napelonic-wars-1.png"
+          alt="Napoleon Bonaparte commanding his troops"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy-deep/40" />
+      </div>
+
       {/* ============================================================ */}
       {/* 2. EARLY LIFE                                                */}
       {/* ============================================================ */}

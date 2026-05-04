@@ -68,6 +68,11 @@ export default function HomePage() {
       {/* 1. HERO */}
       <section className="relative overflow-hidden min-h-[70vh] flex items-center">
         <div className="absolute inset-0 bg-gradient-to-b from-burgundy-deep/50 via-navy-deep to-navy-deep" />
+        <img
+          src="/napoleon-vs-wellington.png"
+          alt="Napoleon and Wellington facing each other across the battlefield"
+          className="absolute inset-0 w-full h-full object-cover opacity-20"
+        />
         <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_40%_20%,rgba(201,162,74,0.4),transparent_60%)]" />
         <div className="relative max-w-5xl mx-auto px-6 py-20 md:py-32 text-center">
           <h1 className="font-display text-5xl md:text-7xl text-gold-pale uppercase tracking-wider leading-tight mb-6">
