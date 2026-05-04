@@ -36,6 +36,8 @@ const routes = [
   { path: "/regiments/scots-greys", priority: 0.85 },
   { path: "/regiments/west-riding", priority: 0.85 },
   { path: "/fiction/characters/sharpe", priority: 0.9 },
+  { path: "/fiction/characters/harper", priority: 0.9 },
+  { path: "/fiction/characters/hakeswill", priority: 0.85 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
