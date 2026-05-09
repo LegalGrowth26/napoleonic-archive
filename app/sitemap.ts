@@ -60,6 +60,7 @@ const routes = [
   { path: "/fiction/characters/dalembord", priority: 0.85 },
   { path: "/fiction/characters/price", priority: 0.85 },
   { path: "/fiction/characters/leroy", priority: 0.85 },
+  { path: "/timeline", priority: 0.9 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

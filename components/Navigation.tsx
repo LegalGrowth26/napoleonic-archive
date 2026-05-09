@@ -220,6 +220,12 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
+        heading: "Explore",
+        links: [
+          { label: "Interactive Timeline", href: "/timeline" },
+        ],
+      },
+      {
         heading: "Visit",
         links: [
           { label: "Museums & Battlefields", href: "/resources#museums" },

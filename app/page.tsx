@@ -160,7 +160,7 @@ export default function HomePage() {
               { href: "/battles", label: "Napoleonic Battles", icon: "⚔" },
               { href: "/people", label: "Wellington & Napoleon", icon: "◈" },
               { href: "/regiments/95th-rifles", label: "The 95th Rifles", icon: "⚑" },
-              { href: "/stories", label: "Eyewitness Accounts", icon: "✦" },
+              { href: "/timeline", label: "Timeline 1789-1815", icon: "⏳" },
             ].map((item) => (
               <Link key={item.href} href={item.href} className="border border-gold/30 rounded-sm p-4 text-center hover:border-gold/70 hover:bg-navy-muted/30 transition group">
                 <div className="text-2xl text-gold/70 group-hover:text-gold transition mb-2">{item.icon}</div>
