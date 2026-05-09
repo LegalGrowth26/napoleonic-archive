@@ -154,6 +154,50 @@ const stories: Story[] = [
     publishedSource:
       "Source: With Napoleon in Russia: The Memoirs of General de Caulaincourt (written 1812-13, published posthumously). Public domain translation available. This is a summary of the account in our own words, not a verbatim extract.",
   },
+  {
+    title: "A Rifleman at Badajoz",
+    byline: "Lieutenant George Simmons, 95th Rifles · A British Rifle Man (1899)",
+    setting: "The siege and storming of Badajoz, April 1812",
+    excerpt:
+      "Simmons describes the weeks of preparation in the trenches before Badajoz, the steady attrition from French fire during the siege, and the terrible night of the assault. He writes of advancing into the ditch beneath the breach in total darkness, of the chevaux de frise and the explosions that tore through the storming parties, and of the hours of repeated attempts to force a way through. His account gives the rifleman's experience of the siege: the patience of the investment followed by the sudden violence of the storm.",
+    commentary:
+      "Simmons's journal, published in 1899 as A British Rifle Man, covers his entire Peninsular service. His Badajoz entries are among the most detailed accounts from a junior officer of the 95th.",
+    publishedSource:
+      "Source: A British Rifle Man: The Journals and Correspondence of Major George Simmons, 1899. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "In the Square at Waterloo",
+    byline: "Sergeant Thomas Morris, 73rd Regiment · Recollections of Military Service (1845)",
+    setting: "The ridge at Mont-Saint-Jean, afternoon of 18 June 1815",
+    excerpt:
+      "Morris describes the experience of standing in an infantry square while French cavalry charged repeatedly. He writes of the ground shaking with the approach of the cuirassiers, the order to hold fire until the horsemen were within yards, and the crash of the volley that emptied saddles at point-blank range. Between charges, men stepped forward to bayonet wounded horses and drag French casualties clear. The square held, but the hours of bombardment between charges killed more men than the charges themselves.",
+    commentary:
+      "Morris's account is one of the most vivid private-soldier descriptions of what it felt like to stand in a square under cavalry attack. Published in 1845, it captures both the terror and the strange routine of the experience.",
+    publishedSource:
+      "Source: Recollections of Military Service by Sergeant Thomas Morris, 73rd Regiment, 1845. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "The Baggage Train at Vitoria",
+    byline: "Captain John Kincaid, 95th Rifles · Adventures in the Rifle Brigade (1830)",
+    setting: "Vitoria, evening of 21 June 1813",
+    excerpt:
+      "Kincaid describes the extraordinary scene after the French collapse at Vitoria: the entire French baggage train captured intact. He writes of carriages stuffed with silver and gold, of Joseph Bonaparte's personal treasure scattered across the road, of soldiers breaking open strongboxes and filling their shakos with coins. The pursuit of the French halted entirely as the army fell upon the plunder. Officers could not control their men. Wellington, Kincaid notes, was furious at the indiscipline that allowed the French to escape.",
+    commentary:
+      "Kincaid's dry wit makes this one of the most entertaining passages in Peninsular memoir literature. His honest admission that the army preferred looting to fighting captures a reality that official dispatches preferred to omit.",
+    publishedSource:
+      "Source: Adventures in the Rifle Brigade by Captain John Kincaid, 1830. Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
+  {
+    title: "A Commissary on the Retreat to Corunna",
+    byline: "Commissary August Schaumann, King's German Legion · On the Road with Wellington (1924)",
+    setting: "The retreat across Galicia, December 1808 to January 1809",
+    excerpt:
+      "Schaumann, a Hanoverian commissary officer attached to the British army, describes the administrative collapse of the retreat. He writes of supply wagons abandoned on frozen roads, of rations that never arrived, of the impossible task of feeding an army in headlong retreat through mountains in winter. His perspective is unusual: not the fighting soldier's view but the supply officer's despair as the system he maintained broke down around him. He describes soldiers too exhausted to eat even when food was available.",
+    commentary:
+      "Schaumann's journal, published in 1924 from his original papers, gives the Peninsular War from the perspective of a logistics officer. His account of the Corunna retreat complements Harris's private-soldier view with an understanding of why the supply system failed.",
+    publishedSource:
+      "Source: On the Road with Wellington by Commissary August Schaumann, 1924 (from original journals). Public domain. This is a summary of the account in our own words, not a verbatim extract.",
+  },
 ];
 
 const articlesJsonLd = {
