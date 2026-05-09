@@ -51,6 +51,7 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "Battle of Corunna", href: "/battles/corunna" },
           { label: "Battle of Borodino", href: "/battles/borodino" },
           { label: "Battle of Vitoria", href: "/battles/vitoria" },
+          { label: "Battle of Leipzig", href: "/battles/leipzig" },
           { label: "Siege of Seringapatam", href: "/india/battles/seringapatam" },
           { label: "Battle of Assaye", href: "/india/battles/assaye" },
         ],

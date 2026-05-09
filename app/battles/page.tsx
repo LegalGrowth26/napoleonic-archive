@@ -158,6 +158,7 @@ const battles: Battle[] = [
     summary:
       "The Battle of the Nations. Half a million men fought over four days around the Saxon city; a premature blast destroyed the Elster bridge behind the retreating French, drowning Marshal Poniatowski. The Confederation of the Rhine collapsed; Napoleon fell back to the Rhine with a wrecked army.",
     campaign: "Early Napoleonic",
+    dedicatedPage: "/battles/leipzig",
   },
   {
     name: "Vimeiro",

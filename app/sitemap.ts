@@ -53,6 +53,7 @@ const routes = [
   { path: "/stories/life-as-a-soldier", priority: 0.8 },
   { path: "/stories/battlefield-medicine", priority: 0.8 },
   { path: "/resources/book-reviews", priority: 0.8 },
+  { path: "/battles/leipzig", priority: 0.9 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
