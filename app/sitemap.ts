@@ -56,6 +56,10 @@ const routes = [
   { path: "/battles/leipzig", priority: 0.9 },
   { path: "/fiction/characters/jane", priority: 0.85 },
   { path: "/fiction/characters/hogan", priority: 0.85 },
+  { path: "/fiction/characters/frederickson", priority: 0.85 },
+  { path: "/fiction/characters/dalembord", priority: 0.85 },
+  { path: "/fiction/characters/price", priority: 0.85 },
+  { path: "/fiction/characters/leroy", priority: 0.85 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {

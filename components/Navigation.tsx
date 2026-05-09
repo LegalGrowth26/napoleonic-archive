@@ -172,7 +172,9 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "Patrick Harper", href: "/fiction/characters/harper" },
           { label: "Obadiah Hakeswill", href: "/fiction/characters/hakeswill" },
           { label: "Teresa Moreno", href: "/fiction/characters/teresa" },
-          { label: "Lucille Castineau", href: "/fiction/characters/lucille" },
+          { label: "Major Hogan", href: "/fiction/characters/hogan" },
+          { label: "Sweet William", href: "/fiction/characters/frederickson" },
+          { label: "See all characters", href: "/fiction/characters" },
         ],
       },
       {
