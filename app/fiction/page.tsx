@@ -5,19 +5,21 @@ import JsonLd from "@/components/JsonLd";
 import { pageMeta, SITE } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Bernard Cornwell Sharpe Books in Order — Complete Guide",
+  title: "Bernard Cornwell Sharpe Books in Order — All 24 Novels",
   description:
-    "The complete guide to Bernard Cornwell's Sharpe novels in chronological and publication order. All 24 books, the ITV TV series with Sean Bean, Sharpe characters, and the real history behind the fiction.",
+    "The complete guide to Bernard Cornwell's Sharpe novels in publication and chronological order. All 24 Sharpe books, the ITV TV series with Sean Bean, character guide, and the real history behind the fiction.",
   path: "/fiction",
   keywords: [
-    "Sharpe novels in order",
+    "sharpe books in order",
+    "sharpe novels in order",
+    "bernard cornwell sharpe books",
+    "sharpe books chronological order",
+    "sharpe series in order",
+    "richard sharpe books",
     "Sharpe reading order",
     "Bernard Cornwell books",
-    "Richard Sharpe",
     "Sharpe TV series Sean Bean",
-    "Sharpe chronological order",
     "Sharpe publication order",
-    "Bernard Cornwell Sharpe",
   ],
   type: "article",
 });
@@ -316,10 +318,14 @@ const relatedPages = [
 
 const fictionFaqItems = [
   { q: "What are the Bernard Cornwell Sharpe books?", a: "The Sharpe series is a sequence of 24 historical novels by Bernard Cornwell following Richard Sharpe, a British soldier who rises from private to lieutenant colonel during the Napoleonic Wars. The series covers campaigns from India in 1799 through to the Battle of Waterloo in 1815 and beyond." },
-  { q: "What is the best Bernard Cornwell Sharpe book to start with?", a: "Most readers start with Sharpe's Eagle (1981), the first published novel, which introduces Sharpe already an officer in Spain during the Peninsular War. For chronological order, start with Sharpe's Tiger (1997) set in India in 1799." },
-  { q: "How many Sharpe books are there by Bernard Cornwell?", a: "Bernard Cornwell has written 24 Sharpe novels plus several short stories. The most recent full novel is Sharpe's Storm (2024)." },
+  { q: "What order should I read the Sharpe books by Bernard Cornwell?", a: "Bernard Cornwell's Sharpe novels can be read in publication order or chronological order. Publication order starts with Sharpe's Eagle (1981). Chronological order starts with Sharpe's Tiger set in India in 1799. Most readers and Cornwell himself recommend starting with Sharpe's Rifles or Sharpe's Eagle for the best introduction to the character." },
+  { q: "How many Sharpe books are there?", a: "Bernard Cornwell has written 24 Sharpe novels, plus several short stories. The series follows Richard Sharpe from 1799 to 1821, covering the Indian campaigns, the Peninsular War, and the Battle of Waterloo." },
+  { q: "What is the first Sharpe book?", a: "The first Sharpe book published was Sharpe's Eagle in 1981. The first book in chronological order is Sharpe's Tiger, set at the Siege of Seringapatam in 1799." },
+  { q: "What is the last Sharpe book?", a: "The most recent Sharpe novel is Sharpe's Storm, published in 2024, set during the Peninsular War in 1813." },
+  { q: "Are the Sharpe books part of a series?", a: "Yes. All 24 Sharpe novels by Bernard Cornwell form a continuous series following Richard Sharpe from private soldier to lieutenant colonel across the Napoleonic Wars." },
+  { q: "What is the best Sharpe book to start with?", a: "Most readers start with Sharpe's Rifles or Sharpe's Eagle. Sharpe's Rifles introduces the character at the start of the Peninsular War and is an excellent entry point. Sharpe's Eagle was the first published and establishes the South Essex Regiment." },
   { q: "Are the Sharpe books by Bernard Cornwell historically accurate?", a: "Cornwell bases every novel on real battles and campaigns. Each book includes an Author's Note explaining what he invented and what is historically accurate. The battles, commanders and military details are carefully researched." },
-  { q: "What order should I read the Bernard Cornwell Sharpe books?", a: "You can read in publication order starting with Sharpe's Eagle (1981) or chronological order starting with Sharpe's Tiger (1799 setting). Publication order is recommended for new readers as Cornwell wrote the Peninsular books first and the India prequels later." },
+  { q: "What is the best Bernard Cornwell Sharpe book to start with?", a: "Most readers start with Sharpe's Eagle (1981), the first published novel, which introduces Sharpe already an officer in Spain during the Peninsular War. For chronological order, start with Sharpe's Tiger (1997) set in India in 1799." },
 ] as const;
 
 const fictionFaqJsonLd = {
@@ -337,6 +343,7 @@ export default function FictionPage() {
     <>
       <JsonLd data={booksJsonLd} />
       <JsonLd data={fictionFaqJsonLd} />
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "BookSeries", name: "Sharpe", author: { "@type": "Person", name: "Bernard Cornwell" }, numberOfItems: 24, description: "Richard Sharpe series: 24 novels following a British soldier through the Napoleonic Wars from 1799 to 1821" }} />
       <PageHeader
         eyebrow="Bernard Cornwell"
         title="Fiction · Sharpe"
@@ -349,10 +356,30 @@ export default function FictionPage() {
         </h1>
         <div className="text-parchment leading-relaxed font-serif text-lg space-y-4">
           <p>
-            Bernard Cornwell&rsquo;s <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link> is the greatest fictional soldier of the Napoleonic Wars. Across 24 novels, Sharpe rises from a private in the 33rd Foot to a lieutenant colonel at <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>, fighting his way through India, the Peninsular War and the Hundred Days. The Sharpe books in order take you from the siege of Seringapatam in 1799 to a final haunted voyage to Chile, with the real campaigns of <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon Bonaparte</Link> as their backdrop.
+            Bernard Cornwell&rsquo;s <Link href="/fiction/characters/sharpe" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link> is the greatest fictional soldier of the <Link href="/napoleonic-wars" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleonic Wars</Link>. All 24 Sharpe books follow a rifleman of the <Link href="/regiments/95th-rifles" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">95th Rifles</Link> from private to lieutenant colonel, fighting alongside <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> through <Link href="/india" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">India</Link>, the <Link href="/battles/peninsular-war" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Peninsular War</Link> and <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>. The Sharpe books in order, whether read in chronological or publication sequence, take you from Seringapatam in 1799 to a final haunted voyage to Chile, with the real campaigns of Wellington and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon</Link> as their backdrop.
           </p>
           <p>
-            The ITV television series starring Sean Bean brought Sharpe to millions of viewers between 1993 and 2008. Below you will find every novel in chronological order, the complete TV series, a <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">character guide</Link>, and <Link href="/fiction/recommendations" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">recommendations</Link> for readers who want more.
+            The ITV television series starring Sean Bean brought Sharpe to millions of viewers between 1993 and 2008. Below you will find every novel listed in order, the complete TV series, a <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">character guide</Link> with <Link href="/fiction/characters/harper" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Patrick Harper</Link> and 150+ characters, and <Link href="/fiction/recommendations" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">recommendations</Link> for readers who want more.
+          </p>
+        </div>
+      </section>
+
+      <section id="reading-order" className="max-w-4xl mx-auto px-6 pb-12 scroll-mt-24">
+        <h2 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-widest text-center mb-4">
+          All 24 Sharpe Books in Order
+        </h2>
+        <p className="text-sm uppercase tracking-[0.3em] text-gold/70 text-center mb-8">
+          Publication Order vs Chronological Order: Which Should You Read First?
+        </p>
+        <div className="text-parchment leading-relaxed font-serif text-lg space-y-4">
+          <p>
+            Bernard Cornwell published Sharpe&rsquo;s Eagle in 1981, setting it during the Battle of Talavera in 1809. For the next fifteen years he wrote the Peninsular War novels, following Sharpe through Spain and France to Waterloo. Only later did he go back and write the India prequels, starting with Sharpe&rsquo;s Tiger (1997) set at Seringapatam in 1799, and the Copenhagen and Trafalgar novels that bridge the gap.
+          </p>
+          <p>
+            This means publication order and chronological order are different. Publication order starts with Sharpe&rsquo;s Eagle and takes you through the Peninsular War first, which is how Cornwell intended readers to discover the character. Chronological order starts with Sharpe&rsquo;s Tiger in India and follows Sharpe&rsquo;s life from beginning to end.
+          </p>
+          <p>
+            <span className="text-gold-pale">Our recommendation:</span> new readers should start with Sharpe&rsquo;s Rifles (the retreat to Corunna, 1809) or Sharpe&rsquo;s Eagle (Talavera, 1809). Both are excellent entry points that introduce Sharpe at his most compelling, already an officer, already fighting in the Peninsula. The India novels are best enjoyed after you know and love the character. The book grid below lists all 24 novels in chronological order.
           </p>
         </div>
       </section>
