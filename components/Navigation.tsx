@@ -85,8 +85,9 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
-        heading: "Sharpe's World",
+        heading: "Authors & Fiction",
         links: [
+          { label: "Bernard Cornwell", href: "/bernard-cornwell" },
           { label: "All Figures", href: "/people" },
           { label: "Sharpe Characters", href: "/people#fictional" },
         ],

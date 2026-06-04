@@ -198,7 +198,7 @@ export default function CharactersPage() {
             <span>❦</span>
           </div>
           <p className="text-parchment/95 font-serif max-w-2xl mx-auto">
-            Every major character in Bernard Cornwell&rsquo;s 24 Sharpe
+            Every major character in <Link href="/bernard-cornwell" className="text-gold-pale underline underline-offset-2 hover:text-gold transition">Bernard Cornwell</Link>&rsquo;s 24 Sharpe
             novels, from Richard Sharpe himself to the villains, lovers and
             comrades who shaped his story.
           </p>

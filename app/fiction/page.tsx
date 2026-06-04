@@ -351,9 +351,12 @@ export default function FictionPage() {
       />
 
       <section className="max-w-4xl mx-auto px-6 pt-12 pb-6">
-        <h1 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-widest text-center mb-8">
+        <h1 className="font-display text-2xl md:text-3xl text-gold-pale uppercase tracking-widest text-center mb-4">
           Bernard Cornwell&rsquo;s Sharpe Novels: The Complete Guide
         </h1>
+        <p className="text-center text-sm text-parchment/70 font-serif mb-8">
+          By <Link href="/bernard-cornwell" className="text-gold-pale underline underline-offset-2 hover:text-gold transition">Bernard Cornwell</Link>, author of over 60 historical novels
+        </p>
         <div className="text-parchment leading-relaxed font-serif text-lg space-y-4">
           <p>
             Bernard Cornwell&rsquo;s <Link href="/fiction/characters/sharpe" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link> is the greatest fictional soldier of the <Link href="/napoleonic-wars" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleonic Wars</Link>. All 24 Sharpe books follow a rifleman of the <Link href="/regiments/95th-rifles" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">95th Rifles</Link> from private to lieutenant colonel, fighting alongside <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> through <Link href="/india" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">India</Link>, the <Link href="/battles/peninsular-war" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Peninsular War</Link> and <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>. The Sharpe books in order, whether read in chronological or publication sequence, take you from Seringapatam in 1799 to a final haunted voyage to Chile, with the real campaigns of Wellington and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon</Link> as their backdrop.
