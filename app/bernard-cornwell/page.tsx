@@ -107,6 +107,18 @@ const NAV_LINKS = [
   { id: "faq", label: "FAQ" },
 ];
 
+const aff = "text-burgundy-bright hover:text-gold transition underline underline-offset-2 decoration-burgundy-bright/40 hover:decoration-gold";
+
+function AffLink({ href, children }: { href: string; children: React.ReactNode }) {
+  return (
+    <a href={href} target="_blank" rel="sponsored noopener" aria-label={`Buy ${typeof children === "string" ? children : ""} on Amazon (affiliate link)`} className={aff}>{children}</a>
+  );
+}
+
+const LK_CTA_URL = "https://www.amazon.co.uk/Last-Kingdom-Saxon-Stories/dp/0007149905?tag=tomstansfi036-21";
+const AZ_CTA_URL = "https://www.amazon.co.uk/Azincourt-Bernard-Cornwell/dp/0007271220?tag=tomstansfi036-21";
+const WL_CTA_URL = "https://amzn.to/4tjc80D";
+
 export default function BernardCornwellPage() {
   return (
     <>
@@ -143,8 +155,6 @@ export default function BernardCornwellPage() {
             His most recent novel, <em>Sharpe&rsquo;s Storm</em>, was published in October 2025. He has suggested it may be the final book in the Sharpe series, though he has not ruled out future Sharpe novels.
           </p>
         </div>
-
-        {/* Quick-jump nav */}
         <nav className="mt-10 flex flex-wrap gap-2 justify-center">
           {NAV_LINKS.map((l) => (
             <a key={l.id} href={`#${l.id}`} className="px-3 py-1.5 border border-gold/30 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold hover:text-gold transition">
@@ -199,14 +209,24 @@ export default function BernardCornwellPage() {
           <div className="mt-8">
             <h3 className="font-display text-lg text-gold-pale uppercase tracking-widest mb-4">Bibliography (publication order)</h3>
             <ol className="text-parchment font-serif space-y-1 text-sm list-decimal pl-6">
-              {["The Last Kingdom (2004)", "The Pale Horseman (2005)", "The Lords of the North (2006)", "Sword Song (2007)", "The Burning Land (2009)", "Death of Kings (2011)", "The Pagan Lord (2013)", "The Empty Throne (2014)", "Warriors of the Storm (2015)", "The Flame Bearer (2016)", "War of the Wolf (2018)", "Sword of Kings (2019)", "War Lord (2020)"].map((b) => (
-                <li key={b}>{b}</li>
-              ))}
+              <li><AffLink href={LK_CTA_URL}>The Last Kingdom</AffLink> (2004)</li>
+              <li><AffLink href="https://amzn.to/4vt4yku">The Pale Horseman</AffLink> (2005)</li>
+              <li><AffLink href="https://amzn.to/43Mhwht">The Lords of the North</AffLink> (2006)</li>
+              <li><AffLink href="https://amzn.to/3Q7I0qq">Sword Song</AffLink> (2007)</li>
+              <li><AffLink href="https://amzn.to/4ocMjNZ">The Burning Land</AffLink> (2009)</li>
+              <li><AffLink href="https://amzn.to/49HYM6i">Death of Kings</AffLink> (2011)</li>
+              <li><AffLink href="https://amzn.to/4uLFXrb">The Pagan Lord</AffLink> (2013)</li>
+              <li><AffLink href="https://amzn.to/43jVyCn">The Empty Throne</AffLink> (2014)</li>
+              <li><AffLink href="https://amzn.to/4g1qxKV">Warriors of the Storm</AffLink> (2015)</li>
+              <li><AffLink href="https://amzn.to/4x53oO1">The Flame Bearer</AffLink> (2016)</li>
+              <li><AffLink href="https://amzn.to/4a0q0p1">War of the Wolf</AffLink> (2018)</li>
+              <li><AffLink href="https://amzn.to/3Q7Ivki">Sword of Kings</AffLink> (2019)</li>
+              <li><AffLink href="https://amzn.to/4uMaPId">War Lord</AffLink> (2020)</li>
             </ol>
-            <p className="text-parchment/85 font-serif text-sm mt-2 italic">Companion: Uhtred&rsquo;s Feast (2024)</p>
+            <p className="text-parchment/85 font-serif text-sm mt-2 italic">Companion: <AffLink href="https://amzn.to/4ue58li">Uhtred&rsquo;s Feast</AffLink> (2024)</p>
           </div>
           <div className="mt-6">
-            <a href="https://www.amazon.co.uk/Last-Kingdom-Saxon-Stories/dp/0007149905?tag=tomstansfi036-21" target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
+            <a href={LK_CTA_URL} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
               Start with The Last Kingdom on Amazon &rarr;
             </a>
           </div>
@@ -220,9 +240,9 @@ export default function BernardCornwellPage() {
           <p><strong>3 novels, complete trilogy.</strong> Cornwell&rsquo;s retelling of the King Arthur legend, set in a brutal, plausible post-Roman Britain. Often cited by critics as some of his finest work. Told from the perspective of Derfel Cadarn, a warrior loyal to Arthur, the trilogy strips away the medieval romance and presents Arthur as a Dark Age warlord fighting to hold a collapsing Britain together against the Saxon invasion.</p>
         </div>
         <ol className="text-parchment font-serif space-y-1 text-sm list-decimal pl-6 mt-4">
-          <li>The Winter King (1995)</li>
-          <li>Enemy of God (1996)</li>
-          <li>Excalibur (1997)</li>
+          <li><AffLink href="https://amzn.to/4vvik6h">The Winter King</AffLink> (1995)</li>
+          <li><AffLink href="https://amzn.to/49FAPwo">Enemy of God</AffLink> (1996)</li>
+          <li><AffLink href="https://amzn.to/4xa8U1I">Excalibur</AffLink> (1997)</li>
         </ol>
         <p className="text-parchment/85 font-serif text-sm mt-2 italic">A television adaptation, The Winter King, aired on MGM+ in 2023 but was not renewed for a second season.</p>
       </section>
@@ -235,10 +255,10 @@ export default function BernardCornwellPage() {
             <p><strong>4 novels.</strong> A Hundred Years War series following Thomas of Hookton, a young English archer caught up in the search for the Holy Grail amid the great battles of fourteenth-century France.</p>
           </div>
           <ol className="text-parchment font-serif space-y-1 text-sm list-decimal pl-6 mt-4">
-            <li>Harlequin (2000, published in the US as <em>The Archer&rsquo;s Tale</em>)</li>
-            <li>Vagabond (2002)</li>
-            <li>Heretic (2003)</li>
-            <li>1356 (2012)</li>
+            <li><AffLink href="https://amzn.to/49HNOh5">Harlequin</AffLink> (2000, published in the US as <em>The Archer&rsquo;s Tale</em>)</li>
+            <li><AffLink href="https://amzn.to/4uK2uVo">Vagabond</AffLink> (2002)</li>
+            <li><AffLink href="https://amzn.to/4x00KZE">Heretic</AffLink> (2003)</li>
+            <li><AffLink href="https://amzn.to/49HZZdQ">1356</AffLink> (2012)</li>
           </ol>
           <p className="text-parchment/85 font-serif text-sm mt-2 italic"><em>1356</em>, set at the Battle of Poitiers, was published nine years after <em>Heretic</em> and is sometimes treated as a standalone, but it continues Thomas of Hookton&rsquo;s story and is generally considered part of the series.</p>
         </div>
@@ -251,10 +271,10 @@ export default function BernardCornwellPage() {
           <p><strong>4 novels, unfinished.</strong> Cornwell&rsquo;s American Civil War series, following Nathaniel Starbuck, a Boston-born son of an abolitionist preacher who finds himself fighting for the Confederacy.</p>
         </div>
         <ol className="text-parchment font-serif space-y-1 text-sm list-decimal pl-6 mt-4">
-          <li>Rebel (1993)</li>
-          <li>Copperhead (1994)</li>
-          <li>Battle Flag (1995)</li>
-          <li>The Bloody Ground (1996)</li>
+          <li><AffLink href="https://amzn.to/4e2sIev">Rebel</AffLink> (1993)</li>
+          <li><AffLink href="https://amzn.to/4ufJPzK">Copperhead</AffLink> (1994)</li>
+          <li><AffLink href="https://amzn.to/4uSIK27">Battle Flag</AffLink> (1995)</li>
+          <li><AffLink href="https://amzn.to/4ae63ed">The Bloody Ground</AffLink> (1996)</li>
         </ol>
         <p className="text-parchment/85 font-serif text-sm mt-2 italic">Cornwell has said for many years that he intends to return to Starbuck and complete the series, but no further books have been published. This is the most-asked-about gap in his bibliography.</p>
       </section>
@@ -266,15 +286,15 @@ export default function BernardCornwellPage() {
           <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
             <p>Outside his major series, Cornwell has written a number of standalone historical novels covering periods from the Bronze Age to Shakespearean London. The most widely read include:</p>
             <ul className="space-y-2 list-disc pl-6">
-              <li><strong>Redcoat</strong> (1987): the American Revolution, set during the British occupation of Philadelphia.</li>
-              <li><strong>Stonehenge</strong> (1999): Bronze Age Britain and the building of the monument.</li>
-              <li><strong>Gallows Thief</strong> (2001): a murder mystery set in Regency London.</li>
-              <li><strong>Azincourt</strong> (2008, published in the US as <em>Agincourt</em>): the 1415 battle, told through the eyes of an English archer.</li>
-              <li><strong>Fools and Mortals</strong> (2017): Elizabethan London, told from the perspective of William Shakespeare&rsquo;s younger brother Richard, an actor in the early theatre.</li>
+              <li><strong><AffLink href="https://amzn.to/4eopUda">Redcoat</AffLink></strong> (1987): the American Revolution, set during the British occupation of Philadelphia.</li>
+              <li><strong><AffLink href="https://amzn.to/4vuv4dt">Stonehenge</AffLink></strong> (1999): Bronze Age Britain and the building of the monument.</li>
+              <li><strong><AffLink href="https://amzn.to/4e9eysj">Gallows Thief</AffLink></strong> (2001): a murder mystery set in Regency London.</li>
+              <li><strong><AffLink href={AZ_CTA_URL}>Azincourt</AffLink></strong> (2008, published in the US as <em>Agincourt</em>): the 1415 battle, told through the eyes of an English archer.</li>
+              <li><strong><AffLink href="https://amzn.to/4ur8S36">Fools and Mortals</AffLink></strong> (2017): Elizabethan London, told from the perspective of William Shakespeare&rsquo;s younger brother Richard, an actor in the early theatre.</li>
             </ul>
           </div>
           <div className="mt-6">
-            <a href="https://www.amazon.co.uk/Azincourt-Bernard-Cornwell/dp/0007271220?tag=tomstansfi036-21" target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
+            <a href={AZ_CTA_URL} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
               Buy Azincourt on Amazon &rarr;
             </a>
           </div>
@@ -286,10 +306,10 @@ export default function BernardCornwellPage() {
         <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest mb-8 section-title">Non-Fiction</h2>
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
           <p>Cornwell has published one full-length work of non-fiction:</p>
-          <p><strong>Waterloo: The History of Four Days, Three Armies, and Three Battles</strong> (2014): a narrative history of the 1815 campaign, including the battles of Quatre Bras, Ligny, and Waterloo itself. Drawing on his decades of research for the Sharpe series, this is widely regarded as one of the most readable single-volume accounts of the battle for general readers.</p>
+          <p><strong><AffLink href={WL_CTA_URL}>Waterloo: The History of Four Days, Three Armies, and Three Battles</AffLink></strong> (2014): a narrative history of the 1815 campaign, including the battles of Quatre Bras, Ligny, and Waterloo itself. Drawing on his decades of research for the Sharpe series, this is widely regarded as one of the most readable single-volume accounts of the battle for general readers.</p>
         </div>
         <div className="mt-6 flex flex-wrap gap-4">
-          <a href="https://amzn.to/4tjc80D" target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
+          <a href={WL_CTA_URL} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
             Buy Waterloo on Amazon &rarr;
           </a>
           <Link href="/battles/waterloo" className="inline-block px-5 py-2 border border-gold/40 text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition">
@@ -319,9 +339,9 @@ export default function BernardCornwellPage() {
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
           <p>Cornwell&rsquo;s catalogue is intimidatingly large, but the entry points are clearer than they look.</p>
           <p><span className="text-gold-pale">If you want military action and a single charismatic hero:</span> start with the <Link href="/fiction" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Sharpe series</Link>. Either <em>Sharpe&rsquo;s Eagle</em> (the first novel published, and still one of the best) or <em>Sharpe&rsquo;s Tiger</em> (the first in chronological order, set in India) work as starting points.</p>
-          <p><span className="text-gold-pale">If you want a sprawling epic about the making of a nation:</span> start with <em>The Last Kingdom</em>, the first book of the Saxon Stories. If you have watched the Netflix series, the books cover the same story with significantly more depth.</p>
-          <p><span className="text-gold-pale">If you want Cornwell at his most literary:</span> start with <em>The Winter King</em>, the first of the Warlord Chronicles. Many readers and critics consider these his finest novels.</p>
-          <p><span className="text-gold-pale">If you want to test the waters with a single book:</span> try <em>Azincourt</em>. It is a standalone, it is one of his best, and it gives you a full sense of his style in around 400 pages.</p>
+          <p><span className="text-gold-pale">If you want a sprawling epic about the making of a nation:</span> start with <em><AffLink href={LK_CTA_URL}>The Last Kingdom</AffLink></em>, the first book of the Saxon Stories. If you have watched the Netflix series, the books cover the same story with significantly more depth.</p>
+          <p><span className="text-gold-pale">If you want Cornwell at his most literary:</span> start with <em><AffLink href="https://amzn.to/4vvik6h">The Winter King</AffLink></em>, the first of the Warlord Chronicles. Many readers and critics consider these his finest novels.</p>
+          <p><span className="text-gold-pale">If you want to test the waters with a single book:</span> try <em><AffLink href={AZ_CTA_URL}>Azincourt</AffLink></em>. It is a standalone, it is one of his best, and it gives you a full sense of his style in around 400 pages.</p>
         </div>
       </section>
 
