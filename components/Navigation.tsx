@@ -157,6 +157,7 @@ const NAV_SECTIONS: NavSection[] = [
           { label: "All 24 Novels", href: "/fiction" },
           { label: "Where to Start", href: "/fiction#where-to-start" },
           { label: "Reading Order", href: "/fiction#reading-order" },
+          { label: "Last Kingdom Books in Order", href: "/last-kingdom-books-in-order" },
         ],
       },
       {

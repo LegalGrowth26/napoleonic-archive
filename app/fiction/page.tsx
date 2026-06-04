@@ -310,6 +310,11 @@ const relatedPages = [
     note: "The 95th Rifles, Sharpe's real home regiment.",
   },
   {
+    href: "/last-kingdom-books-in-order",
+    title: "Last Kingdom Books in Order",
+    note: "Bernard Cornwell's other great series: all 13 Saxon Stories novels.",
+  },
+  {
     href: "/resources",
     title: "Resources",
     note: "The Sharpe Companion, Cornwell's own Waterloo, and more buying guides.",
@@ -319,7 +324,7 @@ const relatedPages = [
 const fictionFaqItems = [
   { q: "What are the Bernard Cornwell Sharpe books?", a: "The Sharpe series is a sequence of 24 historical novels by Bernard Cornwell following Richard Sharpe, a British soldier who rises from private to lieutenant colonel during the Napoleonic Wars. The series covers campaigns from India in 1799 through to the Battle of Waterloo in 1815 and beyond." },
   { q: "What order should I read the Sharpe books by Bernard Cornwell?", a: "Bernard Cornwell's Sharpe novels can be read in publication order or chronological order. Publication order starts with Sharpe's Eagle (1981). Chronological order starts with Sharpe's Tiger set in India in 1799. Most readers and Cornwell himself recommend starting with Sharpe's Rifles or Sharpe's Eagle for the best introduction to the character." },
-  { q: "How many Sharpe books are there?", a: "Bernard Cornwell has written 24 Sharpe novels, plus several short stories. The series follows Richard Sharpe from 1799 to 1821, covering the Indian campaigns, the Peninsular War, and the Battle of Waterloo." },
+  { q: "How many Sharpe books are there?", a: "There are 24 Sharpe novels and 3 short stories by Bernard Cornwell, totalling 27 works in the series. The most recent novel, Sharpe's Storm, was published in October 2025. The series follows Richard Sharpe from 1799 to 1821, covering the Indian campaigns, the Peninsular War, and the Battle of Waterloo." },
   { q: "What is the first Sharpe book?", a: "The first Sharpe book published was Sharpe's Eagle in 1981. The first book in chronological order is Sharpe's Tiger, set at the Siege of Seringapatam in 1799." },
   { q: "What is the last Sharpe book?", a: "The most recent Sharpe novel is Sharpe's Storm, published in 2024, set during the Peninsular War in 1813." },
   { q: "Are the Sharpe books part of a series?", a: "Yes. All 24 Sharpe novels by Bernard Cornwell form a continuous series following Richard Sharpe from private soldier to lieutenant colonel across the Napoleonic Wars." },
@@ -359,7 +364,7 @@ export default function FictionPage() {
         </p>
         <div className="text-parchment leading-relaxed font-serif text-lg space-y-4">
           <p>
-            Bernard Cornwell&rsquo;s <Link href="/fiction/characters/sharpe" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link> is the greatest fictional soldier of the <Link href="/napoleonic-wars" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleonic Wars</Link>. All 24 Sharpe books follow a rifleman of the <Link href="/regiments/95th-rifles" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">95th Rifles</Link> from private to lieutenant colonel, fighting alongside <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> through <Link href="/india" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">India</Link>, the <Link href="/battles/peninsular-war" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Peninsular War</Link> and <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>. The Sharpe books in order, whether read in chronological or publication sequence, take you from Seringapatam in 1799 to a final haunted voyage to Chile, with the real campaigns of Wellington and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon</Link> as their backdrop.
+            There are 24 Sharpe novels and 3 short stories by <Link href="/bernard-cornwell" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Bernard Cornwell</Link>, totalling 27 works in the series. The most recent novel, Sharpe&rsquo;s Storm, was published in October 2025. The series follows <Link href="/fiction/characters/sharpe" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Richard Sharpe</Link>, a rifleman of the <Link href="/regiments/95th-rifles" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">95th Rifles</Link>, from private to lieutenant colonel across the <Link href="/napoleonic-wars" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleonic Wars</Link>: through <Link href="/india" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">India</Link>, the <Link href="/battles/peninsular-war" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Peninsular War</Link> and <Link href="/battles/waterloo" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Waterloo</Link>, fighting alongside <Link href="/people/wellington" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">the Duke of Wellington</Link> with the real campaigns of Wellington and <Link href="/people/napoleon" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleon</Link> as their backdrop.
           </p>
           <p>
             The ITV television series starring Sean Bean brought Sharpe to millions of viewers between 1993 and 2008. Below you will find every novel listed in order, the complete TV series, a <Link href="/fiction/characters" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">character guide</Link> with <Link href="/fiction/characters/harper" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Patrick Harper</Link> and 150+ characters, and <Link href="/fiction/recommendations" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">recommendations</Link> for readers who want more.
@@ -805,6 +810,17 @@ export default function FictionPage() {
             Bernard Cornwell
           </footer>
         </blockquote>
+
+        <div className="mt-16 pt-10 border-t border-gold/20" id="checklist">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest mb-4">Free Sharpe Reading Checklist</h2>
+            <p className="text-parchment font-serif max-w-xl mx-auto mb-6">Print or download a free checklist of all 27 Sharpe novels and short stories in reading order, with checkboxes to track your progress.</p>
+            <a href="/downloads/sharpe-reading-checklist.pdf" target="_blank" rel="noopener" className="inline-block px-8 py-3 border-2 border-gold/70 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-sm font-display hover:border-gold hover:text-gold transition shadow-regal">
+              Download the free Sharpe reading checklist (PDF) &rarr;
+            </a>
+            <p className="text-xs text-parchment/60 mt-3">Free to print and share.</p>
+          </div>
+        </div>
 
         <div className="mt-16 pt-10 border-t border-gold/20" id="faq">
           <div className="text-center mb-10">

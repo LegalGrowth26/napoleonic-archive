@@ -62,6 +62,7 @@ const routes = [
   { path: "/fiction/characters/leroy", priority: 0.85 },
   { path: "/timeline", priority: 0.9 },
   { path: "/bernard-cornwell", priority: 0.9 },
+  { path: "/last-kingdom-books-in-order", priority: 0.9 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
