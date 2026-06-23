@@ -122,6 +122,7 @@ export default function LastKingdomBooksPage() {
             { id: "where-to-start", label: "Where to Start" },
             { id: "books-vs-tv", label: "Books vs Netflix" },
             { id: "companion", label: "Uhtred's Feast" },
+            { id: "checklist", label: "Free Checklist" },
             { id: "faq", label: "FAQ" },
           ].map((l) => (
             <a key={l.id} href={`#${l.id}`} className="px-3 py-1.5 border border-gold/30 text-gold-pale uppercase tracking-widest text-[10px] hover:border-gold hover:text-gold transition">{l.label}</a>
@@ -197,6 +198,18 @@ export default function LastKingdomBooksPage() {
         </div>
       </section>
 
+      {/* 6. PDF CHECKLIST */}
+      <section id="checklist" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <div className="text-center">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest mb-4">Free Last Kingdom Reading Checklist (PDF Download)</h2>
+          <p className="text-parchment font-serif max-w-xl mx-auto mb-6">Print or download a free checklist of all 13 Last Kingdom novels in reading order, plus the Uhtred&rsquo;s Feast companion volume, with checkboxes to track your progress.</p>
+          <a href="/downloads/last-kingdom-reading-checklist.pdf" target="_blank" rel="noopener" className="inline-block px-8 py-3 border-2 border-gold/70 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-sm font-display hover:border-gold hover:text-gold transition shadow-regal">
+            Download the free Last Kingdom reading checklist (PDF) &rarr;
+          </a>
+          <p className="text-xs text-parchment/60 mt-3">Free to print and share.</p>
+        </div>
+      </section>
+
       {/* 7. FAQ */}
       <section id="faq" className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep scroll-mt-24">
         <div className="max-w-4xl mx-auto px-6 py-16">
@@ -236,6 +249,9 @@ export default function LastKingdomBooksPage() {
       <section className="max-w-4xl mx-auto px-6 py-6 text-center">
         <p className="text-xs uppercase tracking-widest text-parchment/85">
           As an Amazon Associate I earn from qualifying purchases.
+        </p>
+        <p className="text-[10px] text-parchment/50 mt-2">
+          Page last updated: June 2026
         </p>
       </section>
     </>

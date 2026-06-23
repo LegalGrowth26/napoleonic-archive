@@ -178,7 +178,7 @@ export default function HomePage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {[
-            { href: "/last-kingdom-books-in-order", title: "Last Kingdom Books in Order", badge: "Fiction", desc: "All 13 Saxon Stories novels in reading order" },
+            { href: "/last-kingdom-books-in-order", title: "Last Kingdom Books in Order", badge: "Fiction", desc: "All 13 novels in reading order, with free PDF checklist" },
             { href: "/bernard-cornwell", title: "Bernard Cornwell", badge: "Author", desc: "The complete guide to his life and 60+ novels" },
             { href: "/battles/peninsular-war", title: "Peninsular War Overview", badge: "Battles", desc: "Six years that broke Napoleon" },
             { href: "/stories/life-as-a-soldier", title: "Life as a Soldier", badge: "Stories", desc: "Pay, food, discipline and survival" },

@@ -225,7 +225,8 @@ export default function BernardCornwellPage() {
             </ol>
             <p className="text-parchment/85 font-serif text-sm mt-2 italic">Companion: <AffLink href="https://amzn.to/4ue58li">Uhtred&rsquo;s Feast</AffLink> (2024)</p>
           </div>
-          <div className="mt-8">
+          <p className="text-parchment/85 font-serif text-sm mt-4">A <Link href="/last-kingdom-books-in-order#checklist" className="text-gold-pale underline underline-offset-2 hover:text-gold transition">free printable reading checklist (PDF)</Link> is available on the dedicated reading guide.</p>
+          <div className="mt-4">
             <Link href="/last-kingdom-books-in-order" className="inline-block px-8 py-3 border-2 border-gold/70 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-sm font-display hover:border-gold hover:text-gold transition shadow-regal">
               Read the complete Last Kingdom books in order &rarr;
             </Link>
