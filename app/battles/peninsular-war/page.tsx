@@ -29,8 +29,8 @@ interface HubBattle {
   background: string;
   battle: string;
   significance: string;
-  /** Dedicated battle page, once built. */
-  href?: string;
+  /** Dedicated battle page. */
+  href: string;
 }
 
 const battles: HubBattle[] = [
@@ -46,6 +46,7 @@ const battles: HubBattle[] = [
       "Delaborde chose an exceptionally strong defensive position around the village of Rolica. Wellesley attempted a double envelopment while pinning the French front. Several British brigades attacked prematurely and suffered heavily climbing steep ravines before eventually forcing the French to withdraw in good order.",
     significance:
       "Although tactically minor, Rolica marked the first major British victory against Napoleon's veteran armies in the Peninsula. It also demonstrated Wellesley's willingness to manoeuvre rather than simply attack head-on.",
+    href: "/battles/rolica",
   },
   {
     id: "vimeiro",
@@ -59,6 +60,7 @@ const battles: HubBattle[] = [
       "French columns repeatedly assaulted British positions but encountered disciplined musket volleys from troops deployed in line rather than column. The British infantry shattered attack after attack.",
     significance:
       "Junot's defeat effectively ended French control of Portugal for the time being. Unfortunately, the subsequent Convention of Cintra allowed the defeated French army to evacuate Portugal by Royal Navy transports, creating political outrage in Britain despite the battlefield victory.",
+    href: "/battles/vimeiro",
   },
   {
     id: "corunna",
@@ -86,6 +88,7 @@ const battles: HubBattle[] = [
       "In one of Wellington's boldest operations, British troops secretly crossed the Douro River using local wine barges while Soult believed the crossing impossible. French forces were completely surprised. Soult narrowly escaped capture.",
     significance:
       "Portugal was liberated for the second time. The battle established Wellington's reputation for deception and operational surprise.",
+    href: "/battles/second-oporto",
   },
   {
     id: "talavera",
@@ -100,6 +103,7 @@ const battles: HubBattle[] = [
       "Marshal Victor launched repeated attacks against British positions. The fighting was brutal, especially around Cerro de Medellin. British infantry again demonstrated their superiority in defensive combat.",
     significance:
       "Talavera earned Wellesley his Viscount Wellington title. However, lack of Spanish cooperation and French manoeuvres forced him to retreat shortly afterwards. The victory therefore produced little immediate strategic gain.",
+    href: "/battles/talavera",
   },
   {
     id: "busaco",
@@ -113,6 +117,7 @@ const battles: HubBattle[] = [
       "French columns attacked uphill against carefully placed British and Portuguese divisions. The reverse-slope defence, which would become Wellington's signature tactic, worked precisely as intended. French casualties were severe; Allied casualties were comparatively light.",
     significance:
       "Busaco delayed Masséna's advance and demonstrated the growing skill of Wellington's Portuguese troops fighting alongside British regiments. Wellington then withdrew as planned behind the Lines of Torres Vedras, where the French army starved through the winter of 1810-1811.",
+    href: "/battles/busaco",
   },
   {
     id: "fuentes-de-onoro",
@@ -127,6 +132,7 @@ const battles: HubBattle[] = [
       "The village of Fuentes de Onoro changed hands repeatedly through hard street fighting. On the southern flank, Wellington narrowly avoided disaster when his right wing became exposed. The famous Light Division covered a difficult withdrawal with exceptional discipline.",
     significance:
       "Masséna ultimately failed to relieve Almeida. French hopes of recovering Portugal effectively ended. Wellington himself later remarked that if Napoleon had been there, they would have been beaten.",
+    href: "/battles/fuentes-de-onoro",
   },
   {
     id: "albuera",
@@ -140,6 +146,7 @@ const battles: HubBattle[] = [
       "One of the bloodiest infantry battles of the war. A sudden French flank attack almost destroyed the Allied line. The British Fusilier Brigade suffered appalling casualties while standing under sustained French musketry, but their steadiness held the line.",
     significance:
       "The battle was tactically inconclusive but strategically prevented Soult from relieving Badajoz. It remains one of the most savage infantry engagements fought by the British Army during the Napoleonic Wars.",
+    href: "/battles/albuera",
   },
   {
     id: "ciudad-rodrigo",
@@ -155,6 +162,7 @@ const battles: HubBattle[] = [
       "British engineers rapidly opened trenches despite winter conditions. Heavy artillery battered the walls. Once practicable breaches appeared, Wellington ordered an immediate assault. The town fell after fierce street fighting.",
     significance:
       "The siege lasted only twelve days. Its rapid success astonished Europe and opened the northern gateway into Spain.",
+    href: "/battles/ciudad-rodrigo",
   },
   {
     id: "badajoz",
@@ -200,6 +208,7 @@ const battles: HubBattle[] = [
       "The British lacked sufficient heavy siege artillery. Repeated assaults failed. French relief armies converged.",
     significance:
       "Wellington abandoned the siege and conducted another masterful retreat back to Portugal. The failure reminded Europe that French power remained formidable, and it was one of Wellington's rare setbacks in the war.",
+    href: "/battles/burgos",
   },
   {
     id: "vitoria",
@@ -229,6 +238,7 @@ const battles: HubBattle[] = [
       "After an initial failed assault in July, British artillery created massive breaches during a second attempt. The final assault on 31 August succeeded after bitter fighting. As at Badajoz, discipline collapsed following the capture. Large parts of the town were destroyed by fire.",
     significance:
       "The fortress secured Allied supply lines along the northern coast and opened the way into the Pyrenees.",
+    href: "/battles/san-sebastian",
   },
   {
     id: "nivelle",
@@ -242,6 +252,7 @@ const battles: HubBattle[] = [
       "Wellington coordinated multiple attacks across difficult terrain. French positions gradually collapsed.",
     significance:
       "For the first time, Wellington defeated the French on French soil. The invasion of France had begun.",
+    href: "/battles/nivelle",
   },
   {
     id: "nive",
@@ -256,6 +267,7 @@ const battles: HubBattle[] = [
       "Several separate engagements occurred over four days. The hard fighting around St Pierre on 13 December was particularly ferocious.",
     significance:
       "Despite repeated French attacks, Soult failed to regain the initiative. Wellington's grip on southern France tightened.",
+    href: "/battles/nive",
   },
   {
     id: "orthez",
@@ -268,6 +280,7 @@ const battles: HubBattle[] = [
     battle:
       "French resistance proved stubborn. Eventually Wellington's pressure forced Soult to withdraw. Wellington himself was slightly wounded during the fighting.",
     significance: "The road into southern France lay open.",
+    href: "/battles/orthez",
   },
   {
     id: "toulouse",
@@ -281,6 +294,7 @@ const battles: HubBattle[] = [
       "Soult defended Toulouse vigorously. The Allies eventually captured the surrounding heights. French forces withdrew during the night.",
     significance:
       "Often regarded as the final major battle of the Peninsular War, Toulouse remains controversial because it was fought after the war had effectively ended. Casualties on both sides were essentially futile.",
+    href: "/battles/toulouse",
   },
 ];
 
@@ -315,6 +329,12 @@ const eventsJsonLd = {
     description: b.significance,
   })),
 };
+
+/** First sentence of a passage, for the shortened battle teasers. */
+function firstSentence(text: string): string {
+  const s = text.split(". ")[0];
+  return s.endsWith(".") ? s : `${s}.`;
+}
 
 export default function PeninsularWarPage() {
   return (
@@ -414,27 +434,15 @@ export default function PeninsularWarPage() {
               {b.siege ? `Siege of ${b.name}` : b.name}
             </h2>
             <div className="text-xs uppercase tracking-[0.3em] text-gold/70 mb-6">{b.dates}</div>
-            <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
-              <div>
-                <h3 className="text-sm uppercase tracking-[0.25em] text-gold/80 font-display mb-2">Background</h3>
-                <p>{b.background}</p>
-              </div>
-              <div>
-                <h3 className="text-sm uppercase tracking-[0.25em] text-gold/80 font-display mb-2">{b.siege ? "The Siege" : "The Battle"}</h3>
-                <p>{b.battle}</p>
-              </div>
-              <div>
-                <h3 className="text-sm uppercase tracking-[0.25em] text-gold/80 font-display mb-2">Significance</h3>
-                <p>{b.significance}</p>
-              </div>
+            <div className="text-parchment leading-relaxed font-serif space-y-4 text-lg">
+              <p>{b.background}</p>
+              <p className="text-parchment/85 italic">{firstSentence(b.significance)}</p>
             </div>
-            {b.href && (
-              <div className="mt-6">
-                <Link href={b.href} className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">
-                  Read the full page &rarr;
-                </Link>
-              </div>
-            )}
+            <div className="mt-6">
+              <Link href={b.href} className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition">
+                Read the full page &rarr;
+              </Link>
+            </div>
           </div>
         </section>
       ))}

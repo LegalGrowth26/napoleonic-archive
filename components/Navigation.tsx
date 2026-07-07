@@ -41,6 +41,25 @@ const NAV_SECTIONS: NavSection[] = [
         ],
       },
       {
+        heading: "Peninsular War",
+        links: [
+          { label: "Battle of Rolica", href: "/battles/rolica" },
+          { label: "Battle of Vimeiro", href: "/battles/vimeiro" },
+          { label: "Second Battle of Oporto", href: "/battles/second-oporto" },
+          { label: "Battle of Talavera", href: "/battles/talavera" },
+          { label: "Battle of Busaco", href: "/battles/busaco" },
+          { label: "Battle of Fuentes de Onoro", href: "/battles/fuentes-de-onoro" },
+          { label: "Battle of Albuera", href: "/battles/albuera" },
+          { label: "Siege of Ciudad Rodrigo", href: "/battles/ciudad-rodrigo" },
+          { label: "Siege of Burgos", href: "/battles/burgos" },
+          { label: "Siege of San Sebastian", href: "/battles/san-sebastian" },
+          { label: "Battle of the Nivelle", href: "/battles/nivelle" },
+          { label: "Battle of the Nive", href: "/battles/nive" },
+          { label: "Battle of Orthez", href: "/battles/orthez" },
+          { label: "Battle of Toulouse", href: "/battles/toulouse" },
+        ],
+      },
+      {
         heading: "Featured Battles",
         links: [
           { label: "Battle of Waterloo", href: "/battles/waterloo" },

@@ -63,6 +63,20 @@ const routes = [
   { path: "/timeline", priority: 0.9 },
   { path: "/bernard-cornwell", priority: 0.9 },
   { path: "/last-kingdom-books-in-order", priority: 0.9 },
+  { path: "/battles/rolica", priority: 0.7 },
+  { path: "/battles/vimeiro", priority: 0.7 },
+  { path: "/battles/second-oporto", priority: 0.7 },
+  { path: "/battles/talavera", priority: 0.7 },
+  { path: "/battles/busaco", priority: 0.7 },
+  { path: "/battles/fuentes-de-onoro", priority: 0.7 },
+  { path: "/battles/albuera", priority: 0.7 },
+  { path: "/battles/ciudad-rodrigo", priority: 0.7 },
+  { path: "/battles/burgos", priority: 0.7 },
+  { path: "/battles/san-sebastian", priority: 0.7 },
+  { path: "/battles/nivelle", priority: 0.7 },
+  { path: "/battles/nive", priority: 0.7 },
+  { path: "/battles/orthez", priority: 0.7 },
+  { path: "/battles/toulouse", priority: 0.7 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
