@@ -115,7 +115,7 @@ function AffLink({ href, children }: { href: string; children: React.ReactNode }
   );
 }
 
-const LK_CTA_URL = "https://www.amazon.co.uk/Last-Kingdom-Saxon-Stories/dp/0007149905?tag=tomstansfi036-21";
+const LK_CTA_URL = "https://amzn.to/4y5Pmfu";
 const AZ_CTA_URL = "https://www.amazon.co.uk/Azincourt-Bernard-Cornwell/dp/0007271220?tag=tomstansfi036-21";
 const WL_CTA_URL = "https://amzn.to/4tjc80D";
 
@@ -210,20 +210,20 @@ export default function BernardCornwellPage() {
             <h3 className="font-display text-lg text-gold-pale uppercase tracking-widest mb-4">Bibliography (publication order)</h3>
             <ol className="text-parchment font-serif space-y-1 text-sm list-decimal pl-6">
               <li><AffLink href={LK_CTA_URL}>The Last Kingdom</AffLink> (2004)</li>
-              <li><AffLink href="https://amzn.to/4vt4yku">The Pale Horseman</AffLink> (2005)</li>
-              <li><AffLink href="https://amzn.to/43Mhwht">The Lords of the North</AffLink> (2006)</li>
-              <li><AffLink href="https://amzn.to/3Q7I0qq">Sword Song</AffLink> (2007)</li>
-              <li><AffLink href="https://amzn.to/4ocMjNZ">The Burning Land</AffLink> (2009)</li>
+              <li><AffLink href="https://amzn.to/4fgrf6c">The Pale Horseman</AffLink> (2005)</li>
+              <li><AffLink href="https://amzn.to/4gRbPXd">The Lords of the North</AffLink> (2006)</li>
+              <li><AffLink href="https://amzn.to/4vjF5K8">Sword Song</AffLink> (2007)</li>
+              <li><AffLink href="https://amzn.to/4vDJvMJ">The Burning Land</AffLink> (2009)</li>
               <li><AffLink href="https://amzn.to/49HYM6i">Death of Kings</AffLink> (2011)</li>
-              <li><AffLink href="https://amzn.to/4uLFXrb">The Pagan Lord</AffLink> (2013)</li>
-              <li><AffLink href="https://amzn.to/43jVyCn">The Empty Throne</AffLink> (2014)</li>
-              <li><AffLink href="https://amzn.to/4g1qxKV">Warriors of the Storm</AffLink> (2015)</li>
-              <li><AffLink href="https://amzn.to/4x53oO1">The Flame Bearer</AffLink> (2016)</li>
-              <li><AffLink href="https://amzn.to/4a0q0p1">War of the Wolf</AffLink> (2018)</li>
-              <li><AffLink href="https://amzn.to/3Q7Ivki">Sword of Kings</AffLink> (2019)</li>
-              <li><AffLink href="https://amzn.to/4uMaPId">War Lord</AffLink> (2020)</li>
+              <li><AffLink href="https://amzn.to/4vjFjRu">The Pagan Lord</AffLink> (2013)</li>
+              <li><AffLink href="https://amzn.to/4wnALKE">The Empty Throne</AffLink> (2014)</li>
+              <li><AffLink href="https://amzn.to/4f0lDvJ">Warriors of the Storm</AffLink> (2015)</li>
+              <li><AffLink href="https://amzn.to/4vjFzQs">The Flame Bearer</AffLink> (2016)</li>
+              <li><AffLink href="https://amzn.to/4wrmHzY">War of the Wolf</AffLink> (2018)</li>
+              <li><AffLink href="https://amzn.to/3SG59Bt">Sword of Kings</AffLink> (2019)</li>
+              <li><AffLink href="https://amzn.to/4y8aguv">War Lord</AffLink> (2020)</li>
             </ol>
-            <p className="text-parchment/85 font-serif text-sm mt-2 italic">Companion: <AffLink href="https://amzn.to/4ue58li">Uhtred&rsquo;s Feast</AffLink> (2024)</p>
+            <p className="text-parchment/85 font-serif text-sm mt-2 italic">Companion: <AffLink href="https://amzn.to/3QWs7Ud">Uhtred&rsquo;s Feast</AffLink> (2024)</p>
           </div>
           <p className="text-parchment/85 font-serif text-sm mt-4">A <Link href="/last-kingdom-books-in-order#checklist" className="text-gold-pale underline underline-offset-2 hover:text-gold transition">free printable reading checklist (PDF)</Link> is available on the dedicated reading guide.</p>
           <div className="mt-4">
@@ -395,7 +395,7 @@ export default function BernardCornwellPage() {
           As an Amazon Associate I earn from qualifying purchases.
         </p>
         <p className="text-[10px] text-parchment/50 mt-2">
-          Page last updated: June 2026
+          Page last updated: July 2026
         </p>
       </section>
     </>

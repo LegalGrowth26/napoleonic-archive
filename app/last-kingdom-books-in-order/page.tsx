@@ -46,7 +46,7 @@ const faqJsonLd = {
   })),
 };
 
-const LK_URL = "https://www.amazon.co.uk/Last-Kingdom-Saxon-Stories/dp/0007149905?tag=tomstansfi036-21";
+const LK_URL = "https://amzn.to/4y5Pmfu";
 
 const aff = "text-burgundy-bright hover:text-gold transition underline underline-offset-2 decoration-burgundy-bright/40 hover:decoration-gold";
 function AffLink({ href, children }: { href: string; children: React.ReactNode }) {
@@ -55,18 +55,18 @@ function AffLink({ href, children }: { href: string; children: React.ReactNode }
 
 const books = [
   { n: 1, title: "The Last Kingdom", year: 2004, period: "Northumbria and Wessex, 866-878", hook: "A young Northumbrian noble named Uhtred is captured by Vikings, raised among them, and finds himself caught between two worlds as the Danes invade Saxon Wessex.", note: "Also the title of the Netflix series.", url: LK_URL },
-  { n: 2, title: "The Pale Horseman", year: 2005, period: "Wessex, 878", hook: "Alfred is driven into hiding in the marshes of Athelney, and Uhtred must choose which side to fight for at the Battle of Edington.", url: "https://amzn.to/4vt4yku" },
-  { n: 3, title: "The Lords of the North", year: 2006, period: "Northumbria, 878-880", hook: "Uhtred returns north to settle scores and reclaim his birthright at Bebbanburg.", url: "https://amzn.to/43Mhwht" },
-  { n: 4, title: "Sword Song", year: 2007, period: "London and Wessex, 885", hook: "The battle for London brings Uhtred back into Alfred's service, against his will.", url: "https://amzn.to/3Q7I0qq" },
-  { n: 5, title: "The Burning Land", year: 2009, period: "Wessex and East Anglia, 893", hook: "A new Danish invasion tests Wessex's defences and Uhtred's loyalties.", url: "https://amzn.to/4ocMjNZ" },
+  { n: 2, title: "The Pale Horseman", year: 2005, period: "Wessex, 878", hook: "Alfred is driven into hiding in the marshes of Athelney, and Uhtred must choose which side to fight for at the Battle of Edington.", url: "https://amzn.to/4fgrf6c" },
+  { n: 3, title: "The Lords of the North", year: 2006, period: "Northumbria, 878-880", hook: "Uhtred returns north to settle scores and reclaim his birthright at Bebbanburg.", url: "https://amzn.to/4gRbPXd" },
+  { n: 4, title: "Sword Song", year: 2007, period: "London and Wessex, 885", hook: "The battle for London brings Uhtred back into Alfred's service, against his will.", url: "https://amzn.to/4vjF5K8" },
+  { n: 5, title: "The Burning Land", year: 2009, period: "Wessex and East Anglia, 893", hook: "A new Danish invasion tests Wessex's defences and Uhtred's loyalties.", url: "https://amzn.to/4vDJvMJ" },
   { n: 6, title: "Death of Kings", year: 2011, period: "Wessex, 899-902", hook: "Alfred is dying, and his son Edward must defend the throne against Danish challengers and Saxon rivals.", url: "https://amzn.to/49HYM6i" },
-  { n: 7, title: "The Pagan Lord", year: 2013, period: "Mercia and Northumbria, 911", hook: "Uhtred makes another attempt on Bebbanburg as a new Danish war approaches.", url: "https://amzn.to/4uLFXrb" },
-  { n: 8, title: "The Empty Throne", year: 2014, period: "Mercia, 911", hook: "The death of a ruler leaves Mercia leaderless, and Uhtred's daughter Stiorra plays a central role.", url: "https://amzn.to/43jVyCn" },
-  { n: 9, title: "Warriors of the Storm", year: 2015, period: "Mercia and Ireland, 917", hook: "A new Norse threat comes from Ireland, led by a warrior calling himself a god.", url: "https://amzn.to/4g1qxKV" },
-  { n: 10, title: "The Flame Bearer", year: 2016, period: "Northumbria, 917-918", hook: "Uhtred returns to Bebbanburg for what may be his final reckoning with the fortress that has shaped his life.", url: "https://amzn.to/4x53oO1" },
-  { n: 11, title: "War of the Wolf", year: 2018, period: "Wessex and Northumbria, 920s", hook: "A new Norse threat tests Uhtred's grandson Aethelstan, and Uhtred must defend a fragile peace.", url: "https://amzn.to/4a0q0p1" },
-  { n: 12, title: "Sword of Kings", year: 2019, period: "Wessex, 920s", hook: "A succession crisis erupts in Wessex, and Uhtred is drawn into the struggle to keep Aethelstan on the path to the throne.", url: "https://amzn.to/3Q7Ivki" },
-  { n: 13, title: "War Lord", year: 2020, period: "Northern England, 937", hook: "The Battle of Brunanburh, the climactic conflict that established Aethelstan as the first king of all England, and Uhtred's last great fight.", note: "The final book in the series.", url: "https://amzn.to/4uMaPId" },
+  { n: 7, title: "The Pagan Lord", year: 2013, period: "Mercia and Northumbria, 911", hook: "Uhtred makes another attempt on Bebbanburg as a new Danish war approaches.", url: "https://amzn.to/4vjFjRu" },
+  { n: 8, title: "The Empty Throne", year: 2014, period: "Mercia, 911", hook: "The death of a ruler leaves Mercia leaderless, and Uhtred's daughter Stiorra plays a central role.", url: "https://amzn.to/4wnALKE" },
+  { n: 9, title: "Warriors of the Storm", year: 2015, period: "Mercia and Ireland, 917", hook: "A new Norse threat comes from Ireland, led by a warrior calling himself a god.", url: "https://amzn.to/4f0lDvJ" },
+  { n: 10, title: "The Flame Bearer", year: 2016, period: "Northumbria, 917-918", hook: "Uhtred returns to Bebbanburg for what may be his final reckoning with the fortress that has shaped his life.", url: "https://amzn.to/4vjFzQs" },
+  { n: 11, title: "War of the Wolf", year: 2018, period: "Wessex and Northumbria, 920s", hook: "A new Norse threat tests Uhtred's grandson Aethelstan, and Uhtred must defend a fragile peace.", url: "https://amzn.to/4wrmHzY" },
+  { n: 12, title: "Sword of Kings", year: 2019, period: "Wessex, 920s", hook: "A succession crisis erupts in Wessex, and Uhtred is drawn into the struggle to keep Aethelstan on the path to the throne.", url: "https://amzn.to/3SG59Bt" },
+  { n: 13, title: "War Lord", year: 2020, period: "Northern England, 937", hook: "The Battle of Brunanburh, the climactic conflict that established Aethelstan as the first king of all England, and Uhtred's last great fight.", note: "The final book in the series.", url: "https://amzn.to/4y8aguv" },
 ];
 
 const booksJsonLd = {
@@ -189,10 +189,10 @@ export default function LastKingdomBooksPage() {
       <section id="companion" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
         <h2 className="font-display text-3xl text-gold-pale uppercase tracking-widest mb-8 section-title">Uhtred&rsquo;s Feast (2024)</h2>
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
-          <p>In 2024, Bernard Cornwell published <em><AffLink href="https://amzn.to/4ue58li">Uhtred&rsquo;s Feast</AffLink></em>, a companion volume to the Saxon Stories. It is part cookbook and part collection of short narrative pieces set in the world of the novels, with recipes inspired by Anglo-Saxon and Viking food. It is not essential reading for the main series, but Last Kingdom fans who want to spend more time in Uhtred&rsquo;s world will find it enjoyable.</p>
+          <p>In 2024, Bernard Cornwell published <em><AffLink href="https://amzn.to/3QWs7Ud">Uhtred&rsquo;s Feast</AffLink></em>, a companion volume to the Saxon Stories. It is part cookbook and part collection of short narrative pieces set in the world of the novels, with recipes inspired by Anglo-Saxon and Viking food. It is not essential reading for the main series, but Last Kingdom fans who want to spend more time in Uhtred&rsquo;s world will find it enjoyable.</p>
         </div>
         <div className="mt-6">
-          <a href="https://amzn.to/4ue58li" target="_blank" rel="sponsored noopener" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
+          <a href="https://amzn.to/3QWs7Ud" target="_blank" rel="sponsored noopener" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">
             Buy Uhtred&rsquo;s Feast on Amazon &rarr;
           </a>
         </div>
@@ -251,7 +251,7 @@ export default function LastKingdomBooksPage() {
           As an Amazon Associate I earn from qualifying purchases.
         </p>
         <p className="text-[10px] text-parchment/50 mt-2">
-          Page last updated: June 2026
+          Page last updated: July 2026
         </p>
       </section>
     </>
