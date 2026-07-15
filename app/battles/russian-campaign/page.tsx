@@ -151,7 +151,10 @@ export default function RussianCampaignPage() {
               drawn from every corner of Napoleon&rsquo;s empire and its client states. Alongside
               French veterans marched Poles, Prussians, Austrians, Italians, Dutch, Swiss,
               Westphalians, Bavarians, Saxons, Spaniards and Croatians. It was an army that
-              reflected the extraordinary reach of Napoleonic power at its zenith.
+              reflected the extraordinary reach of Napoleonic power at its zenith. Only about
+              half of the army was French, and some contingents, notably those from Spain and
+              Portugal, served under coercion rather than loyalty. Napoleon&rsquo;s brothers
+              and his most senior marshals held the major commands.
             </p>
             <p>
               The French core, organised in the numbered corps under marshals of proven ability,
@@ -172,6 +175,60 @@ export default function RussianCampaignPage() {
               would deepen under stress. And the army had no established base in Russia: every
               mile east was another mile from France.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* TIMELINE OF THE CAMPAIGN */}
+      <section id="timeline" className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep scroll-mt-24">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <div className="text-center mb-12">
+            <div className="ornament text-gold/70 mb-4">
+              <span>⚔</span>
+            </div>
+            <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest">
+              Timeline of the Campaign
+            </h2>
+            <p className="mt-3 text-sm uppercase tracking-[0.3em] text-burgundy-bright">
+              24 June to 14 December 1812
+            </p>
+          </div>
+          <div className="relative">
+            <div className="absolute left-8 md:left-12 top-0 bottom-0 w-px bg-gradient-to-b from-gold/0 via-gold/40 to-gold/0" />
+            <ol className="space-y-6">
+              {[
+                { date: "24 Jun", name: "Crossing the Niemen", body: "The Grande Armée crosses the Niemen River, invading Russia." },
+                { date: "Jul", name: "Vilna and Vitebsk", body: "The French advance through Vilna and Vitebsk. The Russian armies refuse pitched battle and withdraw east." },
+                { date: "16-18 Aug", name: "Battle of Smolensk", body: "A costly French victory. The city is stormed and burns, and the Russian army withdraws in good order." },
+                { date: "7 Sep", name: "Battle of Borodino", link: "/battles/borodino", body: "The bloodiest single day of the Napoleonic Wars. Tactically a French victory, but the Russian army survives to fight again." },
+                { date: "14 Sep", name: "Napoleon Enters Moscow", body: "Napoleon enters an abandoned Moscow." },
+                { date: "15-18 Sep", name: "The Great Fire of Moscow", body: "Fire destroys much of the city. Russian responsibility for the fire is debated, but the effect was catastrophic for the French." },
+                { date: "19 Oct", name: "The Retreat Begins", body: "Napoleon begins the retreat from Moscow after Alexander I refuses to negotiate." },
+                { date: "24 Oct", name: "Battle of Maloyaroslavets", body: "Russian forces block the French route south, forcing the retreat along the ruined road the army came in on." },
+                { date: "Nov", name: "Winter Closes In", body: "Temperatures collapse. Discipline breaks down." },
+                { date: "26-29 Nov", name: "Crossing of the Berezina", body: "A costly rearguard action. French engineers build two pontoon bridges under fire, and thousands die in the crossing." },
+                { date: "5 Dec", name: "Napoleon Leaves the Army", body: "Napoleon leaves the army to return to Paris ahead of the collapse." },
+                { date: "14 Dec", name: "Recrossing the Niemen", body: "The remnants of the Grande Armée cross back over the Niemen. The invasion is over." },
+              ].map((c) => (
+                <li key={c.date + c.name} className="relative pl-20 md:pl-28">
+                  <div className="absolute left-0 top-0 flex items-center justify-center w-16 md:w-24 h-8 rounded-sm bg-burgundy border border-gold/60 text-gold-pale font-display text-sm tracking-wider">
+                    {c.date}
+                  </div>
+                  <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-2">
+                    {c.link ? (
+                      <Link href={c.link} className="hover:text-gold transition">
+                        {c.name}
+                      </Link>
+                    ) : (
+                      c.name
+                    )}
+                  </h3>
+                  <p className="text-parchment leading-relaxed font-serif">
+                    {c.body}
+                  </p>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
@@ -405,6 +462,129 @@ export default function RussianCampaignPage() {
               mixture of horror and quiet calculation. The German states that had supplied men
               and matériel to the campaign would not forget what their contingents had suffered.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* KEY FIGURES */}
+      <section id="key-figures" className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
+        <div className="max-w-6xl mx-auto px-6 py-16 scroll-mt-24">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-10">
+            Key Figures
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Napoleon Bonaparte
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Emperor of the French &middot; in personal command
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Commanded the invasion in person. At Borodino he showed uncharacteristic
+                hesitation, refusing to commit his Imperial Guard when it might have destroyed
+                the Russian army.{" "}
+                <Link href="/people/napoleon" className="text-gold-pale hover:text-gold underline underline-offset-4 decoration-gold/40 hover:decoration-gold">
+                  Read his full profile &rarr;
+                </Link>
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Marshal Michel Ney
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Commander of the rearguard
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Commanded the rearguard during the retreat and earned the nickname &ldquo;the
+                bravest of the brave&rdquo; for his conduct in extremis, fighting on foot with
+                the last men of the rearguard.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Marshal Joachim Murat
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Cavalry commander &middot; Napoleon&rsquo;s brother-in-law
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Led the cavalry of the Grande Armée. His squadrons were effectively destroyed
+                by exhaustion and lack of forage long before the worst of the winter arrived.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Marshal Louis-Nicolas Davout
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Commander of I Corps
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                One of Napoleon&rsquo;s most disciplined subordinates and one of the few to
+                bring a coherent formation out of Russia.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Tsar Alexander I
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Emperor of Russia
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Refused to negotiate with Napoleon even after Moscow fell. His stubbornness
+                was strategically decisive: without a peace, the French occupation of Moscow
+                meant nothing.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Field Marshal Mikhail Kutuzov
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Russian commander-in-chief
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Took command of the Russian forces shortly before Borodino. His strategy of
+                preserving the army rather than seeking decisive battle proved correct against
+                Napoleon.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Barclay de Tolly
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Architect of the strategic retreat
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                Commanded the Russian army in the early phase of the campaign and designed the
+                initial strategic retreat. He was unpopular at the time for refusing battle,
+                but history has vindicated his approach.
+              </p>
+            </article>
+
+            <article className="card p-6 rounded-sm">
+              <h3 className="font-display text-xl text-gold-pale uppercase tracking-wider mb-1">
+                Prince Pyotr Bagration
+              </h3>
+              <div className="text-sm italic text-burgundy-bright mb-3">
+                Commander of the Second Army
+              </div>
+              <p className="text-parchment/95 leading-relaxed font-serif text-sm">
+                The most aggressive of the senior Russian generals, forever urging battle
+                during the long retreat. He was mortally wounded at Borodino defending the
+                fl&egrave;ches that came to bear his name.
+              </p>
+            </article>
           </div>
         </div>
       </section>
