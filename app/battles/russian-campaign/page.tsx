@@ -267,6 +267,29 @@ export default function RussianCampaignPage() {
         </div>
       </section>
 
+      {/* THE SCORCHED EARTH STRATEGY */}
+      <section id="scorched-earth" className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep scroll-mt-24">
+        <div className="max-w-4xl mx-auto px-6 py-16">
+          <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest mb-8 section-title">
+            The Scorched Earth Strategy
+          </h2>
+          <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
+            <p>
+              The Russian response to Napoleon&rsquo;s invasion was to refuse the decisive
+              battle he needed. Retreating armies deliberately burned crops, destroyed
+              supplies, and torched buildings as they went. The French found no forage for
+              their horses, no food for their men, and no shelter.
+            </p>
+            <p>
+              Combined with the vast distances of Russia and constant harassment from Cossack
+              cavalry and armed peasants, this denial of resources was the strategic core of
+              the Russian victory. Napoleon&rsquo;s tactical mastery counted for nothing
+              against an enemy who refused to stand and fight until conditions favoured them.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* 5. SMOLENSK */}
       <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
         <div className="max-w-4xl mx-auto px-6 py-16">
@@ -391,10 +414,13 @@ export default function RussianCampaignPage() {
           <p>
             From that moment the retreat became a catastrophe on a scale that European history
             had never seen. The autumn rains turned roads to mud, then in early November the
-            temperature fell dramatically. Men who had already marched hundreds of miles in
-            disintegrating boots now walked through snow without adequate clothing. Horses
-            collapsed and died in their thousands. Wagons were abandoned. The wounded were left
-            behind. Discipline collapsed in units that had not eaten for days.
+            temperature fell dramatically, at times below minus thirty degrees Celsius. Men
+            who had already marched hundreds of miles in disintegrating boots now walked
+            through snow without adequate clothing. Horses collapsed and died in their
+            thousands; some froze standing up. Men lay down in the snow and did not get up.
+            Wagons were abandoned. The wounded were left behind. Discipline broke down first
+            in the multi-national contingents and then across the army, collapsing entirely
+            in units that had not eaten for days.
           </p>
           <p>
             The Cossacks, fast, elusive, and merciless, harried the flanks and rear of the
@@ -461,6 +487,13 @@ export default function RussianCampaignPage() {
               how long the alliance with France could be sustained, watched the disaster with a
               mixture of horror and quiet calculation. The German states that had supplied men
               and matériel to the campaign would not forget what their contingents had suffered.
+            </p>
+            <p>
+              Casualty figures for the campaign are contested. French losses across the whole
+              campaign are commonly estimated at 400,000 to 500,000, though historians debate
+              the precise numbers because of poor record-keeping, high desertion rates, and
+              the chaos of the retreat. Russian losses were also enormous, perhaps 200,000 or
+              more.
             </p>
           </div>
         </div>
@@ -611,8 +644,14 @@ export default function RussianCampaignPage() {
             control of Europe. Prussia broke its alliance with France in December 1812 and signed
             a convention with Russia at Tauroggen. By the spring of 1813 the Sixth Coalition was
             forming: Russia, Prussia, Austria, Britain, Sweden, and ultimately Spain united against
-            France in a way they had never managed before. The 1813 campaign in Germany, the
-            Battle of Leipzig and the final collapse in 1814, all flowed directly from the
+            France in a way they had never managed before. The 1813 campaign in Germany, the{" "}
+            <Link
+              href="/battles/leipzig"
+              className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:text-gold hover:decoration-gold transition"
+            >
+              Battle of Leipzig
+            </Link>{" "}
+            and the final collapse in 1814, all flowed directly from the
             catastrophe of 1812. Without Russia, the empire might have endured for decades.
           </p>
           <p>
@@ -624,6 +663,14 @@ export default function RussianCampaignPage() {
             Russia itself the campaign produced an outpouring of patriotic feeling that would
             shape Russian identity for generations. The war that was meant to consolidate
             Napoleon&rsquo;s empire instead began its dissolution.
+          </p>
+          <p>
+            In cultural terms, Tolstoy&rsquo;s <em>War and Peace</em>, published in the 1860s,
+            remains the greatest literary treatment of the campaign and has shaped the way
+            generations of readers understand it. Modern military historians view the campaign
+            as one of the most catastrophic in history, and largely self-inflicted: the product
+            of Napoleon&rsquo;s misjudgement of Russian resolve, Russian geography, and the
+            Russian winter.
           </p>
         </div>
       </section>
