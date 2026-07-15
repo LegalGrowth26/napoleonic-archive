@@ -388,20 +388,15 @@ export default function PeninsularWarPage() {
         </div>
       </section>
 
-      {/*
-        CAMPAIGN MAP
-        Awaiting upload of the campaign map image to /public/images/peninsular-war-map.png.
-        When the file is in place, restore this section:
-
-        <section className="max-w-5xl mx-auto px-6 pb-16">
-          <img
-            src="/images/peninsular-war-map.png"
-            alt="Map of the Peninsular Campaign 1807-1814 showing major battles including Rolica, Vimeiro, Corunna, Talavera, Ciudad Rodrigo, Badajoz, Salamanca, Vitoria, and Toulouse."
-            className="w-full h-auto border border-gold/25 rounded-sm"
-          />
-          <p className="text-xs uppercase tracking-widest text-parchment/70 text-center mt-3">The Peninsular Campaign 1807-1814</p>
-        </section>
-      */}
+      {/* CAMPAIGN MAP */}
+      <section className="max-w-5xl mx-auto px-6 pb-16">
+        <img
+          src="/images/peninsular-war-map.png"
+          alt="Map of the Peninsular Campaign 1807-1814 showing major battles including Rolica, Vimeiro, Corunna, Talavera, Ciudad Rodrigo, Badajoz, Salamanca, Vitoria, and Toulouse."
+          className="w-full h-auto border border-gold/25 rounded-sm"
+        />
+        <p className="text-xs uppercase tracking-widest text-parchment/70 text-center mt-3">The Peninsular Campaign 1807-1814</p>
+      </section>
 
       {/* QUICK-JUMP MENU */}
       <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">

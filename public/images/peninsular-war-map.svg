@@ -1,0 +1,244 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1536" height="1024" viewBox="0 0 1536 1024" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <filter id="coastblur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- ================= SEA ================= -->
+  <rect x="0" y="0" width="1536" height="1024" fill="#a9cfe3"/>
+
+  <!-- Coastal glow (shading around land) -->
+  <g filter="url(#coastblur)" fill="none" stroke="#6f9dc0" stroke-width="14" opacity="0.55">
+    <path d="M1070,0 L1066,40 L1074,80 L1064,120 L1058,150 L1052,172 L1020,168 L980,158 L940,152 L900,148 L860,140 L820,142 L780,132 L740,134 L700,124 L660,126 L620,114 L590,120 L562,108 L546,124 L538,150 L546,178 L532,205 L542,235 L530,262 L538,292 L516,325 L500,352 L494,392 L500,436 L490,478 L486,524 L478,564 L462,600 L452,622 L472,634 L462,654 L470,690 L486,728 L505,762 L528,786 L550,798 L588,806 L630,798 L672,800 L710,794 L735,790 L762,806 L784,838 L802,858 L828,872 L852,884 L860,896 L874,884 L898,862 L930,838 L968,818 L1010,800 L1055,786 L1098,768 L1135,745 L1168,720 L1195,695 L1218,672 L1242,650 L1256,628 L1262,600 L1272,565 L1282,545 L1292,510 L1300,478 L1318,462 L1342,452 L1372,428 L1402,398 L1432,362 L1452,330 L1462,312 L1478,302 L1505,290 L1536,282"/>
+    <path d="M620,1024 L645,988 L675,955 L710,932 L750,918 L795,912 L835,908 L858,918 L880,930 L910,925 L960,918 L1020,912 L1080,922 L1160,908 L1260,912 L1360,894 L1460,898 L1536,884"/>
+  </g>
+
+  <!-- ================= LAND: IBERIA + FRANCE ================= -->
+  <path d="M1070,0 L1066,40 L1074,80 L1064,120 L1058,150 L1052,172 L1020,168 L980,158 L940,152 L900,148 L860,140 L820,142 L780,132 L740,134 L700,124 L660,126 L620,114 L590,120 L562,108 L546,124 L538,150 L546,178 L532,205 L542,235 L530,262 L538,292 L516,325 L500,352 L494,392 L500,436 L490,478 L486,524 L478,564 L462,600 L452,622 L472,634 L462,654 L470,690 L486,728 L505,762 L528,786 L550,798 L588,806 L630,798 L672,800 L710,794 L735,790 L762,806 L784,838 L802,858 L828,872 L852,884 L860,896 L874,884 L898,862 L930,838 L968,818 L1010,800 L1055,786 L1098,768 L1135,745 L1168,720 L1195,695 L1218,672 L1242,650 L1256,628 L1262,600 L1272,565 L1282,545 L1292,510 L1300,478 L1318,462 L1342,452 L1372,428 L1402,398 L1432,362 L1452,330 L1462,312 L1478,302 L1505,290 L1536,282 L1536,0 Z"
+        fill="#e7d7ae" stroke="#5a86a8" stroke-width="1.5"/>
+
+  <!-- FRANCE tint -->
+  <path d="M1070,0 L1066,40 L1074,80 L1064,120 L1058,150 L1052,172 L1080,192 L1130,208 L1190,226 L1250,246 L1310,266 L1370,284 L1425,300 L1462,312 L1478,302 L1505,290 L1536,282 L1536,0 Z"
+        fill="#dde3c3" stroke="none"/>
+
+  <!-- PORTUGAL tint -->
+  <path d="M538,180 L546,178 L532,205 L542,235 L530,262 L538,292 L516,325 L500,352 L494,392 L500,436 L490,478 L486,524 L478,564 L462,600 L452,622 L472,634 L462,654 L470,690 L486,728 L505,762 L528,786 L550,798 L588,806 L630,798 L672,800 L710,794 L735,790 L722,758 L694,718 L712,678 L692,640 L700,598 L682,558 L654,520 L660,478 L648,438 L654,398 L642,362 L652,325 L630,295 L640,262 L622,240 L600,208 L570,190 Z"
+        fill="#cfcf9d" stroke="none"/>
+
+  <!-- AFRICA -->
+  <path d="M620,1024 L645,988 L675,955 L710,932 L750,918 L795,912 L835,908 L858,918 L880,930 L910,925 L960,918 L1020,912 L1080,922 L1160,908 L1260,912 L1360,894 L1460,898 L1536,884 L1536,1024 Z"
+        fill="#dbc99b" stroke="#5a86a8" stroke-width="1.5"/>
+
+  <!-- BALEARICS -->
+  <g fill="#e7d7ae" stroke="#5a86a8" stroke-width="1.2">
+    <path d="M1398,566 L1412,550 L1436,546 L1456,554 L1448,570 L1420,574 Z"/>
+    <path d="M1470,536 L1490,530 L1500,538 L1484,544 Z"/>
+    <path d="M1352,600 L1368,592 L1376,602 L1360,608 Z"/>
+  </g>
+
+  <!-- ================= RIVERS ================= -->
+  <g fill="none" stroke="#7fa8c8" stroke-width="2">
+    <path d="M500,352 C560,338 620,330 680,322 C750,314 820,308 880,300"/>
+    <path d="M452,624 C520,600 580,585 640,570 C700,556 760,545 815,538 C860,532 890,528 915,524"/>
+    <path d="M850,648 C800,655 750,650 712,640 C716,690 725,740 735,788"/>
+    <path d="M935,235 C980,262 1030,300 1080,340 C1140,386 1220,425 1300,452 L1338,458"/>
+  </g>
+  <g font-style="italic" font-size="17" fill="#4a7fae">
+    <text x="596" y="316" transform="rotate(-5 596 316)">Douro</text>
+    <text x="688" y="552" transform="rotate(-6 688 552)">Tagus</text>
+    <text x="775" y="676">Guadiana</text>
+    <text x="1146" y="380" transform="rotate(26 1146 380)">Ebro</text>
+  </g>
+
+  <!-- ================= BOUNDARIES ================= -->
+  <g fill="none" stroke="#3a3a30" stroke-width="2" stroke-dasharray="9 6">
+    <!-- Portugal / Spain -->
+    <path d="M538,180 L570,190 L600,208 L622,240 L640,262 L630,295 L652,325 L642,362 L654,398 L648,438 L660,478 L654,520 L682,558 L700,598 L692,640 L712,678 L694,718 L722,758 L735,790"/>
+    <!-- Pyrenees: France / Spain -->
+    <path d="M1052,172 L1080,192 L1130,208 L1190,226 L1250,246 L1310,266 L1370,284 L1425,300 L1462,312"/>
+  </g>
+
+  <!-- Pyrenees mountain marks -->
+  <g fill="none" stroke="#8a7a55" stroke-width="1.6" opacity="0.85">
+    <path d="M1128,222 l7,-10 l7,10"/><path d="M1170,232 l7,-10 l7,10"/><path d="M1212,246 l7,-10 l7,10"/>
+    <path d="M1254,258 l7,-10 l7,10"/><path d="M1296,270 l7,-10 l7,10"/><path d="M1338,284 l7,-10 l7,10"/><path d="M1380,296 l7,-10 l7,10"/>
+  </g>
+  <text x="1178" y="262" font-size="16" letter-spacing="4" fill="#5c5342" transform="rotate(11 1178 262)">PYRENEES  MOUNTAINS</text>
+
+  <!-- ================= SEA / REGION LABELS ================= -->
+  <g font-style="italic" letter-spacing="5" fill="#3f76a8">
+    <text x="860" y="62" font-size="30" text-anchor="middle">BAY OF</text>
+    <text x="860" y="98" font-size="30" text-anchor="middle">BISCAY</text>
+    <text x="540" y="880" font-size="30" text-anchor="middle">ATLANTIC</text>
+    <text x="540" y="916" font-size="30" text-anchor="middle">OCEAN</text>
+    <text x="1340" y="754" font-size="30" text-anchor="middle">MEDITERRANEAN</text>
+    <text x="1340" y="790" font-size="30" text-anchor="middle">SEA</text>
+  </g>
+  <text x="1400" y="72" font-size="38" letter-spacing="8" fill="#4a4436" text-anchor="middle">FRANCE</text>
+  <text x="556" y="566" font-size="22" letter-spacing="4" fill="#4a4436" text-anchor="middle">PORTUGAL</text>
+  <text x="1300" y="982" font-size="38" letter-spacing="8" fill="#4a4436" text-anchor="middle">AFRICA</text>
+
+  <!-- Cities -->
+  <g fill="#2b2b22">
+    <text x="874" y="503" font-size="24">&#9733;</text>
+    <text x="902" y="503" font-size="19">Madrid</text>
+    <text x="444" y="620" font-size="24">&#9733;</text>
+    <text x="472" y="619" font-size="19">Lisbon</text>
+  </g>
+
+  <!-- ================= BATTLE MARKERS ================= -->
+  <!-- phase colours: 1808 red, 1809 orange, 1810-11 green, 1812-Vitoria blue, invasion of France purple -->
+  <g font-size="14" font-weight="bold" text-anchor="middle">
+    <!-- 1 Rolica -->
+    <circle cx="600" cy="524" r="12" fill="#a63a2e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="600" y="529" fill="#fff">1</text>
+    <text x="618" y="529" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Roli&#231;a</text>
+    <!-- 2 Vimeiro -->
+    <circle cx="588" cy="494" r="12" fill="#a63a2e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="588" y="499" fill="#fff">2</text>
+    <text x="606" y="499" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Vimeiro</text>
+    <!-- 3 Corunna -->
+    <circle cx="547" cy="118" r="12" fill="#bf7b2e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="547" y="123" fill="#fff">3</text>
+    <circle cx="584" cy="112" r="3" fill="#2b2b22"/>
+    <text x="592" y="118" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">A Coru&#241;a</text>
+    <!-- 4 Second Oporto -->
+    <circle cx="510" cy="348" r="12" fill="#bf7b2e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="510" y="353" fill="#fff">4</text>
+    <circle cx="503" cy="363" r="3" fill="#2b2b22"/>
+    <text x="522" y="368" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Oporto</text>
+    <!-- 5 Talavera -->
+    <circle cx="802" cy="540" r="12" fill="#bf7b2e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="802" y="545" fill="#fff">5</text>
+    <text x="820" y="545" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Talavera</text>
+    <!-- 6 Busaco (near Coimbra, central Portugal) -->
+    <circle cx="620" cy="440" r="12" fill="#78883b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="620" y="445" fill="#fff">6</text>
+    <text x="638" y="445" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Busaco</text>
+    <!-- 7 Fuentes de Onoro (on the border, west of Ciudad Rodrigo) -->
+    <circle cx="657" cy="402" r="12" fill="#78883b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="657" y="407" fill="#fff">7</text>
+    <text x="618" y="384" font-size="17" font-weight="normal" text-anchor="middle" fill="#2b2b22">Fuentes</text>
+    <text x="610" y="402" font-size="17" font-weight="normal" text-anchor="middle" fill="#2b2b22">de O&#241;oro</text>
+    <!-- 8 Albuera -->
+    <circle cx="722" cy="656" r="12" fill="#78883b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="722" y="661" fill="#fff">8</text>
+    <text x="740" y="661" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Albuera</text>
+    <!-- 9 Ciudad Rodrigo -->
+    <circle cx="704" cy="376" r="12" fill="#31689b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="704" y="381" fill="#fff">9</text>
+    <text x="722" y="381" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Ciudad Rodrigo</text>
+    <!-- 10 Badajoz -->
+    <circle cx="706" cy="618" r="12" fill="#31689b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="706" y="623" fill="#fff">10</text>
+    <text x="724" y="623" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Badajoz</text>
+    <!-- 11 Salamanca -->
+    <circle cx="790" cy="410" r="12" fill="#31689b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="790" y="415" fill="#fff">11</text>
+    <circle cx="812" cy="420" r="3" fill="#2b2b22"/>
+    <text x="820" y="426" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Salamanca</text>
+    <!-- 12 Burgos -->
+    <circle cx="912" cy="282" r="12" fill="#31689b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="912" y="287" fill="#fff">12</text>
+    <circle cx="924" cy="296" r="3" fill="#2b2b22"/>
+    <text x="932" y="302" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Burgos</text>
+    <!-- 13 Vitoria -->
+    <circle cx="978" cy="212" r="12" fill="#31689b" stroke="#f4efe2" stroke-width="2"/>
+    <text x="978" y="217" fill="#fff">13</text>
+    <circle cx="958" cy="216" r="3" fill="#2b2b22"/>
+    <text x="950" y="222" font-size="17" font-weight="normal" text-anchor="end" fill="#2b2b22">Vitoria</text>
+    <!-- 14 San Sebastian -->
+    <circle cx="1062" cy="192" r="12" fill="#7b4b8e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="1062" y="197" fill="#fff">14</text>
+    <circle cx="1046" cy="174" r="3" fill="#2b2b22"/>
+    <text x="1052" y="220" font-size="17" font-weight="normal" text-anchor="middle" fill="#2b2b22">San Sebasti&#225;n</text>
+    <!-- 15 Nivelle -->
+    <circle cx="1112" cy="130" r="12" fill="#7b4b8e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="1112" y="135" fill="#fff">15</text>
+    <text x="1130" y="135" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Nivelle</text>
+    <!-- 16 Nive -->
+    <circle cx="1178" cy="178" r="12" fill="#7b4b8e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="1178" y="183" fill="#fff">16</text>
+    <text x="1196" y="183" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Nive</text>
+    <!-- 17 Orthez -->
+    <circle cx="1322" cy="206" r="12" fill="#7b4b8e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="1322" y="211" fill="#fff">17</text>
+    <text x="1340" y="211" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Orthez</text>
+    <!-- 18 Toulouse -->
+    <circle cx="1418" cy="130" r="12" fill="#7b4b8e" stroke="#f4efe2" stroke-width="2"/>
+    <text x="1418" y="135" fill="#fff">18</text>
+    <text x="1436" y="135" font-size="17" font-weight="normal" text-anchor="start" fill="#2b2b22">Toulouse</text>
+  </g>
+
+  <!-- ================= SCALE BAR ================= -->
+  <g>
+    <rect x="455" y="962" width="50" height="7" fill="#2b2b22"/>
+    <rect x="505" y="962" width="50" height="7" fill="#fff" stroke="#2b2b22" stroke-width="1"/>
+    <rect x="555" y="962" width="50" height="7" fill="#2b2b22"/>
+    <text x="455" y="952" font-size="14" fill="#2b2b22" text-anchor="middle">0</text>
+    <text x="505" y="952" font-size="14" fill="#2b2b22" text-anchor="middle">75</text>
+    <text x="555" y="952" font-size="14" fill="#2b2b22" text-anchor="middle">150</text>
+    <text x="605" y="952" font-size="14" fill="#2b2b22" text-anchor="middle">225 km</text>
+  </g>
+
+  <!-- ================= LEFT PANEL ================= -->
+  <rect x="0" y="0" width="438" height="1024" fill="#f4efe2" stroke="#c9bfa5" stroke-width="2"/>
+  <line x1="438" y1="0" x2="438" y2="1024" stroke="#8a7a55" stroke-width="2"/>
+
+  <text x="219" y="58" font-size="40" font-weight="bold" letter-spacing="2" fill="#1e3a5f" text-anchor="middle">THE PENINSULAR</text>
+  <text x="219" y="104" font-size="40" font-weight="bold" letter-spacing="2" fill="#1e3a5f" text-anchor="middle">CAMPAIGN</text>
+  <g stroke="#1e3a5f" stroke-width="1.5">
+    <line x1="88" y1="130" x2="140" y2="130"/>
+    <line x1="298" y1="130" x2="350" y2="130"/>
+  </g>
+  <text x="219" y="138" font-size="26" letter-spacing="3" fill="#1e3a5f" text-anchor="middle">1807&#8211;1814</text>
+  <text x="219" y="172" font-size="18" letter-spacing="3" fill="#3f3a2e" text-anchor="middle">MAJOR BATTLES AND ACTIONS</text>
+
+  <!-- KEY: 18 entries -->
+  <g font-size="17" fill="#2b2b22">
+    <g><circle cx="38" cy="205" r="11" fill="#a63a2e"/><text x="38" y="210" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">1</text><text x="60" y="211">Roli&#231;a</text><text x="404" y="211" text-anchor="end">17 Aug 1808</text></g>
+    <g><circle cx="38" cy="234" r="11" fill="#a63a2e"/><text x="38" y="239" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">2</text><text x="60" y="240">Vimeiro</text><text x="404" y="240" text-anchor="end">21 Aug 1808</text></g>
+    <g><circle cx="38" cy="263" r="11" fill="#bf7b2e"/><text x="38" y="268" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">3</text><text x="60" y="269">Corunna</text><text x="404" y="269" text-anchor="end">16 Jan 1809</text></g>
+    <g><circle cx="38" cy="292" r="11" fill="#bf7b2e"/><text x="38" y="297" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">4</text><text x="60" y="298">Oporto (Second Battle)</text><text x="404" y="298" text-anchor="end">12 May 1809</text></g>
+    <g><circle cx="38" cy="321" r="11" fill="#bf7b2e"/><text x="38" y="326" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">5</text><text x="60" y="327">Talavera</text><text x="404" y="327" text-anchor="end">27&#8211;28 Jul 1809</text></g>
+    <g><circle cx="38" cy="350" r="11" fill="#78883b"/><text x="38" y="355" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">6</text><text x="60" y="356">Busaco</text><text x="404" y="356" text-anchor="end">27 Sep 1810</text></g>
+    <g><circle cx="38" cy="379" r="11" fill="#78883b"/><text x="38" y="384" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">7</text><text x="60" y="385">Fuentes de O&#241;oro</text><text x="404" y="385" text-anchor="end">3&#8211;5 May 1811</text></g>
+    <g><circle cx="38" cy="408" r="11" fill="#78883b"/><text x="38" y="413" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">8</text><text x="60" y="414">Albuera</text><text x="404" y="414" text-anchor="end">16 May 1811</text></g>
+    <g><circle cx="38" cy="437" r="11" fill="#31689b"/><text x="38" y="442" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">9</text><text x="60" y="443">Ciudad Rodrigo (Siege)</text><text x="404" y="443" text-anchor="end">Jan 1812</text></g>
+    <g><circle cx="38" cy="466" r="11" fill="#31689b"/><text x="38" y="471" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">10</text><text x="60" y="472">Badajoz (Siege)</text><text x="404" y="472" text-anchor="end">Mar&#8211;Apr 1812</text></g>
+    <g><circle cx="38" cy="495" r="11" fill="#31689b"/><text x="38" y="500" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">11</text><text x="60" y="501">Salamanca</text><text x="404" y="501" text-anchor="end">22 Jul 1812</text></g>
+    <g><circle cx="38" cy="524" r="11" fill="#31689b"/><text x="38" y="529" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">12</text><text x="60" y="530">Burgos (Siege)</text><text x="404" y="530" text-anchor="end">Sep&#8211;Oct 1812</text></g>
+    <g><circle cx="38" cy="553" r="11" fill="#31689b"/><text x="38" y="558" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">13</text><text x="60" y="559">Vitoria</text><text x="404" y="559" text-anchor="end">21 Jun 1813</text></g>
+    <g><circle cx="38" cy="582" r="11" fill="#7b4b8e"/><text x="38" y="587" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">14</text><text x="60" y="588">San Sebasti&#225;n (Siege)</text><text x="404" y="588" text-anchor="end">Jul&#8211;Sep 1813</text></g>
+    <g><circle cx="38" cy="611" r="11" fill="#7b4b8e"/><text x="38" y="616" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">15</text><text x="60" y="617">Nivelle</text><text x="404" y="617" text-anchor="end">10 Nov 1813</text></g>
+    <g><circle cx="38" cy="640" r="11" fill="#7b4b8e"/><text x="38" y="645" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">16</text><text x="60" y="646">Nive</text><text x="404" y="646" text-anchor="end">9&#8211;13 Dec 1813</text></g>
+    <g><circle cx="38" cy="669" r="11" fill="#7b4b8e"/><text x="38" y="674" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">17</text><text x="60" y="675">Orthez</text><text x="404" y="675" text-anchor="end">27 Feb 1814</text></g>
+    <g><circle cx="38" cy="698" r="11" fill="#7b4b8e"/><text x="38" y="703" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle">18</text><text x="60" y="704">Toulouse</text><text x="404" y="704" text-anchor="end">10 Apr 1814</text></g>
+  </g>
+
+  <!-- LEGEND -->
+  <rect x="26" y="738" width="300" height="150" fill="none" stroke="#8a7a55" stroke-width="1.5"/>
+  <g font-size="16" fill="#2b2b22">
+    <rect x="42" y="754" width="34" height="18" fill="#cfcf9d" stroke="#8a7a55" stroke-width="1"/>
+    <text x="88" y="768">British / Allied forces</text>
+    <rect x="42" y="782" width="34" height="18" fill="#e0d3a8" stroke="#8a7a55" stroke-width="1"/>
+    <text x="88" y="796">Portuguese forces</text>
+    <rect x="42" y="810" width="34" height="18" fill="#e7d7ae" stroke="#8a7a55" stroke-width="1"/>
+    <text x="88" y="824">Spanish forces</text>
+    <rect x="42" y="838" width="34" height="18" fill="#b8cfe0" stroke="#8a7a55" stroke-width="1"/>
+    <text x="88" y="852">French forces</text>
+    <line x1="42" y1="872" x2="76" y2="872" stroke="#3a3a30" stroke-width="2" stroke-dasharray="7 5"/>
+    <text x="88" y="878">International boundary (1812)</text>
+  </g>
+
+  <!-- COMPASS -->
+  <g transform="translate(219,952)">
+    <circle r="32" fill="none" stroke="#3f3a2e" stroke-width="1.5"/>
+    <circle r="24" fill="none" stroke="#3f3a2e" stroke-width="0.8"/>
+    <path d="M0,-28 L6,0 L0,28 L-6,0 Z" fill="#3f3a2e"/>
+    <path d="M-28,0 L0,6 L28,0 L0,-6 Z" fill="#8a7a55"/>
+    <path d="M0,-28 L6,0 L-6,0 Z" fill="#a63a2e"/>
+    <text x="0" y="-40" font-size="18" font-weight="bold" fill="#3f3a2e" text-anchor="middle">N</text>
+  </g>
+</svg>
