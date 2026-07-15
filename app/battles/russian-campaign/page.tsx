@@ -5,20 +5,40 @@ import { pageMeta, SITE } from "@/lib/seo";
 export const metadata = pageMeta({
   title: "Napoleon’s Russian Campaign 1812",
   description:
-    "Napoleon’s Russian Campaign of 1812: the Grande Armée’s march to Moscow, the burning of the city, and the catastrophic winter retreat that destroyed the finest army in Europe.",
+    "Napoleon’s invasion of Russia in 1812: full campaign timeline, the Grande Armée, Borodino, the fire of Moscow, the scorched earth strategy, the retreat, and the Berezina crossing, with key figures and FAQ.",
   path: "/battles/russian-campaign",
   keywords: [
+    "Napoleon Russian Campaign",
+    "Napoleon invasion of Russia 1812",
     "Russian Campaign 1812",
-    "Napoleon Russia 1812",
     "Grande Armée",
     "Battle of Borodino",
     "Moscow 1812",
-    "Beresina crossing",
+    "Berezina crossing",
     "Napoleonic Wars",
     "retreat from Moscow",
+    "scorched earth",
   ],
   type: "article",
 });
+
+const faqItems = [
+  { q: "What was Napoleon's Russian Campaign?", a: "Napoleon's Russian Campaign was his invasion of the Russian Empire in 1812, undertaken with the Grande Armée of around 600,000 troops. It ended in catastrophic defeat: only around 100,000 men returned. The campaign broke Napoleon's military reputation and led directly to his abdication two years later." },
+  { q: "Why did Napoleon invade Russia in 1812?", a: "Napoleon invaded Russia primarily to force Tsar Alexander I to enforce the Continental System, the economic blockade of Britain that Russia had been openly breaking. He also aimed to break Russian power on the continent and secure his eastern flank. He assumed the campaign would be decided in a matter of weeks by a decisive battle. It was not." },
+  { q: "How many soldiers did Napoleon lose in Russia?", a: "Estimates vary, but the Grande Armée is generally reckoned to have lost between 400,000 and 500,000 men across the campaign. Precise figures are debated by historians because of poor record-keeping, high desertion rates, and the chaos of the retreat. Russian losses were also very high, perhaps 200,000 or more." },
+  { q: "What was the Grande Armée?", a: "The Grande Armée was the collective term for the army Napoleon led into Russia. At around 600,000 troops it was the largest army ever assembled in European history to that point. Only about half were French; the rest came from Poland, Italy, the German states, the Netherlands, Switzerland, Spain, and Portugal." },
+  { q: "Who commanded the Russian army against Napoleon?", a: "Barclay de Tolly commanded the Russian army during the early phase of the campaign and designed the strategic retreat. He was replaced by Field Marshal Mikhail Kutuzov shortly before the Battle of Borodino. Kutuzov led the army through Borodino, the abandonment of Moscow, and the pursuit of the retreating French." },
+  { q: "What happened at the Berezina?", a: "The Berezina crossing on 26 to 29 November 1812 was the moment the retreating Grande Armée came closest to total annihilation. French engineers built two pontoon bridges under enemy fire while Russian forces attacked the crossing points. Thousands died in the water and on the banks. The bridges were burned behind the last organised French units, stranding thousands of stragglers." },
+  { q: "Did the Russian winter defeat Napoleon?", a: "The Russian winter is often blamed for Napoleon's defeat, but this is only partly accurate. Russian strategy defeated Napoleon: the refusal to give battle on his terms, the scorched earth policy that denied his army supplies, and Alexander's refusal to negotiate even after Moscow fell. The winter accelerated the collapse of an army that had already been strategically defeated." },
+] as const;
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map(({ q, a }) => ({
+    "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
 
 const articleJsonLd = {
   "@context": "https://schema.org",
@@ -45,6 +65,7 @@ export default function RussianCampaignPage() {
   return (
     <>
       <JsonLd data={articleJsonLd} />
+      <JsonLd data={faqJsonLd} />
 
       {/* 1. HERO */}
       <section className="relative overflow-hidden border-b border-gold/20">
@@ -350,15 +371,14 @@ export default function RussianCampaignPage() {
             eastward during the night. Napoleon had won the field but not the campaign.
           </p>
           <p>
-            A dedicated Borodino page will be added to this archive in due course. Until then,
-            see the{" "}
+            Read the full account of the bloodiest day of the campaign on the dedicated{" "}
             <Link
-              href="/battles"
+              href="/battles/borodino"
               className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:text-gold hover:decoration-gold transition"
             >
-              Battles index
+              Battle of Borodino
             </Link>{" "}
-            for related articles.
+            page.
           </p>
         </div>
       </section>
@@ -431,7 +451,7 @@ export default function RussianCampaignPage() {
             stumbling through the snow.
           </p>
           <p>
-            The Beresina river crossing in late November 1812 was the nadir. Russian forces had
+            The Berezina river crossing in late November 1812 was the nadir. Russian forces had
             seized the main crossing and threatened to destroy what remained of the army
             entirely. Napoleon&rsquo;s engineers, working in freezing water up to their shoulders,
             built two pontoon bridges under fire in a feat of extraordinary courage and technical
@@ -439,7 +459,7 @@ export default function RussianCampaignPage() {
             rearguards fought off Russian attacks on both banks. Thousands were killed in the
             fighting or drowned when bridges broke under the weight of fugitives. Thousands more
             were left on the eastern bank when the bridges were finally burned. Those who survived
-            the Beresina still faced hundreds of miles through deepening winter to reach safety.
+            the Berezina still faced hundreds of miles through deepening winter to reach safety.
           </p>
         </div>
       </section>
@@ -728,6 +748,48 @@ export default function RussianCampaignPage() {
         </div>
       </section>
 
+      {/* FAQ */}
+      <section id="faq" className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
+        <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-10">
+          Frequently Asked Questions
+        </h2>
+        <div className="space-y-4">
+          {faqItems.map(({ q, a }) => (
+            <details key={q} className="card rounded-sm">
+              <summary className="flex items-start gap-3 p-5 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                <span className="text-gold font-display text-sm mt-0.5 shrink-0" aria-hidden="true">Q</span>
+                <span className="font-display text-lg text-gold-pale tracking-wide leading-snug">{q}</span>
+              </summary>
+              <div className="px-5 pb-5 pt-2 border-t border-gold/15"><p className="text-parchment leading-relaxed font-serif">{a}</p></div>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      {/* RELATED CONTENT */}
+      <section className="border-t border-gold/20 bg-gradient-to-b from-navy-deep via-burgundy-deep/10 to-navy-deep">
+        <div className="max-w-5xl mx-auto px-6 py-16">
+          <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest text-center mb-10">
+            Related Content
+          </h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            {[
+              { href: "/battles/borodino", title: "Battle of Borodino", desc: "The bloodiest single day of the Napoleonic Wars, 7 September 1812." },
+              { href: "/battles/leipzig", title: "Battle of Leipzig", desc: "The Battle of the Nations, October 1813: the direct consequence of the Russian disaster." },
+              { href: "/timeline", title: "Napoleonic Wars Timeline", desc: "Every major event of the wars in chronological order." },
+              { href: "/people/wellington", title: "Duke of Wellington", desc: "The strategic contrast: while Napoleon marched on Moscow, Wellington was winning at Salamanca." },
+              { href: "/napoleonic-wars", title: "The Napoleonic Wars", desc: "The complete guide to the wars, from the Revolution to Waterloo." },
+              { href: "/people/napoleon", title: "Napoleon Bonaparte", desc: "The life and campaigns of the Emperor of the French." },
+            ].map((c) => (
+              <Link key={c.href} href={c.href} className="card p-5 rounded-sm block group hover:border-gold/60 transition">
+                <div className="font-display text-gold-pale uppercase tracking-wider text-sm group-hover:text-gold transition mb-1">{c.title}</div>
+                <p className="text-parchment/85 font-serif text-sm">{c.desc}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 12. FURTHER READING */}
       <section className="max-w-4xl mx-auto px-6 py-16 scroll-mt-24">
         <h2 className="font-display text-3xl md:text-4xl text-gold-pale uppercase tracking-widest text-center mb-10">
@@ -784,6 +846,9 @@ export default function RussianCampaignPage() {
         <p className="text-xs uppercase tracking-widest text-parchment/60 text-center">
           Book links, where present, may be affiliate links. As an Amazon Associate the
           Archive earns from qualifying purchases.
+        </p>
+        <p className="text-[10px] text-parchment/50 text-center mt-2">
+          Page last updated: July 2026
         </p>
       </section>
     </>
