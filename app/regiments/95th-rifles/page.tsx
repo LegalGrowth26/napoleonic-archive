@@ -942,6 +942,16 @@ export default function NinetyFifthRiflesPage() {
           </div>
         </div>
 
+        <p className="text-center text-parchment/95 font-serif italic max-w-2xl mx-auto mt-4">
+          For a wider curated selection of memoirs and modern histories, see our{" "}
+          <Link
+            href="/napoleonic-wars-books"
+            className="text-gold-pale underline underline-offset-2 hover:text-gold transition"
+          >
+            Napoleonic Wars reading guide &rarr;
+          </Link>
+        </p>
+
         </div>
       </section>
 

@@ -178,10 +178,10 @@ export default function HomePage() {
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
           {[
+            { href: "/napoleonic-wars-books", title: "Best Napoleonic Wars Books", badge: "Reading", desc: "Curated non-fiction: where to start on Napoleon, Wellington, Waterloo and 1812" },
             { href: "/last-kingdom-books-in-order", title: "Last Kingdom Books in Order", badge: "Fiction", desc: "All 13 novels in reading order, with free PDF checklist" },
             { href: "/bernard-cornwell", title: "Bernard Cornwell", badge: "Author", desc: "The complete guide to his life and 60+ novels" },
             { href: "/battles/peninsular-war", title: "Peninsular War Overview", badge: "Battles", desc: "Six years that broke Napoleon" },
-            { href: "/stories/life-as-a-soldier", title: "Life as a Soldier", badge: "Stories", desc: "Pay, food, discipline and survival" },
           ].map((item) => (
             <Link key={item.href} href={item.href} className="card p-5 rounded-sm flex items-start gap-4 group hover:border-gold/60 transition">
               <div className="shrink-0 px-2 py-1 border border-burgundy-bright/50 bg-burgundy-deep/30 text-burgundy-bright text-[10px] uppercase tracking-widest rounded-sm">

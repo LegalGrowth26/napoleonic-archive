@@ -811,6 +811,24 @@ export default function FictionPage() {
           </footer>
         </blockquote>
 
+        <div className="mt-16">
+          <Link
+            href="/napoleonic-wars-books"
+            className="block border-2 border-gold/50 rounded-sm p-6 bg-gradient-to-b from-burgundy-deep/40 to-navy-muted/40 hover:border-gold transition group"
+          >
+            <div className="font-display uppercase tracking-widest text-gold-pale text-lg group-hover:text-gold transition">
+              For readers who want the real history behind Sharpe
+            </div>
+            <p className="mt-2 text-parchment/95 font-serif">
+              See our{" "}
+              <span className="text-gold-pale underline underline-offset-2 group-hover:text-gold">
+                Napoleonic Wars reading guide
+              </span>
+              : the best non-fiction on the Peninsular War, Napoleon, Wellington, Waterloo and Russia 1812 &rarr;
+            </p>
+          </Link>
+        </div>
+
         <div className="mt-16 pt-10 border-t border-gold/20" id="checklist">
           <div className="text-center mb-10">
             <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest mb-4">Free Sharpe Reading Checklist</h2>

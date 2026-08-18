@@ -566,6 +566,24 @@ export default function ResourcesPage() {
         lede="Memoirs, modern histories, museums, archives, maps and podcasts: the archivist's further shelves."
       />
 
+      <section className="max-w-5xl mx-auto px-6 pt-10">
+        <Link
+          href="/napoleonic-wars-books"
+          className="block border-2 border-gold/50 rounded-sm p-6 bg-gradient-to-b from-burgundy-deep/40 to-navy-muted/40 hover:border-gold transition group"
+        >
+          <div className="font-display uppercase tracking-widest text-gold-pale text-lg group-hover:text-gold transition">
+            Looking for reading recommendations?
+          </div>
+          <p className="mt-2 text-parchment/95 font-serif">
+            See our curated{" "}
+            <span className="text-gold-pale underline underline-offset-2 group-hover:text-gold">
+              reading guide
+            </span>
+            : the best non-fiction books on Napoleon, Wellington, Waterloo, the Peninsular War and Russia 1812, with a starting order for new readers &rarr;
+          </p>
+        </Link>
+      </section>
+
       <section className="max-w-5xl mx-auto px-6 py-16 space-y-16">
         <div>
           <h2 className="font-display text-2xl text-gold-pale uppercase tracking-widest section-title mb-6">

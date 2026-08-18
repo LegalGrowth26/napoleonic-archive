@@ -780,6 +780,7 @@ export default function RussianCampaignPage() {
               { href: "/people/wellington", title: "Duke of Wellington", desc: "The strategic contrast: while Napoleon marched on Moscow, Wellington was winning at Salamanca." },
               { href: "/napoleonic-wars", title: "The Napoleonic Wars", desc: "The complete guide to the wars, from the Revolution to Waterloo." },
               { href: "/people/napoleon", title: "Napoleon Bonaparte", desc: "The life and campaigns of the Emperor of the French." },
+              { href: "/napoleonic-wars-books", title: "Reading Guide", desc: "Zamoyski, Lieven, Caulaincourt: the best non-fiction on 1812 and the wider wars." },
             ].map((c) => (
               <Link key={c.href} href={c.href} className="card p-5 rounded-sm block group hover:border-gold/60 transition">
                 <div className="font-display text-gold-pale uppercase tracking-wider text-sm group-hover:text-gold transition mb-1">{c.title}</div>

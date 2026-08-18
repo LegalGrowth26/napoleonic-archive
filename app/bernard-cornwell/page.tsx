@@ -313,6 +313,7 @@ export default function BernardCornwellPage() {
         <div className="text-parchment leading-relaxed font-serif space-y-5 text-lg">
           <p>Cornwell has published one full-length work of non-fiction:</p>
           <p><strong><AffLink href={WL_CTA_URL}>Waterloo: The History of Four Days, Three Armies, and Three Battles</AffLink></strong> (2014): a narrative history of the 1815 campaign, including the battles of Quatre Bras, Ligny, and Waterloo itself. Drawing on his decades of research for the Sharpe series, this is widely regarded as one of the most readable single-volume accounts of the battle for general readers.</p>
+          <p className="text-parchment/90 italic">See it alongside the other essential non-fiction accounts on our <Link href="/napoleonic-wars-books" className="text-gold-pale underline underline-offset-4 decoration-gold/40 hover:decoration-gold hover:text-gold transition">Napoleonic Wars reading guide</Link>.</p>
         </div>
         <div className="mt-6 flex flex-wrap gap-4">
           <a href={WL_CTA_URL} target="_blank" rel="noopener noreferrer sponsored" className="inline-block px-5 py-2 border border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-xs hover:border-gold hover:text-gold transition shadow-regal">

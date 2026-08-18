@@ -910,12 +910,20 @@ export default function WaterlooPage() {
           </div>
 
           <div className="text-center space-y-4">
-            <Link
-              href="/resources"
-              className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
-            >
-              Browse all resources &rarr;
-            </Link>
+            <div className="flex flex-wrap gap-3 justify-center">
+              <Link
+                href="/napoleonic-wars-books"
+                className="inline-block px-6 py-3 border-2 border-gold/60 bg-gradient-to-b from-burgundy to-burgundy-deep text-gold-pale uppercase tracking-widest text-sm font-display hover:border-gold hover:text-gold transition shadow-regal"
+              >
+                Full Napoleonic Wars reading guide &rarr;
+              </Link>
+              <Link
+                href="/resources"
+                className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+              >
+                Browse all resources &rarr;
+              </Link>
+            </div>
             <p className="text-xs uppercase tracking-widest text-parchment/85">
               As an Amazon Associate I earn from qualifying purchases.
             </p>

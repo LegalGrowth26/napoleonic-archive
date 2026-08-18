@@ -464,6 +464,7 @@ export default function PeninsularWarPage() {
               { href: "/regiments/95th-rifles", title: "The 95th Rifles", desc: "The green-jacketed riflemen whose service ran throughout the Peninsula." },
               { href: "/regiments/kings-german-legion", title: "The King's German Legion", desc: "Hanover's exiles in British service." },
               { href: "/fiction", title: "The Sharpe Series", desc: "Bernard Cornwell's novels, set during the Peninsular War." },
+              { href: "/napoleonic-wars-books", title: "Reading Guide", desc: "The best non-fiction books on the Peninsular War, with a suggested starting order." },
             ].map((c) => (
               <Link key={c.href} href={c.href} className="card p-5 rounded-sm block group hover:border-gold/60 transition">
                 <div className="font-display text-gold-pale uppercase tracking-wider text-sm group-hover:text-gold transition mb-1">{c.title}</div>
