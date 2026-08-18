@@ -3,9 +3,9 @@ import JsonLd from "@/components/JsonLd";
 import { pageMeta, SITE } from "@/lib/seo";
 
 export const metadata = pageMeta({
-  title: "Bernard Cornwell: Complete Author Guide & Books in Order",
+  title: "Bernard Cornwell: Sharpe, Last Kingdom & All His Books",
   description:
-    "Bernard Cornwell, author of Sharpe and The Last Kingdom. Full biography, complete bibliography across all series, and where to start reading.",
+    "British author of Sharpe, The Last Kingdom, and 60+ historical novels. Full bio, complete bibliography, and where to start reading each series.",
   path: "/bernard-cornwell",
   keywords: [
     "Bernard Cornwell",
@@ -395,7 +395,7 @@ export default function BernardCornwellPage() {
           As an Amazon Associate I earn from qualifying purchases.
         </p>
         <p className="text-[10px] text-parchment/50 mt-2">
-          Page last updated: July 2026
+          Page last updated: August 2026
         </p>
       </section>
     </>
