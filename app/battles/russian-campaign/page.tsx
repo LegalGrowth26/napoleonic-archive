@@ -803,6 +803,36 @@ export default function RussianCampaignPage() {
             &larr; All Battles
           </Link>
           <Link
+            href="/battles/borodino"
+            className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+          >
+            Battle of Borodino
+          </Link>
+          <Link
+            href="/battles/leipzig"
+            className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+          >
+            Battle of Leipzig
+          </Link>
+          <Link
+            href="/timeline"
+            className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+          >
+            Napoleonic Wars Timeline
+          </Link>
+          <Link
+            href="/napoleonic-wars"
+            className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+          >
+            Napoleonic Wars Hub
+          </Link>
+          <Link
+            href="/people/wellington"
+            className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
+          >
+            Duke of Wellington
+          </Link>
+          <Link
             href="/people/napoleon"
             className="inline-block px-6 py-3 border border-gold/40 text-gold-pale uppercase tracking-widest text-sm hover:border-gold hover:text-gold transition"
           >
@@ -848,7 +878,7 @@ export default function RussianCampaignPage() {
           Archive earns from qualifying purchases.
         </p>
         <p className="text-[10px] text-parchment/50 text-center mt-2">
-          Page last updated: July 2026
+          Page last updated: August 2026
         </p>
       </section>
     </>
