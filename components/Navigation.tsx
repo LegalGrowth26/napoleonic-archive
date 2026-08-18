@@ -219,6 +219,7 @@ const NAV_SECTIONS: NavSection[] = [
       {
         heading: "Reading",
         links: [
+          { label: "Best Napoleonic Wars Books", href: "/napoleonic-wars-books" },
           { label: "Books & Histories", href: "/resources" },
           { label: "Primary Sources", href: "/stories" },
         ],

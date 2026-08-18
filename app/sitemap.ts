@@ -77,6 +77,7 @@ const routes = [
   { path: "/battles/nive", priority: 0.7 },
   { path: "/battles/orthez", priority: 0.7 },
   { path: "/battles/toulouse", priority: 0.7 },
+  { path: "/napoleonic-wars-books", priority: 0.8 },
 ] as const;
 
 export default function sitemap(): MetadataRoute.Sitemap {
